@@ -1,0 +1,1383 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.2">
+    
+    
+      
+        <title>Logging - Carl-bot Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.3020aac5.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#546e7a">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.01ccdecf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Fira+Code">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Fira Code","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-126357432-1", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue-grey" data-md-color-accent="cyan">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#logging" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Carl-bot Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../../images/googleturtle.svg" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Carl-bot Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              Logging
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/CarlGroth/carlbot-docs/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    carlbot-docs
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." title="Home" class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../config/command-permissions/" title="Config" class="md-tabs__link">
+          Config
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="./" title="Logging" class="md-tabs__link md-tabs__link--active">
+          Logging
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../misc/animals/" title="Misc" class="md-tabs__link">
+          Misc
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../moderation/automod/" title="Moderation" class="md-tabs__link">
+          Moderation
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../music/music/" title="Music" class="md-tabs__link">
+          Music
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../roles/autoroles/" title="Roles" class="md-tabs__link">
+          Roles
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tags-and-triggers/ccs/" title="Tags and triggers" class="md-tabs__link">
+          Tags and triggers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../utilities/announcements/" title="Utilities" class="md-tabs__link">
+          Utilities
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Carl-bot Documentation" class="md-nav__button md-logo">
+      
+        <img src="../../images/googleturtle.svg" width="48" height="48">
+      
+    </a>
+    Carl-bot Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/CarlGroth/carlbot-docs/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    carlbot-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../SUMMARY/" title="Table of contents" class="md-nav__link">
+      Table of contents
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../basic-bot-setup/" title="Basic bot setup" class="md-nav__link">
+      Basic bot setup
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../faq/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Config
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Config
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../config/command-permissions/" title="Managing commands" class="md-nav__link">
+      Managing commands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../config/prefixes/" title="Prefixes" class="md-nav__link">
+      Prefixes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+    
+    <label class="md-nav__link" for="nav-6">
+      Logging
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Logging
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Logging
+      </label>
+    
+    <a href="./" title="Logging" class="md-nav__link md-nav__link--active">
+      Logging
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" title="Quick start" class="md-nav__link">
+    Quick start
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-list" title="Event list" class="md-nav__link">
+    Event list
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../modlogs/" title="Modlogs" class="md-nav__link">
+      Modlogs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../welcome-messages/" title="Welcome and leave messages" class="md-nav__link">
+      Welcome and leave messages
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Misc
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Misc
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../misc/animals/" title="Animals" class="md-nav__link">
+      Animals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../misc/silly-useless/" title="Silly/useless" class="md-nav__link">
+      Silly/useless
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Moderation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Moderation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../moderation/automod/" title="Automod" class="md-nav__link">
+      Automod
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../moderation/moderation/" title="Moderation" class="md-nav__link">
+      Moderation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Music
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        Music
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../music/music/" title="Music" class="md-nav__link">
+      Music
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      Roles
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        Roles
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../roles/autoroles/" title="Autoroles and delayed autoroles" class="md-nav__link">
+      Autoroles and delayed autoroles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../roles/reaction-roles/" title="Reaction Roles" class="md-nav__link">
+      Reaction Roles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../roles/role-management/" title="Role management" class="md-nav__link">
+      Role management
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      Tags and triggers
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        Tags and triggers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tags-and-triggers/ccs/" title="Tags" class="md-nav__link">
+      Tags
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tags-and-triggers/tags-advanced-usage/" title="Tags - Advanced usage" class="md-nav__link">
+      Tags - Advanced usage
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tags-and-triggers/triggers/" title="Triggers" class="md-nav__link">
+      Triggers
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+    
+    <label class="md-nav__link" for="nav-12">
+      Utilities
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        Utilities
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../utilities/announcements/" title="Announcements" class="md-nav__link">
+      Announcements
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../utilities/embeds/" title="Embeds" class="md-nav__link">
+      Embeds
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../utilities/highlights-pager/" title="Highlights/pager" class="md-nav__link">
+      Highlights/pager
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../utilities/reminders-timers/" title="Reminders/Timers" class="md-nav__link">
+      Reminders/Timers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../utilities/starboard/" title="Starboard" class="md-nav__link">
+      Starboard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../utilities/suggestions/" title="Suggestions" class="md-nav__link">
+      Suggestions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../utilities/twitch-notifications/" title="Twitch notifications" class="md-nav__link">
+      Twitch notifications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../utilities/uncategorized-utilities/" title="Uncategorized utilities" class="md-nav__link">
+      Uncategorized utilities
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" title="Quick start" class="md-nav__link">
+    Quick start
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-list" title="Event list" class="md-nav__link">
+    Event list
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/CarlGroth/carlbot-docs/edit/master/docs/logging/logging.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="logging">Logging</h1>
+<h2 id="quick-start">Quick start</h2>
+<ol>
+<li>Choose a channel with <strong>!log channel &lt;#channel&gt;</strong></li>
+<li>Select which events you want logged with <strong>!log &lt;event&gt;</strong> where event is an event found at the bottom of this page</li>
+<li>Split up logging into separate channels by using the commands found below</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The command <strong>!log aio</strong> automatically creates a category, fills it with five channels and splits up logging into them.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Consider using the website at <a href="https://carl.gg">https://carl.gg</a></p>
+</div>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Example</th>
+<th align="left">Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>log channel [#channel]</strong></td>
+<td align="left">!log channel #logs</td>
+<td align="left">Sets the default channel where logged events go. Leave empty to clear the channel.</td>
+</tr>
+<tr>
+<td align="left"><strong>log [event]</strong></td>
+<td align="left">!log channelcreate</td>
+<td align="left">Toggles an event from being logged or not. Leave blank to see current settings.</td>
+</tr>
+<tr>
+<td align="left"><strong>log messagechannel [#channel]</strong></td>
+<td align="left">!log messagechannel #msglog</td>
+<td align="left">Sets the channel where message events are logged to.</td>
+</tr>
+<tr>
+<td align="left"><strong>log memberchannel [#channel]</strong></td>
+<td align="left">!log memberchannel #member-logs</td>
+<td align="left">Sets the channel where member events are logged to.</td>
+</tr>
+<tr>
+<td align="left"><strong>log joinchannel [#channel]</strong></td>
+<td align="left">!log joinchannel #hello-bye</td>
+<td align="left">Sets the channel where the bot logs members joining and leaving to.</td>
+</tr>
+<tr>
+<td align="left"><strong>log serverchannel [#channel]</strong></td>
+<td align="left">!log serverchannel #server-updates</td>
+<td align="left">Sets the channel where updates to the server itself are logged.</td>
+</tr>
+<tr>
+<td align="left"><strong>log voicechannel [#channel]</strong></td>
+<td align="left">!log voicechannel #spying</td>
+<td align="left">Sets the channel where members joining/moving between/leaving voice channels are logged.</td>
+</tr>
+<tr>
+<td align="left"><strong>log ignore &lt;channels/members...&gt;</strong></td>
+<td align="left">!log ignore @Carl#0001 #bilderberg #secret-shhh</td>
+<td align="left">Ignores message events posted in the channels or by the members.</td>
+</tr>
+<tr>
+<td align="left"><strong>log unignore &lt;channels/members...&gt;</strong></td>
+<td align="left">!log unignore @Carl#0001 #bilderberg</td>
+<td align="left">Unignores the previous ignores.</td>
+</tr>
+<tr>
+<td align="left"><strong>log [prefix|ip] &lt;prefix&gt;</strong></td>
+<td align="left">!log ip !</td>
+<td align="left">Ignores message deletions, edits and messages within purges starting with the prefixes.</td>
+</tr>
+<tr>
+<td align="left"><strong>log [removeprefix|up] &lt;prefix&gt;</strong></td>
+<td align="left">!log up ?</td>
+<td align="left">Unignores previously added prefixes.</td>
+</tr>
+<tr>
+<td align="left"><strong>log export</strong></td>
+<td align="left"></td>
+<td align="left">Exports the settings used in this server to be used with the next command.</td>
+</tr>
+<tr>
+<td align="left"><strong>log [import|custom] &lt;perms&gt;</strong></td>
+<td align="left">!log import 1337</td>
+<td align="left">Imports some settings.</td>
+</tr>
+<tr>
+<td align="left"><strong>log aio</strong></td>
+<td align="left"></td>
+<td align="left">Creates a category, fills it with five channels and splits up logging into them.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="event-list">Event list</h2>
+<p>Each event that Carl-bot logs has an associated value and channel. The values are only there for ultra-nerds, don't worry about it.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Event</th>
+<th align="left">Associated logging</th>
+<th align="right">Value</th>
+<th align="center">Channel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">delete</td>
+<td align="left">Deleted messages</td>
+<td align="right">1</td>
+<td align="center">messagechannel</td>
+</tr>
+<tr>
+<td align="left">edit</td>
+<td align="left">Message edits</td>
+<td align="right">2</td>
+<td align="center">messagechannel</td>
+</tr>
+<tr>
+<td align="left">purge</td>
+<td align="left">Bulk message deletion</td>
+<td align="right">4</td>
+<td align="center">messagechannel</td>
+</tr>
+<tr>
+<td align="left">discord</td>
+<td align="left">Discord invites posted</td>
+<td align="right">2097152</td>
+<td align="center">messagechannel</td>
+</tr>
+<tr>
+<td align="left">role</td>
+<td align="left">Member role updates</td>
+<td align="right">8</td>
+<td align="center">memberchannel</td>
+</tr>
+<tr>
+<td align="left">avatar</td>
+<td align="left">Avatar updates</td>
+<td align="right">32</td>
+<td align="center">memberchannel</td>
+</tr>
+<tr>
+<td align="left">bans</td>
+<td align="left">Bans and unbans</td>
+<td align="right">192</td>
+<td align="center">memberchannel</td>
+</tr>
+<tr>
+<td align="left">ban</td>
+<td align="left">Just bans</td>
+<td align="right">64</td>
+<td align="center">memberchannel</td>
+</tr>
+<tr>
+<td align="left">unban</td>
+<td align="left">Just unbans</td>
+<td align="right">128</td>
+<td align="center">memberchannel</td>
+</tr>
+<tr>
+<td align="left">join</td>
+<td align="left">Name or nickname updates</td>
+<td align="right">256</td>
+<td align="center">joinchannel</td>
+</tr>
+<tr>
+<td align="left">leave</td>
+<td align="left">Name or nickname updates</td>
+<td align="right">512</td>
+<td align="center">joinchannel</td>
+</tr>
+<tr>
+<td align="left">channels</td>
+<td align="left">Channel creations, updates and deletions</td>
+<td align="right">7168</td>
+<td align="center">serverchannel</td>
+</tr>
+<tr>
+<td align="left">channelcreate</td>
+<td align="left">Channel creation</td>
+<td align="right">1024</td>
+<td align="center">serverchannel</td>
+</tr>
+<tr>
+<td align="left">channelupdate</td>
+<td align="left">Channel updates</td>
+<td align="right">2048</td>
+<td align="center">serverchannel</td>
+</tr>
+<tr>
+<td align="left">channeldelete</td>
+<td align="left">Channel deletion</td>
+<td align="right">4096</td>
+<td align="center">serverchannel</td>
+</tr>
+<tr>
+<td align="left">rolecreate</td>
+<td align="left">Roles created</td>
+<td align="right">65536</td>
+<td align="center">serverchannel</td>
+</tr>
+<tr>
+<td align="left">roleupdate</td>
+<td align="left">Updates to roles</td>
+<td align="right">131072</td>
+<td align="center">serverchannel</td>
+</tr>
+<tr>
+<td align="left">roledelete</td>
+<td align="left">Roles deleted</td>
+<td align="right">262144</td>
+<td align="center">serverchannel</td>
+</tr>
+<tr>
+<td align="left">allroles</td>
+<td align="left">Roles being created, updated or deleted</td>
+<td align="right">458752</td>
+<td align="center">serverchannel</td>
+</tr>
+<tr>
+<td align="left">emoji</td>
+<td align="left">Emojis being created, updated or deleted</td>
+<td align="right">1048576</td>
+<td align="center">serverchannel</td>
+</tr>
+<tr>
+<td align="left">server</td>
+<td align="left">Updates to the server itself</td>
+<td align="right">524288</td>
+<td align="center">serverchannel</td>
+</tr>
+<tr>
+<td align="left">voicejoin</td>
+<td align="left">Members joining voice channels</td>
+<td align="right">8192</td>
+<td align="center">voicechannel</td>
+</tr>
+<tr>
+<td align="left">voicemove</td>
+<td align="left">Members changing voice channels</td>
+<td align="right">16384</td>
+<td align="center">voicechannel</td>
+</tr>
+<tr>
+<td align="left">voiceleave</td>
+<td align="left">Members leaving voice channels</td>
+<td align="right">32768</td>
+<td align="center">voicechannel</td>
+</tr>
+<tr>
+<td align="left">voice</td>
+<td align="left">All voice events</td>
+<td align="right">57344</td>
+<td align="center">voicechannel</td>
+</tr>
+<tr>
+<td align="left">everything</td>
+<td align="left">Every single event</td>
+<td align="right">4194303</td>
+<td align="center">depends</td>
+</tr>
+<tr>
+<td align="left">nothing</td>
+<td align="left">Nothing!</td>
+<td align="right">0</td>
+<td align="center">--</td>
+</tr>
+<tr>
+<td align="left">default</td>
+<td align="left">Some messages and member events</td>
+<td align="right">1019</td>
+<td align="center">depends</td>
+</tr>
+</tbody>
+</table>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../config/prefixes/" title="Prefixes" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Prefixes
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../modlogs/" title="Modlogs" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Modlogs
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2018 - 2019 Carl
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://carl.gg" class="md-footer-social__link fa fa-discord"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.267712eb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>
