@@ -127,6 +127,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#bulk-management" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -728,6 +732,8 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
+      
+    
     
     <a href="./" title="Role management" class="md-nav__link md-nav__link--active">
       Role management
@@ -928,6 +934,21 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -936,12 +957,9 @@
                   <a href="https://github.com/CarlGroth/carlbot-docs/edit/master/docs/roles/role-management.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Role management</h1>
-                
                 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>These commands are for administrators to manage role assignments in their servers. The permissions required for each of these are simply to be able to assign them normally, with an exception made to !rank and !ranks 
-as they are meant for users. </p>
+<p>These commands are for administrators to manage role assignments in their servers. The bot might mention it or you requiring additional permission despite having <code>manage roles</code>. To fix this, make sure both you and the bot have roles higher in the role hierarchy than the role you're trying to assign.</p>
 </div>
 <p><a href="https://docs.carl.gg/roles/reaction-roles">This page does not go over reaction roles, click this text to go there instead</a></p>
 <table>
@@ -972,46 +990,6 @@ as they are meant for users. </p>
 <td align="left"><strong>!role color &lt;role&gt; &lt;color&gt;</strong></td>
 <td align="left">!role color weeb #eeaaee</td>
 <td align="left">Changes the color of a role</td>
-</tr>
-<tr>
-<td align="left"><strong>!role all &lt;role&gt;</strong></td>
-<td align="left">!role all peon</td>
-<td align="left">Adds a role to every single member.</td>
-</tr>
-<tr>
-<td align="left"><strong>!role bots &lt;role&gt;</strong></td>
-<td align="left">!role bots metallic overlord</td>
-<td align="left">Adds a role to every single bot.</td>
-</tr>
-<tr>
-<td align="left"><strong>!role humans &lt;role&gt;</strong></td>
-<td align="left">!role humans flesh haver</td>
-<td align="left">Adds a role to all non-bots</td>
-</tr>
-<tr>
-<td align="left"><strong>!role in &lt;base_role&gt; &lt;assigned_role&gt;</strong></td>
-<td align="left">!role in "movie fan" game of thrones</td>
-<td align="left">Adds a role (&lt;assigned_role&gt;) to all members with the &lt;base_role&gt; role. In the previous example, all members with the movie fan role would be assigned the game of thrones role.</td>
-</tr>
-<tr>
-<td align="left"><strong>!role rall &lt;role&gt;</strong></td>
-<td align="left">!role rall admin</td>
-<td align="left">Removes a role from all members.</td>
-</tr>
-<tr>
-<td align="left"><strong>!role rbots &lt;role&gt;</strong></td>
-<td align="left">!role rbots people</td>
-<td align="left">Removes a role from all bots.</td>
-</tr>
-<tr>
-<td align="left"><strong>!role rhumans &lt;role&gt;</strong></td>
-<td align="left">!role rhumans metallic</td>
-<td align="left">Removes a role from all humans.</td>
-</tr>
-<tr>
-<td align="left"><strong>!role rin &lt;role&gt;</strong></td>
-<td align="left">!role rin weeb cool dude</td>
-<td align="left">Removes a role from all members with the base_role. Previous example would have removed the "cool dude" role from all weebs.</td>
 </tr>
 <tr>
 <td align="left"><strong>!role [removeall|purge|clear] &lt;@member&gt;</strong></td>
@@ -1067,6 +1045,62 @@ as they are meant for users. </p>
 <td align="left">!rank custom &lt;custom_string&gt;</td>
 <td align="left">!rank custom +Role 1 -Role 2</td>
 <td align="left">Adds/removes multiple roles to the person using the command. Requires roles to be whitelisted.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="bulk-management">Bulk management</h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Only one bulk assignment can be used at a time</p>
+</div>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Example</th>
+<th align="left">Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>!role all &lt;role&gt;</strong></td>
+<td align="left">!role all peon</td>
+<td align="left">Adds a role to every single member.</td>
+</tr>
+<tr>
+<td align="left"><strong>!role bots &lt;role&gt;</strong></td>
+<td align="left">!role bots metallic overlord</td>
+<td align="left">Adds a role to every single bot.</td>
+</tr>
+<tr>
+<td align="left"><strong>!role humans &lt;role&gt;</strong></td>
+<td align="left">!role humans flesh haver</td>
+<td align="left">Adds a role to all non-bots</td>
+</tr>
+<tr>
+<td align="left"><strong>!role in &lt;base_role&gt; &lt;assigned_role&gt;</strong></td>
+<td align="left">!role in "movie fan" game of thrones</td>
+<td align="left">Adds a role (&lt;assigned_role&gt;) to all members with the &lt;base_role&gt; role. In the previous example, all members with the movie fan role would be assigned the game of thrones role.</td>
+</tr>
+<tr>
+<td align="left"><strong>!role rall &lt;role&gt;</strong></td>
+<td align="left">!role rall admin</td>
+<td align="left">Removes a role from all members.</td>
+</tr>
+<tr>
+<td align="left"><strong>!role rbots &lt;role&gt;</strong></td>
+<td align="left">!role rbots people</td>
+<td align="left">Removes a role from all bots.</td>
+</tr>
+<tr>
+<td align="left"><strong>!role rhumans &lt;role&gt;</strong></td>
+<td align="left">!role rhumans metallic</td>
+<td align="left">Removes a role from all humans.</td>
+</tr>
+<tr>
+<td align="left"><strong>!role rin &lt;role&gt;</strong></td>
+<td align="left">!role rin weeb cool dude</td>
+<td align="left">Removes a role from all members with the base_role. Previous example would have removed the "cool dude" role from all weebs.</td>
 </tr>
 </tbody>
 </table>

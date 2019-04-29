@@ -962,6 +962,7 @@
 <p class="admonition-title">Info</p>
 <p>Deleted messages are also cleared from the database. A good tip is to pin the reaction role message to make it immune to purging.</p>
 </div>
+<h1 id="management">Management</h1>
 <table>
 <thead>
 <tr>
@@ -972,7 +973,7 @@
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong>rr [setup|make]</strong></td>
+<td align="left"><strong>rr make</strong></td>
 <td align="left">--</td>
 <td align="left">Starts the interactive setup to get you started with reaction roles</td>
 </tr>
@@ -982,9 +983,14 @@
 <td align="left">Shows the emoji-role pairs and their associated message id, useful for rr add. If a message id is specified, it will show additional information about that particular reaction role.</td>
 </tr>
 <tr>
-<td align="left"><strong>rr edit &lt;msg_id&gt; &lt;title | description&gt;</strong></td>
-<td align="left">!rr edit 23094823094823490 Games | Click on the games you want to be notified by</td>
-<td align="left">Edits the title and description, works like it does in the make command</td>
+<td align="left"><strong>rr add [channel] &lt;msg_id&gt; &lt;emoji&gt; &lt;role&gt;</strong></td>
+<td align="left">!rr add 1238901239812 :angel: pure</td>
+<td align="left">Adds the emoji-role pair to the message and the database. <strong>NOTE:</strong> This message id can belong to other people than carlbot, and the same emoji can be used for different messages for different roles (useful for regional roles)</td>
+</tr>
+<tr>
+<td align="left"><strong>rr addmany [channel] &lt;msg_id&gt; &lt;emoji role...&gt;</strong></td>
+<td align="left">!rr addmany 1238901239812 :angel: pure :poop: fortnite :grin: league of legends</td>
+<td align="left"><strong>SEPARATE EACH EMOJI-ROLE PAIR WITH A NEWLINE</strong> Works like <strong>!rr add</strong> except it adds more than one role at a time</td>
 </tr>
 <tr>
 <td align="left"><strong>rr remove &lt;msg_id&gt; &lt;role&gt;</strong></td>
@@ -992,30 +998,66 @@
 <td align="left">Removes an emoji-reaction pair from the specified bot message.</td>
 </tr>
 <tr>
-<td align="left"><strong>rr move &lt;base_id&gt; &lt;target_id&gt;</strong></td>
-<td align="left">!rr move 493018654405951488 351050906189692938</td>
-<td align="left">Moves the reaction roles from one message to another. This works even if the message was purged (using the message id found in !rr show).</td>
-</tr>
-<tr>
 <td align="left"><strong>rr clear [msg_id]</strong></td>
 <td align="left">!rr clear 12343323615155</td>
 <td align="left">If you specify a message id, it removes all the roles from the message, if you don't, it will remove <strong>all</strong> reaction roles from the server.</td>
 </tr>
 <tr>
-<td align="left"><strong>rr add [channel] &lt;msg_id&gt; &lt;emoji&gt; &lt;role&gt;</strong></td>
-<td align="left">!rr add 1238901239812 :angel: pure</td>
-<td align="left">Adds the emoji-role pair to the message and the database. <strong>NOTE:</strong> This message id can belong to other people than carlbot, and the same emoji can be used for different messages for different roles (useful for regional roles)</td>
+<td align="left"><strong>rr bl &lt;msg_id&gt; &lt;roles...&gt;</strong></td>
+<td align="left">!rr bl 2389742349827 Staff</td>
+<td align="left">Prevents members with this role from picking up roles from the message.</td>
 </tr>
 <tr>
-<td align="left"><strong>rr [colour|color] &lt;msg_id&gt; &lt;color&gt;</strong></td>
-<td align="left">!rr color 507068806800211969 #00ee28</td>
-<td align="left">Changes the accent color of the specified  bot message</td>
+<td align="left"><strong>rr wl &lt;msg_id&gt; &lt;roles...&gt;</strong></td>
+<td align="left">!rr wl 2389742349827 Staff</td>
+<td align="left">Only members with one of these roles can pick up roles from the message.</td>
 </tr>
 <tr>
-<td align="left"><strong>rr addmany [channel] &lt;msg_id&gt; &lt;emoji role...&gt;</strong></td>
-<td align="left">!rr addmany 1238901239812 :angel: pure :poop: fortnite :grin: league of legends</td>
-<td align="left"><strong>SEPARATE EACH EMOJI-ROLE PAIR WITH A NEWLINE</strong> Works like <strong>!rr add</strong> except it adds more than one role at a time</td>
+<td align="left"><strong>rr unbl &lt;msg_id&gt;&lt;roles...&gt;</strong></td>
+<td align="left">!rr unbl 2389742349827 Staff</td>
+<td align="left">Removes a blacklisted role from the indicated reaction role message allowing for the role to pick up new roles from the message.</td>
 </tr>
+<tr>
+<td align="left"><strong>rr unwl &lt;msg_id&gt;&lt;roles...&gt;</strong></td>
+<td align="left">!rr unwl 2389742349827 Staff</td>
+<td align="left">Removes a whitelisted role from the indicated reaction role message preventing the role from picking up new roles from the message.</td>
+</tr>
+<tr>
+<td align="left"><strong>rr clearbl &lt;msg_id&gt;</strong></td>
+<td align="left">!rr clearbl 2389742349827</td>
+<td align="left">Removes all roles from your blacklist for that set of reaction roles.</td>
+</tr>
+<tr>
+<td align="left"><strong>rr clearwl &lt;msg_id&gt;</strong></td>
+<td align="left">!rr clearwl 2389742349827</td>
+<td align="left">Removes all roles from your whitelist for that set of reaction roles.</td>
+</tr>
+<tr>
+<td align="left"><strong>rr selfdestruct &lt;msg_id&gt; &lt;time&gt;</strong></td>
+<td align="left">!rr selfdestruct 2389742349827 7d</td>
+<td align="left">Deletes the message and all of its reaction roles after the time is up.</td>
+</tr>
+<tr>
+<td align="left"><strong>rr edit &lt;msg_id&gt; &lt;title | description&gt;</strong></td>
+<td align="left">!rr edit 23094823094823490 Games | Click on the games you want to be notified by</td>
+<td align="left">Edits the title and description, works like it does in the make command</td>
+</tr>
+</tbody>
+</table>
+<h1 id="modes">Modes</h1>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Modes are per message and change their behavior. Every message has a mode which defaults to normal.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Example</th>
+<th align="left">Usage</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td align="left"><strong>rr unique &lt;msg_id&gt;</strong></td>
 <td align="left">!rr unique 123817349589</td>
@@ -1071,45 +1113,26 @@
 <td align="left">!rr limit 2389742349827 5</td>
 <td align="left">Limits members to picking up x amount of roles from a message.</td>
 </tr>
+</tbody>
+</table>
+<h1 id="advancedniche">Advanced/niche</h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>These commands come in very handy in certain situations, but may cause confusion to people unfamiliar with how Carl-bot's reaction roles work.</p>
+</div>
+<table>
+<thead>
 <tr>
-<td align="left"><strong>rr bl &lt;msg_id&gt; &lt;roles...&gt;</strong></td>
-<td align="left">!rr bl 2389742349827 Staff</td>
-<td align="left">Prevents members with this role from picking up roles from the message.</td>
+<th align="left">Name</th>
+<th align="left">Example</th>
+<th align="left">Usage</th>
 </tr>
+</thead>
+<tbody>
 <tr>
-<td align="left"><strong>rr wl &lt;msg_id&gt; &lt;roles...&gt;</strong></td>
-<td align="left">!rr wl 2389742349827 Staff</td>
-<td align="left">Only members with one of these roles can pick up roles from the message.</td>
-</tr>
-<tr>
-<td align="left"><strong>rr unbl &lt;msg_id&gt;&lt;roles...&gt;</strong></td>
-<td align="left">!rr unbl 2389742349827 Staff</td>
-<td align="left">Removes a blacklisted role from the indicated reaction role message allowing for the role to pick up new roles from the message.</td>
-</tr>
-<tr>
-<td align="left"><strong>rr unwl &lt;msg_id&gt;&lt;roles...&gt;</strong></td>
-<td align="left">!rr unwl 2389742349827 Staff</td>
-<td align="left">Removes a whitelisted role from the indicated reaction role message preventing the role from picking up new roles from the message.</td>
-</tr>
-<tr>
-<td align="left"><strong>rr clearbl &lt;msg_id&gt;</strong></td>
-<td align="left">!rr clearbl 2389742349827</td>
-<td align="left">Removes all roles from your blacklist for that set of reaction roles.</td>
-</tr>
-<tr>
-<td align="left"><strong>rr clearwl &lt;msg_id&gt;</strong></td>
-<td align="left">!rr clearwl 2389742349827</td>
-<td align="left">Removes all roles from your whitelist for that set of reaction roles.</td>
-</tr>
-<tr>
-<td align="left"><strong>rr maxroles &lt;msg_id&gt; [&lt;role&gt; &lt;number&gt;...]</strong></td>
-<td align="left">!rr maxroles 2389742349827 DPS 10</td>
-<td align="left">Want to limit the number of x role? With this, you can. <strong>NOTE</strong> This checks for how many people have the role, not how many reactions there are.</td>
-</tr>
-<tr>
-<td align="left"><strong>rr selfdestruct &lt;msg_id&gt; &lt;time&gt;</strong></td>
-<td align="left">!rr selfdestruct 2389742349827 7d</td>
-<td align="left">Deletes the message and all of its reaction roles after the time is up.</td>
+<td align="left"><strong>rr move &lt;base_id&gt; &lt;target_id&gt;</strong></td>
+<td align="left">!rr move 493018654405951488 351050906189692938</td>
+<td align="left">Moves the reaction roles from one message to another. This works even if the message was purged (using the message id found in !rr show).</td>
 </tr>
 <tr>
 <td align="left"><strong>rr aio &lt;channel&gt; &lt;color&gt; &lt;title | description&gt; &lt;emoji&gt; &lt;role&gt;</strong></td>
@@ -1137,9 +1160,14 @@
 <td align="left">Super niche command which can be used to have the bot react to emojis the bot doesn't have access to. One reason you might want to use this is because you want to use google's blob emojis. This command isn't required for these emojis to work, it only makes it so that the bot has its reactions added to the message. <strong>YOU HAVE TO REACT TO THE MESSAGE WITH THE EMOJIS YOURSELF BEFORE USING THIS COMMAND</strong></td>
 </tr>
 <tr>
-<td align="left"><strong>!embed &lt;channel&gt; &lt;color&gt; &lt;title | description&gt;</strong></td>
-<td align="left">Pick up a role in #get-roles to get pinged here</td>
-<td align="left">Creates an embed.</td>
+<td align="left"><strong>rr maxroles &lt;msg_id&gt; [&lt;role&gt; &lt;number&gt;...]</strong></td>
+<td align="left">!rr maxroles 2389742349827 DPS 10</td>
+<td align="left">Want to limit the number of x role? With this, you can. <strong>NOTE</strong> This checks for how many people have the role, not how many reactions there are.</td>
+</tr>
+<tr>
+<td align="left"><strong>rr [colour|color] &lt;msg_id&gt; &lt;color&gt;</strong></td>
+<td align="left">!rr color 507068806800211969 #00ee28</td>
+<td align="left">Changes the accent color of the specified  bot message</td>
 </tr>
 </tbody>
 </table>
