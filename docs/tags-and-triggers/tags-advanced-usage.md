@@ -250,7 +250,7 @@ Calculates the difference between two date, time, or datetime instances. The abo
 
 ## Strf Time Blocks
 
-`{strf\(optional datetime\): _strftime_}`
+`{strf(optional datetime): _strftime_}`
 
 Returns the current time formatted according to python's strftime, see [http://strftime.org/](http://strftime.org/) for more information.
 

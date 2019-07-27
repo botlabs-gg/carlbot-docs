@@ -3,7 +3,7 @@
 !!! info
     Getting tags after they're created can be done without using !tag &lt;name&gt; simply do !&lt;name&gt;
 
-Tags can get complicated, see [advanced tag usage](https://github.com/CarlGroth/Carl-Bot/wiki/Tags---Advanced-Usage) for a more thorough explanation of the tagscript
+Tags can get complicated, see [advanced tag usage](https://docs.carl.gg/tags-and-triggers/tags-advanced-usage/) for a more thorough explanation of the tagscript
 
 | Name | Example | Usage |
 | :--- | :--- | :--- |
@@ -25,4 +25,5 @@ Tags can get complicated, see [advanced tag usage](https://github.com/CarlGroth/
 | tag claim &lt;name&gt; | !tag claim realms | Claims a tag from a member who has left the server, only relevant if ownership is enabled |
 | tag sub &lt;name&gt; &lt;from&gt; &lt;to&gt; | !tag sub invite discord.gg/abc123 discord.gg/xyz999 | Replaces every occurance of from\_string with to\_string in an already existing tag. This can be extremely useful for expired invite links, slightly outdated information, or anything else that allows you to systematically correct your mistakes. |
 | \[tag list\|command\|taglist\] | -- | Lists all of the tags on the server |
+| tag share &lt;name&gt; | !tag share picross | Creates a shareable link of a tag so that other users can import it to their servers. | 
 

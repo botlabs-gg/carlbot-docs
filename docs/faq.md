@@ -4,7 +4,7 @@
 
 Most people are probably best off using `!rr make` simply because it guides you through the process and tries to tell you what went wrong if any. Other ways of doing it includes using `!rr aio` which results in the same result as `!rr make` but with just a single command, it uses some weird syntax if you are unfamiliar, so I would recommend sticking to `!rr make` until you are familiar with the bot.
 
-[Here is a screenshot of me setting up unique reaction roles for my bot help server](https://i.imgur.com/W2KAAPa.png)
+[Here is a screenshot of me setting up unique reaction roles for my bot help server](./images/reaction_role_setup.png)
 
 ### Why does the bot complain about requiring more permissions? I've given it manage roles already!
 
@@ -19,13 +19,13 @@ Just assign the bot a role that is higher than highest role it has to assign, th
 
 Discord settings -&gt; Appearance -&gt; Developer mode
 
-![](https://i.imgur.com/lBh0b0f.png)
+![](./images/copy_id.png)
 
 For reaction roles already set up you can also use `!rr show`
 
 ### How do I get the bot to announce new members joining?
 
-Use the dashboard! [https://carl.gg](https://carl.gg)
+Use the dashboard! [https://carl.gg](https://carl.gg) Just make sure to set a welcome channel in the top left box. You find the settings under 'welcome'.
 
 ### I don't want normal users creating tags, but I obviously can't disable tag, what do I do?
 

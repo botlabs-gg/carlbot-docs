@@ -1,7 +1,5 @@
 # Music
 
-
-
 !!! info 
     Music is a premium feature offered to patrons as a way to show my gratitude for helping keep the bot alive
 

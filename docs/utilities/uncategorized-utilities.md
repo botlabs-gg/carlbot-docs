@@ -44,12 +44,6 @@
       <td style="text-align:left">Picks one of your specified arguments. Use commas for multiple words.</td>
     </tr>
     <tr>
-      <td style="text-align:left">activity [day/week/month/year]</td>
-      <td style="text-align:left">!activity week</td>
-      <td style="text-align:left">Defaults to month, shows the 25 most active members by postcount for the
-        specified timespan (that the bot has seen)</td>
-    </tr>
-    <tr>
       <td style="text-align:left">youngest</td>
       <td style="text-align:left">!youngest</td>
       <td style="text-align:left">Ranks members by account creation - Requires Manage Messages</td>
