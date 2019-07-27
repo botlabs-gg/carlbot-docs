@@ -1,5 +1,11 @@
 # Home
+**Useful links**
 
+* [Dashboard](https://carl.gg)
+* [Patreon](https://carl.gg/patreon)
+* [Trello](https://carl.gg/trello)
+* [Invite link](https://carl.gg/invite)
+* [Support server](https://carl.gg/discord)
 ## How do I read this wiki?
 
 !!! danger
@@ -19,7 +25,7 @@ Additionally, the bot uses what are called _converters_ which makes specifying r
 
 ## How do I set up reaction roles?
 
-[Check out the reaction roles page](https://carlbot.gitbook.io/docs/roles/reaction-roles) There is an example at the bottom of the page of me setting up reaction roles for my bot server that a lot of people seem to find useful.
+[Check out the reaction roles page](https://docs.carl.gg/roles/reaction-roles/) There is an example at the bottom of the page of me setting up reaction roles for my bot server that a lot of people seem to find useful.
 
 ## How do I actually configure the bot?
 
@@ -27,5 +33,5 @@ Additionally, the bot uses what are called _converters_ which makes specifying r
 
 
 
-[There's a page for a basic set up](https://carlbot.gitbook.io/docs/basic-bot-setup) and then there is also a page for a more [in-depth guide](https://carlbot.gitbook.io/docs/config/managing-commands) that goes over disabling/enabling commands on a granular level.
+[There's a page for a basic set up](https://docs.carl.gg/basic-bot-setup/) and then there is also a page for a more [in-depth guide](https://docs.carl.gg/config/command-permissions/) that goes over disabling/enabling commands on a granular level.
 

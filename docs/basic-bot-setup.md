@@ -13,8 +13,6 @@ I want the bot to respond when I use the prefix `-` to do that, I can type `!pre
 
 `!log channel <#channel>` Sets the channel where carlbot will log things such as message deletions, name changes, role updates. More on that later.
 
-`!set twitch <#channel>` Sets the channel where twitch notifications are sent.
-
 `!set welcome <#channel>` Decides where join/leave/ban messages go, more on that later.
 
 **3. Setting up reaction roles**

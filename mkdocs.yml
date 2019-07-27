@@ -1,55 +1,4 @@
 site_name: Carl-bot Documentation
-# nav:
-#   - Dashboard: 'https://carl.gg'
-#   - Discord: 'https://carl.gg/discord'
-#   - GitHub: 'https://github.com/CarlGroth/Carl-Bot'
-#   - Patreon: 'https://patreon.com/carlbot'
-
-
-# nav: 
-# - Home: index.md
-# - Roles: 
-#   - /roles/reaction-roles
-#   - 'Reaction Roles': /roles/reaction-roles
-#   - 'Role Management': /roles/role-management
-#   - 'Autoroles': /roles/autoroles-and-delayed-autoroles
-# - 'Tags and Triggers':
-#   - 'Tags': /tags-and-triggers/tags
-#   - 'Tags - Advanced Usage': /tags-and-triggers/tags-advanced-usage
-#   - 'Triggers': /tags-and-triggers/autoresponses-trigger-words
-# - Config:
-#   - 'Command Permissions': /config/managing-commands
-#   - Prefixes: /config/prefixes
-# - Moderation:
-#   - Moderation: 
-#     - moderation: /moderation/moderation.md
-#   - 'Automod': 
-#     - /moderation/automod
-# - Misc:
-#   - Animals: /misc/animals
-#   - Silly/Useless: /misc/silly-useless
-# - Logging:
-#   - Logging: /logging/logging
-#   - Modlogs: /logging/modlogs
-#   - 'Welcome Messages': /logging/welcome-and-leave-messages
-# - Utilities:
-#   - Announcements: /utilities/announcements
-#   - Embeds: /utilities/embeds
-#   - Highlights: /utilities/highlights-pager
-#   - Reminders: /utilities/reminders-timers
-#   - Starboard: /utilities/starboard
-#   - Suggestions: /utilities/suggestions
-#   - 'Twitch Notifications': /utilities/twitch-notifications
-#   - Miscallaneous: /utilities/uncategorized-utilities 
-# - Music:
-#   - Music: /music/music
-  
-
-# nav: 
-#   - Home: ../
-#   - Tags: /tags-and-triggers/tags
-#   - Animals: /misc/animals
-
 theme: 
   name: 'material'
   logo:
@@ -70,8 +19,12 @@ repo_url: 'https://github.com/CarlGroth/carlbot-docs'
 
 extra:
   social:
-    - type: 'discord'
+    - type: 'globe'
       link: 'https://carl.gg'
+    - type: 'github-alt'
+      link: 'https://github.com/CarlGroth'
+    - type: 'twitter'
+      link: 'https://twitter.com/Carlgrrr'
 
 markdown_extensions:
   - admonition
@@ -80,4 +33,4 @@ google_analytics:
   - 'UA-126357432-1'
   - 'auto'
 
-copyright: 'Copyright &copy; 2018 - 2019 Carl'
+copyright: 'Copyright &copy; 2018 - 2019 Carl (admin@carl.gg)'
