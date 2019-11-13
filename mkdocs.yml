@@ -12,7 +12,7 @@ theme:
     accent: 'Cyan'
   font:
     text: 'Roboto'
-    code: 'Fira Code'
+    code: 'Fira Mono'
   
 repo_name: 'carlbot-docs'
 repo_url: 'https://github.com/CarlGroth/carlbot-docs'
