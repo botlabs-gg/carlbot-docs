@@ -20,9 +20,6 @@
 | **enable mod** | -- | Enables all moderation commands |
 | **disable mod** | -- | Disables all moderation commands |
 | enable list | -- | Shows all enabled/disabled commands. |
-| **plonk** | !plonk @Carl\#0080 tag create | This works almost exactly like !ignore but for users instead. If no command is specified, the user is banned from using the bot completely. |
-| **unplonk &lt;@member&gt; \[command\]** | !unplonk @Carl\#0080 | Unbans the user from using the bot |
-| **plonks** | -- | Displays all plonked users. |
 | **restrict &lt;command&gt;** | !restrict define | This requires a bot channel to utilize. Makes it so that if the command is used outside of the bot channel, the bot will ping the user in the botchannel and give the results there instead. |
 | **unrestrict &lt;command&gt;** | !unrestrict d | Unrestricts it. Like all commands where you pass in a command, aliases work just as well. |
 | **set bot &lt;channel&gt;** | !set bot \#botspam | Sets the channel used for restricted commands to be redirected to. |
