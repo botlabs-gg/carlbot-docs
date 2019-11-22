@@ -59,11 +59,6 @@ Tags that really showcase how powerful tagscript can be
 
     _Quote command, deletes original command. Able to quote yourself and others._
 
-!!! info "!todo - A todo list by Polar#5893"
-    [https://carl.gg/t/42959](https://carl.gg/t/42959)
-
-    _Made an easy to use todo list using tags
-    React with the checkmark to mark an item on the list as finished or react with the x to deny it!_
 
 !!! info "!cpoll - quickpoll with custom emojis by Dungo#6650"
     [https://carl.gg/t/41636](https://carl.gg/t/41636)
