@@ -145,7 +145,7 @@ Command blocks can also be used to rename a command or create an alias for it.
 
 Control blocks control the flow of your tag and determine what payloads are passed to the rest of the tag or block. They are conditional statements that evaluate boolean equations you provide as block parameters. A boolean is a binary variable, having two possible values called *true* and *false*. Boolean equations compare a value on the left of an operator to a value to the right of the operator, and depending on the comparison the operator requires, it evaluates to either true or false. To begin, you need to understand how to form a boolean equation.
 
-!!! info "Boolean Operators in Tagscript"
+!!! summary "Boolean Operators in Tagscript"
     * `==`<br>Evaluates to true if the value on the left is equal to the value on the right.
     * `!=`<br>Evaluates to true if the value on the left is not equal to the value on the right.
     * `>` and `>=`<br>Evaluates to true if the number on the left side is greater than the number on the right.<br>`>=` is greater than or equal.
