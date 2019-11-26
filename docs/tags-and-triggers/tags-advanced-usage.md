@@ -184,7 +184,7 @@ If the boolean equation is false, the payload is what is between the pipe `|` an
 !!! memo "Examples - Control Blocks"
     * `{if({user(id)}=={target(id)}):You didn't mention someone else.|{user} says {target} is a wuss!}`
     * `{any({user(color)}==#5989ab|{user(color)}==#6296ff|{user(color)}==#000001):You're awesome}`
-    * `{all({randomnumber}>0|{randomnumber}<=100):You ate {randomnumber} tacos last night|You must input a number between 1 and 100}`
+    * `{all({args}>0|{args}<=100):You ate {args} tacos last night|You must input a number between 1 and 100}`
     * `{break({args}==):You did not provide the proper input.}`
 
 ## Data Storage & Parsing
