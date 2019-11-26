@@ -87,8 +87,8 @@ Action blocks change how the invocation, tag output, and command blocks containe
 Redirects the output of the tag and any command blocks unless otherwise specified in the command. You can only specify one tag output destination, if multiple are provided the latter will override the former.
 
 !!! example "Redirection Blocks"
-    * `{dm}`<br>Redirects output as a direct message to the user who uses the command.
-    * `{redirect:channel}`<br>Redirects _tag_ output to the specified channel. The tag's creator needs to have send message permissions in the pointed channel.
+    * `{dm}`<br>Redirects output as a direct message to the user who uses the tag.
+    * `{redirect:channel}`<br>Redirects output to the specified channel. The tag's creator needs to have send message permissions in the pointed channel.
     
 The "channel" must either be valid a channel name, a channel id, or a mention formatted channel id `<#556675168634798111>`. 
 
