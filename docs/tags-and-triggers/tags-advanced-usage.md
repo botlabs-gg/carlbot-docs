@@ -443,7 +443,7 @@ Within this section whenever "DateTime" is mentioned, it means a date and time i
 
 ### Strf Blocks
 
-Strf blocks return the time data formatted according to Python's strftime, see [http://strftime.org/](http://strftime.org/) for more information. Strf bloc
+Strf blocks return the time data formatted according to Python's strftime, see [http://strftime.org/](http://strftime.org/) for more information.
 
 !!! example "Strf Blocks"
     * `{strf(optional DateTime or Unix time):strf formatting codes}`<br>Returns the DateTime value listed in the parameters in the format described in the payload.
