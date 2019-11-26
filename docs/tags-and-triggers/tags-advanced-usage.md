@@ -253,8 +253,8 @@ List and Cycle Blocks are another way to parse through a list of values in Tagsc
 Both lists and cycles use 0 as the index for the first element in the list. List blocks will return null if the index is out of bounds, while a cycle block will loop if the index is greater than the number of elements in the list, essentially `index` = index % list_length. Both allow for backward parsing using negative values. Both blocks will return an error message if the value in parameters is not a number.
 
 !!! memo "Example - List & Cycle Blocks"
-    * `{list(3):Carl,Pysnow,Michael,Whoozard,DeaFiore,Viosmic,Pebbles}`==`Whoozard`
-    * `{cycle(28):Carl,Pysnow,Michael,Whoozard,DeaFiore,Viosmic,Pebbles}`==`DeaFiore`
+    * `{list(3):Carl,Pysnow,Michael,Whoozard,DeaFiore,Viosmic,Pebbles,Kable,Raffael}`==`Whoozard`
+    * `{cycle(31):Carl,Pysnow,Michael,Whoozard,DeaFiore,Viosmic,Pebbles,Kable,Raffael}`==`DeaFiore`
     
 ### Index Blocks
 
