@@ -113,6 +113,9 @@ They must either be a role/channel name, a role/channel id, or a mention formatt
     * `{require(you're not cool enough):Cool kids}` Word around the office is that `{user}` is kind of a big deal
     * `{blacklist:Staff}` You have no power here
 
+!!! warning "Channel and Role Names"
+	Be cautious of using channel and role names in restrict, require, and blacklist blocks. If the channel or role name is changed, the tag must be changed or it will not function as intended. Using IDs makes this a non-issue as channel and role IDs cannot change.
+
 ### React Blocks
 
 React Blocks instruct Carl-bot to react to either the invocation or the output. Carl-bot, like all discord accounts, must be in the server where the emoji is hosted to be able to use it. If the emoji is from a server he is in but not the server the tag is in, the emoji id may need to be used instead of just the name. `<:carlpat:590335691968348191>`
