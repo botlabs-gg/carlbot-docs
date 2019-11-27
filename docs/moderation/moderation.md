@@ -21,6 +21,12 @@
 | **warn &lt;@member&gt; \[reason\]** | !warn @Carl\#0001 do not spam reactions | Warns a user, pms them the reason and posts it to the modlog. |
 | **removewarn &lt;case\_id&gt;** | !removewarn 17 | Removes a warning by its case id. |
 | **clearwarn &lt;@member&gt;** | !clearwarn @Carl\#0001 | Removes all warnings from a user. |
+| **setnote &lt;@member&gt; &lt;note&gt;** | !setnote @MichaelAus\#9999 favorite Australian | Assigns the note to the member specified. |
+| **notes &lt;@member&gt;** | !notes @Carl\#0001 | Displays all of a member's notes. |
+| **removenote &lt;note_id&gt;** | !removenote 56 | Removes a note by id. |
+| **clearnotes &lt;@member&gt;** | !clearnotes @Carl\#0001 | Removes all notes from a member. |
+| **report &lt;message&gt;** | !report Carl big meanie | Sends a report to the reportchannel. Usable by anyone. |
+| **reportchannel &lt;channel&gt;** | !reportchannel \#reports |  Sets the channel where reports are sent. |
 | **purge \[count=100\]** | !purge 200 | Purges the last howmany messages. |
 | **purge bot \[count=100\]** | !purge bot ? 20 | Purges the bot messages \(and messages with the specified prefix\) from the last howmany messages. |
 | **purge contains \[count=100\]** | !purge contains thanos | Purges messages containing the substring |
