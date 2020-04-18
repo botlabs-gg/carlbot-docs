@@ -40,8 +40,8 @@ Discord Object blocks, which are listed under Default Arguments above, contain c
     * (avatar): a link to the user's avatar
     * (id): the user's Discord ID, a multi-digit number that is unique to that user. 
     * (mention): a string to mention the user.
-    * (created_at): outputs the date the account was created in the format yyyy-mm-dd HH.MM.SS 
-    * (joined_at): outputs the date the account joined the server in the format yyyy-mm-dd HH.MM.SS 
+    * (created_at): outputs the date the account was created in the format yyyy-mm-dd HH:MM:SS 
+    * (joined_at): outputs the date the account joined the server in the format yyyy-mm-dd HH:MM:SS 
     * (color): the hexadecimal color code relating to the user's highest non-default role color.
     * (name): their Discord account username, not their nickname.
     * (proper): their username followed by their discriminator. username#0001
@@ -60,7 +60,7 @@ Discord Object blocks, which are listed under Default Arguments above, contain c
     * (humans): number of humans in the server
     * (roles): number of roles in the server
     * (channels): number of channels in the server
-    * (created_at): when the server was created in the format yyyy-mm-dd HH.MM.SS 
+    * (created_at): when the server was created in the format yyyy-mm-dd HH:MM:SS 
 
 !!! example "{channel} Properties"
     * (id): the channel's id 
@@ -439,7 +439,7 @@ The number range is inclusive, meaning it can pick either endpoint of the specif
 
 Time blocks deal with time and how it is represented, as well as calculating the duration between two dates. All time blocks use and display time values for Coordinated Universal Time (or UTC).
 
-Within this section whenever "DateTime" is mentioned, it means a date and time in the following format:<br>`yyyy-mm-dd HH.MM.SS`
+Within this section whenever "DateTime" is mentioned, it means a date and time in the following format:<br>`yyyy-mm-dd HH:MM:SS`
 
 ### Strf Blocks
 
