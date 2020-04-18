@@ -6,6 +6,15 @@ Most people are probably best off using `!rr make` simply because it guides you 
 
 [Here is a screenshot of me setting up unique reaction roles for my bot help server](./images/reaction_role_setup.png)
 
+### What's the drama channel?
+
+It's a [premium](https://patreon.com/carlbot) feature that aims to streamline your server's moderation. Automod is nice, but it's not perfect, false positives happen. The drama channel was made for that exact reason. You need to:
+
+1. Set up the drama channel. Either on the dashboard or with the command `!am drama <channel>`
+2. Set the automod punishment to 'send to drama channel' on [the dashboard](https://carl.gg)
+
+![](https://i.imgur.com/hQjbM4G.png)
+
 ### Why does the bot complain about requiring more permissions? I've given it manage roles already!
 
 The way discord decides if you can add a role or not is based on two things:
