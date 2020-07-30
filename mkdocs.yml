@@ -1,8 +1,7 @@
 site_name: Carl-bot Documentation
 theme: 
   name: 'material'
-  icon:
-    'images/googleturtle.svg'
+  logo: 'images/googleturtle.svg'
   favicon:
     'images/favicon.ico'
   features:
