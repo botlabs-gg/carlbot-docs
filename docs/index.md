@@ -1,15 +1,12 @@
 # Home
 **Useful links**
 
-* [Dashboard](https://carl.gg)
-* [Patreon](https://carl.gg/patreon)
-* [Trello](https://carl.gg/trello)
-* [Invite link](https://carl.gg/invite)
-* [Support server](https://carl.gg/discord)
-## How do I read this wiki?
+| [Dashboard](https://carl.gg) | [Patreon](https://carl.gg/patreon) | [Trello](https://carl.gg/trello) | [Invite link](https://carl.gg/invite) | [Support server](https://carl.gg/discord) | [Bot Status](https://carl.gg/status) |
+
+### How do I read this wiki?
 
 !!! danger
-    Do not literally type out &lt;&gt; \[\] \| etc
+    Do not literally type out &lt;   &gt; [   ] \| etc
 
 !!! info
     When referencing commands, Mod commands are in **bold**. 
@@ -23,11 +20,11 @@ Each category of commands has their own page which can be found on the sidebar.
 
 Additionally, the bot uses what are called _converters_ which makes specifying roles, members, channels etc easy and fool-proof. When asked to specify a member, you can provide it a mention \(pinging the person\), an id, their name or their nickname. This principle works for every single command where applicable.
 
-## How do I set up reaction roles?
+### How do I set up reaction roles?
 
 [Check out the reaction roles page](https://docs.carl.gg/roles/reaction-roles/) There is an example at the bottom of the page of me setting up reaction roles for my bot server that a lot of people seem to find useful.
 
-## How do I actually configure the bot?
+### How do I actually configure the bot?
 
 **Use the website!** at [https://carl.gg](https://carl.gg) it's much easier than doing it with commands.
 
