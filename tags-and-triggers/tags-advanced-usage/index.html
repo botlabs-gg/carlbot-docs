@@ -1,48 +1,27 @@
 
 
 
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-      
-      
-        <meta name="lang:clipboard.copy" content="Copy to clipboard">
-      
-        <meta name="lang:clipboard.copied" content="Copied to clipboard">
-      
-        <meta name="lang:search.language" content="en">
-      
-        <meta name="lang:search.pipeline.stopwords" content="True">
-      
-        <meta name="lang:search.pipeline.trimmer" content="True">
-      
-        <meta name="lang:search.result.none" content="No matching documents">
-      
-        <meta name="lang:search.result.one" content="1 matching document">
-      
-        <meta name="lang:search.result.other" content="# matching documents">
-      
-        <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.0">
     
     
       
-        <title>Tags - Advanced usage - Carl-bot Documentation</title>
+        <title>Tags - Advanced Usage - Carl-bot Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.1b62728e.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.b5d04df8.min.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.9ab2c1f8.min.css">
       
       
         
@@ -51,116 +30,97 @@
       
     
     
-      <script src="../../assets/javascripts/modernizr.268332fc.js"></script>
-    
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Fira+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Fira Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CFira+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Fira Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
       
     
-    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
     
     
     
       
         
-<script>
-  window.ga = window.ga || function() {
-    (ga.q = ga.q || []).push(arguments)
-  }
-  ga.l = +new Date
-  /* Setup integration and send page view */
-  ga("create", "UA-126357432-1", "auto")
-  ga("set", "anonymizeIp", true)
-  ga("send", "pageview")
-  /* Register handler to log search on blur */
-  document.addEventListener("DOMContentLoaded", () => {
-    if (document.forms.search) {
-      var query = document.forms.search.query
-      query.addEventListener("blur", function() {
-        if (this.value) {
-          var path = document.location.pathname;
-          ga("send", "pageview", path + "?q=" + this.value)
-        }
-      })
-    }
-  })
-</script>
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-126357432-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
 <script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
     
   </head>
   
-    
-    
-    <body dir="ltr" data-md-color-primary="blue-grey" data-md-color-accent="cyan">
   
-    <svg class="md-svg">
-      <defs>
-        
-        
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
-        
-      </defs>
-    </svg>
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="blue-grey" data-md-color-accent="cyan">
+  
+    
+      <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
-    
-      <a href="#tags-advanced-usage" tabindex="1" class="md-skip">
-        Skip to content
-      </a>
-    
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tags-advanced-usage" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
     
       <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid">
-    <div class="md-flex">
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../.." title="Carl-bot Documentation" class="md-header-nav__button md-logo">
-          
-            <img src="../../images/googleturtle.svg" width="24" height="24">
-          
-        </a>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
-      </div>
-      <div class="md-flex__cell md-flex__cell--stretch">
-        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
-          
-            <span class="md-header-nav__topic">
-              Carl-bot Documentation
-            </span>
-            <span class="md-header-nav__topic">
-              
-                Tags - Advanced usage
-              
-            </span>
-          
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="Carl-bot Documentation" class="md-header-nav__button md-logo" aria-label="Carl-bot Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Carl-bot Documentation
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Tags - Advanced Usage
+            
+          </span>
         </div>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-          
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
-      <label class="md-icon md-search__icon" for="__search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
-        &#xE5CD;
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
       </button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
+        <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Type to start searching
+            Initializing search
           </div>
           <ol class="md-search-result__list"></ol>
         </div>
@@ -168,45 +128,35 @@
     </div>
   </div>
 </div>
+    
+    
+      <div class="md-header-nav__source">
         
-      </div>
-      
-        <div class="md-flex__cell md-flex__cell--shrink">
-          <div class="md-header-nav__source">
-            
-
-
-  
-
-<a href="https://github.com/CarlGroth/carlbot-docs/" title="Go to repository" class="md-source" data-md-source="github">
-  
-    <div class="md-source__icon">
-      <svg viewBox="0 0 24 24" width="24" height="24">
-        <use xlink:href="#__github" width="24" height="24"></use>
-      </svg>
-    </div>
-  
+<a href="https://github.com/CarlGroth/carlbot-docs/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
   <div class="md-source__repository">
     carlbot-docs
   </div>
 </a>
-          </div>
-        </div>
-      
-    </div>
+      </div>
+    
   </nav>
 </header>
     
-    <div class="md-container">
+    <div class="md-container" data-md-component="container">
       
         
       
       
         
+          
 
   
 
-<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
@@ -244,6 +194,19 @@
   
     <li class="md-tabs__item">
       
+        <a href="../../fun/animals/" class="md-tabs__link">
+          Fun
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
         <a href="../../levels/levels/" class="md-tabs__link">
           Levels
         </a>
@@ -259,19 +222,6 @@
       
         <a href="../../logging/logging/" class="md-tabs__link">
           Logging
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../../misc/animals/" class="md-tabs__link">
-          Misc
         </a>
       
     </li>
@@ -359,38 +309,33 @@
     </ul>
   </div>
 </nav>
+        
       
-      <main class="md-main" role="main">
-        <div class="md-main__inner md-grid" data-md-component="container">
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
           
             
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" data-md-level="0">
-  <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="../.." title="Carl-bot Documentation" class="md-nav__button md-logo">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Carl-bot Documentation" class="md-nav__button md-logo" aria-label="Carl-bot Documentation">
       
-        <img src="../../images/googleturtle.svg" width="48" height="48">
-      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
     </a>
     Carl-bot Documentation
   </label>
   
     <div class="md-nav__source">
       
-
-
-  
-
-<a href="https://github.com/CarlGroth/carlbot-docs/" title="Go to repository" class="md-source" data-md-source="github">
-  
-    <div class="md-source__icon">
-      <svg viewBox="0 0 24 24" width="24" height="24">
-        <use xlink:href="#__github" width="24" height="24"></use>
-      </svg>
-    </div>
-  
+<a href="https://github.com/CarlGroth/carlbot-docs/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
   <div class="md-source__repository">
     carlbot-docs
   </div>
@@ -454,13 +399,19 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
       Config
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+    <nav class="md-nav" aria-label="Config" data-md-level="1">
       <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Config
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -502,13 +453,97 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
     <label class="md-nav__link" for="nav-6">
-      Levels
+      Fun
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+    <nav class="md-nav" aria-label="Fun" data-md-level="1">
       <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Fun
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../fun/animals/" title="Animals" class="md-nav__link">
+      Animals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../fun/game-information/" title="Game Information" class="md-nav__link">
+      Game Information
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../fun/miscellaneous/" title="Miscellaneous" class="md-nav__link">
+      Miscellaneous
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../fun/text-transformations/" title="Text Transformations" class="md-nav__link">
+      Text Transformations
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Levels
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Levels" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Levels
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -538,13 +573,19 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
     
-    <label class="md-nav__link" for="nav-7">
+    <label class="md-nav__link" for="nav-8">
       Logging
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-7">
+    <nav class="md-nav" aria-label="Logging" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Logging
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -598,61 +639,19 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
-    
-    <label class="md-nav__link" for="nav-8">
-      Misc
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-8">
-        Misc
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../misc/animals/" title="Animals" class="md-nav__link">
-      Animals
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../misc/silly-useless/" title="Silly/useless" class="md-nav__link">
-      Silly/useless
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
     
     <label class="md-nav__link" for="nav-9">
       Moderation
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+    <nav class="md-nav" aria-label="Moderation" data-md-level="1">
       <label class="md-nav__title" for="nav-9">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Moderation
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -694,13 +693,19 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
     
     <label class="md-nav__link" for="nav-10">
       Music
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+    <nav class="md-nav" aria-label="Music" data-md-level="1">
       <label class="md-nav__title" for="nav-10">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Music
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -730,13 +735,19 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
     
     <label class="md-nav__link" for="nav-11">
       Notifications
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+    <nav class="md-nav" aria-label="Notifications" data-md-level="1">
       <label class="md-nav__title" for="nav-11">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Notifications
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -778,13 +789,19 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
     
     <label class="md-nav__link" for="nav-12">
       Roles
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+    <nav class="md-nav" aria-label="Roles" data-md-level="1">
       <label class="md-nav__title" for="nav-12">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Roles
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -796,8 +813,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../roles/autoroles/" title="Autoroles and delayed autoroles" class="md-nav__link">
-      Autoroles and delayed autoroles
+    <a href="../../roles/autoroles/" title="Autoroles & Delayed Autoroles" class="md-nav__link">
+      Autoroles & Delayed Autoroles
     </a>
   </li>
 
@@ -820,8 +837,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../roles/role-management/" title="Role management" class="md-nav__link">
-      Role management
+    <a href="../../roles/role-management/" title="Role Management" class="md-nav__link">
+      Role Management
     </a>
   </li>
 
@@ -840,13 +857,19 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13" checked>
     
     <label class="md-nav__link" for="nav-13">
       Tags and triggers
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+    <nav class="md-nav" aria-label="Tags and triggers" data-md-level="1">
       <label class="md-nav__title" for="nav-13">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Tags and triggers
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -870,8 +893,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../collection/" title="Collection of high quality tags" class="md-nav__link">
-      Collection of high quality tags
+    <a href="../collection/" title="Collection of High Quality Tags" class="md-nav__link">
+      Collection of High Quality Tags
     </a>
   </li>
 
@@ -885,27 +908,35 @@
 
   <li class="md-nav__item md-nav__item--active">
     
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
       
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Tags - Advanced usage
+        Tags - Advanced Usage
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
       </label>
     
-    <a href="./" title="Tags - Advanced usage" class="md-nav__link md-nav__link--active">
-      Tags - Advanced usage
+    <a href="./" title="Tags - Advanced Usage" class="md-nav__link md-nav__link--active">
+      Tags - Advanced Usage
     </a>
     
       
-<nav class="md-nav md-nav--secondary">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
     
   
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
@@ -916,12 +947,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#default-arguments" class="md-nav__link">
-    Default Arguments
+  <a href="#default-variables" class="md-nav__link">
+    Default Variables
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Default Variables">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#discord-objects" class="md-nav__link">
+    Discord Objects
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#discord-object-properties" class="md-nav__link">
@@ -940,7 +978,7 @@
     Meta Blocks
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Meta Blocks">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -958,8 +996,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#require-blacklist-blocks" class="md-nav__link">
-    Require &amp; Blacklist Blocks
+  <a href="#use-limiting-blocks" class="md-nav__link">
+    Use Limiting Blocks
   </a>
   
 </li>
@@ -995,7 +1033,7 @@
     Data Storage &amp; Parsing
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Data Storage &amp; Parsing">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1050,8 +1088,15 @@
     Manipulation Blocks
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Manipulation Blocks">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ordinal-abbreviation-blocks" class="md-nav__link">
+    Ordinal Abbreviation Blocks
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#case-blocks" class="md-nav__link">
@@ -1061,15 +1106,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#url-encode-blocks" class="md-nav__link">
-    URL Encode Blocks
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#join-replace-blocks" class="md-nav__link">
-    Join &amp; Replace Blocks
+  <a href="#text-replacement-blocks" class="md-nav__link">
+    Text Replacement Blocks
   </a>
   
 </li>
@@ -1091,7 +1129,7 @@
     RNG Blocks
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="RNG Blocks">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1125,7 +1163,7 @@
     Time Blocks
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Time Blocks">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1148,15 +1186,18 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#going-from-blocks-to-tags" class="md-nav__link">
+    Going from Blocks to Tags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#important-note-on-block-behavior" class="md-nav__link">
     Important Note on Block Behavior
   </a>
   
 </li>
-      
-      
-      
-      
       
     </ul>
   
@@ -1189,13 +1230,19 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
     
     <label class="md-nav__link" for="nav-14">
       Utilities
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+    <nav class="md-nav" aria-label="Utilities" data-md-level="1">
       <label class="md-nav__title" for="nav-14">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Utilities
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1243,8 +1290,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../utilities/highlights-pager/" title="Highlights/pager" class="md-nav__link">
-      Highlights/pager
+    <a href="../../utilities/highlights-pager/" title="Highlights/Pager" class="md-nav__link">
+      Highlights/Pager
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../utilities/info-polls/" title="Infomation/Polls" class="md-nav__link">
+      Infomation/Polls
     </a>
   </li>
 
@@ -1285,18 +1344,6 @@
   </li>
 
         
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../utilities/uncategorized-utilities/" title="Uncategorized utilities" class="md-nav__link">
-      Uncategorized utilities
-    </a>
-  </li>
-
-        
       </ul>
     </nav>
   </li>
@@ -1313,13 +1360,18 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
-<nav class="md-nav md-nav--secondary">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
     
   
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
@@ -1330,12 +1382,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#default-arguments" class="md-nav__link">
-    Default Arguments
+  <a href="#default-variables" class="md-nav__link">
+    Default Variables
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Default Variables">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#discord-objects" class="md-nav__link">
+    Discord Objects
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#discord-object-properties" class="md-nav__link">
@@ -1354,7 +1413,7 @@
     Meta Blocks
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Meta Blocks">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1372,8 +1431,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#require-blacklist-blocks" class="md-nav__link">
-    Require &amp; Blacklist Blocks
+  <a href="#use-limiting-blocks" class="md-nav__link">
+    Use Limiting Blocks
   </a>
   
 </li>
@@ -1409,7 +1468,7 @@
     Data Storage &amp; Parsing
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Data Storage &amp; Parsing">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1464,8 +1523,15 @@
     Manipulation Blocks
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Manipulation Blocks">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ordinal-abbreviation-blocks" class="md-nav__link">
+    Ordinal Abbreviation Blocks
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#case-blocks" class="md-nav__link">
@@ -1475,15 +1541,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#url-encode-blocks" class="md-nav__link">
-    URL Encode Blocks
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#join-replace-blocks" class="md-nav__link">
-    Join &amp; Replace Blocks
+  <a href="#text-replacement-blocks" class="md-nav__link">
+    Text Replacement Blocks
   </a>
   
 </li>
@@ -1505,7 +1564,7 @@
     RNG Blocks
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="RNG Blocks">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1539,7 +1598,7 @@
     Time Blocks
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Time Blocks">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1562,15 +1621,18 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#going-from-blocks-to-tags" class="md-nav__link">
+    Going from Blocks to Tags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#important-note-on-block-behavior" class="md-nav__link">
     Important Note on Block Behavior
   </a>
   
 </li>
-      
-      
-      
-      
       
     </ul>
   
@@ -1584,11 +1646,24 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CarlGroth/carlbot-docs/edit/master/docs/tags-and-triggers/tags-advanced-usage.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/CarlGroth/carlbot-docs/edit/master/docs/tags-and-triggers/tags-advanced-usage.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
                 
                 
-                <h1 id="tags-advanced-usage">Tags - Advanced usage</h1>
-<p>Tags are custom commands. They are easy to use and can be very powerful. With some ingenuity, you can create your own. It is for instance entirely possible to create an 8ball command, a hug command and many other things using just tags. Though to do more than just output plaintext, you must configure the command's behavior using what is called Tagscript. Tagscript is a small language the bot interprets, made up of dynamic "blocks". To build a tag you will need to combine various blocks to tell the tag what you want it to do. Some parts of Tagscript can be used elsewhere within Carl-bot, like in Triggers, Autofeeds, and Welcome/Leave/Ban Messages.</p>
+                  
+                
+                
+                <h1 id="tags-advanced-usage">Tags - Advanced Usage</h1>
+<p>Tags are custom commands. They are easy to use and can be very powerful. With some ingenuity, you can create your own. It is for instance entirely possible to create an 8ball command, a hug command and many other things using just tags. To do more than just output plaintext, you must configure the command's behavior using what is called Tagscript. Tagscript is a small language the bot interprets, made up of dynamic "blocks". To build a tag you will need to combine various blocks to tell the tag what you want it to do. Some parts of Tagscript can be used elsewhere within Carl-bot, like in Triggers, Autofeeds, and Welcome/Leave/Ban Messages.</p>
+<div class="admonition info">
+<p class="admonition-title">Limits</p>
+<p>Tags must be under 25000 characters long in the "Content" section. Tags <strong>CANNOT</strong> and will <strong>NEVER</strong> be able to DM a mentioned user, only the tag's invoker. A tag's output is sent as one message that can consist of 2000 characters of plaintext, and an embed attached to that message. Command blocks can be used for additional output. Embeds attached to Tags via the Dashboard are subject to the same limits detailed in the Embeds section.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you would like a Tag that outputs sections of this documentation on demand (<em>like the <code>help</code> command</em>), visit this link and import the <code>tse</code> tag to your server: <a href="https://carl.gg/t/204246">https://carl.gg/t/204246</a></p>
+</div>
 <h2 id="anatomy-of-a-tagscript-block">Anatomy of a Tagscript Block</h2>
 <p>All Tagscript blocks begin with a left curly brace <code>{</code>, and end with a right curly brace <code>}</code>.</p>
 <p>Immediately after the left curly brace is the block <em>name</em>, which determines the behavior of the block. Some blocks have aliases or multiple names that produce the same behavior.</p>
@@ -1598,42 +1673,46 @@
 <p class="admonition-title">Anatomy of a Tagscript Block</p>
 <p><code>{blockname(parameters):payload}</code></p>
 </div>
-<p>Now to get to the blocks themselves. Tagscript blocks are split into rough categories based on their behavior or characteristics:</p>
-<h2 id="default-arguments">Default Arguments</h2>
-<p>Tagscript comes with a few default arguments. These are:</p>
-<div class="admonition example">
-<p class="admonition-title">Default Arguments</p>
-<ul>
+<p>Now to get to the blocks themselves. Tagscript blocks are split into rough categories based on their behavior or characteristics.</p>
+<h2 id="default-variables">Default Variables</h2>
+<p>Tagscript comes with a few default variables. They are:</p>
+<details class="example" open="open"><summary>Default Variables</summary><ul>
 <li><code>{unix}</code><br>Current Unix time, useful for math blocks. This only works in Tags.</li>
 <li><code>{uses}</code><br>The number of times the tag has been used. This only works in Tags.</li>
-<li><code>{args}</code><br>The arguments (words used) after the tag invocation.<br>!foo bar baz means <code>{args}</code>==bar baz<br>For triggers <code>{args}</code> contains the entire message.</li>
-<li><code>{mention}</code><br>Mentions the user of the tag<br><br>
-<strong>Discord Objects:</strong></li>
+<li><code>{mention}</code><br>Mentions the user of the tag<br></li>
+<li><code>{args}</code><br><code>{message}</code><br>The arguments (words used) after the tag invocation.<br>!foo bar baz means <code>{args}</code>==bar baz<br>For triggers <code>{args}</code> contains the entire message.</li>
+</ul>
+</details>
+<p>Two especially notable default variables are <code>{args}</code> and <code>{message}</code>.</p>
+<details class="info" open="open"><summary>{args} vs {message}</summary><p>Both <code>{args}</code> and <code>{message}</code> represent the same thing, but they act as separate variables. If args or message are accidentally used as a variable name, the other will continue to represent the arguments during the tag execution.<br><br><strong>However</strong>, the digit shorthand variables <code>{1}</code>, <code>{2}</code>, <code>{3}</code>, etc, are based upon <code>{message}</code>, not <code>{args}</code>, meaning if message is used as a variable name those shorthand variables will represent the 1st, 2nd, 3rd, etc index values in the new <code>{message}</code> variable rather than the arguments they represented prior.</p>
+</details>
+<h3 id="discord-objects">Discord Objects</h3>
+<p>The following Discord Objects are also default variables that are defined upon tag use:</p>
+<details class="example" open="open"><summary>Discord Objects</summary><ul>
 <li><code>{user}</code><br>Nickname of the user that used the tag</li>
 <li><code>{target}</code><br>Similar to <code>{user}</code>, if the tag user mentions someone after the invocation, this variable is the mentioned user's nickname. If nobody is not mentioned, <code>{target}</code>==<code>{user}</code>.</li>
 <li><code>{server}</code><br>The name of the server</li>
 <li><code>{channel}</code><br>The name of the channel the tag was used in</li>
 </ul>
-</div>
+</details>
 <h3 id="discord-object-properties">Discord Object Properties</h3>
-<p>Discord Object blocks, which are listed under Default Arguments above, contain certain properties. To access a property, you specify the property name as the block's parameter, like <code>{user(id)}</code>. You can access properties relating to the <code>{user}</code>, <code>{target}</code>, <code>{server}</code> and <code>{channel}</code> blocks.</p>
-<div class="admonition example">
-<p class="admonition-title">{user} &amp; {target} Properties</p>
+<p>Discord Object blocks contain certain properties. To access a Discord Object block's property, you specify the property name as the block's parameter, like <code>{user(id)}</code>, or <code>{server(owner)}</code>.</p>
+<details class="example" open="open"><summary>Discord Object Properties</summary><div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">{user} &amp; {target}</label><div class="tabbed-content">
 <ul>
 <li>(avatar): a link to the user's avatar</li>
+<li>(icon): the same as (avatar)</li>
 <li>(id): the user's Discord ID, a multi-digit number that is unique to that user. </li>
 <li>(mention): a string to mention the user.</li>
 <li>(created_at): outputs the date the account was created in the format yyyy-mm-dd HH:MM:SS </li>
 <li>(joined_at): outputs the date the account joined the server in the format yyyy-mm-dd HH:MM:SS </li>
-<li>(color): the hexadecimal color code relating to the user's highest non-default role color.</li>
+<li>(color): the hexadecimal color code relating to the user's highest non-default role color (preceding '#' included).</li>
 <li>(name): their Discord account username, not their nickname.</li>
 <li>(proper): their username followed by their discriminator. username#0001</li>
 <li>(roleids): a list of the role IDs for every role the user has, listed from lowest in the hierarchy to highest</li>
 <li>(position): their position in the role hierarchy. Position starts with 0 for @everyone at the bottom and increases by 1 for each role in the server going upwards.</li>
 </ul>
 </div>
-<div class="admonition example">
-<p class="admonition-title">{server} Properties</p>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">{server}</label><div class="tabbed-content">
 <ul>
 <li>(icon): a link to the Server's icon </li>
 <li>(id): the Server's ID </li>
@@ -1649,8 +1728,7 @@
 <li>(created_at): when the server was created in the format yyyy-mm-dd HH:MM:SS </li>
 </ul>
 </div>
-<div class="admonition example">
-<p class="admonition-title">{channel} Properties</p>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">{channel}</label><div class="tabbed-content">
 <ul>
 <li>(id): the channel's id </li>
 <li>(topic): the channel's topic </li>
@@ -1659,173 +1737,237 @@
 <li>(mention): clickable link to the channel</li>
 </ul>
 </div>
+</div>
+</details>
 <h2 id="meta-blocks">Meta Blocks</h2>
 <p>Meta blocks change the tag's overall behavior. Where the output is sent, if the invocation is deleted, if any commands blocks used in the tag should output their standard output in addition to the tag's output, who can and can't use the tag, if the bot should react to the invocation or the output, etc.</p>
 <h3 id="action-blocks">Action Blocks</h3>
 <p>Action blocks change how the invocation, tag output, and command blocks contained within the tag act.</p>
-<div class="admonition example">
-<p class="admonition-title">Action Blocks</p>
+<details class="example" open="open"><summary>Action Blocks</summary><div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Delete</label><div class="tabbed-content">
 <ul>
-<li><code>{delete}</code><br>Deletes the message or invocation that triggered the tag.</li>
-<li><code>{silence}</code><br>Silences the usual output of any command being used in a command block.</li>
-<li><code>{override}</code><br>This instructs the tag to act as if the tag user has the modrole. It still respects role hierarchy. For a tag creator to add this they must have manage server or the modrole.</li>
+<li><code>{delete}</code></li>
+<li><code>{del}</code><br>Deletes the message or invocation that triggered the tag.</li>
 </ul>
 </div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Silence</label><div class="tabbed-content">
+<ul>
+<li><code>{silence}</code></li>
+<li><code>{silent}</code><br>Silences the usual output of any command being used in a command block.</li>
+</ul>
+</div>
+<input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><label for="__tabbed_2_3">Override</label><div class="tabbed-content">
+<ul>
+<li><code>{override}</code><br>This instructs the tag to act as if the tag user has the modrole. Carl-bot still respects role hierarchy though. For a tag creator to add this they must have Manage Server permissions or the modrole.</li>
+</ul>
+</div>
+</div>
+</details>
 <h3 id="redirection-blocks">Redirection Blocks</h3>
 <p>Redirects the output of the tag and any command blocks unless otherwise specified in the command. You can only specify one tag output destination, if multiple are provided the latter will override the former.</p>
-<div class="admonition example">
-<p class="admonition-title">Redirection Blocks</p>
+<details class="example" open="open"><summary>Redirection Blocks</summary><div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">DM</label><div class="tabbed-content">
 <ul>
-<li><code>{dm}</code><br>Redirects output as a direct message to the user who uses the tag.</li>
+<li><code>{dm}</code><br>Redirects output as a direct message to the tag <strong>user</strong>. Tags cannot be used to direct message mentioned users.</li>
+</ul>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Channel</label><div class="tabbed-content">
+<ul>
 <li><code>{redirect:channel}</code><br>Redirects output to the specified channel. The tag's creator needs to have send message permissions in the pointed channel.</li>
 </ul>
 </div>
-<p>The "channel" must either be valid a channel name, a channel id, or a mention formatted channel id <code>&lt;#556675168634798111&gt;</code>. </p>
-<div class="admonition memo">
-<p class="admonition-title">Example - Redirection Blocks</p>
-<ul>
+</div>
+</details>
+<p>The "channel" must either be valid a channel name, a channel id, or a mention formatted channel id like <code>&lt;#556675168634798111&gt;</code>. </p>
+<details class="note" open="open"><summary>Example - Redirection Blocks</summary><ul>
 <li><code>{user}</code> says: <code>{args}</code> <code>{redirect:screaming-out-loud}</code></li>
 <li><code>{redirect:186980582863929345}</code></li>
 </ul>
-</div>
-<h3 id="require-blacklist-blocks">Require &amp; Blacklist Blocks</h3>
-<p>Restricts tag usage to users with or without roles, to only certain channels, or to exclude specific channels.</p>
-<div class="admonition example">
-<p class="admonition-title">Require &amp; Blacklist Blocks</p>
+</details>
+<h3 id="use-limiting-blocks">Use Limiting Blocks</h3>
+<p>These blocks limit tag usage to users with or without roles, to only certain channels, or excludes usage in specific channels.</p>
+<details class="example" open="open"><summary>Use Limiting Blocks</summary><div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Require</label><div class="tabbed-content">
 <ul>
-<li><code>{require(message):channel,role}</code><br>Limits the tag to executing when the user has a role listed or when used in a channel listed.</li>
+<li><code>{require(message):channel,role}</code><br>Limits the tag to executing ONLY when the user has a role listed or when used in a channel listed.</li>
+</ul>
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Blacklist</label><div class="tabbed-content">
+<ul>
 <li><code>{blacklist(message):channel,role}</code><br>Prevents the tag from executing when the user has a role listed or when used in a channel listed.</li>
 </ul>
 </div>
+</div>
+</details>
 <p>The message in the parameters is optional. It will display <em>instead of</em> the warning emoji if the require block or blacklist block prevent the user from using the tag.</p>
 <p>Both accept roles and channels. Entries must be separated by a comma.<br>
-They must either be a role/channel name, a role/channel id, or a mention formatted role/channel id <code>&lt;@&amp;554342061428572170&gt;</code> or <code>&lt;#556675168634798111&gt;</code>.</p>
-<div class="admonition memo">
-<p class="admonition-title">Examples - Require &amp; Blacklist</p>
+They must either be a role/channel name, a role/channel id, or a mention formatted role/channel id like <code>&lt;@&amp;554342061428572170&gt;</code> or <code>&lt;#556675168634798111&gt;</code>.</p>
+<details class="note" open="open"><summary>Examples - Require &amp; Blacklist</summary><div class="tabbed-set" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">Require</label><div class="tabbed-content">
 <ul>
 <li><code>{require(you're not cool enough):Cool kids}</code> Word around the office is that <code>{user}</code> is kind of a big deal</li>
+</ul>
+</div>
+<input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><label for="__tabbed_5_2">Blacklist</label><div class="tabbed-content">
+<ul>
 <li><code>{blacklist:Staff}</code> You have no power here</li>
 </ul>
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Channel and Role Names</p>
-<p>Be cautious of using channel and role names in restrict, require, and blacklist blocks. If the channel or role name is changed, the tag must be changed or it will not function as intended. Using IDs makes this a non-issue as channel and role IDs cannot change.</p>
 </div>
+</details>
+<details class="warning" open="open"><summary>Channel and Role Names</summary><p>Be cautious of using channel and role names in restrict, require, and blacklist blocks. If the channel or role name is changed, the tag must be changed or it will not function as intended. Using IDs makes this a non-issue as channel and role IDs cannot change.</p>
+</details>
 <h3 id="react-blocks">React Blocks</h3>
-<p>React Blocks instruct Carl-bot to react to either the invocation or the output. Carl-bot, like all discord accounts, must be in the server where the emoji is hosted to be able to use it. If the emoji is from a server he is in but not the server the tag is in, the emoji id may need to be used instead of just the name. <code>&lt;:carlpat:590335691968348191&gt;</code></p>
-<p>React Blocks are limited to using one emoji, but this restriction is lifted for premium servers in which react blocks can use 5 emojis.</p>
-<div class="admonition example">
-<p class="admonition-title">React Blocks</p>
-<ul>
-<li><code>{react: :laughing: :fortnight:}</code><br>Reacts to the tag's output with the emoji(s) listed.</li>
-<li><code>{reactu: :laughing: :fortnight:}</code><br>Reacts to the tag's invocation with the emoji(s) listed.</li>
+<p>React Blocks instruct Carl-bot to react to either the invocation or the output. Carl-bot, like all Discord accounts, must be in the server where the emoji is hosted to be able to use it. If the emoji is from a server he is in but not the server the tag is in, the emoji ID may need to be used instead of just the name. <code>&lt;:carlpat:590335691968348191&gt;</code></p>
+<details class="info" open="open"><summary>Premium Restriction</summary><p>React Blocks are limited to using one emoji, but this restriction is lifted for premium servers in which react blocks can use 5 emojis.</p>
+</details>
+<details class="example" open="open"><summary>React Blocks</summary><ul>
+<li><code>{react: :laughing: :fortnight:}</code><br>Reacts with the emoji(s) listed to the tag's output message. Cannot react to command block output messages.</li>
+<li><code>{reactu: :laughing: :fortnight:}</code><br>Reacts (upwards) with the emoji(s) listed to the tag's invocation or to the message containing the trigger word.</li>
 </ul>
-</div>
-<p>Use a space to separate multiple emoji.</p>
+</details>
+<p>Use a space to separate multiple emoji. </p>
 <h2 id="command-blocks">Command Blocks</h2>
-<p>Command blocks execute a Carl-bot command. The formatting and syntax do not change compared to how Carl-bot commands are normally used, except you do not include a prefix. Tags are limited to using one command block per tag unless the server is marked as premium, then they can use 3 command blocks per tag. Command blocks cannot use reaction role commands, nor can they call other tags or use tag commands. If the tag's user does not have the permissions required to use the command, Carl-bot will not use it and will output an error message as if they had tried to use the command. As stated in the Action Blocks section, <code>{override}</code> can be a useful tool in allowing users that would not otherwise have permission to use a specific command. Command blocks can only be used in Tags.</p>
-<div class="admonition example">
-<p class="admonition-title">Command Block Aliases</p>
-<ul>
+<p>Command blocks execute a Carl-bot command. The formatting and syntax do not change compared to how Carl-bot commands are normally used, except you do not include a prefix. Command blocks cannot use reaction role commands, nor can they call other tags or use tag commands. If the tag's user does not have the permissions required to use the command, Carl-bot will not use it and will output an error message as if they had tried to use the command.</p>
+<p><strong>Command blocks can only be used in Tags.</strong></p>
+<details class="example" open="open"><summary>Command Block Aliases</summary><ul>
+<li><code>{command:pick Pizza,Burgers,Takeout}</code></li>
 <li><code>{cmd:echo {args}}</code></li>
 <li><code>{c:role add {user(id)} Verified}</code><br>Executes the Carl-bot command in the payload. Block names are synonymous.</li>
 </ul>
-</div>
+</details>
+<details class="info" open="open"><summary>Premium Restriction</summary><p>Tags are limited to using <strong>one</strong> command block per tag unless the server is marked as premium.<br>Tags in Carl-bot premium servers can use <strong>three</strong> command blocks per tag.</p>
+</details>
+<details class="tip" open="open"><summary>Override</summary><p>The action block <code>{override}</code> can be a useful tool in allowing users to use a specific command in a command block that they would not otherwise have permission to use.</p>
+</details>
 <p>Command blocks can also be used to rename a command or create an alias for it.</p>
-<div class="admonition memo">
-<p class="admonition-title">Example - Command Alias</p>
-<p><code>!tag + whois {cmd:info {args}}</code></p>
-</div>
+<details class="tip" open="open"><summary>Using Tags to Create Command Aliases</summary><ul>
+<li><code>!tag + whois {cmd:info {args}}</code></li>
+<li><code>!tag + iam {cmd:rank {args}}</code></li>
+<li><code>!tag + lb {c:leaderboard {args}}</code></li>
+</ul>
+</details>
 <h2 id="control-blocks">Control Blocks</h2>
-<p>Control blocks control the flow of your tag and determine what payloads are passed to the rest of the tag or block. They are conditional statements that evaluate boolean equations you provide as block parameters. A boolean is a binary variable, having two possible values called <em>true</em> and <em>false</em>. Boolean equations compare a value on the left of an operator to a value to the right of the operator, and depending on the comparison the operator requires, it evaluates to either true or false. To begin, you need to understand how to form a boolean equation.</p>
-<div class="admonition summary">
-<p class="admonition-title">Boolean Operators in Tagscript</p>
+<p>Control blocks control the flow of your tag and determine what payloads are passed to the rest of the tag or block. They are conditional statements that evaluate boolean equations you provide as block parameters. </p>
+<details class="info" open="open"><summary>Booleans</summary><p>A boolean is a binary variable, having two possible values called <em>true</em> and <em>false</em>. Boolean equations compare an entity on the left of an operator to an entity to the right of the operator, and depending on the comparison the operator requires, it evaluates to either true or false.</p>
+</details>
+<details class="summary" open="open"><summary>Boolean Operators in Tagscript</summary><div class="tabbed-set" data-tabs="6:4"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">Equal</label><div class="tabbed-content">
 <ul>
-<li><code>==</code><br>Evaluates to true if the value on the left is equal to the value on the right.</li>
-<li><code>!=</code><br>Evaluates to true if the value on the left is not equal to the value on the right.</li>
+<li><code>==</code><br>Evaluates to true if the string on the left is identical to the string on the right.</li>
+</ul>
+</div>
+<input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><label for="__tabbed_6_2">Not Equal</label><div class="tabbed-content">
+<ul>
+<li><code>!=</code><br>Evaluates to true if the string on the left is not identical to the string on the right.</li>
+</ul>
+</div>
+<input id="__tabbed_6_3" name="__tabbed_6" type="radio" /><label for="__tabbed_6_3">Greater Than</label><div class="tabbed-content">
+<ul>
 <li><code>&gt;</code> and <code>&gt;=</code><br>Evaluates to true if the number on the left side is greater than the number on the right.<br><code>&gt;=</code> is greater than or equal.</li>
+</ul>
+</div>
+<input id="__tabbed_6_4" name="__tabbed_6" type="radio" /><label for="__tabbed_6_4">Less Than</label><div class="tabbed-content">
+<ul>
 <li><code>&lt;</code> and <code>&lt;=</code><br>Evaluates to true if the number on the left side is less than the number on the right.<br><code>&lt;=</code> is less than or equal.</li>
 </ul>
 </div>
-<div class="admonition memo">
-<p class="admonition-title">Examples - Boolean Equations</p>
+</div>
+</details>
+<details class="note" open="open"><summary>Examples - Boolean Equations</summary><div class="tabbed-set" data-tabs="7:4"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><label for="__tabbed_7_1">Equal</label><div class="tabbed-content">
 <ul>
-<li><code>cat==dog</code> This would evalute to false.</li>
-<li><code>tree!=car</code> This would evaluate to true.</li>
-<li><code>15&gt;20</code> This would evalute to false.</li>
-<li><code>1&lt;=1</code> This would evaluate to true.</li>
+<li><code>cat==dog</code> This would evaluate to false.</li>
+<li><code>5==5</code> This would evaluate to true.</li>
 </ul>
 </div>
-<p>If the boolean equation in the block's parameters evaluates as true, the control block will continue executing the payload. If the boolean equation evaluates as false, the control block will execute the portion of the payload designated by a <code>|</code> if it exists, otherwise, it will act as if the control block is null, or does not exist.</p>
-<div class="admonition example">
-<p class="admonition-title">If Blocks</p>
+<input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><label for="__tabbed_7_2">Not Equal</label><div class="tabbed-content">
+<ul>
+<li><code>tree!=car</code> This would evaluate to true.</li>
+<li><code>10!=10</code> This would evaluate to false.</li>
+</ul>
+</div>
+<input id="__tabbed_7_3" name="__tabbed_7" type="radio" /><label for="__tabbed_7_3">Greater Than</label><div class="tabbed-content">
+<ul>
+<li><code>15&gt;20</code> This would evaluate to false.</li>
+<li><code>17&gt;=17</code> This would evaluate to true.</li>
+</ul>
+</div>
+<input id="__tabbed_7_4" name="__tabbed_7" type="radio" /><label for="__tabbed_7_4">Less Than</label><div class="tabbed-content">
+<ul>
+<li><code>1&lt;=1</code> This would evaluate to true.</li>
+<li><code>25&lt;5</code> This would evaluate to false.</li>
+</ul>
+</div>
+</div>
+</details>
+<p>If the boolean equation in the block's parameters evaluates as true, the control block will continue executing the payload. If the boolean equation evaluates as false, the control block will execute the second portion of the payload starting after the <code>|</code> character, if present, otherwise the tag will act as if the control block does not exist.</p>
+<details class="example" open="open"><summary>Control Blocks</summary><div class="tabbed-set" data-tabs="8:4"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><label for="__tabbed_8_1">If</label><div class="tabbed-content">
 <ul>
 <li><code>{if(booleanEQ):then|else}</code><br>If the boolean equation evaluates to true, the block will result in the payload. If the boolean equation evaluates to false, the block will result in the second portion of the payload after the <code>|</code> if provided.</li>
 </ul>
 </div>
-<div class="admonition example">
-<p class="admonition-title">Any Block Aliases</p>
+<input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><label for="__tabbed_8_2">Any/Or</label><div class="tabbed-content">
 <ul>
 <li><code>{any(booleanEQ1|booleanEQ2|etc):then|else}</code></li>
 <li><code>{or(booleanEQ1|booleanEQ2|etc):then|else}</code><br>If any of the boolean equations provided evaluate to true, the block will result in the payload. If all of the boolean equations evaluate to false, the block will result in the second portion of the payload after the <code>|</code> if provided. Separate boolean equations inside the parameters with a pipe character <code>|</code>.</li>
 </ul>
 </div>
-<div class="admonition example">
-<p class="admonition-title">All Block Aliases</p>
+<input id="__tabbed_8_3" name="__tabbed_8" type="radio" /><label for="__tabbed_8_3">All/And</label><div class="tabbed-content">
 <ul>
 <li><code>{all(booleanEQ1|booleanEQ2|etc):then|else}</code></li>
-<li><code>{and(booleanEQ1|booleanEQ2|etc):then|else}</code><br>If all of the boolean equations provided evaluate to true, the block will result in the payload. If any of the boolean equations evaluate to false, the block will result in the second portion of the payload after the <code>|</code> if provided. Separate boolean equations inside the parameters with a pipe character <code>|</code>.</li>
+<li><code>{and(booleanEQ1|booleanEQ2|etc):then|else}</code><br>If all of the boolean equations provided evaluate to true, the block will result in the payload. If any of the boolean equations evaluate to false, the block will result in the second portion of the payload after the <code>|</code> if provided. Separate boolean equations inside the parameters with a pipe character <code>|</code>. </li>
 </ul>
 </div>
-<div class="admonition example">
-<p class="admonition-title">Break Block Aliases</p>
+<input id="__tabbed_8_4" name="__tabbed_8" type="radio" /><label for="__tabbed_8_4">Break/Shortcircuit</label><div class="tabbed-content">
 <ul>
 <li><code>{shortcircuit(booleanEQ):then}</code></li>
 <li><code>{short(booleanEQ):then}</code></li>
 <li><code>{break(booleanEQ):then}</code><br>If the boolean equation evaluates to true, the tag's output will ONLY be the payload of this block.<br>However, Carl-bot commands in command blocks will still execute, and if an embed is defined in the tag's attached embed builder it will still send.</li>
 </ul>
 </div>
-<p>For the <code>if</code>, <code>any</code>, and <code>all</code> control blocks, an optional else statement can be added after the payload by using a pipe character <code>|</code>.</p>
-<p>If the boolean equation is true the payload is what is between the colon <code>:</code> and the pipe <code>|</code>. </p>
-<p>If the boolean equation is false, the payload is what is between the pipe <code>|</code> and the end of the block <code>}</code>. If the control block does not have an else statement and the boolean is false, the Tagscript Engine ignores that control block.</p>
-<div class="admonition memo">
-<p class="admonition-title">Examples - Control Blocks</p>
+</div>
+</details>
+<details class="info" open="open"><summary>Else Statements</summary><p>For the <code>if</code>, <code>any</code>, and <code>all</code> control blocks, an optional else statement can be added after the payload by using a pipe character <code>|</code>.<br>If the boolean equation is true the payload is what is between the colon <code>:</code> and the pipe <code>|</code>.<br>If the boolean equation is false, the payload is what is between the pipe <code>|</code> and the end of the block <code>}</code>.<br>If the control block does not have an else statement and the boolean is false, the Tagscript Engine ignores that control block.</p>
+</details>
+<details class="note" open="open"><summary>Examples - Control Blocks</summary><div class="tabbed-set" data-tabs="9:4"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><label for="__tabbed_9_1">If</label><div class="tabbed-content">
 <ul>
 <li><code>{if({user(id)}=={target(id)}):You didn't mention someone else.|{user} says {target} is a wuss!}</code></li>
-<li><code>{any({user(color)}==#5989ab|{user(color)}==#6296ff|{user(color)}==#000001):You're awesome}</code></li>
-<li><code>{all({args}&gt;0|{args}&lt;=100):You ate {args} tacos last night|You must input a number between 1 and 100}</code></li>
-<li><code>{break({args}==):You did not provide the proper input.}</code></li>
 </ul>
 </div>
+<input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><label for="__tabbed_9_2">Any/Or</label><div class="tabbed-content">
+<ul>
+<li><code>{any({user(color)}==#5989ab|{user(color)}==#6296ff|{user(color)}==#000001):You're awesome}</code></li>
+</ul>
+</div>
+<input id="__tabbed_9_3" name="__tabbed_9" type="radio" /><label for="__tabbed_9_3">All/And</label><div class="tabbed-content">
+<ul>
+<li><code>{all({1}&gt;0|{1}&lt;=100):You ate {args} tacos.|You must input a number between 1 and 100}</code></li>
+</ul>
+</div>
+<input id="__tabbed_9_4" name="__tabbed_9" type="radio" /><label for="__tabbed_9_4">Break/Shortcircuit</label><div class="tabbed-content">
+<ul>
+<li><code>{break({1}==):You did not provide the proper input.}</code></li>
+</ul>
+</div>
+</div>
+</details>
 <h2 id="data-storage-parsing">Data Storage &amp; Parsing</h2>
 <p>Tags cannot save data between invocations. There is no database you can read from or write to. But tags can still store data and values to variables and reference them within the instance of the tag.</p>
 <h3 id="variable-assignment-blocks">Variable Assignment Blocks</h3>
 <p>Often in a tag, you might want to reference the same string of words, or the same number multiple times in your tag. Assigning variables is how you would assign a value to a name for reuse across your entire tag.</p>
-<div class="admonition example">
-<p class="admonition-title">Variable Assignment Block Aliases</p>
-<ul>
+<details class="example" open="open"><summary>Variable Assignment Block Aliases</summary><ul>
 <li><code>{=(variablename):Content}</code></li>
 <li><code>{assign(variablename):Content}</code></li>
 <li><code>{let(variablename):Content}</code></li>
 <li><code>{var(variablename):Content}</code><br>Assigns the content in the payload to the name given in the parameters. Block names are synonymous.</li>
 </ul>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Variable Naming</p>
-<p>You can name variables whatever you would like, but if they share the name of any other Tagscript block or block alias, they will not work to reference the payload. A common error is to name a variable<br><code>{=(c):content}</code><br><code>{c:}</code> is an alias for the command block. It is recommended that variable names be at least 2 characters long.</p>
-</div>
+</details>
+<details class="tip" open="open"><summary>Variable Naming</summary><p>You can name variables whatever you would like, but if they share the name of any other Tagscript block or block alias, they will not work to reference the payload. A common error is to name a variable<br><code>{=(c):content}</code><br><code>{c:}</code> is an alias for the command block. It is recommended that variable names be at least 2 characters long.</p>
+</details>
 <h3 id="variable-blocks">Variable Blocks</h3>
 <p>To call the variable, or use the value stored in <code>variablename</code>, you reference the variable's name as a block: <code>{variablename}</code></p>
-<div class="admonition memo">
-<p class="admonition-title">Example - Nested Variables</p>
-<p><code>{=(t1):A}</code><br><code>{=(t2):B}</code><br><code>{=(b1):C}</code><br><code>{=(b2):D}</code><br><code>{=(letter):{if({args}&gt;5):t|b}}</code><br><code>{=(number):{if({args}&lt;20):1|2}}</code><br>You could reference any of the first four variables by nesting the last two together as a block.<br><code>{{letter}{number}}</code> would be <code>{t1}</code> which is <code>A</code> whenever <code>{args}</code> is a number greater than 5 and less than 20.</p>
-</div>
-<p>With a variable block, you can reference individual words in the variable, like parsing through a list, by specifying the index, or number, for that word as a parameter. The elements in a list are indexed according to their sequence. Index values for variables start at 1 and increment with each delimiter encountered. A delimiter is a sequence of one or more characters for specifying the boundary between separate, independent strings. The default delimiter for variables in Tagscript is a space. You can also set a custom delimiter for a variable block by specifying it as the variable block's payload.</p>
-<div class="admonition memo">
-<p class="admonition-title">Example - Variable Parsing</p>
-<p><code>{args}</code> is the most common variable used in tags, because it is how a tag's creator accesses the information included with the tag's invocation.<br>
-In this example:<br>
-<code>{args}</code>==<code>Carl likes Subway. Today he got a Spicy Italian with - double pepperoni, double salami, provolone, and tomatoes.</code><br></p>
+<details class="note" open="open"><summary>Example - Nested Variables</summary><p><code>{=(msg1):Hello World}</code><br><code>{=(msg2):How are you today?}</code><br><code>{=(msg3):See you later!}</code><br>You could reference any of the messages in those variables by following the tag invocation with a number from 1 to 3, and nesting <code>{1}</code> inside the <code>{msg}</code> variable call at the end.<br><code>{msg{1}}</code></p>
+</details>
+<p>With a variable block, you can reference individual words in the variable, like parsing through a list, by specifying the index, or number, for that element as a parameter. The elements in a list are indexed according to their sequence. Index values for variables start at 1 and increment with each delimiter encountered. A delimiter is a sequence of one or more characters for specifying the boundary between separate, independent strings. The default delimiter for variables in Tagscript is a space. You can also set a custom delimiter for a variable block by specifying it as the variable block's payload.</p>
+<details class="note" open="open"><summary>Example - Variable Parsing</summary><p><code>{args}</code> is the most common variable used in tags, because it is how a tag's creator accesses the information included with the tag's invocation.<br>
+In this example, <code>{args}</code> is:<br>
+<code>Carl likes Subway. Today he got a Spicy Italian with - double pepperoni, double salami, provolone, and tomatoes.</code><br></p>
+<div class="tabbed-set" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><label for="__tabbed_10_1">Basic Parsing</label><div class="tabbed-content">
 <p>Since space is the default delimiter, you can easily grab individual words<br>
 <code>{args(1)}==Carl</code>, <code>{args(2)}==likes</code>, and <code>{args(3)}==Subway.</code><br>
 You can also use <code>{1}</code> to mean <code>{args(1)}</code>, <code>{2}</code> to mean <code>{args(2)}</code> etc...<br></p>
@@ -1835,7 +1977,9 @@ You can also use <code>{1}</code> to mean <code>{args(1)}</code>, <code>{2}</cod
 <code>{args(+9)}==Carl likes Subway. Today he got a Spicy Italian</code><br>
 Use a <code>+</code> after the index to reference the index value and every element after it.<br>
 <code>{args(-11+)}==a Spicy Italian with - double pepperoni, double salami, provolone, and tomatoes.</code><br></p>
-<p>You can grab the sentences separately by redefining the delimiter as a <code>.</code><br>
+</div>
+<input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><label for="__tabbed_10_2">Defining Delimiters</label><div class="tabbed-content">
+<p>You can grab the sentences separately by defining the delimiter as a <code>.</code><br>
 <code>{args(2):.}==Today he got a Spicy Italian with - double pepperoni, double salami, provolone, and tomatoes</code><br></p>
 <p>What if you wanted to parse through just the toppings? Set the toppings to another variable then parse that.<br>
 <code>{=(toppings):{args(2):-}}</code><br>
@@ -1845,142 +1989,200 @@ Use a <code>+</code> after the index to reference the index value and every elem
 If you attempt to reference a span of elements using <code>+</code> after an index that is out of bounds for the variable, Tagscript will return nothing.<br>
 <code>{args(3+):.}==</code></p>
 </div>
+</div>
+</details>
 <h3 id="list-cycle-blocks">List &amp; Cycle Blocks</h3>
-<p>List and Cycle Blocks are another way to parse through a list of values in Tagscript. They both <strong>strictly</strong> use commas <code>,</code> as the delimiter for the list placed in the block's payload. These blocks only functions in Tags.</p>
-<div class="admonition example">
-<p class="admonition-title">List &amp; Cycle Blocks</p>
+<p>List and Cycle Blocks are another way to parse through a list of values in Tagscript. They both <strong>strictly</strong> use either commas <code>,</code> or tildes <code>~</code> as the delimiters for the list placed in the block's payload. Use tildes when elements contains commas. These blocks only functions in Tags.</p>
+<details class="example" open="open"><summary>List &amp; Cycle Blocks</summary><div class="tabbed-set" data-tabs="11:2"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><label for="__tabbed_11_1">List</label><div class="tabbed-content">
 <ul>
-<li><code>{list(index):elem, elem2...}</code><br>Returns the element in the payload the corresponds to the index value in the parameters. Block is null if the index is out of bounds.</li>
-<li><code>{cycle(index):elem, elem2...}</code><br>Returns the element in the payload the corresponds to the index value in the parameters. Loops around if the index is out of bounds.</li>
+<li><code>{list(index):elem,elem2...}</code><br>Returns the element in the payload the corresponds to the index value in the parameters. Block is null if the index is out of bounds.</li>
 </ul>
 </div>
-<p>Both lists and cycles use 0 as the index for the first element in the list. List blocks will return null if the index is out of bounds, while a cycle block will loop if the index is greater than the number of elements in the list, essentially <code>index</code> = index % list_length. Both allow for backward parsing using negative values. Both blocks will return an error message if the value in parameters is not a number.</p>
-<div class="admonition memo">
-<p class="admonition-title">Example - List &amp; Cycle Blocks</p>
+<input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><label for="__tabbed_11_2">Cycle</label><div class="tabbed-content">
 <ul>
-<li><code>{list(3):Carl,Pysnow,Michael,Whoozard,DeaFiore,Viosmic,Pebbles,Kable,Raffael}</code>==<code>Whoozard</code></li>
-<li><code>{cycle(31):Carl,Pysnow,Michael,Whoozard,DeaFiore,Viosmic,Pebbles,Kable,Raffael}</code>==<code>DeaFiore</code></li>
+<li><code>{cycle(index):elem,elem2...}</code><br>Returns the element in the payload the corresponds to the index value in the parameters. Loops around if the index is out of bounds.</li>
 </ul>
 </div>
+</div>
+</details>
+<p>Both lists and cycles use 0 as the index for the first element in the list. List blocks will return null if the index is out of bounds, which can be useful. Cycle blocks will loop if the index is greater than the number of elements in the list (essentially <code>index</code> = index % list_length). Both allow for backward parsing using negative values. Both blocks will return an error message if the value in parameters is not a number.</p>
+<details class="note" open="open"><summary>Example - List &amp; Cycle Blocks</summary><div class="tabbed-set" data-tabs="12:2"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><label for="__tabbed_12_1">List</label><div class="tabbed-content">
+<ul>
+<li><code>{list(3):Apples~Bananas~Pears~Grapes~Oranges}</code>==<code>Grapes</code></li>
+</ul>
+</div>
+<input id="__tabbed_12_2" name="__tabbed_12" type="radio" /><label for="__tabbed_12_2">Cycle</label><div class="tabbed-content">
+<ul>
+<li><code>{cycle(11):Apples,Bananas,Pears,Grapes,Oranges}</code>==<code>Bananas</code></li>
+</ul>
+</div>
+</div>
+</details>
 <h3 id="index-blocks">Index Blocks</h3>
 <p>The index block functions inversely compared to other data parsing blocks. Instead of using an index value to return an element from a list or string, it finds the specified element in the payload and returns that element's index value. This block only functions in Tags.</p>
-<div class="admonition example">
-<p class="admonition-title">Index Blocks</p>
-<p><code>{index(element):list of elements}</code><br>Returns the index value of the element in the parameters for the content in the payload.</p>
-</div>
+<details class="example" open="open"><summary>Index Blocks</summary><p><code>{index(element):list of elements}</code><br>Returns the index value of the element in the parameters for the content in the payload.</p>
+</details>
 <p>The index block uses 0 as the index for the first element in the payload. The index block always views the payload as being delimited by spaces. If the element specified in the parameters is not found in the payload, the index block will return <code>-1</code>. The index block will always return the index for the first instance of the element in the payload, regardless of how many times it is present.</p>
-<div class="admonition memo">
-<p class="admonition-title">Example - Index Blocks</p>
-<p><code>{index(bread):Which do you like more, bread or chocolate? I like bread more}</code>==<code>5</code></p>
-</div>
+<details class="note" open="open"><summary>Example - Index Blocks</summary><p><code>{index(bread):Which do you like more, bread or chocolate? I like bread more}</code>==<code>5</code></p>
+</details>
 <h3 id="membership-test-operations">Membership Test Operations</h3>
 <p>Membership test operations are blocks that check a value in the block's parameters against the content in the payload and return a boolean value depending on if the value is present. Again, a boolean is a binary variable, having two possible values called <em>true</em> and <em>false</em>. They check to see if the parameter is a <em>member</em> of the payload. These blocks only function in Tags.</p>
-<div class="admonition example">
-<p class="admonition-title">In &amp; Contains Blocks</p>
+<details class="example" open="open"><summary>Membership Test Operations</summary><div class="tabbed-set" data-tabs="13:2"><input checked="checked" id="__tabbed_13_1" name="__tabbed_13" type="radio" /><label for="__tabbed_13_1">In</label><div class="tabbed-content">
 <ul>
 <li><code>{in(string):string}</code><br>Checks the payload for the presence of the parameter in the payload. Returns <em>true</em> if found or <em>false</em> if not.</li>
+</ul>
+</div>
+<input id="__tabbed_13_2" name="__tabbed_13" type="radio" /><label for="__tabbed_13_2">Contains</label><div class="tabbed-content">
+<ul>
 <li><code>{contains(element):list}</code><br>Checks the payload for the presence of the parameter as an element of the payload delimited by spaces. Returns <em>true</em> if found or <em>false</em> if not.</li>
 </ul>
 </div>
+</div>
+</details>
 <p>The in block is the more powerful of the two, as it checks the payload as a string for the parameter string. Contains is useful to check a list for an element, but is bound to checking for only one element and will return false if that exact element is not present.</p>
-<div class="admonition memo">
-<p class="admonition-title">Example - In &amp; Contains</p>
+<details class="note" open="open"><summary>Example - Membership Test Operations</summary><div class="tabbed-set" data-tabs="14:2"><input checked="checked" id="__tabbed_14_1" name="__tabbed_14" type="radio" /><label for="__tabbed_14_1">In</label><div class="tabbed-content">
 <ul>
 <li><code>{in(spam):Most server rules prohibit spamming.}</code> would return <code>true</code></li>
 <li><code>{in(spicy italian):Today Carl had a spicy italian sub.}</code> would return <code>true</code></li>
-<li><code>{in(kable):Kable's beard is majestic}</code> would return <code>false</code> because everything in Tagscript is case-sensitive.</li>
+<li><code>{in(kable):Kable is awesome}</code> would return <code>false</code> because everything in Tagscript is case-sensitive.</li>
+</ul>
+</div>
+<input id="__tabbed_14_2" name="__tabbed_14" type="radio" /><label for="__tabbed_14_2">Contains</label><div class="tabbed-content">
+<ul>
 <li><code>{contains(violet):blue black green grey violet red yellow}</code> would return <code>true</code></li>
 <li><code>{contains(maple):pine fir aspen oak dogwood}</code> would return <code>false</code></li>
 </ul>
 </div>
-<div class="admonition info">
-<p class="admonition-title">In &amp; Contains Blocks</p>
-<p>Because these blocks return a boolean value, in almost all use cases it is necessary to use them inside Control blocks and check their value by using them as one side of a boolean equation.<br>
-A common use for the contains block is to check if a user has a role.<br>
-<code>{if({contains(514905279188434972):{user(roleids)}}==true):That's user is a Fake Canadian!}</code></p>
 </div>
+</details>
+<details class="tip" open="open"><summary>Membership Test Operations</summary><p>Because these blocks return a boolean value, in almost all use cases it is necessary to check their value, by using them inside Control blocks as one side of a boolean equation.<br>
+A common use for the contains block is to check if a user has a role.<br>
+<code>{if({contains(514905279188434972):{user(roleids)}}==true):That's user has the Fake Canadian role!}</code></p>
+</details>
 <h2 id="embed-blocks">Embed Blocks</h2>
 <p>Embed blocks change specific values in a tag's attached embed builder (accessible from <a href="https://carl.gg">Carl-bot's Dashboard</a>). There are only embed blocks for 1st level JSON attributes which are specified as the block's parameters.</p>
-<div class="admonition example">
-<p class="admonition-title">Embed Blocks</p>
+<details class="example" open="open"><summary>Embed Blocks</summary><div class="tabbed-set" data-tabs="15:5"><input checked="checked" id="__tabbed_15_1" name="__tabbed_15" type="radio" /><label for="__tabbed_15_1">Title</label><div class="tabbed-content">
 <ul>
 <li><code>{embed(title):string}</code><br>Sets the embed's title to the payload.</li>
-<li><code>{embed(URL):https://carl.gg}</code><br>Sets the embed title's URL to the payload.</li>
-<li><code>{embed(description):string}</code><br>Sets the embed's description to the payload.</li>
-<li><code>{embed(color):#5989ab}</code><br>Sets the color of the embed's left vertical bar to the hexidecimal value in the payload.</li>
-<li><code>{embed(timestamp):now}</code><br>Sets the embed's timestamp to the value in the payload.</li>
 </ul>
 </div>
-<p>The tag's attached embed builder must have a value in it set via the dashboard before an embed block will work to change values in it. Tags created by command line alone will not display an embed even if these embed blocks are present.</p>
-<p>The embed block with the timestamp parameter accepts only <code>now</code> as a value following the payload. The embed block with the color parameters <em>must</em> have a preceding # before the hexadecimal color code.</p>
+<input id="__tabbed_15_2" name="__tabbed_15" type="radio" /><label for="__tabbed_15_2">URL</label><div class="tabbed-content">
+<ul>
+<li><code>{embed(URL):https://carl.gg}</code><br>Sets the embed title's URL to the payload.<br>The payload for the <code>URL</code> parameter must be an HTTP formatted URL (begins with http:// or https://)</li>
+</ul>
+</div>
+<input id="__tabbed_15_3" name="__tabbed_15" type="radio" /><label for="__tabbed_15_3">Description</label><div class="tabbed-content">
+<ul>
+<li><code>{embed(description):string}</code><br>Sets the embed's description to the payload.</li>
+</ul>
+</div>
+<input id="__tabbed_15_4" name="__tabbed_15" type="radio" /><label for="__tabbed_15_4">Color</label><div class="tabbed-content">
+<ul>
+<li><code>{embed(color):#5989ab}</code><br>Sets the color of the embed's left vertical bar to the hexidecimal value in the payload.<br>The payload for the <code>color</code> parameter <em>must</em> have a # preceding the hexidecimal color code.</li>
+</ul>
+</div>
+<input id="__tabbed_15_5" name="__tabbed_15" type="radio" /><label for="__tabbed_15_5">Timestamp</label><div class="tabbed-content">
+<ul>
+<li><code>{embed(timestamp):now}</code><br>Sets the embed's timestamp to the value in the payload.<br><code>now</code> is the only valid payload value for the <code>timestamp</code> parameter.</li>
+</ul>
+</div>
+</div>
+</details>
+<details class="warning" open="open"><summary>Embed Block Usage</summary><p>A tag's attached embed builder <strong>MUST</strong> contain some content set via the dashboard before an embed block will "work" to modify values in it. Tags created by command line alone will not display an embed even if these embed blocks are present.</p>
+</details>
 <h2 id="manipulation-blocks">Manipulation Blocks</h2>
-<p>These are blocks that manipulate the string in the payload in specific ways to return different desired results. They can be used to concatenate a string onto the end of a search URL with the correct encoding for spaces, or to sanitize inputs before using the input in a conditional statement, or to remove spaces or specific characters from the payload. They have many potential uses and are versatile. This entire category of blocks only functions in Tags.</p>
+<p>These are blocks that manipulate the string in the payload in specific ways to return different desired results. They can be used to concatenate a string onto the end of a search URL with the correct encoding for spaces, or to sanitize inputs before using the input in a conditional statement, or to remove spaces or specific characters from the payload.</p>
+<h3 id="ordinal-abbreviation-blocks">Ordinal Abbreviation Blocks</h3>
+<details class="example" open="open"><summary>Ord Blocks</summary><ul>
+<li><code>{ord:number}</code><br>Returns the number in the payload with the correct Ordinal Abbreviation following it.</li>
+</ul>
+</details>
+<details class="note" open="open"><summary>Example - Ord Blocks</summary><ul>
+<li><code>{ord:101}</code> returns <code>101st</code></li>
+<li><code>{ord:22}</code> returns <code>22nd</code></li>
+<li><code>{ord:3}</code> returns <code>3rd</code></li>
+<li><code>{ord:456}</code> returns <code>456th</code></li>
+</ul>
+</details>
 <h3 id="case-blocks">Case Blocks</h3>
-<p>Case blocks change the case of the text in the payload.</p>
-<div class="admonition example">
-<p class="admonition-title">Lower &amp; Upper Case Blocks</p>
+<p>Case blocks change the case of the text in the payload. These blocks only function in Tags.</p>
+<details class="example" open="open"><summary>Case Blocks</summary><div class="tabbed-set" data-tabs="16:2"><input checked="checked" id="__tabbed_16_1" name="__tabbed_16" type="radio" /><label for="__tabbed_16_1">Lower</label><div class="tabbed-content">
 <ul>
 <li><code>{lower:string}</code><br>Returns the payload in all lowercase.</li>
+</ul>
+</div>
+<input id="__tabbed_16_2" name="__tabbed_16" type="radio" /><label for="__tabbed_16_2">Upper</label><div class="tabbed-content">
+<ul>
 <li><code>{upper:string}</code><br>Returns the payload in all uppercase.</li>
 </ul>
 </div>
+</div>
+</details>
 <p>These blocks are useful in sanitizing input when checking it against a list that is all one case.</p>
-<div class="admonition memo">
-<p class="admonition-title">Example - Case Blocks</p>
+<details class="note" open="open"><summary>Example - Case Blocks</summary><div class="tabbed-set" data-tabs="17:2"><input checked="checked" id="__tabbed_17_1" name="__tabbed_17" type="radio" /><label for="__tabbed_17_1">Lower</label><div class="tabbed-content">
 <ul>
 <li><code>{lower:Whoozard is a Wizard}</code> would return <code>whoozard is a wizard</code></li>
+</ul>
+</div>
+<input id="__tabbed_17_2" name="__tabbed_17" type="radio" /><label for="__tabbed_17_2">Upper</label><div class="tabbed-content">
+<ul>
 <li><code>{upper:carl-bot best bot}</code> would return <code>CARL-BOT BEST BOT</code></li>
 </ul>
 </div>
-<h3 id="url-encode-blocks">URL Encode Blocks</h3>
+</div>
+</details>
+<h3 id="text-replacement-blocks">Text Replacement Blocks</h3>
+<p>Text Replacement Blocks blocks involve replacing specific characters or substrings in the payload with other characters or substrings specified in the block's parameters. These blocks only function in Tags.</p>
+<details class="example" open="open"><summary>Text Replacement Blocks</summary><div class="tabbed-set" data-tabs="18:3"><input checked="checked" id="__tabbed_18_1" name="__tabbed_18" type="radio" /><label for="__tabbed_18_1">Join</label><div class="tabbed-content">
+<ul>
+<li><code>{join(string):string}</code><br>Replaces every space in the payload with the parameters.<br><br>Parameters <strong>must</strong> be set for these blocks, even if they are null. Cannot use the symbols <code>)</code> or <code>}</code> as parameters.</li>
+</ul>
+</div>
+<input id="__tabbed_18_2" name="__tabbed_18" type="radio" /><label for="__tabbed_18_2">Replace</label><div class="tabbed-content">
+<ul>
+<li><code>{replace(1st string,2nd string):string}</code><br>Replaces every instance of the 1st string in the payload with 2nd string.<br><br>Parameters <strong>must</strong> be set for these blocks, even if they are null. If the 2nd parameter value for the replace block is null, the block will return the payload with every instance of the 1st parameter value removed. If the 1st parameter value for the replace block is null, the block will return the payload with the 2nd parameter value on each side of every character in the payload. Cannot use the symbol <code>,</code> as the first parameter, nor <em>just</em> the symbols <code>)</code> or <code>}</code> as any parameters.</li>
+</ul>
+</div>
+<input id="__tabbed_18_3" name="__tabbed_18" type="radio" /><label for="__tabbed_18_3">URLencode</label><div class="tabbed-content">
 <p>The urlencode block encodes the payload into <a href="https://en.wikipedia.org/wiki/Percent-encoding" title="Wikipedia: Percent-encoding">Percent-encoding</a> so it can be included in a URL and understood by the browser of the user that clicked the link.</p>
-<div class="admonition example">
-<p class="admonition-title">URL Encode Blocks</p>
 <ul>
 <li><code>{urlencode:payload}</code><br>Encodes the payload into percent-encoding.</li>
 <li><code>{urlencode(+):payload}</code><br>Encodes the payload into percent-encoding, but replaces spaces with <code>+</code> instead of <code>%20</code></li>
 </ul>
 </div>
-<div class="admonition memo">
-<p class="admonition-title">Example - URL Encode Blocks</p>
+</div>
+</details>
+<details class="note" open="open"><summary>Example - Text Replacement Blocks</summary><div class="tabbed-set" data-tabs="19:3"><input checked="checked" id="__tabbed_19_1" name="__tabbed_19" type="radio" /><label for="__tabbed_19_1">Join</label><div class="tabbed-content">
+<ul>
+<li><code>{join(_):hello friends}</code> will result in <code>hello_friends</code></li>
+<li><code>{join():an example sentence}</code> will result in <code>anexamplesentence</code></li>
+</ul>
+</div>
+<input id="__tabbed_19_2" name="__tabbed_19" type="radio" /><label for="__tabbed_19_2">Replace</label><div class="tabbed-content">
+<ul>
+<li><code>{replace(oo,ee):Goose Tooth Moose}</code> will result in <code>Geese Teeth Meese</code></li>
+<li><code>/{replace(, ):Carl-Bot}/</code> will result in <code>/ C a r l - B o t /</code></li>
+</ul>
+</div>
+<input id="__tabbed_19_3" name="__tabbed_19" type="radio" /><label for="__tabbed_19_3">URLencode</label><div class="tabbed-content">
 <ul>
 <li><code>{urlencode:Hey there, how are you?}</code> will return <code>Hey%20there%2C%20how%20are%20you%3F</code> </li>
 <li><code>{urlencode(+):Hey there, how are you?}</code> will return <code>Hey+there%2C+how+are+you%3F</code></li>
 <li><code>https://www.google.com/search?q={urlencode(+):Carl-bot's dashboard}</code><br>will result in this link: <a href="https://www.google.com/search?q=Carl-bot%27s+dashboard" title="Search for Carl-bot's Dashboard">Google Search Results</a></li>
 </ul>
 </div>
-<h3 id="join-replace-blocks">Join &amp; Replace Blocks</h3>
-<p>Join and replace blocks both involve replacing specific characters or substrings in the payload with other characters or substrings.</p>
-<div class="admonition example">
-<p class="admonition-title">Join &amp; Replace Blocks</p>
-<ul>
-<li><code>{join(string):string}</code><br>Replaces every space in the payload with the parameters.</li>
-<li><code>{replace(1st string,2nd string):string}</code><br>Replaces every instance of the 1st string in the payload with 2nd string.</li>
-</ul>
 </div>
-<p>Parameters <strong>must</strong> be set for these blocks, even if they are null. If the 2nd parameter value for the replace block is null, the block will return the payload with every instance of the 1st parameter value removed. If the 1st parameter value for the replace block is null, the block will return the payload with the 2nd parameter value on each side of every character in the payload.</p>
-<div class="admonition memo">
-<p class="admonition-title">Example - Join &amp; Replace Blocks</p>
-<ul>
-<li><code>{join(_):hello friends}</code> will result in <code>hello_friends</code></li>
-<li><code>{join():an example sentence}</code> will result in <code>anexamplesentence</code></li>
-<li><code>{replace(oo,ee):Goose Tooth Moose}</code> will result in <code>Geese Teeth Meese</code></li>
-<li><code>/{replace(, ):Carl-Bot}/</code> will result in <code>/ C a r l - B o t /</code></li>
-</ul>
-</div>
+</details>
 <h2 id="math-blocks">Math Blocks</h2>
 <p>Math blocks perform the mathematical operations in the payload and return the results.</p>
-<div class="admonition example">
-<p class="admonition-title">Math Block Aliases</p>
-<ul>
+<details class="example" open="open"><summary>Math Block Aliases</summary><ul>
 <li><code>{math:8+9}</code><br></li>
 <li><code>{calc:7-4}</code><br></li>
 <li><code>{+:8/2}</code><br></li>
 <li><code>{m:5*6}</code><br>Evaluates the mathematical operations in the payload in the correct order of operations and returns the result. Block names are synonymous.</li>
 </ul>
-</div>
-<div class="admonition summary">
-<p class="admonition-title">Supported Mathematical Operations, Functions and Variables</p>
+</details>
+<details class="summary" open="open"><summary>Supported Mathematical Operations, Functions and Variables</summary><div class="tabbed-set" data-tabs="20:2"><input checked="checked" id="__tabbed_20_1" name="__tabbed_20" type="radio" /><label for="__tabbed_20_1">Basic</label><div class="tabbed-content">
 <ul>
 <li><code>a+b</code> Addition</li>
 <li><code>a-b</code> Subtraction</li>
@@ -1991,6 +2193,10 @@ A common use for the contains block is to check if a user has a role.<br>
 <li><code>abs(x)</code> Absolute value of x</li>
 <li><code>round(x)</code> Rounds x to the nearest whole number</li>
 <li><code>trunc(x)</code> Truncates x to integer value (chops off decimals)</li>
+</ul>
+</div>
+<input id="__tabbed_20_2" name="__tabbed_20" type="radio" /><label for="__tabbed_20_2">Advanced</label><div class="tabbed-content">
+<ul>
 <li><code>sin(x)</code> Returns the sine of x radians</li>
 <li><code>cos(x)</code> Returns the cosine of x radians</li>
 <li><code>tan(x)</code> Returns the tangent of x radians</li>
@@ -2003,109 +2209,191 @@ A common use for the contains block is to check if a user has a role.<br>
 <li><code>e</code> or <code>E</code> can be used to indicate Euler's Number (2.718281828459045)</li>
 </ul>
 </div>
-<div class="admonition memo">
-<p class="admonition-title">Examples - Math Blocks</p>
-<ul>
+</div>
+</details>
+<details class="note" open="open"><summary>Examples - Math Blocks</summary><ul>
 <li><code>{math:cos(pi)}</code> would return <code>-1.0</code></li>
 <li><code>{m:round(7.8)+trunc(8.9)}</code> would return <code>16</code></li>
 </ul>
-</div>
+</details>
 <h2 id="rng-blocks">RNG Blocks</h2>
 <p>Sometimes you want some random in your tag. These blocks have the Tagscript Engine pick a random value out of a list or range you provide.</p>
 <h3 id="random-blocks">Random Blocks</h3>
 <p>Random blocks choose a random value from the payload. </p>
-<div class="admonition example">
-<p class="admonition-title">Random Block Aliases</p>
-<ul>
+<details class="example" open="open"><summary>Random Block Aliases</summary><ul>
 <li><code>{random(optional_seed):List,of,elements}</code></li>
 <li><code>{rand(optional_seed):List~of~elements}</code></li>
 <li><code>{#(optional_seed):4|Weighted,2|list,of,3|elements}</code><br>Chooses a random value out of the list in the payload. Block names are synonymous.</li>
 </ul>
-</div>
+</details>
 <p>You can use <code>,</code> to separate simple lists, but if you want to use commas as part of an element, you must instead use <code>~</code> to separate all the elements.</p>
-<p>Seed values are optional. When a seed value is included as a random block's parameter, the block will 'lock' the random choice to the same index value of the payload every time that same seed value is used. This works similar to a cycle block; the seed value might lock to an index value larger than the number of elements in the list and cycle around. Thus, seed_index % list_length might result in different index values being chosen should the same seed be used in random blocks with different list lengths.</p>
-<p>Elements in the payload can be weighted if that is desired. Weighting a value is the same as if that value was in the list of elements that many times.<br><code>{random:4|a,2|b}</code> is the same as <code>{random:a,a,a,a,b,b}</code></p>
-<div class="admonition memo">
-<p class="admonition-title">Example - Random Blocks</p>
-<ul>
+<details class="info" open="open"><summary>Element Weighting</summary><p>Elements in the payload can be weighted if that is desired. Weighting a value is the same as if that value was in the list of elements that many times.<br><code>{random:4|a,2|b}</code> is the same as <code>{random:a,a,a,a,b,b}</code></p>
+</details>
+<details class="note" open="open"><summary>Example - Random Blocks</summary><ul>
 <li><code>{rand:Hello, how are you?~Howdy}</code> will return either <code>Hello, how are you?</code> or <code>Howdy</code></li>
 <li><code>{#({args}):1,2,3} {#({args}):one,two,three}</code><br>will always return elements with matching indices. <code>1 one</code>, <code>2 two</code>, or <code>3 three</code></li>
 <li><code>{random:99|You lost,You won!}</code> has a 1% chance of returning <code>You won!</code></li>
 </ul>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Seed values</p>
-<p>If you want tag users to receive the same random value each time they use the tag, a common method of doing so is setting the seed value to one of the <code>{user}</code> objects immutable properties, like <code>{user(id)}</code> or <code>{user(created_at)}</code>.</p>
-</div>
+</details>
+<details class="info" open="open"><summary>Seed values</summary><p>Seed values are optional. When a seed value is included as a random block's parameter, the block will 'lock' the random choice to the same index value of the payload every time that same seed value is used. This works similar to a cycle block; the seed value might lock to an index value larger than the number of elements in the list and cycle around. Thus, seed_index % list_length might result in different index values being chosen should the same seed be used in random blocks with different list lengths.<br><br>
+If you want tag users to receive the same random value each time they use the tag, a common method of doing so is setting the seed value to one of the <code>{user}</code> objects immutable properties, like <code>{user(id)}</code> or <code>{user(created_at)}</code>.</p>
+</details>
 <h3 id="range-blocks">Range Blocks</h3>
 <p>Range blocks return a random number in the range of numbers in the payload.</p>
-<div class="admonition example">
-<p class="admonition-title">Range Block</p>
-<ul>
+<details class="example" open="open"><summary>Range Block</summary><ul>
 <li><code>{range(optional_seed):Lower#-Higher#}</code><br>Returns a random whole number in the specified range</li>
 <li><code>{rangef(optional_seed):Lower#-Higher#}</code><br>Returns a random number in the specified range with tenths place decimal numbers.</li>
 </ul>
-</div>
+</details>
 <p>The number range is inclusive, meaning it can pick either endpoint of the specified range as well. It can be seeded similar to the Random block. Rangef will multiply both range endpoints by 10, get a random number in that range, and divide it by 10 to return a number with a tenths place decimal value.</p>
-<div class="admonition memo">
-<p class="admonition-title">Example - Range Blocks</p>
-<ul>
+<details class="note" open="open"><summary>Example - Range Blocks</summary><ul>
 <li><code>{range:1-100}</code> would pick a number from 1 to 100, like 19</li>
 <li><code>{rangef:8-9}</code> would pick a number from 8.0 to 9.0, like 8.7</li>
 </ul>
-</div>
+</details>
 <h3 id="5050-blocks">50/50 Blocks</h3>
-<div class="admonition example">
-<p class="admonition-title">50/50 Block Aliases</p>
-<ul>
+<details class="example" open="open"><summary>50/50 Block Aliases</summary><ul>
 <li><code>{5050:payload}</code></li>
 <li><code>{50:payload}</code></li>
-<li><code>{?:payload}</code><br>Has a 50% chance of returning the payload, and a 50% chance of being null    </li>
+<li><code>{?:payload}</code><br>Has a 50% chance of returning the payload, and a 50% chance of being null. Block names are synonymous.   </li>
 </ul>
-</div>
+</details>
 <h2 id="time-blocks">Time Blocks</h2>
 <p>Time blocks deal with time and how it is represented, as well as calculating the duration between two dates. All time blocks use and display time values for Coordinated Universal Time (or UTC).</p>
-<p>Within this section whenever "DateTime" is mentioned, it means a date and time in the following format:<br><code>yyyy-mm-dd HH:MM:SS</code></p>
+<details class="info" open="open"><summary>DateTime Format</summary><p>Within this section whenever "DateTime" is mentioned, it means a date and time in the following format:<br><code>yyyy-mm-dd HH:MM:SS</code><br><br>Currently triggers, welcome messages, and autofeeds use periods <code>.</code> where the colons <code>:</code> are:<br><code>yyyy-mm-dd HH.MM.SS</code></p>
+</details>
 <h3 id="strf-blocks">Strf Blocks</h3>
-<p>Strf blocks return the time data formatted according to Python's strftime, see <a href="http://strftime.org/">http://strftime.org/</a> for more information.</p>
-<div class="admonition example">
-<p class="admonition-title">Strf Blocks</p>
-<ul>
+<p>Strf blocks return the time data formatted according to Python's strftime, see <a href="http://strftime.org/">http://strftime.org/</a> or the <a href="http://man7.org/linux/man-pages/man3/strftime.3.html">Linux Programmer's Manual</a> for more information.</p>
+<details class="example" open="open"><summary>Strf Blocks</summary><ul>
 <li><code>{strf(optional DateTime or Unix time):strf formatting codes}</code><br>Returns the DateTime value listed in the parameters in the format described in the payload.</li>
 </ul>
-</div>
+</details>
 <p>If no parameters are provided, the Tagscript Engine defaults to using the current DateTime as the implied parameters.</p>
-<div class="admonition memo">
-<p class="admonition-title">Example - Strf Blocks</p>
-<ul>
+<details class="note" open="open"><summary>Example - Strf Blocks</summary><ul>
 <li><code>December 31st 1999 was a {strf(1999-12-31 23.59.59):%A}</code> will output <code>December 31st 1999 was a Friday</code></li>
 <li><code>The current time is {strf:%-I:%M %p}</code> will output <code>The current time is</code> followed by whatever the current 12h clock is for UTC, like <code>2:19 AM</code></li>
 <li><code>Your account was created on {strf({user(created_at)}: %x}</code> will output <code>Your account was created on 2015/12/24</code> (for me at least)</li>
 </ul>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Strf Formats for Reference</p>
-<ul>
-<li><code>%Y-%m-%d %H.%M.%S</code> is the DateTime format in strf codes, which can be useful for defining the payload of the timedelta block described below.</li>
-<li><code>{strf:%Y-%m-%dT%X}.000Z</code> is the strf block for the ISO 8601 format, which is used when setting the timestamp in an embed's JSON. Useful if you're using Carl-bot's <code>cembed</code> or <code>ecembed</code> commands in a tag.</li>
+</details>
+<details class="info" open="open"><summary>Strf Formats for Reference</summary><ul>
+<li><code>%Y-%m-%d %H:%M:%S</code> &amp; the short version <code>%F %T</code> are the DateTime format in strf codes, which can be useful for defining the payload of the timedelta block described below.</li>
+<li><code>{strf:%%FT%T}.000Z</code> is the strf code for the ISO 8601 format, which is used when setting the timestamp in an embed's JSON. Useful if you're using Carl-bot's <code>cembed</code> or <code>ecembed</code> commands in a tag.</li>
+<li><code>%s</code> Lowercase s is the code for Unix time. Since the {unix} block only works in tags, this code is useful to set to a variable named unix when doing time-based math in welcome messages, triggers, and autofeeds.</li>
 </ul>
-</div>
+</details>
 <h3 id="timedelta-blocks">Timedelta Blocks</h3>
 <p>Timedelta blocks calculate the delta, or difference, between two time values.</p>
-<div class="admonition example">
-<p class="admonition-title">Timedelta Blocks</p>
-<ul>
+<details class="example" open="open"><summary>Timedelta Blocks</summary><ul>
 <li><code>{td(optional DateTime or Unix time):DateTime value}</code><br>Outputs a string describing the difference in time between the parameters and the payload.</li>
 </ul>
-</div>
+</details>
 <p>If no parameters are provided, the Tagscript Engine defaults to using the current DateTime as the implied parameters.</p>
-<div class="admonition memo">
-<p class="admonition-title">Example - Timedelta Blocks</p>
-<ul>
+<details class="note" open="open"><summary>Example - Timedelta Blocks</summary><ul>
 <li><code>{td:2020-01-01 00.00.00}</code> as of 2019-11-25 would output <code>1 month, 5 days and 21 hours</code>, or the time until Midnight New Years Day</li>
 <li><code>{td({m:trunc({unix}-3600)}):{strf:%Y-%m-%d %H.%M.%S}}</code> will always output <code>1 hour</code> because <code>{unix}</code> is the current time and we subtracted 3600 seconds.</li>
 </ul>
-</div>
+</details>
+<h2 id="going-from-blocks-to-tags">Going from Blocks to Tags</h2>
+<p>Most programming language guides start you off with a "Hello World" tutorial, but considering Tags output plaintext as a message, we'll have to change it up.</p>
+<p>Let's start with a "Hello _____" tag that will say hello to whomever the tag's user mentions. At the end of this tutorial we'll have the tag give the mentioned user a role, so let's call this tag "verify".</p>
+<details class="note" open="open"><summary>verify's Content:</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>Hello {target(mention)}
+</code></pre></div>
+</td></tr></table>
+
+</details>
+<p>Pretty simple right? But if someone only says <code>!hello</code> with no text following, it will say "Hello" to the user, which is not our intention. We should add a check to see if the tag user mentioned someone else, and if they didn't, we'll instruct them to.</p>
+<p>To check if another user was mentioned, form a boolean equation with <code>{user(id)}</code> on one side, either equals (<code>==</code>) or not-equals (<code>!=</code>) in the middle, and <code>{target(id)}</code> on the other side. If the user mentioned someone, the target's ID will be different, and if they didn't mention someone or mentioned themselves, the target's ID will be equal to the user's ID. To form the else statement, follow the first payload with a vertical bar (<code>|</code>).</p>
+<details class="note" open="open"><summary>verify's Content:</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>{if({user(id)}!={target(id)}):Hello {target(mention)}|You need to mention someone.}
+</code></pre></div>
+</td></tr></table>
+
+</details>
+<p>It's a start, but let's make it fancier. Why don't we put the output into an embed? Best practice is to either set Tagscript sections to variables and call the variables in the embed builder, or to use embed blocks in the content section. I'll show how to do both, to familiarize you with variable assignment. We'll set our message to <code>desc</code> and add a little something to our hello statement as well, and we'll set our error message to the variable <code>error</code>. We'll reference those variables in the payload of our existing control block, and put the control block as the payload of our embed description block.</p>
+<details class="note" open="open"><summary>verify's Content:</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>{=(desc):Hello {target(mention)}, welcome to {server}!}
+{=(error):You need to mention someone.}
+{embed(description):{if({user(id)}!={target(id)}):{desc}|{error}}}
+</code></pre></div>
+</td></tr></table>
+
+</details>
+<p>Then we'll add <code>{server(icon)}</code> to the embed builder as the thumbnail URL to allow the embed block to work.</p>
+<details class="warning" open="open"><summary>Embed Block Usage</summary><p>Remember, a tag's attached embed builder <strong>MUST</strong> contain some content set via the dashboard before an embed block will "work" to modify values in it. Tags created by command line alone will not display an embed even if these embed blocks are present.</p>
+</details>
+<p>Now let's give the embed a color! We'll use the mentioned target's color to personalize the embed to them. Add <code>{embed(color):{target(color)}}</code> to the tag's content section.</p>
+<details class="note" open="open"><summary>verify's Content:</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>{=(desc):Hello {target(mention)}, welcome to {server}!}
+{=(error):You need to mention someone.}
+{embed(description):{if({user(id)}!={target(id)}):{desc}|{error}}}
+{embed(color):{target(color)}}
+</code></pre></div>
+</td></tr></table>
+
+</details>
+<p>But what if the target is a new user and does not have a color yet? Let's create a random hexidecimal color code and use that if the target does not have a color. To create a random hexidecimal color, we'll need to utilize 6 random blocks each with the set of all hexidecimal character values. Let's set the values to a variable named <code>hex</code> we'll call later to save space.</p>
+<p><code>{=(hex):0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F}</code></p>
+<p>We'll also set our color (the 6 random blocks) to a variable for later use. We'll use the <code>#</code> alias for the random blocks.</p>
+<p><code>{=(rand.color):#{#:{hex}}{#:{hex}}{#:{hex}}{#:{hex}}{#:{hex}}{#:{hex}}}</code> </p>
+<p>Now we can update our embed(color) block with an if statement. The default Discord color is #000000, so we'll check if that is the target's color, and if it is we'll use <code>{random.color}</code>, and if not we'll use the target's color. Our tag now looks like this:</p>
+<details class="note" open="open"><summary>verify's Content:</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>{=(desc):Hello {target(mention)}, welcome to {server}!}
+{=(error):You need to mention someone.}
+{embed(description):{if({user(id)}!={target(id)}):{desc}|{error}}}
+{embed(color):{target(color)}}
+{=(hex):0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F}
+{=(rand.color):#{#:{hex}}{#:{hex}}{#:{hex}}{#:{hex}}{#:{hex}}{#:{hex}}}
+{embed(color):{if({target(color)}==#000000):{rand.color}|{target(color)}}}
+</code></pre></div>
+</td></tr></table>
+
+</details>
+<p>Lastly, let's assign a role (that already exists) to the mentioned target to show that we have verified them using a command block, but <em>only</em> when a target is mentioned. </p>
+<p>We're going to utilize a clever trick to conditionally make the command block <em>only</em> exist when a target is mentioned. We will create a variable with no name and no content, and put the innards of the command block into a control block's payload, then put brackets <em>around</em> that control block.</p>
+<p>If the boolean equation in the control block is true and the control block returns the payload (our command block's innards), the brackets surrounding it will <em>make</em> that payload a functional command block. If the boolean equation in the control block is false, the brackets surrouding the control block will have nothing inside of them, and will <em>form</em> a variable call block for our "empty" variable and return the content in that variable, which is nothing.</p>
+<p>Our special variable will be: <code>{=():}</code><br>Our command block innards are: <code>cmd:role add {target(id)} Verified</code><br>Our control block is: <code>{if({user(id)}!={target(id)}):}</code><br>(<em>same as the one we used before</em>)</p>
+<p>Putting the command block innards into the control block and adding an extra pair of brackets around it will result in this:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>{=():}
+{{if({user(id)}!={target(id)}):cmd:role add {target(id)} Verified}}
+</code></pre></div>
+</td></tr></table>
+
+<p>Let's combine everything and look at our final tag!</p>
+<details class="note" open="open"><summary>verify's Content:</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>{=(desc):Hello {target(mention)}, welcome to {server}!}
+{=(error):You need to mention someone.}
+{embed(description):{if({user(id)}!={target(id)}):{desc}|{error}}}
+{embed(color):{target(color)}}
+{=(hex):0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F}
+{=(rand.color):#{#:{hex}}{#:{hex}}{#:{hex}}{#:{hex}}{#:{hex}}{#:{hex}}}
+{embed(color):{if({target(color)}==#000000):{rand.color}|{target(color)}}}
+{=():}
+{{if({user(id)}!={target(id)}):cmd:role add {target(id)} Verified}}
+</code></pre></div>
+</td></tr></table>
+
+</details>
+<p>What your verify tag's output might look like:
+<figure>
+  <img alt="What your verify tag's output might look like." src="../../images/verify_tag_tutorial.png" />
+</figure></p>
+<details class="info" open="open"><summary>Reminder</summary><p>You can add <code>{silent}</code> and <code>{delete}</code> <em>anywhere</em> in the tag if you do not want to see the output of the command block or want the tag's invocation automatically deleted.</p>
+</details>
 <h2 id="important-note-on-block-behavior">Important Note on Block Behavior</h2>
 <p>Blocks can be placed and nested inside any parts of other blocks to change or modify their behavior. However, all complete, properly formatted blocks "execute". What does that mean?</p>
 <p>As an example, let's say you want to give a user the Verified role if they supply a passphrase. Many readers with some experience using other programming languages would type something like,</p>
@@ -2115,43 +2403,35 @@ A common use for the contains block is to check if a user has a role.<br>
 </div>
 <p>However, that command block is a complete, properly formatted block. Tagscript does not care that it is the payload of a control block. The command block will execute, and give the user the role even if the control block's parameters are false. This is not a bug, this is intentional and due to how the Tagscript interpreter works. This applies to all blocks. Because we cannot use conditional statements outside complete blocks to negate complete blocks from executing, we must use control blocks <em>inside</em> complete blocks to determine what the contents of the complete blocks are.</p>
 <p>Because the control block must be inside the complete block, it creates a small issue. What part of the previous command block should we use as the if block's payload, and how do we avoid the bot complaining when the boolean equation in the if block is incorrect. Here are some of the different correct options available:</p>
-<div class="admonition success">
-<p class="admonition-title">Correct ways to conditionally run a command</p>
-<ul>
+<details class="success" open="open"><summary>Correct ways to conditionally run a command</summary><ul>
 <li><code>{cmd:{if({args}=={passphrase}):role add {user} Verified|echo That is not the passphrase}}</code><br>This passes the echo command to the command block if the boolean equation is incorrect, so the command block is not empty.</li>
 <li><code>{cmd:role add {user} {if({args}=={passphrase}):Verified|UnVerified}}</code><br>This adds an alternate role the command grants if the boolean equation is incorrect, so the role add command is not incomplete.</li>
-<li><code>{=(null):}{{if({args}=={passphrase}):cmd:role add {user} Verified|null}}</code><br>This defines the variable null, and double brackets the if statement. Depending on the output of the boolean equation, it will either result in <code>{cmd:role add {user} Verified}</code> or <code>{null}</code>. The variable null makes sure if the boolean equation is incorrect, the tag does not output a pair of empty brackets <code>{}</code></li>
+<li><code>{=():}{{if({args}=={passphrase}):cmd:role add {user} Verified}}</code><br>This defines an empty variable with no name or payload, and double brackets the entire if statement. Depending on the output of the boolean equation, it will either result in <code>{cmd:role add {user} Verified}</code> or <code>{}</code>. The empty variable makes sure if the boolean equation is incorrect, the tag does not output a pair of empty brackets <code>{}</code>.</li>
 </ul>
-</div>
-<p>Another common goal is to conditionally set variables to a value.</p>
+</details>
+<p><br>Another common goal is to conditionally set variables to a value or to create multiple variables that act as data tables that return information according to a given key. Let's explore how to do that correctly in Tagscript:</p>
 <div class="admonition fail">
 <p class="admonition-title">Example of what NOT TO DO</p>
 <p><code>{if({args}==xmas):{assign(name):Christmas}{assign(date):-12-25}{assign(emoji):🎄}}</code>
 <code>{if({args}==vday):{assign(name):Valentine's Day}{assign(date):-02-14}{assign(emoji):❤️}}</code></p>
 </div>
 <p>This is similar to the example above. Because those variable assignment blocks are complete, properly formatted blocks, Tagscript executes them and assigns the values in their payloads to the variable names in the blocks' parameters. Since the vday assignment line comes after the xmas one, no matter what <code>{args}</code> is, <code>{name}</code> will be <code>Valentine's Day</code>, <code>{date}</code> will be <code>-02-14</code>, and <code>{emoji}</code> will be <code>❤️</code>. Again, we must move our control blocks inside our complete blocks.</p>
-<div class="admonition warning">
-<p class="admonition-title">Technically correct but inefficient</p>
-<p><code>{assign(name):{if({args}==xmas):Christmas|{if({args}==vday):Valentine's Day}}}</code><br>
+<details class="warning" open="open"><summary>Technically correct but inefficient</summary><p><code>{assign(name):{if({args}==xmas):Christmas|{if({args}==vday):Valentine's Day}}}</code><br>
 <code>{assign(date):{if({args}==xmas):-12-25|{if({args}==vday):-02-14}}}</code><br>
 <code>{assign(emoji):{if({args}==xmas):🎄|{if({args}==vday):❤️}}}</code><br>
 Holiday: <code>{name}</code><br>
 Date: <code>{date}</code><br>
 Emoji: <code>{emoji}</code><br>
 While this is correct, it's long, and not really the best way to do this. Think about the data and how it could be better collected.</p>
-</div>
-<div class="admonition success">
-<p class="admonition-title">A correct way to conditionally assign variables</p>
-<p><code>{assign(xmas):Christmas|-12-25|🎄}</code><br>
+</details>
+<details class="success" open="open"><summary>A correct way to conditionally assign variables</summary><p><code>{assign(xmas):Christmas|-12-25|🎄}</code><br>
 <code>{assign(vday):Valentine's Day|-02-14|❤️}</code><br>
 <code>{any({args}==xmas|{args}==vday):</code><br>
 Holiday: <code>{{args}(1):|}</code><br>
 Date: <code>{{args}(2):|}</code><br>
 Emoji: <code>{{args}(3):|}}</code><br>
 This method assigns all the data that is related to the same holiday to variables split by a pipe symbol, then references each by doublebracketing args when args matches either variable's name.</p>
-</div>
-                
-                  
+</details>
                 
               
               
@@ -2168,34 +2448,34 @@ This method assigns all the data that is related to the same holiday to variable
 <footer class="md-footer">
   
     <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../collection/" title="Collection of high quality tags" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+          <a href="../collection/" title="Collection of High Quality Tags" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Collection of high quality tags
-              </span>
+                Collection of High Quality Tags
+              </div>
             </div>
           </a>
         
         
-          <a href="../triggers/" title="Triggers" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
+          <a href="../triggers/" title="Triggers" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
                 Triggers
-              </span>
+              </div>
             </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
             </div>
           </a>
         
@@ -2207,24 +2487,43 @@ This method assigns all the data that is related to the same holiday to variable
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2018 - 2019 Carl (admin@carl.gg)
+            Copyright &copy; 2018 - 2020 Carl (admin@carl.gg)
           </div>
         
-        powered by
-        <a href="https://www.mkdocs.org">MkDocs</a>
-        and
-        <a href="https://squidfunk.github.io/mkdocs-material/">
-          Material for MkDocs</a>
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
       </div>
       
   <div class="md-footer-social">
-    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
     
-      <a href="https://carl.gg" class="md-footer-social__link fa fa-globe"></a>
+      
+      
+        
+        
+      
+      <a href="https://carl.gg" target="_blank" rel="noopener" title="carl.gg" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm82.29 357.6c-3.9 3.88-7.99 7.95-11.31 11.28-2.99 3-5.1 6.7-6.17 10.71-1.51 5.66-2.73 11.38-4.77 16.87l-17.39 46.85c-13.76 3-28 4.69-42.65 4.69v-27.38c1.69-12.62-7.64-36.26-22.63-51.25-6-6-9.37-14.14-9.37-22.63v-32.01c0-11.64-6.27-22.34-16.46-27.97-14.37-7.95-34.81-19.06-48.81-26.11-11.48-5.78-22.1-13.14-31.65-21.75l-.8-.72a114.792 114.792 0 01-18.06-20.74c-9.38-13.77-24.66-36.42-34.59-51.14 20.47-45.5 57.36-82.04 103.2-101.89l24.01 12.01C203.48 89.74 216 82.01 216 70.11v-11.3c7.99-1.29 16.12-2.11 24.39-2.42l28.3 28.3c6.25 6.25 6.25 16.38 0 22.63L264 112l-10.34 10.34c-3.12 3.12-3.12 8.19 0 11.31l4.69 4.69c3.12 3.12 3.12 8.19 0 11.31l-8 8a8.008 8.008 0 01-5.66 2.34h-8.99c-2.08 0-4.08.81-5.58 2.27l-9.92 9.65a8.008 8.008 0 00-1.58 9.31l15.59 31.19c2.66 5.32-1.21 11.58-7.15 11.58h-5.64c-1.93 0-3.79-.7-5.24-1.96l-9.28-8.06a16.017 16.017 0 00-15.55-3.1l-31.17 10.39a11.95 11.95 0 00-8.17 11.34c0 4.53 2.56 8.66 6.61 10.69l11.08 5.54c9.41 4.71 19.79 7.16 30.31 7.16s22.59 27.29 32 32h66.75c8.49 0 16.62 3.37 22.63 9.37l13.69 13.69a30.503 30.503 0 018.93 21.57 46.536 46.536 0 01-13.72 32.98zM417 274.25c-5.79-1.45-10.84-5-14.15-9.97l-17.98-26.97a23.97 23.97 0 010-26.62l19.59-29.38c2.32-3.47 5.5-6.29 9.24-8.15l12.98-6.49C440.2 193.59 448 223.87 448 256c0 8.67-.74 17.16-1.82 25.54L417 274.25z"/></svg>
+      </a>
     
-      <a href="https://github.com/CarlGroth" class="md-footer-social__link fa fa-github-alt"></a>
+      
+      
+        
+        
+      
+      <a href="https://github.com/CarlGroth" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+      </a>
     
-      <a href="https://twitter.com/Carlgrrr" class="md-footer-social__link fa fa-twitter"></a>
+      
+      
+        
+        
+      
+      <a href="https://twitter.com/Carlgrrr" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
     
   </div>
 
@@ -2234,9 +2533,18 @@ This method assigns all the data that is related to the same holiday to variable
       
     </div>
     
-      <script src="../../assets/javascripts/application.a8b5e56f.js"></script>
+      <script src="../../assets/javascripts/vendor.92ffa368.min.js"></script>
+      <script src="../../assets/javascripts/bundle.5123e3d4.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ["tabs", "instant"],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.a68abb33.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
       
     
   </body>
