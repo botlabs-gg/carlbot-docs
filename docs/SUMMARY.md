@@ -23,9 +23,10 @@
 
 ## Tags and responses
 
-* [Autoresponses \(trigger words\)](tags-and-triggers/triggers.md)
-* [Tags \(custom commands\)](tags-and-triggers/ccs.md)
+* [Autoresponses (trigger words)](tags-and-triggers/triggers.md)
+* [Tags (custom commands)](tags-and-triggers/ccs.md)
 * [Tags - Advanced usage](tags-and-triggers/tags-advanced-usage.md)
+* [Collection of High Quality Tags](tags-and-triggers/collection.md)
 
 ## Config
 
@@ -44,18 +45,18 @@
 * [Highlights/pager](utilities/highlights-pager.md)
 * [Suggestions](utilities/suggestions.md)
 * [Starboard](utilities/starboard.md)
-* [Uncategorized utilities](utilities/uncategorized-utilities.md)
+* [Information/Polls](utilities/info-polls.md)
 * [Embeds](utilities/embeds.md)
-* [The dump command](utilities/dump.md)
+* [The Dump Command](utilities/dump.md)
 
 ## Premium
 
 * [Music](music/music.md)
 * [Levels](levels/levels.md)
 
+## Fun
 
-## Misc
-
-* [Animals](misc/animals.md)
-* [Silly/useless](misc/silly-useless.md)
-
+* [Animals](fun/animals.md)
+* [Game Information](fun/game-information.md)
+* [Miscellaneous](fun/miscellaneous.md)
+* [Text Transformations](fun/text-transformations.md)

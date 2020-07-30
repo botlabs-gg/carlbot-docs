@@ -1,13 +1,15 @@
 site_name: Carl-bot Documentation
 theme: 
   name: 'material'
-  logo:
+  icon:
     'images/googleturtle.svg'
   favicon:
     'images/favicon.ico'
-  feature:
-    tabs: true
+  features:
+    - tabs
+    - instant
   palette:
+    scheme: preference
     primary: 'Blue Grey'
     accent: 'Cyan'
   font:
@@ -19,18 +21,25 @@ repo_url: 'https://github.com/CarlGroth/carlbot-docs'
 
 extra:
   social:
-    - type: 'globe'
+    - icon: 'fontawesome/solid/globe-americas'
       link: 'https://carl.gg'
-    - type: 'github-alt'
+    - icon: 'fontawesome/brands/github-alt'
       link: 'https://github.com/CarlGroth'
-    - type: 'twitter'
+    - icon: 'fontawesome/brands/twitter'
       link: 'https://twitter.com/Carlgrrr'
 
 markdown_extensions:
   - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.keys
+  - attr_list
+  - pymdownx.betterem:
+      smart_enable: all
 
 google_analytics:
   - 'UA-126357432-1'
   - 'auto'
 
-copyright: 'Copyright &copy; 2018 - 2019 Carl (admin@carl.gg)'
+copyright: 'Copyright &copy; 2018 - 2020 Carl (admin@carl.gg)'
