@@ -46,7 +46,7 @@
 	| Name | Example | Usage |
 	| :--- | :--- | :--- |
 	| **lvl shh** | !lvl shh | Makes the bot no longer announce level up messages.  |
-	| **lvl destination &lt;channel&gt;** | !lvl bg https://i.imgur.com/s1ck3n1ng.png | Changes the background image for !lvl. |
+	| **lvl channel [destination]** | !lvl channel #bot-channel | Sets a channel to send level up messages to. If no channel is specified, sets the channel the command was used in as the destination. |
 	| **lvl limit &lt;number&gt;** | !lvl limit 15 | Only announce level ups ABOVE this level (15 means 16 and above would be announced.) |
 	| **lvl mod &lt;number&gt;** | !lvl mod 5 | Sets the bot to only announce level up messages if they are evenly divisible by the number. For instance you could set it to 10 to announce lvl 10, 20, 30 etc... |
 	| **lvl rewardonly** | !lvl rewardonly | Only announce levels with associated rank rewards |
