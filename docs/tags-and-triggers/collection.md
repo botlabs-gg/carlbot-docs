@@ -75,6 +75,7 @@ Want your creation featured here? Post it in #show off in [the support server](h
 	| maze | A Maze Generator tag | Raffael | [carl.gg/t/260353](https://carl.gg/t/260353) |
 	| mine | Play Minesweeper with a tag | Dungo | [carl.gg/t/35755](https://carl.gg/t/35755) |
 	| picross | The game Picross as a tag | Dungo | [carl.gg/t/38184](https://carl.gg/t/38184) |
+	| race | Race different vehicles against opponents | ! SpinaChant | [carl.gg/t/226914](https://carl.gg/t/226914) |
 	| slots | A slots tag using emojis | Raffael &<br>RedAngel | [carl.gg/t/96789](https://carl.gg/t/96789) |
 	| slots | A slots tag using gifs | Rath. | [carl.gg/t/206215](https://carl.gg/t/206215) |
 	| tictactoe | A Tic-Tac-Toe game. Do: `tictactoe new` to start. | Tush | [carl.gg/t/98106](https://carl.gg/t/98106) |
