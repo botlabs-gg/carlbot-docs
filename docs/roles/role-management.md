@@ -38,7 +38,7 @@
 ### Bulk Role Management
 
 !!! warning
-    Only one bulk assignment can be used at a time.
+    Only one bulk assignment can be used at a time. Once started, a bulk role management command will give you an estimated time of completion, and the process cannot be stopped.
 	
 ???+ tldr "Bulk Role Commands"
 	| Name | Example | Usage |
