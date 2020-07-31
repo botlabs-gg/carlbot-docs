@@ -610,7 +610,7 @@ We'll also set our color (the 6 random blocks) to a variable for later use. We'l
 
 ```{=(rand.color):#{#:{hex}}{#:{hex}}{#:{hex}}{#:{hex}}{#:{hex}}{#:{hex}}}``` 
 
-Now we can update our embed(color) block with an if statement. The default Discord color is #000000, so we'll check if that is the target's color, and if it is we'll use `{random.color}`, and if not we'll use the target's color. Our tag now looks like this:
+Now we can update our embed(color) block with an if statement. The default Discord color is #000000, so we'll check if that is the target's color, and if it is we'll use `{rand.color}`, and if not we'll use the target's color. Our tag now looks like this:
 
 ???+ note "verify's Content:"
 	```linenums="1"
