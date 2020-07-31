@@ -2335,7 +2335,7 @@ If you want tag users to receive the same random value each time they use the ta
 <p><code>{=(hex):0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F}</code></p>
 <p>We'll also set our color (the 6 random blocks) to a variable for later use. We'll use the <code>#</code> alias for the random blocks.</p>
 <p><code>{=(rand.color):#{#:{hex}}{#:{hex}}{#:{hex}}{#:{hex}}{#:{hex}}{#:{hex}}}</code> </p>
-<p>Now we can update our embed(color) block with an if statement. The default Discord color is #000000, so we'll check if that is the target's color, and if it is we'll use <code>{random.color}</code>, and if not we'll use the target's color. Our tag now looks like this:</p>
+<p>Now we can update our embed(color) block with an if statement. The default Discord color is #000000, so we'll check if that is the target's color, and if it is we'll use <code>{rand.color}</code>, and if not we'll use the target's color. Our tag now looks like this:</p>
 <details class="note" open="open"><summary>verify's Content:</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
