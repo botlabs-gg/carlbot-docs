@@ -19,5 +19,4 @@
 | **twitch add** | !twitch azortharion #streams The best hunter in the world just went online :pogu: {link} | Same as !twitch |
 | **twitch remove &lt;name&gt;** | !twitch remove azortharion  | Removes a twitch streamer. |
 | **twitch move &lt;name&gt; &lt;channel&gt;** | !twitch move azortharion #cool-streamers | Moves the notification to another channel. |
-| **twitch fmt &lt;name&gt; &lt;channel&gt;** | !twitch fmt azortharion THE BEST HUNTER IS ONLINE OMG | Changes the notification message. |
-
+| **twitch fmt &lt;name&gt; &lt;message&gt;** | !twitch fmt azortharion THE BEST HUNTER IS ONLINE OMG | Changes the notification message. |
