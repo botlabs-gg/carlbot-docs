@@ -2,7 +2,7 @@
 
 Tags are custom commands. They are easy to use and can be very powerful. With some ingenuity, you can create your own. It is for instance entirely possible to create an 8ball command, a hug command and many other things using just tags. To do more than just output plaintext, you must configure the command's behavior using what is called Tagscript. Tagscript is a small language the bot interprets, made up of dynamic "blocks". To build a tag you will need to combine various blocks to tell the tag what you want it to do. Some parts of Tagscript can be used elsewhere within Carl-bot, like in Triggers, Autofeeds, and Welcome/Leave/Ban Messages.
 
-!!! info "Limits"
+!!! warning "Limits"
 	Tags must be under 25000 characters long in the "Content" section. Tags **CANNOT** and will **NEVER** be able to DM a mentioned user, only the tag's invoker. A tag's output is sent as one message that can consist of 2000 characters of plaintext, and an embed attached to that message. Command blocks can be used for additional output. Embeds attached to Tags via the Dashboard are subject to the same limits detailed in the Embeds section.
 
 !!! tip
@@ -542,7 +542,7 @@ If no parameters are provided, the Tagscript Engine defaults to using the curren
     
 ???+ info "Strf Formats for Reference"
     * `%Y-%m-%d %H:%M:%S` & the short version `%F %T` are the DateTime format in strf codes, which can be useful for defining the payload of the timedelta block described below.
-    * `{strf:%%FT%T}.000Z` is the strf code for the ISO 8601 format, which is used when setting the timestamp in an embed's JSON. Useful if you're using Carl-bot's `cembed` or `ecembed` commands in a tag.
+    * `{strf:%FT%T}.000Z` is the strf code for the ISO 8601 format, which is used when setting the timestamp in an embed's JSON. Useful if you're using Carl-bot's `cembed` or `ecembed` commands in a tag.
 	* `%s` Lowercase s is the code for Unix time. Since the {unix} block only works in tags, this code is useful to set to a variable named unix when doing time-based math in welcome messages, triggers, and autofeeds.
 
 ### Timedelta Blocks
