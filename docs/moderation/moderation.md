@@ -74,18 +74,21 @@
     Purge Commands ignore pinned messages. `cleanup` does **NOT**.
 	
 ???+ tldr "Bulk Message Deletion Commands"
+	The search number is how many messages you want Carl-bot to look through whilst checking for offenders, or messages that match the parameters of the purge type used.
 
 	| Name | Example | Usage |
 	| :--- | :--- | :--- |
-	| **purge [count=100]** | !purge 200 | Purges the last howmany messages. |
-	| **purge bot [count=100]** | !purge bot ? 20 | Purges the bot messages (and messages with the specified prefix) from the last howmany messages. |
-	| **purge contains [count=100]** | !purge contains thanos | Purges messages containing the substring |
-	| **purge user [count=100]** | !purge user @Carl\#0001 20 | Purges messages from the user |
-	| **purge all [count=100]** | !purge all 13 | Purges the last howmany messages |
-	| **purge embeds [count=100]** | !purge embeds 12 | Purges the last howmany messages with embeds |
-	| **purge emoji [count=100]** | !purge emoji | Purges the last howmany messages containing custom emoji |
-	| **purge files [count=100]** | !purge files | Purges messages with attachments |
-	| **purge images [count=100]** | !purge images | Purges messages with attachments or embeds |
-	| **purge links [count=100]** | !purge links | Purges messages with links |
-	| **purge reactions [count=100]** | !purge reactions | Purges reactions from messages |
-	| **cleanup [count=100]** | -- | Sort of like !purge bot except just for carlbot and works for all prefixes. |
+	| **purge [search=100]** | !purge 200 | Purges the last howmany messages. |
+	| **purge bot [search=100] [prefix]** | !purge bot 20 ? | Purges the bot messages (and messages with the specified prefix) from the last howmany messages. |
+	| **purge contains [search=100] &lt;substring&gt;** | !purge contains 12 thanos | Purges messages containing the specified substring. |
+	| **purge user &lt;member&gt; [search=100]** | !purge user @Carl#0001 20 | Purges messages from the specified user. |
+	| **purge all [search=100]** | !purge all 13 | Purges the last howmany messages |
+	| **purge embeds [search=100]** | !purge embeds 12 | Purges messages with embeds. |
+	| **purge emoji [search=100]** | !purge emoji 6 | Purges messages that contain custom emoji. |
+	| **purge files [search=100]** | !purge files 21 | Purges messages with attachments. |
+	| **purge images [search=100]** | !purge images 11 | Purges messages with attachments or embeds |
+	| **purge links [search=100]** | !purge links 15 | Purges messages that contain links. |
+	| **purge [mentions|pings] [search=100]**| !purge pings 25 | Purges messages that contain mentions. |
+	| **purge [human|humans] [search=100]**| !purge humans 13 | Purges messages sent by user accounts, ignores bot messages. |
+	| **purge reactions [search=100]** | !purge reactions | Removes all reactions from messages that have them. |
+	| **cleanup [search=100]** | -- | Sort of like !purge bot except just for carlbot and works for all prefixes. |
