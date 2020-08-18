@@ -66,7 +66,7 @@
 	| **lockdown &lt;\#channel&gt; &lt;duration&gt;** | !lockdown \#general 20m | Locks the specified channel (or the one the command is used in if none is specified) for [duration] if specified else forever. |
 	| **unlockdown &lt;\#channel&gt;** | !unlockdown \#general |  Undoes what !lockdown does. |
 	| **lockdown server &lt;duration&gt;** | !lockdown server 20m | Locks all channels in the server. |
-	| **unlockdown server** | !unlockdown server |  Undoes what !lockdown server ****does. |
+	| **unlockdown server** | !unlockdown server |  Undoes what !lockdown server does. |
 
 ### Bulk Message Deletion
 
