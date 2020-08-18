@@ -1430,7 +1430,8 @@
 <p class="admonition-title">Info</p>
 <p>Purge Commands ignore pinned messages. <code>cleanup</code> does <strong>NOT</strong>.</p>
 </div>
-<details class="tldr" open="open"><summary>Bulk Message Deletion Commands</summary><table>
+<details class="tldr" open="open"><summary>Bulk Message Deletion Commands</summary><p>The search number is how many messages you want Carl-bot to look through whilst checking for offenders, or messages that match the parameters of the purge type used.</p>
+<table>
 <thead>
 <tr>
 <th align="left">Name</th>
@@ -1440,62 +1441,72 @@
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong>purge [count=100]</strong></td>
+<td align="left"><strong>purge [search=100]</strong></td>
 <td align="left">!purge 200</td>
 <td align="left">Purges the last howmany messages.</td>
 </tr>
 <tr>
-<td align="left"><strong>purge bot [count=100]</strong></td>
-<td align="left">!purge bot ? 20</td>
+<td align="left"><strong>purge bot [search=100] [prefix]</strong></td>
+<td align="left">!purge bot 20 ?</td>
 <td align="left">Purges the bot messages (and messages with the specified prefix) from the last howmany messages.</td>
 </tr>
 <tr>
-<td align="left"><strong>purge contains [count=100]</strong></td>
-<td align="left">!purge contains thanos</td>
-<td align="left">Purges messages containing the substring</td>
+<td align="left"><strong>purge contains [search=100] &lt;substring&gt;</strong></td>
+<td align="left">!purge contains 12 thanos</td>
+<td align="left">Purges messages containing the specified substring.</td>
 </tr>
 <tr>
-<td align="left"><strong>purge user [count=100]</strong></td>
+<td align="left"><strong>purge user &lt;member&gt; [search=100]</strong></td>
 <td align="left">!purge user @Carl#0001 20</td>
-<td align="left">Purges messages from the user</td>
+<td align="left">Purges messages from the specified user.</td>
 </tr>
 <tr>
-<td align="left"><strong>purge all [count=100]</strong></td>
+<td align="left"><strong>purge all [search=100]</strong></td>
 <td align="left">!purge all 13</td>
 <td align="left">Purges the last howmany messages</td>
 </tr>
 <tr>
-<td align="left"><strong>purge embeds [count=100]</strong></td>
+<td align="left"><strong>purge embeds [search=100]</strong></td>
 <td align="left">!purge embeds 12</td>
-<td align="left">Purges the last howmany messages with embeds</td>
+<td align="left">Purges messages with embeds.</td>
 </tr>
 <tr>
-<td align="left"><strong>purge emoji [count=100]</strong></td>
-<td align="left">!purge emoji</td>
-<td align="left">Purges the last howmany messages containing custom emoji</td>
+<td align="left"><strong>purge emoji [search=100]</strong></td>
+<td align="left">!purge emoji 6</td>
+<td align="left">Purges messages that contain custom emoji.</td>
 </tr>
 <tr>
-<td align="left"><strong>purge files [count=100]</strong></td>
-<td align="left">!purge files</td>
-<td align="left">Purges messages with attachments</td>
+<td align="left"><strong>purge files [search=100]</strong></td>
+<td align="left">!purge files 21</td>
+<td align="left">Purges messages with attachments.</td>
 </tr>
 <tr>
-<td align="left"><strong>purge images [count=100]</strong></td>
-<td align="left">!purge images</td>
+<td align="left"><strong>purge images [search=100]</strong></td>
+<td align="left">!purge images 11</td>
 <td align="left">Purges messages with attachments or embeds</td>
 </tr>
 <tr>
-<td align="left"><strong>purge links [count=100]</strong></td>
-<td align="left">!purge links</td>
-<td align="left">Purges messages with links</td>
+<td align="left"><strong>purge links [search=100]</strong></td>
+<td align="left">!purge links 15</td>
+<td align="left">Purges messages that contain links.</td>
 </tr>
 <tr>
-<td align="left"><strong>purge reactions [count=100]</strong></td>
+<td align="left">**purge [mentions</td>
+<td align="left">pings] [search=100]**</td>
+<td align="left">!purge pings 25</td>
+</tr>
+<tr>
+<td align="left">**purge [human</td>
+<td align="left">humans] [search=100]**</td>
+<td align="left">!purge humans 13</td>
+</tr>
+<tr>
+<td align="left"><strong>purge reactions [search=100]</strong></td>
 <td align="left">!purge reactions</td>
-<td align="left">Purges reactions from messages</td>
+<td align="left">Removes all reactions from messages that have them.</td>
 </tr>
 <tr>
-<td align="left"><strong>cleanup [count=100]</strong></td>
+<td align="left"><strong>cleanup [search=100]</strong></td>
 <td align="left">--</td>
 <td align="left">Sort of like !purge bot except just for carlbot and works for all prefixes.</td>
 </tr>
