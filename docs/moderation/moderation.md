@@ -88,7 +88,7 @@
 	| **purge files [search=100]** | !purge files 21 | Purges messages with attachments. |
 	| **purge images [search=100]** | !purge images 11 | Purges messages with attachments or embeds |
 	| **purge links [search=100]** | !purge links 15 | Purges messages that contain links. |
-	| **purge [mentions|pings] [search=100]**| !purge pings 25 | Purges messages that contain mentions. |
-	| **purge [human|humans] [search=100]**| !purge humans 13 | Purges messages sent by user accounts, ignores bot messages. |
+	| **purge [mentions\|pings] [search=100]** | !purge pings 25 | Purges messages that contain mentions. |
+	| **purge [human\|humans] [search=100]** | !purge humans 13 | Purges messages sent by user accounts, ignores bot messages. |
 	| **purge reactions [search=100]** | !purge reactions | Removes all reactions from messages that have them. |
-	| **cleanup [search=100]** | -- | Sort of like !purge bot except just for carlbot and works for all prefixes. |
+	| **cleanup [search=100]** | !cleanup 8 | Sort of like !purge bot except just for carlbot and works for all prefixes. |
