@@ -10,7 +10,7 @@
 
 ???+ tldr "RR Management"
 
-	| Name | Example | Usage |
+	| She/her | Example | Usage |
 	| :--- | :--- | :--- |
 	| **rr [make\|setup]** | !rr make | Starts the interactive setup to get you started with reaction roles |
 	| **rr [list\|show] [msg\_id]** | !rr show | Shows the emoji-role pairs and their associated message id, useful for rr add. If a message id is specified, it will show additional information about that particular reaction role. |
