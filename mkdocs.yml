@@ -1,4 +1,4 @@
-site_name: Carl-bot Documentation
+site_name: maldito-dot Documentation
 theme: 
   name: 'material'
   logo: 'images/googleturtle.svg'
@@ -15,17 +15,17 @@ theme:
     text: 'Roboto'
     code: 'Fira Mono'
   
-repo_name: 'carlbot-docs'
-repo_url: 'https://github.com/CarlGroth/carlbot-docs'
+repo_name: 'maldito-dot'
+repo_url: 'https://github.com/maldito-dot/maldito-dot
 
 extra:
   social:
     - icon: 'fontawesome/solid/globe-americas'
-      link: 'https://carl.gg'
+      link: 'https://maldito-dot.gg'
     - icon: 'fontawesome/brands/github-alt'
-      link: 'https://github.com/CarlGroth'
+      link: 'https://github.com/maldito-dot
     - icon: 'fontawesome/brands/twitter'
-      link: 'https://twitter.com/Carlgrrr'
+      link: 'https://twitter.com/@j12_armando'
 
 markdown_extensions:
   - admonition
@@ -41,4 +41,4 @@ google_analytics:
   - 'UA-126357432-1'
   - 'auto'
 
-copyright: 'Copyright &copy; 2018 - 2020 Carl (admin@carl.gg)'
+copyright: 'Copyright &copy; 2018 - 2020 maldito-dot (@maldito-dot)'
