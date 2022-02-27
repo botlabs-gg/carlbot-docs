@@ -1,5 +1,6 @@
 # Reaction Roles
-
+She/her 🍒
+He/him 🫐
 !!! tip
     Deleted messages are also cleared from the database. Pin the reaction role message to make it immune to purging.
 
