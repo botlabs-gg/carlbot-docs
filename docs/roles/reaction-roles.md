@@ -25,7 +25,7 @@
 	| **rr clearbl &lt;msg\_id&gt;** | !rr clearbl 458641514017587210  | Removes all roles from your blacklist for that set of reaction roles. |
 	| **rr clearwl &lt;msg\_id&gt;** | !rr clearwl 458641514017587210  | Removes all roles from your whitelist for that set of reaction roles. |
 	| **rr selfdestruct &lt;msg\_id&gt; &lt;time&gt;** | !rr selfdestruct 458641514017587210 7d | Deletes the message and all of its reaction roles after the time is up. |
-	| **rr edit &lt;msg\_id&gt; &lt;title \| description&gt;** | !rr edit 458641514017587210 Games \| Click on the games you want to be notified by | Edits the title and description, works like it does in the make command |
+	| **rr edit &lt;msg\_id&gt; &lt;title \| description&gt;** | !rr edit 458641514017587210 Games \| Click on the games you want to be notified by {roles} | Edits the title and description, works like it does in the make command |
 	| **rr [channel\|cc] [name=get-roles]** | !rr cc color-roles | Creates a channel with the sort of permissions you most likely want for a reaction role channel (yes, add reactions is off, this is intentional) |
 	| **rr fix** | !rr fix | Accidentally (or intentionally) cleared all reactions? Use this command to have the bot add the reactions missing |
 
