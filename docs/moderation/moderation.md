@@ -29,7 +29,7 @@
 	| **unmute &lt;@member&gt;** | !unmute @Carl\#0001 | Unmutes a member |
 	| **kick &lt;@member&gt; [reason]** | !kick @Carl\#0001 racism | Kicks a member. Reason shows up in the modlogs and in audit logs |
 	| **softban &lt;@member&gt; [days=2] [reason]** | !softban @Carl\#0001 go away | Bans and immediately unbans a member to clear 48 hours of message history. |
-	| **tempban &lt;@user&gt; [days=2] [reason]** | !tempban @Carl\#0001 20h big ugly | Bans a user for the specified duration regardless if they're on the server or not. |
+	| **tempban &lt;@user&gt; [time] [days=2] [reason]** | !tempban @Carl\#0001 20h big ugly | Bans a user for the specified duration regardless if they're on the server or not. |
 	| **massban [days=2] &lt;@members...&gt;** | !massban 123124151241 @Carl\#0001 12152252634 123123901231 | Bans more than one person, each ban shows up in the modlog. |
 	| **warn &lt;@member&gt; [reason]** | !warn @Carl\#0001 do not spam reactions | Warns a user, pms them the reason and posts it to the modlog. |
 
