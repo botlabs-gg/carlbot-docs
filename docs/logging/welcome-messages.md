@@ -8,8 +8,23 @@
 
 | Name | Example | Usage |
 | :--- | :--- | :--- |
-| **set welcome &lt;\#channel&gt;** | !set welcome \#join-say-hi | Sets the channel where welcome/leave/banmsg messages will be posted. |
-| **\[welcome\|greet\] &lt;text&gt;** | !greet Welcome {mention}, we've been expecting you | Sets up a welcome message that will be sent when a new user joins. |
+| **set welcome &lt;\#channel&gt;** | !set welcome \#join-say-hi | — ୨\🎀୧ _Be very welcome, {@user}_ ✦ ₊꒷ 
+꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘ω˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷ 
+₊˚ʚ\💌ɞ *Hope you like our server!*ヾ(•ω•`)o 
+꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘ω˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷ 
+ʚ ୨୧ *__We have...__* ⊹꒷ 
+꒦꒷୨\🐰୧・[ anime fans ]˚๑ 
+— 
+꒦꒷୨\🐰୧・[ supportive friends]˚๑ 
+— 
+꒦꒷୨\🐰୧・[gaming]˚๑ 
+— 
+꒦꒷୨\🐰୧・[ a lovely community]˚๑ 
+✦ ₊꒷꒦︶︶︶ ୨୧ ︶︶︶꒷꒦ෆ 
+***Read the rules to avoid punishment.*** 
+— Rules: #╰˚₊୨💭୧・𝐑𝐮𝐥𝐞𝐛𝐨𝐨𝐤 __  
+✦ ₊꒷꒦︶︶︶ ୨୧ ︶︶︶꒷꒦ෆ 
+︶꒷꒥꒷ ‧₊˚ Thanks for joining! :)
 | **\[leave\|farewell\] &lt;text&gt;** | !farewell Goodbye {user}, maybe it wasn't meant to be... | Like !greet but for people leaving |
 | **banmsg &lt;text&gt;** | !banmsg **{user}** just got blown the fuck out | Like !greet but for people getting banned |
 | **\[dmjoin\|pmjoin\|joindm\|joinpm\] &lt;text&gt;** | !dmjoin Hello and welcome to {server}, before chatting you need to assign roles in \#get-roles | Like !greet except it dms the message to the user upon joining |
