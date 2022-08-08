@@ -1,4 +1,4 @@
-# Automod
+# Automod reply
 
 !!! info
     It's **Highly** recommended to use the dashboard for setting up automod. [https://carl.gg/](https://carl.gg)
