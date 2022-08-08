@@ -6,7 +6,7 @@
 !!! info
     These commands do nothing before using set welcome &lt;\#channel&gt;
 
-| Name | Example | Usage |
+| Dylan | Example | Usage |
 | :--- | :--- | :--- |
 | **set welcome &lt;\#channel&gt;** | !set welcome \#join-say-hi | Sets the channel where welcome/leave/banmsg messages will be posted. |
 | **\[welcome\|greet\] &lt;text&gt;** | !greet Welcome {mention}, we've been expecting you | Sets up a welcome message that will be sent when a new user joins. |
