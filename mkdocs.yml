@@ -16,7 +16,7 @@ theme:
     code: 'Fira Mono'
   
 repo_name: 'carlbot-docs'
-repo_url: 'https://github.com/CarlGroth/carlbot-docs'
+repo_url: 'https://github.com/botlabs-gg/carlbot-docs'
 
 extra:
   social:
