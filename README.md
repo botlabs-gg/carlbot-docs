@@ -1,4 +1,4 @@
-# Carl-bot - Documentation
+# Carl-bot Documentation
 
 This is the documentation for carl-bot, it uses HTML pages for documentation. This is still a work in progress, and is constantly updated, in-case you find something incorrect/missing,
 feel free to raise a Pull request as per Contributing Guidelines below.
@@ -9,14 +9,15 @@ If you don't find the information you're looking for, please inform the [support
 
 It is hosted on https://docs.carl.gg.
 
-## How to run the documentation Locally
+## How to run the documentation locally
 
-- Setup docker on your system (Read here on how)[https://docs.docker.com/desktop],
+- [Setup docker on your system] (https://docs.docker.com/desktop)
+- Go to the directory of the cloned repo
 - And then do `docker-compose up`
 
 If you find docker too complicated. You can alternatively use any http server to run this.
 
-## Contributing Guidelines. 
+## Contributing Guidelines
 
 - You can fork this repository, and make changes and raise a pull-request.
 - All pull requests must be raised to the `dev` branch. 
