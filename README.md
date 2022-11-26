@@ -11,7 +11,7 @@ It is hosted on https://docs.carl.gg.
 
 ## How to run the documentation locally
 
-- [Setup docker on your system] (https://docs.docker.com/desktop)
+- [Setup docker on your system](https://docs.docker.com/desktop)
 - Go to the directory of the cloned repo
 - And then do `docker-compose up`
 
