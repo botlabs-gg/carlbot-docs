@@ -1,6 +1,8 @@
 # Carl-bot Documentation
 
-This is the documentation for carl-bot, it uses HTML pages for documentation. This is still a work in progress, and is constantly updated, in-case you find something incorrect/missing,
+This is the documentation for Carl-bot (https://carl.gg).
+
+This is still a work in progress, and is constantly updated, in-case you find something incorrect/missing,
 feel free to raise a Pull request as per Contributing Guidelines below.
 
 # Support
@@ -14,8 +16,9 @@ It is hosted on https://docs.carl.gg.
 - [Setup docker on your system](https://docs.docker.com/desktop)
 - Go to the directory of the cloned repo
 - And then do `docker-compose up`
+- By default, the documentation will start on `http://localhost:4000`, you can change the port in `docker-compose.yml`
 
-If you find docker too complicated. You can alternatively use any http server to run this.
+If you find docker too complicated. You can alternatively use any http server to serve the html pages.
 
 ## Contributing Guidelines
 
