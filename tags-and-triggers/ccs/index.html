@@ -1177,42 +1177,42 @@
 </thead>
 <tbody>
 <tr>
-<td align="left">[tag get|tag] &lt;lookup&gt;</td>
+<td align="left"><strong>[tag get|tag] &lt;lookup&gt;</strong></td>
 <td align="left">!classdiscords</td>
 <td align="left">This is how you get tags after they're saved.</td>
 </tr>
 <tr>
-<td align="left">tag [create|add|+] &lt;name&gt; &lt;content&gt;</td>
+<td align="left"><strong>tag [create|add|+] &lt;name&gt; &lt;content&gt;</strong></td>
 <td align="left">!tag + test Hello world</td>
 <td align="left">Makes a tag named test with the content Hello world.</td>
 </tr>
 <tr>
-<td align="left">tag [delete|del|remove|-] &lt;tagname&gt;</td>
+<td align="left"><strong>tag [delete|del|remove|-] &lt;tagname&gt;</strong></td>
 <td align="left">!tag - test</td>
 <td align="left">Removes a tag</td>
 </tr>
 <tr>
-<td align="left">tag ++ &lt;name&gt; &lt;pastebin link&gt;</td>
+<td align="left"><strong>tag ++ &lt;name&gt; &lt;pastebin link&gt;</strong></td>
 <td align="left">!tag ++ setup https://pastebin.com/tehqxQRV</td>
 <td align="left">Since tags can have an output shorter than their length, using !tag ++ allows you to make them</td>
 </tr>
 <tr>
-<td align="left">tag [+=|append] &lt;tagname&gt; &lt;content&gt;</td>
+<td align="left"><strong>tag [+=|append] &lt;tagname&gt; &lt;content&gt;</strong></td>
 <td align="left">!tag += test and my mom</td>
 <td align="left">Adds content to an already existing tag</td>
 </tr>
 <tr>
-<td align="left">tag [a|alias] &lt;new&gt; &lt;existing&gt;</td>
+<td align="left"><strong>tag [a|alias] &lt;new&gt; &lt;existing&gt;</strong></td>
 <td align="left">!tag alias testing test</td>
 <td align="left">Creates a link to an already existing tag, changes made to the original tag means the aliased tag will also be changed. The name you want for the alias is the first argument, the already existing tag is the second.</td>
 </tr>
 <tr>
-<td align="left">tag raw &lt;name&gt;</td>
+<td align="left"><strong>tag raw &lt;name&gt;</strong></td>
 <td align="left">!tag raw test</td>
 <td align="left">retrieves a tag with its markdown (bold, italic, tagscript etc.) removed.</td>
 </tr>
 <tr>
-<td align="left">tag edit &lt;name&gt; &lt;content&gt;</td>
+<td align="left"><strong>tag edit &lt;name&gt; &lt;content&gt;</strong></td>
 <td align="left">!tag e test bye world</td>
 <td align="left">Edits the content of an already existing tag.</td>
 </tr>
@@ -1227,12 +1227,12 @@
 <td align="left">To prevent big tags cluttering your chatty channels, this will make the bot post the content in the bot-channel and ping the author.</td>
 </tr>
 <tr>
-<td align="left">tag stats [@member]</td>
+<td align="left"><strong>tag stats [@member]</strong></td>
 <td align="left">!tag stats @Carl#0080</td>
 <td align="left">Shows information about the servers tags (uses, top 3, total number of tags). If you mention someone, it will show their tags instead.</td>
 </tr>
 <tr>
-<td align="left">tag info &lt;name&gt;</td>
+<td align="left"><strong>tag info &lt;name&gt;</strong></td>
 <td align="left">!tag info test</td>
 <td align="left">Shows some stats collected about the tag, uses, creation date, last update, owner.</td>
 </tr>
@@ -1252,32 +1252,32 @@
 <td align="left">Know how trying to create a tag that already exists asks you if you want to edit, or append? With this disabled (enabled by default) it will default to editing the tag</td>
 </tr>
 <tr>
-<td align="left">tag claim &lt;name&gt;</td>
+<td align="left"><strong>tag claim &lt;name&gt;</strong></td>
 <td align="left">!tag claim realms</td>
 <td align="left">Claims a tag from a member who has left the server, only relevant if ownership is enabled</td>
 </tr>
 <tr>
-<td align="left">tag sub &lt;name&gt; &lt;from&gt; &lt;to&gt;</td>
+<td align="left"><strong>tag sub &lt;name&gt; &lt;from&gt; &lt;to&gt;</strong></td>
 <td align="left">!tag sub invite discord.gg/abc123 discord.gg/xyz999</td>
 <td align="left">Replaces every occurance of from_string with to_string in an already existing tag. This can be extremely useful for expired invite links, slightly outdated information, or anything else that allows you to systematically correct your mistakes.</td>
 </tr>
 <tr>
-<td align="left">[tag list|command|taglist]</td>
+<td align="left"><strong>[tag list|command|taglist]</strong></td>
 <td align="left">!taglist</td>
 <td align="left">Lists all of the tags on the server</td>
 </tr>
 <tr>
-<td align="left">tag share &lt;name&gt;</td>
+<td align="left"><strong>tag share &lt;name&gt;</strong></td>
 <td align="left">!tag share picross</td>
 <td align="left">Creates a shareable link of a tag so that other users can import it to their servers.</td>
 </tr>
 <tr>
-<td align="left">tag unshare &lt;name&gt;</td>
+<td align="left"><strong>tag unshare &lt;name&gt;</strong></td>
 <td align="left">!tag unshare picross</td>
 <td align="left">Unshare a specific publicly shared tag. Already created share link will not work once you unshare a tag. (Requires MANAGE SERVER permission)</td>
 </tr>
 <tr>
-<td align="left">tag unshareall</td>
+<td align="left"><strong>tag unshareall</strong></td>
 <td align="left">!tag unshareall</td>
 <td align="left">Unshare all publicly shared tags. (Requires MANAGE SERVER permission)</td>
 </tr>
