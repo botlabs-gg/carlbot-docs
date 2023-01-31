@@ -27,7 +27,7 @@
 
 
 ## Managing Commands
-?> Consider using the [Dashboard](https://carl.gg). It is much, much easier to manage commands through the Dashboard as it allows per-command customization *far* beyond what these commands offer.
+?> Consider using the **[Dashboard](https://carl.gg)**. It is much, much easier to manage commands through the Dashboard as it allows per-command customization *far* beyond what these commands offer.
 
 !> Restricted commands require a bot channel to be set up.
 
