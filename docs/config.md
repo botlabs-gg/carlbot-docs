@@ -5,7 +5,7 @@
 
 <!-- tabs:start -->
 
-<!-- tab:Chat Commands -->
+<!-- tab:Prefix Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
 | prefix        | `!prefix`         | Lists the prefixes currently in use by the server                             |
@@ -33,7 +33,7 @@
 
 <!-- tabs:start -->
 
-<!-- tab:Chat Commands -->
+<!-- tab:Prefix Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
 | **ignore [channels...] [commands...]** | `!ignore #general #log ping about` | If no channel is specified, the current channel is ignored. If no command is specified, all commands will be ignored in that channel. <span style="color: red;">Manage Server</span> bypasses this.                                          |
@@ -65,7 +65,7 @@
 
 <!-- tabs:start -->
 
-<!-- tab:Chat Commands -->
+<!-- tab:Prefix Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
 | **set welcome [channel]**   | `!set welcome #welcome` | Sets the channel to send the welcome, farewell and ban messages. If no channel is specified, this will remove the welcome channel. |
@@ -82,7 +82,7 @@
 
 <!-- tabs:start -->
 
-<!-- tab:Chat Commands -->
+<!-- tab:Prefix Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
 | **modrole <role>**   | `!modrole mod` | Any user with the specified role will be seen as a Moderator by the bot. This command won't give the users power to kick, ban, mute, warn, etc. |
