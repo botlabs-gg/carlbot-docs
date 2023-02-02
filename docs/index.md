@@ -4,7 +4,7 @@ A fully customizable, multi-purpose and modular discord bot with endless list of
 
 ## Documentation
 
-See the [**Getting Started**](/getting-started) guide for more details.
+See the **[Getting Started](/getting-started)** guide for more details.
 
 ## Features
 
@@ -20,4 +20,4 @@ See the [**Getting Started**](/getting-started) guide for more details.
 
 ## Support
 
-Users and the development team usually provide support in the [**Carl-bot Help**](https://discord.gg/S2ZkBTnd8X) Discord server.
+Users and the development team usually provide support in the **[Carl-bot Help](https://discord.gg/S2ZkBTnd8X)** Discord server.

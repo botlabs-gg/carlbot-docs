@@ -1,5 +1,5 @@
 ## Navigating
-!> Do not literally type out < > [ ] | etc.
+!> Do not literally type out `<` `>` `[` `]` `|` etc.
 
 ?> When referencing commands, Mod commands are in **bold**.
 
