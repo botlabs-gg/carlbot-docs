@@ -1,5 +1,5 @@
 ## Navigating
-!> Do not literally type out < > [ ] | etc.
+!> Do not literally type out `<` `>` `[` `]` `|` etc.
 
 ?> When referencing commands, Mod commands are in **bold**.
 
@@ -18,7 +18,7 @@ Additionally, the bot uses *converters* which makes specifying roles, members, c
 
 
 ## Basic Confugration
-?> Use the [Dashboard](https://carl.gg) to configure the bot easily without the need to use any commands.
+?> Use the **[Dashboard](https://carl.gg)** to configure the bot easily without the need to use any commands.
 
 This guide will cover everything you need to do to get started with the basics of what carlbot offers.
 
@@ -71,6 +71,8 @@ This is far from everything Carl-bot has to offer but at this point you will hav
 ?> To enable this option you would need to do the following:<br>
 Discord Settings > Advanced > Developer Mode > Enable
 
+![Discord ID](_images/faq_discordid.png "Discord ID")
+
 
 ### Another bot has the same command and they both respond, what do I do? {docsify-ignore}
 Depends on what you're after. If you need to use both, you're pretty much forced to change the prefix of either bot. If you just want the command that is not from Carl-bot then you can disable it with `!disable <command>`. If you just want Carl-bot's command then you may create an alias using tags and `{cmd:cmdname {args}}`. Check out the Advanced Usage section in Tags category for more information.
@@ -88,3 +90,5 @@ Just assign the bot a role that is higher than the highest role it has to assign
 This is a [Premium](https://www.patreon.com/carlbot) feature that aims to streamline your server's moderation. Automod is nice but it is not perfect as sometimes false positives happen. This feature was made for that exact reason. You need to:
 1. Set up the drama channel on either the Dashboard or with the command `!am drama <channel>`.
 2. Set the automod punishment to `Post to drama channel` on the Dashboard.
+
+![Drama Channel](_images/faq_drama.png "Drama Channel")
