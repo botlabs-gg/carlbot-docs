@@ -8,20 +8,20 @@
 <!-- tab:Prefix Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| prefix        | `!prefix`         | Lists the prefixes currently in use by the server                             |
+| prefix            | `!prefix`         | Lists the prefixes currently in use by the server.                            |
 | **prefix add \<prefix\>** | `!prefix add -` | Adds a prefix to be used byb the bot (Limited to 10).<br>**NOTE**: If you want a two word prefix or a prefix with a space after it or an emoji, you must use quotes. |
 | **prefix set \<prefix\>** | `!prefix set -` | Sets the specified prefix to be the only prefix in the server.          |
 | **prefix remove \<prefix\>** | `!prefix remove -` | Removes a prefix. Can't remove mentioning the bot or `/` slash commands. |
-| **prefix clear** | `!prefix clear` | Removes all prefixes except mentioning the bot or `/` slash commands. This *obviously* means that you need to mention the bot to register more prefixes. |
+| **prefix clear** | `!prefix clear`    | Removes all prefixes except mentioning the bot or `/` slash commands. This *obviously* means that you need to mention the bot to register more prefixes. |
 
 <!-- tab:Slash Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| prefix list        | `/prefix list`         | Lists the prefixes currently in use by the server                   |
+| prefix list       | `/prefix list`    | Lists the prefixes currently in use by the server                             |
 | **prefix add \<prefix\>** | `/prefix add -` | Adds a prefix to be used byb the bot (Limited to 10).<br>**NOTE**: If you want a two word prefix or a prefix with a space after it or an emoji, you must use quotes. |
 | **prefix set \<prefix\>** | `/prefix set -` | Sets the specified prefix to be the only prefix in the server.          |
 | **prefix remove \<prefix\>** | `/prefix remove -` | Removes a prefix. Can't remove mentioning the bot or `/` slash commands. |
-| **prefix clear** | `/prefix clear` | Removes all prefixes except mentioning the bot or `/` slash commands. This *obviously* means that you need to mention the bot to register more prefixes. |
+| **prefix clear**  | `/prefix clear`   | Removes all prefixes except mentioning the bot or `/` slash commands. This *obviously* means that you need to mention the bot to register more prefixes. |
 
 <!-- tabs:end -->
 
