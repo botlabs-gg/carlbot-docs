@@ -1,5 +1,7 @@
 ?> It is highly recommended to use the **[Dashboard](https://carl.gg)** for setting up automod.
 
+![Automod](_images/automod.png ':size=75%')
+
 ## General Settings
 
 <!-- tabs:start -->
