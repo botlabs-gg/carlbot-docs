@@ -19,14 +19,13 @@
 <!-- tab:Slash Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **[am\|automod]** | `!am`             | Shows an overview of the current automod settings.                            |
-| **automod drama <channel>** | `!automod drama #drama` | This is a [Premium](https://www.patreon.com/carlbot) command.<br>Set the channel where mods can make decisions on rule breakers through reactions. |
-| **automod log <channel>** | `!automod log #automod` | Set the channel where the logs for automatic moderation actions go. |
-| **automod [media\|mo] <channels...>** | `!am mo #show-off` | Set the channel(s) where only posting images/links is allowed. |
-| **automod [unmedia\|umo\|unmo] <channels...>** | `!am umo #show-off` | Removes the media-only restriction from one or more channels. |
-| **automod [whitelist\|wl] <roles/channels>** | `!am wl mods #admin-chat` | Whitelists roles and/or channels so that the automod ignores messages posted in/by them. |
-| **automod [unwhitelist\|unwl] <roles/channels>** | `!automod unwl mods #admin-chat` | Removes roles and/or channels from the automod whitelist. |
-| **deletefiles**   | `!deletefiles`    | Toggles deleting unsafe files. Safe formats include png, jpg, jpeg, gif, svg, bmp, tif, webp, webm, mp4, mov, pdf, txt, mp3, flac and wav. |
+| **automod server**| `/automod server` | Shows an overview of the current automod settings.                            |
+| **automod drama <channel>** | `/automod drama #drama` | This is a [Premium](https://www.patreon.com/carlbot) command.<br>Set the channel where mods can make decisions on rule breakers through reactions. |
+| **automod log <channel>** | `/automod log #automod` | Set the channel where the logs for automatic moderation actions go. |
+| **automod media <channels...>** | `/automod mo #show-off` | Set the channel(s) where only posting images/links is allowed. |
+| **automod unmedia <channels...>** | `/automod umo #show-off` | Removes the media-only restriction from one or more channels. |
+| **automod whitelist [add\|remove] <roles/channels>** | `!automod whitelist add mods #admin-chat` | Add or remove roles and/or channels from the automod whitelist. |
+| **deletefiles**   | `/deletefiles`    | Toggles deleting unsafe files. Safe formats include png, jpg, jpeg, gif, svg, bmp, tif, webp, webm, mp4, mov, pdf, txt, mp3, flac and wav. |
 
 <!-- tabs:end -->
 
@@ -58,14 +57,14 @@ Warns do not automatically expire. Managing warns is detailed on the [Moderation
 <!-- tab:Prefix Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **automod [warn\|threshold] <limit>** | `!am warn 5`             | Sets the warn threshold for a punishment to be made.|
+| **automod [warn\|threshold] <limit>** | `!am warn 5`             | Sets the warn threshold for a punishment to be made. |
 | **automod [warnpunish\|wp] <punishments...>** | `!am wp kick` | Sets the punishment for hitting the threshold.        |
 
 <!-- tab:Slash Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **automod [warn\|threshold] <limit>** | `!am warn 5`             | Sets the warn threshold for a punishment to be made.|
-| **automod [warnpunish\|wp] <punishments...>** | `!am wp kick` | Sets the punishment for hitting the threshold.        |
+| **automod threshold <limit>** | `/automod threshold 5`             | Sets the warn threshold for a punishment to be made. |
+| **automod warnpunish <punishments...>** | `/automod warnpunish kick` | Sets the punishment for hitting the threshold. |
 
 <!-- tabs:end -->
 
@@ -88,8 +87,9 @@ Message spam will not be active without setting a rate limit of at least 1+ mess
 <!-- tab:Slash Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **[slowmode\|sm] [rate] [per]** | `!slowmode 5 25` | Rate is the number of messages you can send per timeframe. Per is the timeframe. If you only supply one value, it sets that value as the per. (1/x) |
-| **slowmode [punishment\|punish\|p] <punishments...>** | `!sm p delete, tempmute 20m` | Sets the punishment(s) for hitting the rate limit. |
+| **slowmode set <rate>** | `/slowmode set 5 25` | Sets slowmode in the current channel. If you want the rate to be X messages in Y time then input `x y`. If only one value is supplied then it sets it as 1 message every supplied value. |
+| **slowmode disable** | `/slowmode disable` | Disables slowmode in the current channel.                                |
+| **slowmode punishment <punishments...>** | `/slowmode punishment delete, tempmute 20m` | Sets the punishment(s) for hitting the rate limit. |
 
 <!-- tabs:end -->
 
@@ -107,8 +107,9 @@ Attachmentspam will not be active without setting a rate limit of at least 1+ fi
 <!-- tab:Slash Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **attachmentspam [rate] [per=1]** | `!attachmentspam 3 5` | Rate limits the number of attachments a member can post in a specific timeframe. |
-| **attachmentspam punishment <punishments...>** | `!attachmentspam p mute, defer` | Sets the punishment(s) for hitting the rate limit. |
+| **attachmentspam set <rate>** | `/attachmentspam set 3 5` | Rate limits the number of attachments a member can post in a specific timeframe. |
+| **attachmentspam disable** | `/attachmentspam disable` | Disables attachmentspam in the current channel.              |
+| **attachmentspam punishment <punishments...>** | `/attachmentspam punishment mute, defer` | Sets the punishment(s) for hitting the rate limit. |
 
 <!-- tabs:end -->
 
@@ -126,8 +127,9 @@ Mentionspam will not be active without setting a rate limit of at least 1+ menti
 <!-- tab:Slash Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **mentionspam [rate] [per=1]** | `!mentionspam 25 5` | Enables the bot to automatically punish the mentionspammers.   |
-| **mentionspam punishment <punishments...=mute>** | `!mentionspam p tempban 24h` | Sets the punishment(s) for hitting the rate limit. |
+| **mentionspam set <rate>** | `/mentionspam set 25 5` | Enables the bot to automatically punish the mentionspammers.   |
+| **mentionspam disable** | `/mentionspam disable` | Disables mentionspam in the current channel.                       |
+| **mentionspam punishment <punishments...=mute>** | `/mentionspam punishment tempban 24h` | Sets the punishment(s) for hitting the rate limit. |
 
 <!-- tabs:end -->
 
@@ -139,13 +141,13 @@ Linkspam will not be active without setting a rate limit of at least 1+ links in
 <!-- tab:Prefix Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
+| **linkspam**      | `!linkspam`       | Shows the current settings.                                                   |
 | **linkspam <rate> [per=1]** | `!linkspam 1 1` | Sets the link rate limit. Use the example command to block all links. |
 | **linkspam punishment <punishments...>** | `!linkspam p delte, mute, defer` | Sets the punishment(s) for hitting the rate limit. |
-| **linkspam**      | `!linkspam`       | Shows the current settings.                                                   |
-| **linkspam bl <llinks...>** | `!linkspam bl reddit.com twitter.com` | Blacklists one or more links.                   |
-| **linkspam wl <llinks...>** | `!linkspam wl reddit.com twitter.com` | Whitelists one or more links.                   |
-| **linkspam unbl <llinks...>** | `!linkspam unbl reddit.com twitter.com` | Removes one or more links from the blacklist. |
-| **linkspam unwl <llinks...>** | `!linkspam unwl reddit.com twitter.com` | Removes one or more links from the whitelist. |
+| **linkspam bl <links...>** | `!linkspam bl reddit.com twitter.com` | Blacklists one or more links.                   |
+| **linkspam wl <links...>** | `!linkspam wl reddit.com twitter.com` | Whitelists one or more links.                   |
+| **linkspam unbl <links...>** | `!linkspam unbl reddit.com twitter.com` | Removes one or more links from the blacklist. |
+| **linkspam unwl <links...>** | `!linkspam unwl reddit.com twitter.com` | Removes one or more links from the whitelist. |
 | **linkspam clearbl** | `!linkspam clearbl` | Clears the blacklist.                                                    |
 | **linkspam clearwl** | `!linkspam clearwl` | Clears the whitelist.                                                    |
 | **linkspam block**| `!linkspam block` | Punish all non-whitelisted links.                                             |
@@ -157,18 +159,15 @@ Linkspam will not be active without setting a rate limit of at least 1+ links in
 <!-- tab:Slash Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **linkspam <rate> [per=1]** | `!linkspam 1 1` | Sets the link rate limit. Use the example command to block all links. |
-| **linkspam punishment <punishments...>** | `!linkspam p delte, mute, defer` | Sets the punishment(s) for hitting the rate limit. |
-| **linkspam**      | `!linkspam`       | Shows the linkspam settings.                                                  |
-| **linkspam bl <llinks...>** | `!linkspam bl reddit.com twitter.com` | Blacklists one or more links.                   |
-| **linkspam wl <llinks...>** | `!linkspam wl reddit.com twitter.com` | Whitelists one or more links.                   |
-| **linkspam unbl <llinks...>** | `!linkspam unbl reddit.com twitter.com` | Removes one or more links from the blacklist. |
-| **linkspam unwl <llinks...>** | `!linkspam unwl reddit.com twitter.com` | Removes one or more links from the whitelist. |
-| **linkspam clearbl** | `!linkspam clearbl` | Clears the blacklist.                                                    |
-| **linkspam clearwl** | `!linkspam clearwl` | Clears the whitelist.                                                    |
-| **linkspam block**| `!linkspam block` | Punish all non-whitelisted links.                                             |
-| **linkspam off**  | `!linkspam off`   | Punish only blacklisted links.                                                |
-| **linkspam norole** | `!linkspam norole` | Punish only those without roles.                                           |
+| **linkspam server** | `/linkspam server` | Shows the linkspam settings.                                               |
+| **linkspam rate <rate>** | `/linkspam rate 1 1` | Sets the link rate limit. Use the example command to block all links. |
+| **linkspam punishment <punishments...>** | `/linkspam punishment delte, mute, defer` | Sets the punishment(s) for hitting the rate limit. |
+| **linkspam blacklist [add\|remove] <links...>** | `/linkspam blacklist add reddit.com twitter.com` | Adds or removes link(s) to/from the linkspam blacklist. |
+| **linkspam whitelist [add\|remove] <links...>** | `/linkspam whitelist remove reddit.com twitter.com` | Adds or removes link(s) to/from the linkspam whitelist. |
+| **linkspam clear [blacklist\|whitelist]** | `/linkspam clear blacklist` | Clears the blacklist or the whitelist.      |
+| **linkspam block**| `/linkspam block` | Punish all non-whitelisted links.                                             |
+| **linkspam off**  | `/linkspam off`   | Punish only blacklisted links.                                                |
+| **linkspam norole** | `/linkspam norole` | Punish only those without roles.                                           |
 
 <!-- tabs:end -->
 
@@ -180,13 +179,13 @@ Invitespam will not be active without setting a rate limit of at least 1+ invite
 <!-- tab:Prefix Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
+| **invitespam**    | `!invitespam`     | Shows the invitespam settings.                                                |
 | **invitespam <rate> [per=1]** | `!invitespam 1 1` | Sets the invite rate limit. Use the example command to block all invites. |
 | **invitespam punishment <punishments...>** | `!invitespam p delte, mute, defer, message` | Sets the punishment(s) for hitting the rate limit. |
-| **invitespam**      | `!linkspam`       | Shows the invitespam settings.                                              |
-| **invitespam bl <llinks...>** | `!invitespam bl discord.gg/fredboat` | Adds the server that the invite goes to, to the blacklist. |
-| **invitespam wl <llinks...>** | `!invitespam wl discord.gg/fredboat` | Adds the server that the invite goes to, to the whitelist. |
-| **invitespam unbl <llinks...>** | `!invitespam unbl discord.gg/fredboat` | Removes one or more servers from the blacklist. |
-| **invitespam unwl <llinks...>** | `!invitespam unwl discord.gg/fredboat` | Removes one or more servers from the whitelist. |
+| **invitespam bl <links...>** | `!invitespam bl discord.gg/fredboat` | Adds the server that the invite goes to, to the blacklist. |
+| **invitespam wl <links...>** | `!invitespam wl discord.gg/fredboat` | Adds the server that the invite goes to, to the whitelist. |
+| **invitespam unbl <links...>** | `!invitespam unbl discord.gg/fredboat` | Removes one or more servers from the blacklist. |
+| **invitespam unwl <links...>** | `!invitespam unwl discord.gg/fredboat` | Removes one or more servers from the whitelist. |
 | **invitespam clearbl** | `!invitespam clearbl` | Clears the blacklist.                                                    |
 | **invitespam clearwl** | `!invitespam clearwl` | Clears the whitelist.                                                    |
 | **invitespam [on\|block]**| `!invitespam on` | Punish all non-whitelisted invites.                                    |
@@ -196,18 +195,9 @@ Invitespam will not be active without setting a rate limit of at least 1+ invite
 <!-- tab:Slash Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **invitespam <rate> [per=1]** | `!invitespam 1 1` | Sets the invite rate limit. Use the example command to block all invites. |
-| **invitespam punishment <punishments...>** | `!invitespam p delte, mute, defer, message` | Sets the punishment(s) for hitting the rate limit. |
-| **invitespam**      | `!linkspam`       | Shows the invitespam settings.                                              |
-| **invitespam bl <llinks...>** | `!invitespam bl discord.gg/fredboat` | Adds the server that the invite goes to, to the blacklist. |
-| **invitespam wl <llinks...>** | `!invitespam wl discord.gg/fredboat` | Adds the server that the invite goes to, to the whitelist. |
-| **invitespam unbl <llinks...>** | `!invitespam unbl discord.gg/fredboat` | Removes one or more servers from the blacklist. |
-| **invitespam unwl <llinks...>** | `!invitespam unwl discord.gg/fredboat` | Removes one or more servers from the whitelist. |
-| **invitespam clearbl** | `!invitespam clearbl` | Clears the blacklist.                                                    |
-| **invitespam clearwl** | `!invitespam clearwl` | Clears the whitelist.                                                    |
-| **invitespam [on\|block]**| `!invitespam on` | Punish all non-whitelisted invites.                                    |
-| **invitespam off**| `!invitespam off` | Punish only blacklisted invites.                                              |
-| **invitespam norole** | `!invitespam norole` | Punish only those without roles.                                       |
+| **invitespam server** | `/invitespam server` | Shows the invitespam settings.                                         |
+| **invitespam punishment <punishments...>** | `/invitespam punishment delte, mute, defer, message` | Sets the punishment(s) for hitting the rate limit. |
+| **invitespam norole** | `/invitespam norole` | Punish only those without roles.                                       |
 
 <!-- tabs:end -->
 
@@ -229,12 +219,11 @@ Bad words detection is case insensitive, looks for substrings and ignores punctu
 <!-- tab:Slash Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **censor <words...>** | `!censor boat`| Adds one or more words to the list of blacklisted words.                     |
-| **censor add <words...>** | `!censor add boat` | Same as above.                                                       |
-| **censor remove <words...>** | `!censor remove boat` | Removes a word from the blacklist.                             |
-| **censor list**   | `!censor list`    | Lists all censored words.                                                     |
-| **censor clear**  | `!censor clear`   | Clears all censored words.                                                    |
-| **censor punishment <punishments...=delete, defer>** | `!censor p mute, delete, defer` |  Sets the punishment(s) for bad words. |
+| **censor server** | `/censor server`  | View censor settings for server.                                              |
+| **censor words [add\|remove] <words...>** | `/censor words add boat`| Adds or removes one or more words to/from the list of blacklisted words. |
+| **censor display**| `/censor display` | Lists all censored words.                                                     |
+| **censor clear**  | `/censor clear`   | Clears all censored words.                                                    |
+| **censor punishment <punishments...=delete, defer>** | `/censor punishment mute, delete, defer` |  Sets the punishment(s) for bad words. |
 
 <!-- tabs:end -->
 
@@ -251,8 +240,8 @@ Bad words detection is case insensitive, looks for substrings and ignores punctu
 <!-- tab:Slash Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **capslimit <percentage>** | `!capslimit 70` | Punishes messages with the % of its characters being uppercase. The message has to be at least 6 characters long. |
-| **[capspunish\|capsp\|capspunishment] <punishments...>** | `!capsp delete, warn` | Sets the punishment(s) for sending a message which hits the threshold. |
+| **caps limit <percentage>** | `/caps limit 70` | Punishes messages with the % of its characters being uppercase. The message has to be at least 6 characters long. |
+| **caps punishment <punishments...>** | `/caps punishment delete, warn` | Sets the punishment(s) for sending a message which hits the threshold. |
 
 <!-- tabs:end -->
 
