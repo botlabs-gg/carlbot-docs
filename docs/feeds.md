@@ -53,7 +53,7 @@ Automatic feeds can be seen as group reminders, and they share a lot of function
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
 | **autofeeds list**| `/autofeeds list` | Lists all autofeeds that have been set up in the server.                      |
-| **autofeeds create \<role> \<when>** | `/autofeeds create @Final Fantasy 18h The servers have been reset.` | Autofeeds that will ping the role specified each time they run. |\
+| **autofeeds create \<role> \<when>** | `/autofeeds create @FF 18h The servers have been reset.` | Autofeeds that will ping the role specified each time they run. |\
 | **autofeeds everyone \<duration>** | `/autofeeds everyone 24h Good morning` | Creates an autofeed that pings @everyone. |
 | **autofeeds here \<duration>** | `/autofeeds here 24h Good morning` | Creates an autofeed that pings @here.           |
 | **autofeeds silent \<duration>** | `/autofeeds silent 2h Vote for Carl-bot on Top.gg` | Autofeeds that won't ping any role each time they run. |
