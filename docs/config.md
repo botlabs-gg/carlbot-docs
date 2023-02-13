@@ -51,7 +51,9 @@
 | **restrict <command>** | `!restrict ping` | Restricts the response of the command to the specified bot channel.       |
 | **unrestrict <command>** | `!unrestrict ping` | Unrestricts the response of the command.                              |
 | **modonly <command>** | `!modonly ping` | Makes the command usable only by the role set in `modrole`.                 |
+| **modonly all**   | `!modonly all`    | Makes all commands modonly.                                                   |
 | **unmodonly <command>** | `!unmodonly ping` | Removes a command from the modonly list.                                |
+| **unmodonly all** | `!unmodonly all`  | Removes all commands from the modonly list.                                   |
 
 
 <!-- tab:Slash Commands -->
