@@ -48,11 +48,11 @@
 | **enable mod**    | `!enable mod`     | Enables all moderation commands.                                              |
 | **enable all**    | `!enable all`     | Enables all the commands.                                                     |
 | **enable list**   | `!enable list`    | Shows all enabled and disabled commands.                                      |
-| **restrict <command>** | `!restrict ping` | Restricts the response of the command to the specified bot channel.       |
-| **unrestrict <command>** | `!unrestrict ping` | Unrestricts the response of the command.                              |
-| **modonly <command>** | `!modonly ping` | Makes the command usable only by the role set in `modrole`.                 |
+| **restrict \<command>** | `!restrict ping` | Restricts the response of the command to the specified bot channel.       |
+| **unrestrict \<command>** | `!unrestrict ping` | Unrestricts the response of the command.                              |
+| **modonly \<command>** | `!modonly ping` | Makes the command usable only by the role set in `modrole`.                 |
 | **modonly all**   | `!modonly all`    | Makes all commands modonly.                                                   |
-| **unmodonly <command>** | `!unmodonly ping` | Removes a command from the modonly list.                                |
+| **unmodonly \<command>** | `!unmodonly ping` | Removes a command from the modonly list.                                |
 | **unmodonly all** | `!unmodonly all`  | Removes all commands from the modonly list.                                   |
 
 
@@ -87,10 +87,10 @@
 <!-- tab:Prefix Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **modrole <role>**   | `!modrole mod` | Any user with the specified role will be seen as a Moderator by the bot. This command won't give the users power to kick, ban, mute, warn, etc. |
+| **modrole \<role>**   | `!modrole mod` | Any user with the specified role will be seen as a Moderator by the bot. This command won't give the users power to kick, ban, mute, warn, etc. |
 | **modrole clear** | `!modrole clear`  | Removes the modrole.                                                          |
 | **muterole create [role_name=Muted]** | `!muterole create prison` | Creates a role with the specified name or default name **Muted**, and changes permission for that role in all current channels |
-| **muterole <role>** | `!muterole prison` | Sets an already created role as the muterole.                                |
+| **muterole \<role>** | `!muterole prison` | Sets an already created role as the muterole.                                |
 | **muterole update** | `!muterole update` | Updates the muterole settings for the server.                              |
 
 <!-- tab:Slash Commands -->
@@ -100,7 +100,7 @@
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
 | **muterole create [name]** | `/muterole create @prison` | Creates a role with the specified name or default name **Muted**, and changes permission for that role in all current channels |
-| **muterole set <role>** | `/muterole set @prison` | Sets an already created role as the muterole.                                |
+| **muterole set \<role>** | `/muterole set @prison` | Sets an already created role as the muterole.                                |
 | **muterole update** | `/muterole update` | Updates the muterole settings for the server.                              |
 
 <!-- tabs:end -->

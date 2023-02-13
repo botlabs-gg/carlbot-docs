@@ -10,8 +10,8 @@
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
 | **[am\|automod]** | `!am`             | Shows an overview of the current automod settings.                            |
-| **automod drama <channel>** | `!automod drama #drama` | This is a [Premium](https://www.patreon.com/carlbot) command.<br>Set the channel where mods can make decisions on rule breakers through reactions. |
-| **automod log <channel>** | `!automod log #automod` | Set the channel where the logs for automatic moderation actions go. |
+| **automod drama \<channel>** | `!automod drama #drama` | This is a [Premium](https://www.patreon.com/carlbot) command.<br>Set the channel where mods can make decisions on rule breakers through reactions. |
+| **automod log \<channel>** | `!automod log #automod` | Set the channel where the logs for automatic moderation actions go. |
 | **automod [media\|mo] <channels...>** | `!am mo #show-off` | Set the channel(s) where only posting images/links is allowed. |
 | **automod [unmedia\|umo\|unmo] <channels...>** | `!am umo #show-off` | Removes the media-only restriction from one or more channels. |
 | **automod [whitelist\|wl] <roles/channels>** | `!am wl mods #admin-chat` | Whitelists roles and/or channels so that the automod ignores messages posted in/by them. |
@@ -22,8 +22,8 @@
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
 | **automod server**| `/automod server` | Shows an overview of the current automod settings.                            |
-| **automod drama <channel>** | `/automod drama #drama` | This is a [Premium](https://www.patreon.com/carlbot) command.<br>Set the channel where mods can make decisions on rule breakers through reactions. |
-| **automod log <channel>** | `/automod log #automod` | Set the channel where the logs for automatic moderation actions go. |
+| **automod drama \<channel>** | `/automod drama #drama` | This is a [Premium](https://www.patreon.com/carlbot) command.<br>Set the channel where mods can make decisions on rule breakers through reactions. |
+| **automod log \<channel>** | `/automod log #automod` | Set the channel where the logs for automatic moderation actions go. |
 | **automod media <channels...>** | `/automod mo #show-off` | Set the channel(s) where only posting images/links is allowed. |
 | **automod unmedia <channels...>** | `/automod umo #show-off` | Removes the media-only restriction from one or more channels. |
 | **automod whitelist [add\|remove] <roles/channels>** | `!automod whitelist add mods #admin-chat` | Add or remove roles and/or channels from the automod whitelist. |
@@ -59,13 +59,13 @@ Warns do not automatically expire. Managing warns is detailed on the [Moderation
 <!-- tab:Prefix Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **automod [warn\|threshold] <limit>** | `!am warn 5`             | Sets the warn threshold for a punishment to be made. |
+| **automod [warn\|threshold] \<limit>** | `!am warn 5`             | Sets the warn threshold for a punishment to be made. |
 | **automod [warnpunish\|wp] <punishments...>** | `!am wp kick` | Sets the punishment for hitting the threshold.        |
 
 <!-- tab:Slash Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **automod threshold <limit>** | `/automod threshold 5`             | Sets the warn threshold for a punishment to be made. |
+| **automod threshold \<limit>** | `/automod threshold 5`             | Sets the warn threshold for a punishment to be made. |
 | **automod warnpunish <punishments...>** | `/automod warnpunish kick` | Sets the punishment for hitting the threshold. |
 
 <!-- tabs:end -->
@@ -89,7 +89,7 @@ Message spam will not be active without setting a rate limit of at least 1+ mess
 <!-- tab:Slash Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **slowmode set <rate>** | `/slowmode set 5 25` | Sets slowmode in the current channel. If you want the rate to be X messages in Y time then input `x y`. If only one value is supplied then it sets it as 1 message every supplied value. |
+| **slowmode set \<rate>** | `/slowmode set 5 25` | Sets slowmode in the current channel. If you want the rate to be X messages in Y time then input `x y`. If only one value is supplied then it sets it as 1 message every supplied value. |
 | **slowmode disable** | `/slowmode disable` | Disables slowmode in the current channel.                                |
 | **slowmode punishment <punishments...>** | `/slowmode punishment delete, tempmute 20m` | Sets the punishment(s) for hitting the rate limit. |
 
@@ -109,7 +109,7 @@ Attachmentspam will not be active without setting a rate limit of at least 1+ fi
 <!-- tab:Slash Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **attachmentspam set <rate>** | `/attachmentspam set 3 5` | Rate limits the number of attachments a member can post in a specific timeframe. |
+| **attachmentspam set \<rate>** | `/attachmentspam set 3 5` | Rate limits the number of attachments a member can post in a specific timeframe. |
 | **attachmentspam disable** | `/attachmentspam disable` | Disables attachmentspam in the current channel.              |
 | **attachmentspam punishment <punishments...>** | `/attachmentspam punishment mute, defer` | Sets the punishment(s) for hitting the rate limit. |
 
@@ -129,7 +129,7 @@ Mentionspam will not be active without setting a rate limit of at least 1+ menti
 <!-- tab:Slash Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **mentionspam set <rate>** | `/mentionspam set 25 5` | Enables the bot to automatically punish the mentionspammers.   |
+| **mentionspam set \<rate>** | `/mentionspam set 25 5` | Enables the bot to automatically punish the mentionspammers.   |
 | **mentionspam disable** | `/mentionspam disable` | Disables mentionspam in the current channel.                       |
 | **mentionspam punishment <punishments...=mute>** | `/mentionspam punishment tempban 24h` | Sets the punishment(s) for hitting the rate limit. |
 
@@ -144,7 +144,7 @@ Linkspam will not be active without setting a rate limit of at least 1+ links in
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
 | **linkspam**      | `!linkspam`       | Shows the current settings.                                                   |
-| **linkspam <rate> [per=1]** | `!linkspam 1 1` | Sets the link rate limit. Use the example command to block all links. |
+| **linkspam \<rate> [per=1]** | `!linkspam 1 1` | Sets the link rate limit. Use the example command to block all links. |
 | **linkspam punishment <punishments...>** | `!linkspam p delte, mute, defer` | Sets the punishment(s) for hitting the rate limit. |
 | **linkspam bl <links...>** | `!linkspam bl reddit.com twitter.com` | Blacklists one or more links.                   |
 | **linkspam wl <links...>** | `!linkspam wl reddit.com twitter.com` | Whitelists one or more links.                   |
@@ -162,7 +162,7 @@ Linkspam will not be active without setting a rate limit of at least 1+ links in
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
 | **linkspam server** | `/linkspam server` | Shows the linkspam settings.                                               |
-| **linkspam rate <rate>** | `/linkspam rate 1 1` | Sets the link rate limit. Use the example command to block all links. |
+| **linkspam rate \<rate>** | `/linkspam rate 1 1` | Sets the link rate limit. Use the example command to block all links. |
 | **linkspam punishment <punishments...>** | `/linkspam punishment delte, mute, defer` | Sets the punishment(s) for hitting the rate limit. |
 | **linkspam blacklist [add\|remove] <links...>** | `/linkspam blacklist add reddit.com twitter.com` | Adds or removes link(s) to/from the linkspam blacklist. |
 | **linkspam whitelist [add\|remove] <links...>** | `/linkspam whitelist remove reddit.com twitter.com` | Adds or removes link(s) to/from the linkspam whitelist. |
@@ -182,7 +182,7 @@ Invitespam will not be active without setting a rate limit of at least 1+ invite
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
 | **invitespam**    | `!invitespam`     | Shows the invitespam settings.                                                |
-| **invitespam <rate> [per=1]** | `!invitespam 1 1` | Sets the invite rate limit. Use the example command to block all invites. |
+| **invitespam \<rate> [per=1]** | `!invitespam 1 1` | Sets the invite rate limit. Use the example command to block all invites. |
 | **invitespam punishment <punishments...>** | `!invitespam p delte, mute, defer, message` | Sets the punishment(s) for hitting the rate limit. |
 | **invitespam bl <links...>** | `!invitespam bl discord.gg/fredboat` | Adds the server that the invite goes to, to the blacklist. |
 | **invitespam wl <links...>** | `!invitespam wl discord.gg/fredboat` | Adds the server that the invite goes to, to the whitelist. |
@@ -236,13 +236,13 @@ Bad words detection is case insensitive, looks for substrings and ignores punctu
 <!-- tab:Prefix Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **capslimit <percentage>** | `!capslimit 70` | Punishes messages with the % of its characters being uppercase. The message has to be at least 6 characters long. |
+| **capslimit \<percentage>** | `!capslimit 70` | Punishes messages with the % of its characters being uppercase. The message has to be at least 6 characters long. |
 | **[capspunish\|capsp\|capspunishment] <punishments...>** | `!capsp delete, warn` | Sets the punishment(s) for sending a message which hits the threshold. |
 
 <!-- tab:Slash Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **caps limit <percentage>** | `/caps limit 70` | Punishes messages with the % of its characters being uppercase. The message has to be at least 6 characters long. |
+| **caps limit \<percentage>** | `/caps limit 70` | Punishes messages with the % of its characters being uppercase. The message has to be at least 6 characters long. |
 | **caps punishment <punishments...>** | `/caps punishment delete, warn` | Sets the punishment(s) for sending a message which hits the threshold. |
 
 <!-- tabs:end -->
