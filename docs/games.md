@@ -5,7 +5,7 @@
 <!-- tab:Prefix Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **[fortnite\|fn] [platform=pc] \<name>** | `!fn Dakotaz` | Fetches some Fortnite stats for a specified player. Platform can be `playstation` or `xbox`, defaults to PC. |
+| **[fortnite\|fn] [platform=pc] \<name>** | `!fn Dakotaz` | Fetches some Fortnite stats for a specified player. Platform can be `playstation` or `xbox`, defaults to `pc`. |
 
 <!-- tab:Slash Commands -->
 ?> Not available in Slash Commands currently. Please use Prefix Commands instead.
