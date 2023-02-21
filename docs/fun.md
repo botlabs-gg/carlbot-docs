@@ -66,7 +66,7 @@
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
 | **echo [channel] \<message>** | `!echo #general Welcome guys` | Makes the bot post the message in the mentioned channel or the channel the command was used in. |
-| **[pick\|choice\|select] <...choices>** | `!choose go to sleep, play game` | Picks one of your specified arguments. Use commas for multiple choices. |
+| **[pick\|choice\|select] <choices...>** | `!choose go to sleep, play game` | Picks one of your specified arguments. Use commas for multiple choices. |
 | **[ud\|urbandictionary] \<word>** | `!ud rizz` | Returns the UrbanDictionary definition for your word. Can only be used in NSFW channels. |
 | **roll [lower=1]-[upper=100]** | `!roll 100-1100` | Random number generation. Providing only one number will change the upper limit. |
 | **[coinflip\|coin\|flip]** | `!coin`  | Flips a coin.                                                                 |
