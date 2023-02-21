@@ -77,20 +77,24 @@ Ideal background resolution is `934x282` pixels but if a different resolution is
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
 | **level shh**     | `!lvl shh`        | Bot stops announcing level up messages.                                       |
+| **level dm**      | `!lvl dm`         | Makes the bot DM the level up message to the user.                            |
 | **level channel [channel=current]** | `!lvl channel #level-up` | Sets a channel to send level up messages to.         |
 | **level limit \<number>** | `!lvl limit 15` | Only announce level ups above the limit.                                |
 | **level mod \<number>** | `!lvl mod 5`| Only announce level ups if they are evenly divisble by the number.            |
 | **level rewardonly** | `!lvl rewardonly` | Only announce level ups with associated rank rewards.                      |
+| **leaderboard [page]** | `!leaderboard` | Lists the members based on their XP.                                        |
 | **level log**     | `!lvl log`        | Shows the last 25 level ups in the server.                                    |
 
 <!-- tab:Slash Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
 | **level shh**     | `/level shh`      | Bot stops announcing level up messages.                                       |
+| **level dm**      | `/level dm`       | Makes the bot DM the level up message to the user.                            |
 | **level channel [channel=current]** | `/level channel #level-up` | Sets a channel to send level up messages to.       |
 | **level limit \<limit>** | `/level limit 15` | Only announce level ups above the limit.                               |
 | **level mod \<mod>** | `/level mod 5` | Only announce level ups if they are evenly divisble by the number.            |
 | **level rewardonly** | `/level rewardonly` | Only announce level ups with associated rank rewards.                    |
+| **leaderboard [page]** | `/leaderboard` | Lists the members based on their XP.                                        |
 | **level log**     | `/level log`      | Shows the last 25 level ups in the server.                                    |
 
 <!-- tabs:end -->
