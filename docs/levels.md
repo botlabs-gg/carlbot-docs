@@ -94,7 +94,7 @@ Ideal background resolution is `934x282` pixels but if a different resolution is
 | **level limit \<limit>** | `/level limit 15` | Only announce level ups above the limit.                               |
 | **level mod \<mod>** | `/level mod 5` | Only announce level ups if they are evenly divisble by the number.            |
 | **level rewardonly** | `/level rewardonly` | Only announce level ups with associated rank rewards.                    |
-| **leaderboard [page]** | `/leaderboard` | Lists the members based on their XP.                                        |
+| **leaderboard [page]** | `/level leaderboard` | Lists the members based on their XP.                                  |
 | **level log**     | `/level log`      | Shows the last 25 level ups in the server.                                    |
 
 <!-- tabs:end -->
