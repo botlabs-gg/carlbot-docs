@@ -13,7 +13,8 @@
 
 <!-- tab:Slash Commands -->
 1. Choose a channel with `/log channel [channel]`
-2. Split up logging into separate channel by using the commands found in [Logging Commands](#logging-commands).
+2. Select which events you want to be logged with `/log config [event]` where event is an event found in the [Events List](#events-list).
+3. Split up logging into separate channel by using the commands found in [Logging Commands](#logging-commands).
 
 ?> The `/log aio` command automatically creates a category, fills it with five channels and splits up logging into them.
 
