@@ -26,7 +26,7 @@ This guide will cover everything you need to do to get started with the basics o
 
 
 + ### Prefix
-By default, Carl-bot response to `!` and `?` prefixes as well as `/` slash commands. To make the bot respond to another prefix, `-` for example, you can use `!prefix set -`.
+By default, Carl-bot responds to `!` and `?` prefixes as well as `/` slash commands. To make the bot respond to another prefix, `-` for example, you can use `!prefix set -`.
 To add a prefix without removing the others, use `!prefix add -`. Carl-bot can have upto **15 prefixes** in each server.
 
 
