@@ -3,12 +3,11 @@
 [![Patron Button](_images/patron_button.png)](https://www.patreon.com/bePatron?u=11251319)
 
 ## Level Card
+!> In order for the bot to start tracking messages you need to change <i>any</i> setting. As long as `level config` command works, the level system works.
 
 <!-- tabs:start -->
 
 <!-- tab:Prefix Commands -->
-!> In order for the bot to start tracking messages you need to change <i>any</i> setting. As long as `!lvl config` works, the level system works.
-
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
 | **[levels\|lvl\|level\|lvls] [member]** | `!level @Carl-bot` | Displays the rank card for a member.                   |
@@ -19,8 +18,6 @@
 | **level [serverbackground\|serverbg] \<link>** | `!lvl serverbg https://i.ibb.co/L1n\|<` | Sets the default [background](#background) for level cards in your server. This won't overwrite individually set backgrounds. |
 
 <!-- tab:Slash Commands -->
-!> In order for the bot to start tracking messages you need to change <i>any</i> setting. As long as `/level config` works, the level system works.
-
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
 | **level member [member]** | `/level member @Carl-bot` | Displays the rank card for a member.                          |
