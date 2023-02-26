@@ -27,7 +27,7 @@
 
 ## Embed Builder
 
-!["Embed Builder](_images/embed_builder.png ':size=75%')
+!["Embed Builder"](_images/embed_builder.png ':size=75%')
 
 > `I` = Icon URL
 `T` = Thumbnail URL
