@@ -99,3 +99,32 @@ Each event that Carl-bot logs has an associated value and channel.
 | everything            | All events                                | 4194303       | depends                           |
 | nothing               | No events                                 | 0             |                                   |
 | default               | Some messages and member events           | 1019          | depends                           |
+
+
+## Modlogs
+
+<!-- tabs:start -->
+
+<!-- tab:Prefix Commands -->
+| Name              | Example           | Usage                                                                         |
+| ----------------- | ----------------- | ----------------------------------------------------------------------------- |
+| **modlog create [name=modlog]** | `!modlog create auditlog` | Creates a channel where moderation actions will be logged. |
+| **modlog set \<channel>** | `!modlog set #modlog` | Sets an already existing channel to send actions to (make sure the bot has the permissions required to post in the channel). |
+| **modlog clear**  | `!modlog clear`   | Makes the bot stop logging actions to the channel.                            |
+| **modlog from \<member>** | `!modlog from @Carl-bot` | Retrieves all infractions for a member with the responsible moderator. |
+| **reason \<case_id> \<reason>** | `!reason 17 Spamming` | Sets a reason for a modlog entry, useful for cases where you either banned manually or forgot to specify a reason. |
+| **modlog highscores** | `!modlog highscores` | Shows the moderators ranked by how many actions they've taken.        |
+| **modlog export [member]** | `!modlog export @Carl-bot` | Generates a `.txt` file of your server's modlogs or the modlogs relating to the user specified. |
+
+<!-- tab:Slash Commands -->
+| Name              | Example           | Usage                                                                         |
+| ----------------- | ----------------- | ----------------------------------------------------------------------------- |
+| **modlog create [name]** | `/modlog create auditlog` | Creates a channel where moderation actions will be logged. |
+| **modlog set \<channel>** | `/modlog set #modlog` | Sets an already existing channel to send actions to (make sure the bot has the permissions required to post in the channel). |
+| **modlog clear**  | `/modlog clear`   | Makes the bot stop logging actions to the channel.                            |
+| **modlog from \<member>** | `/modlog from @Carl-bot` | Retrieves all infractions for a member with the responsible moderator. |
+| **modlog reason \<case_id> \<reason>** | `/modlog reason 17 Spamming` | Sets a reason for a modlog entry, useful for cases where you either banned manually or forgot to specify a reason. |
+| **modlog highscores** | `/modlog highscores` | Shows the moderators ranked by how many actions they've taken.        |
+| **modlog export \<all\|member> [member]** | `/modlog export member @Carl-bot` | Generates a `.txt` file of your server's modlogs or the modlogs relating to the user specified. |
+
+<!-- tabs:end -->
