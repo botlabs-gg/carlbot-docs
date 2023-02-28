@@ -1,6 +1,8 @@
 ## Tags
 Tags are basically custom commands that can be called using their names after Carl-bot's prefix. So, if you have created a tag named **test** which has the content `Hello World` then you can use `!test` to make the bot reply `Hello World`.
 
+![Create Tag](_images/tag_create.png)
+
 ?> Tags can get complicated, check out [Advanced Usage](#advanced-usage) for a more thorough explannation of Tagscript.
 
 ### Tag Commands
@@ -946,9 +948,11 @@ This method assigns all the data that is related to the same holiday to variable
 
 
 ## Triggers
-!> Autoresponses are not custom commands, if you want things that are triggered by a prefix and a keyword, see the tag section. They offer more functionality, better editing capabilities, will never have a limit to them and are just generally nicer for their intended purpose.
+?> Triggers are not custom commands, if you want things that are triggered by a prefix and a keyword, see the [Tag](#tags) section. They offer more functionality, better editing capabilities, will never have a limit to them and are just generally nicer for their intended purpose.
 
-!> Autoresponses **CANNOT** be more than 2000 characters in length. A server can only have 50 autoresponses. If more than 50 autoresponses exist on a server, any autoresponse after the 50th one alphabetically will no longer function. Embeds attached to autoresponse via the Dashboard are subject to the same limits detailed in the Embeds section.
+![Create Trigger](_images/trigger_create.png)
+
+!> Triggers **CANNOT** be more than 2000 characters in length. A server can only have 50 triggers. If more than 50 triggers exist on a server, any triggers after the 50th one alphabetically will no longer function. Embeds attached to trigger via the Dashboard are subject to the same limits detailed in the Embeds section.
 
 <!-- tabs:start -->
 

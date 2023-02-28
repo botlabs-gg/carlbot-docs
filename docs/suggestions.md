@@ -1,5 +1,7 @@
 ?> All commands here require `suggestion channel` to have been used and set in order to work.
 
+![Suggestions](_images/suggestions.png ':size=75%')
+
 ## Settings
 
 <!-- tabs:start -->

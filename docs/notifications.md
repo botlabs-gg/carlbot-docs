@@ -1,6 +1,8 @@
 ## Twitch
 ?> **Limits**<br>Non-Premium Carl-bot servers are limited to subscribing to 1 Twitch channel notifications.<br>Premium Carl-bot servers are limited to subscribing to 5 Twitch channel notifications.
 
+![Twitch](_images/twitch.png ':size=100%')
+
 <!-- tabs:start -->
 
 <!-- tab:Prefix Commands -->
