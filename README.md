@@ -13,12 +13,7 @@ It is hosted on https://docs.carl.gg.
 
 ## How to run the documentation locally
 
-- [Setup docker on your system](https://docs.docker.com/desktop)
-- Go to the directory of the cloned repo
-- And then do `docker-compose up`
-- By default, the documentation will start on `http://localhost:4000`, you can change the port in `docker-compose.yml`
-
-If you find docker too complicated. You can alternatively use any http server to serve the html pages.
+- 
 
 ## Contributing Guidelines
 
