@@ -61,6 +61,7 @@ By using `!muterole create` you can create a role with the permission <span styl
 + ### Welcome Message
 You can set the welcome message that would be sent in the previously set [channel](#channels) using `!welcome <message>`. You can also set a different message to be sent in a DM to the member upon joining by using `!joindm <message>`. There are a few variables that can be used in these commands which you can read about in later sections, such as `{user}` for mentioning the user to whom the message is addressed to.
 
+![Set Welcome](_images/welcome_channel.png ':size=75%')
 
 This is far from everything Carl-bot has to offer but at this point you will have set up the crucial things that you can set up.
 

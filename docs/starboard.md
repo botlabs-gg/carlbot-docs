@@ -1,5 +1,7 @@
 ?> After you make a Starboard channel, your members can react to any message with a ⭐ `:star:` which counts as a vote to display that message as a post on the Starboard. Once the message gets enough reactions, Carl-bot posts it onto the Starboard. By default, a user's reaction on their own post doesn't count.
 
+![Starboard Settings](_images/starboard_settings.png ':size=75%')
+
 <!-- tabs:start -->
 
 <!-- tab:Prefix Commands -->
