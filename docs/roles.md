@@ -1,6 +1,8 @@
 ## Autoroles
 ?> If you have autoroles and reassigned roles, the returning member will receive the union of both.
 
+![Autoroles](_images/autoroles.png ':size=75%') ![Sticky Roles](_images/sticky_roles.png ':size=75%')
+
 <!-- tabs:start -->
 
 <!-- tab:Prefix Commands -->
@@ -50,6 +52,8 @@ Autoroles but roles are assigned with a delay.
 
 ## Reaction Roles
 ?> Deleted messages are also cleared from the database. Pin the reaction role message to make it immune to purging.
+
+![Reaction Roles](_images/create_rr.png ':size=75%')
 
 ### RR Management
 

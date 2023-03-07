@@ -35,6 +35,8 @@ Automatic feeds can be seen as group reminders, and they share a lot of function
 
 ?> Timezones suck, use the [Dashboard](https://carl.gg) to create autofeeds with your local timezone.
 
+![Autofeeds](_images/create_autofeed.png ':size=75%')
+
 <!-- tabs:start -->
 
 <!-- tab:Prefix Commands -->

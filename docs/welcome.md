@@ -27,6 +27,7 @@
 
 <!-- tabs:end -->
 
+![Set Welcome](_images/welcome_channel.png ':size=75%')
 
 ### Variables
 Supports the following variables:
@@ -38,3 +39,5 @@ Supports the following variables:
 - `{server(members)}` - Number of members in the server (after the event has happened). Use `{ord:{server(members)}}` to turn 8102 into 8,102nd etc
 - `{random: lists, separated by commas}` - Random string from the list
 - `{math: 1 + 1}` - Calculate stuff
+
+![Welcome Settings](_images/welcome_settings.png ':size=75%')

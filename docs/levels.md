@@ -38,6 +38,8 @@ Ideal background resolution is `934x282` pixels but if a different resolution is
 
 ## Level Settings
 
+![Level Config](_images/level_config.png ':size=75%')
+
 <!-- tabs:start -->
 
 <!-- tab:Prefix Commands -->
@@ -98,6 +100,8 @@ Ideal background resolution is `934x282` pixels but if a different resolution is
 
 
 ## Level Rewards
+
+![Level Rewards](_images/level_rewards.png ':size=75%')
 
 <!-- tabs:start -->
 
