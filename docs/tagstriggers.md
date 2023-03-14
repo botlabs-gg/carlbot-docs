@@ -891,7 +891,7 @@ Let's combine everything and look at our final tag!
 `{=(rand.color):#{#:{hex}}{#:{hex}}{#:{hex}}{#:{hex}}{#:{hex}}{#:{hex}}}`<br>
 `{embed(color):{if({target(color)}==#000000):{rand.color}|{target(color)}}}`<br>
 `{=():}`<br>
-`{{if({user(id)}!={target(id)}):cmd:role add {target(id)} Verified}}`<br>`
+`{{if({user(id)}!={target(id)}):cmd:role add {target(id)} Verified}}`<br>
 
 What your verify tag's output might look like:
 
