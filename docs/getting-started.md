@@ -17,7 +17,7 @@ Each category of commands has their own page which can be found on the sidebar.
 Additionally, the bot uses *converters* which makes specifying roles, members, channels etc, easy and fool-proof. When asked to specify a member, you can provide it a mention, an id, a name or a nickname. This principle works for every single command where applicable.
 
 
-## Basic Confugration
+## Basic Configuration
 ?> Use the **[Dashboard](https://carl.gg)** to configure the bot easily without the need to use any commands.
 
 !["Bot Settings"](_images/bot_settings.png ':size=75%')
