@@ -42,7 +42,7 @@ Dumps the 10 oldest accounts with the patreon role. Output:<br>
 `10. Terra Fri Dec  4 02:49:17 2015`
 
 > **!dump -o id --limit 10 --no-roles**<br>
-`Dumps the 10 oldest accounts without roles. Output:<br>
+Dumps the 10 oldest accounts without roles. Output:<br>
 `Andy#7194 (23572087872421888)`<br>
 `macki#9999 (48287434319855616)`<br>
 `Xaric123#8510 (49188871384072192)`<br>
@@ -67,7 +67,7 @@ The syntax is `/stats dump [role] [query]`
 
 If you're not used to using flags this might be confusing, so here are some examples and what they do:
 
-> **/dump @Patrons --enumerate --order id -f %n %c --dateformat %c --limit 10**<br>
+> **/stats dump @Patrons --enumerate --order id -f %n %c --dateformat %c --limit 10**<br>
 Dumps the 10 oldest accounts with the patreon role. Output:<br>
 `1. evlsmurf Mon Aug 31 22:23:33 2015`<br>
 `2. Hammy:hamster: Thu Sep 24 23:04:31 2015`<br>
@@ -80,8 +80,8 @@ Dumps the 10 oldest accounts with the patreon role. Output:<br>
 `9. aphoenix Mon Nov  9 02:09:03 2015`<br>
 `10. Terra Fri Dec  4 02:49:17 2015`
 
-> **/dump -o id --limit 10 --no-roles**<br>
-`Dumps the 10 oldest accounts without roles. Output:<br>
+> **/stats dump -o id --limit 10 --no-roles**<br>
+Dumps the 10 oldest accounts without roles. Output:<br>
 `Andy#7194 (23572087872421888)`<br>
 `macki#9999 (48287434319855616)`<br>
 `Xaric123#8510 (49188871384072192)`<br>

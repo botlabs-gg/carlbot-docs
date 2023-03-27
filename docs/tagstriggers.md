@@ -623,7 +623,7 @@ Sets the embed's timestamp to the value in the payload.<br>
 #### Manipulation Blocks
 These are blocks that manipulate the string in the payload in specific ways to return different desired results. They can be used to concatenate a string onto the end of a search URL with the correct encoding for spaces, or to sanitize inputs before using the input in a conditional statement, or to remove spaces or specific characters from the payload.
 
-##### Ordial Abbreviation Blocks
+##### Ordinal Abbreviation Blocks
 `{ord:number}`<br>
 Returns the number in the payload with the correct Ordinal Abbreviation following it.
 
@@ -891,7 +891,7 @@ Let's combine everything and look at our final tag!
 `{=(rand.color):#{#:{hex}}{#:{hex}}{#:{hex}}{#:{hex}}{#:{hex}}{#:{hex}}}`<br>
 `{embed(color):{if({target(color)}==#000000):{rand.color}|{target(color)}}}`<br>
 `{=():}`<br>
-`{{if({user(id)}!={target(id)}):cmd:role add {target(id)} Verified}}`<br>`
+`{{if({user(id)}!={target(id)}):cmd:role add {target(id)} Verified}}`<br>
 
 What your verify tag's output might look like:
 

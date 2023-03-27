@@ -13,7 +13,9 @@ It is hosted on https://docs.carl.gg.
 
 ## How to run the documentation locally
 
-- 
+- Clone the repository on your system.
+- Install docsify-cli `npm i docsify-cli -g`
+- Then do `docsify serve ./docs` to host the documentation on `https://localhost:3000`
 
 ## Contributing Guidelines
 

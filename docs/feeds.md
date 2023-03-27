@@ -43,7 +43,7 @@ Automatic feeds can be seen as group reminders, and they share a lot of function
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
 | **[autofeed\|autofeeds\|af]** | `!af` | Lists all autofeeds that have been set up in the server.                      |
-| **autofeeds \<role> \<time> \<message>** | `!af "Final Fantasy" 18h The servers have been reset.` | Autofeeds that will ping the role specified each time they run. |
+| **autofeeds create \<role> \<time> \<message>** | `!af create "Final Fantasy" 18h The servers have been reset.` | Autofeeds that will ping the role specified each time they run. |
 | **autofeeds silent \<time> \<message>** | `!af silent 2h Vote for Carl-bot on Top.gg` | Autofeeds that won't ping any role each time they run. |
 | **autofeeds silence \<id>** | `!af silence 37` | Silences an already existing autofeed.                               |
 | **autofeeds repeat \<id> \<time>** | `!af repeat 13 24h` | Marks an autofeed to be repeated. This keeps going until you delete the autofeed. |
@@ -55,7 +55,7 @@ Automatic feeds can be seen as group reminders, and they share a lot of function
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
 | **autofeeds list**| `/autofeeds list` | Lists all autofeeds that have been set up in the server.                      |
-| **autofeeds create \<role> \<when>** | `/autofeeds create @FF 18h The servers have been reset.` | Autofeeds that will ping the role specified each time they run. |\
+| **autofeeds create \<role> \<when> \<message>** | `/autofeeds create @FF 18h The servers have been reset.` | Autofeeds that will ping the role specified each time they run. |\
 | **autofeeds everyone \<duration>** | `/autofeeds everyone 24h Good morning` | Creates an autofeed that pings @everyone. |
 | **autofeeds here \<duration>** | `/autofeeds here 24h Good morning` | Creates an autofeed that pings @here.           |
 | **autofeeds silent \<duration>** | `/autofeeds silent 2h Vote for Carl-bot on Top.gg` | Autofeeds that won't ping any role each time they run. |
