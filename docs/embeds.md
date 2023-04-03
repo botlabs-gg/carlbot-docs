@@ -51,6 +51,7 @@
 
 
 ## Editing an Embed
+?> You can now edit embeds through the **[Dashboard](https://carl.gg)**.
 
 Editing complex embeds can be daunting to users unfamiliar with JSON. Follow these steps:
 
