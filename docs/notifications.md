@@ -53,7 +53,7 @@ These variables can be used in the message that is sent when a streamer goes liv
 <!-- tab:Slash Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **youtube add \<name> [channel=current] [format]** | `/youtube add https://youtube.come/ygaming` | Binds the youtuber channel's alerts to the channel. Can use handle name, custom profile link or even video links (which is the most accurate way). |
+| **youtube add \<name> [channel=current] [format]** | `/youtube add https://youtube.come/ygaming` | Binds the youtuber channel's alerts to the channel. Can use channel name, handle name, custom channel link or even video links (which is the most accurate way). |
 | **youtube list** | `/youtube list` | Shows all the binded youtubers and the connected channels.         |
 | **youtube remove \<name>** | `/youtube remove https://youtube.come/ygaming` | Unbinds a youtuber channel's alerts. |
 | **youtube move \<name> \<channel>** | `/youtube move https://youtube.come/ygaming #live` | Rebinds a youtube channel's alerts to a different channel. |
