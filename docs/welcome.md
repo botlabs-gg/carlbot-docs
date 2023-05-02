@@ -20,9 +20,9 @@
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
 | **welcome \<message>** | `/welcome Welcome` | Sets up a welcome message that will be sent when a new user joins.      |
-| **farewell \<message>** | `/farewell Goodbye` | Sets up a leave message that will be sent when a user leaves the server. | 
+| **farewell [message]** | `/farewell Goodbye` | Sets up a leave message that will be sent when a user leaves the server. | 
 | **banmessage [message]**| `/banmessage {user} got banned` | Sets up a banmsg message that will be sent when a user gets banned. |
-| **joindm \<message>** | `/joindm Welcome` | DMs the user upon joining your server.                                    |
+| **joindm [message]** | `/joindm Welcome` | DMs the user upon joining your server.                                    |
 | **testgreet**     | `/testgreet`      | Sends a welcome, farewell and banmsg for testing.                             |
 
 <!-- tabs:end -->
