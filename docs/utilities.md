@@ -152,7 +152,7 @@ For multi-word highlights, it will look for a sequence of words, not a substring
 <!-- tab:Slash Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **fun info [member]** | `/fun info @Carl-bot` | Returns the specified user's name, avatar link, roles, ID, creation date, server join date and some cool related information. |
+| **members info [member]** | `/members info @Carl-bot` | Returns the specified user's name, avatar link, roles, ID, creation date, server join date and some cool related information. |
 | **avatars [user]** | `/avatars @Carl-bot` | Shows the avatar of a mentioned user or yourself if you don't. Works even if the user doesn't share a server with the bot. |
 | **stats serverinfo** | `/stats serverinfo` | Displays server information.                                             |
 | **members youngest [count=5]** | `/members youngest 10` | Ranks up to 25 members by account creation. Defaults to 5 if unspecified. Requires <span style="color: red;">Manage Messages</span>. |
@@ -169,14 +169,13 @@ For multi-word highlights, it will look for a sequence of words, not a substring
 <!-- tab:Prefix Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| poll \<question>  | `!poll is this nice?` | Creates a thumbs up-down poll where users vote with reactions.            |
+| poll \<question> [choices]  | `!poll is this nice?` | Creates a thumbs up-down poll where users vote with reactions.            |
 | quickpoll \<question_and_choices> | `!quickpoll is this nice?, yes, no` | Creates a poll with question and answers. Use `|` or `,` to separate the question and answers. |
 
 <!-- tab:Slash Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| poll \<question>  | `/poll is this nice?` | Creates a thumbs up-down poll where users vote with reactions.            |
-| quickpoll \<question_and_choices> | `/quickpoll is this nice?, yes, no` | Creates a poll with question and answers. Use `|` or `,` to separate the question and answers. |
+| poll \<question> [choices]  | `/poll is this nice?` | Creates a thumbs up-down poll where users vote with reactions. Use `|` or `,` to separate the question and answers. |
 
 <!-- tabs:end -->
 
