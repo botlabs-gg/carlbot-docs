@@ -9,9 +9,10 @@
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
 | **embed [channel] \<color> \<title> \| \<description>** | `!embed #welcome FF0000 Title \| Description` | Creates a simple embed with color, title and description. |
 | **editembed \<message id> \<title> \| \<description>** | `!editembed 32538901190123 Title \| Description` | Edits an embed sent by the bot in a message. |
-| **cembed [channel] \<JSON>** | `!cembed #welcome` | Creates a fully customized embed. Also accepts a Pastebin link. |
+| **cembed [channel] \<JSON>** | `!cembed #welcome` | Creates a fully customized embed. Also accepts a Pastebin link.   |
 | **ecembed \<message id> \<channel> \<JSON>** | `!ecembed 31203123191 #welcome` | Edits any embed the bot has posted using the JSON or JSON source that follows the message ID and channel. |
-| **embedsource \<message id> [channel]** | `!embedsource 9312838121123 #welcome` | Gets the raw JSON from an embed. |
+| **embedsource \<message id> [channel]** | `!embedsource 9312838121123 #welcome` | Gets the raw JSON from an embed.    |
+| **embedunhide \<message_id> [channel]** | `!embedunhide 123456789` | Unhides a previously closed embed.               |
 
 <!-- tab:Slash Commands -->
 | Name              | Example           | Usage                                                                         |
@@ -20,7 +21,8 @@
 | **embed edit \<message id> \<text>** | `/embed edit 32538901190123 Title \| Description` | Edits an embed sent by the bot in a message. |
 | **embed custom \<JSON> [channel]** | `/embed custom #welcome` | Creates a fully customized embed. Also accepts a Pastebin link. |
 | **embed editcustom \<message id> \<JSON> \<channel>** | `/embed editcustom 31203123191 #welcome` | Edits any embed the bot has posted using the JSON or JSON source that follows the message ID and channel. |
-| **embed source \<message id> [channel]** | `/embedsource 9312838121123 #welcome` | Gets the raw JSON from an embed. |
+| **embed source \<message id> [channel]** | `/embed source 9312838121123 #welcome` | Gets the raw JSON from an embed.  |
+| **embed unhide \<message_id> [channel]** | `/embed unhide 123456789` | Unhides a previously closed embed.             |
 
 <!-- tabs:end -->
 
