@@ -3,7 +3,7 @@ Tags are basically custom commands that can be called using their names after Ca
 
 ![Create Tag](_images/tag_create.png)
 
-?> Tags can get complicated, check out [Advanced Usage](#advanced-usage) for a more thorough explannation of Tagscript.
+?> Tags can get complicated, check out [Advanced Usage](#advanced-usage) for a more thorough explanation of Tagscript.
 
 ### Tag Commands
 
