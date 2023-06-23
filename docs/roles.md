@@ -169,7 +169,7 @@ Autoroles but roles are assigned with a delay.
 <!-- tab:Prefix Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **role create \<name> [color] [mentionable=False] [hoist=False]** | `!role create bot FF0000 true true` | Creates a role. Hoist decides if it shows up in the sidebar or not. |
+| **role create \<name> [color] [mentionable=False] [hoist=False]** | `!role create bot #FF0000 true true` | Creates a role. Hoist decides if it shows up in the sidebar or not. |
 | **allroles**      | `!allroles`       | Displays list of roles in the server and member count assigned to the role.              |
 | **role \<member> \<role>** | `!role @Carl-bot bot` | Adds/removes a role from the specified member.                   |
 | **role add \<member> \<role>** | `!role add @Carl-bot bot` | Adds a role to the specified member.                     |
@@ -184,7 +184,7 @@ Autoroles but roles are assigned with a delay.
 <!-- tab:Slash Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **role create \<name> [color] [mentionable=False] [hoist=False]** | `/role create bot FF0000 true true` | Creates a role. Hoist decides if it shows up in the sidebar or not. |
+| **role create \<name> [color] [mentionable=False] [hoist=False]** | `/role create bot #FF0000 true true` | Creates a role. Hoist decides if it shows up in the sidebar or not. |
 | **role allroles** | `/role allroles` | Displays list of roles in the server and member count assigned to the role.    |
 | **role add \<user> \<role>** | `/role add @Carl-bot bot` | Adds a role to the specified member.                       |
 | **role remove \<user> \<role>** | `/role remove @Carl-bot bot` | Removes a role from the specified member.            |

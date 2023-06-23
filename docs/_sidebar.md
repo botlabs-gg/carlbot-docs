@@ -5,6 +5,7 @@
 - [**Feeds**](feeds.md "Feeds")
 - [**Fun**](fun.md "Fun")
 - [**Games**](games.md "Games")
+- [**Giveaways**](giveaways.md "Giveaways")
 - [**Welcome & Leave**](welcome.md "Welcome & Leave")
 - [**Levels** :star:](levels.md "Levels")
 - [**Logging**](logging.md "Logging")

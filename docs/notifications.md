@@ -38,6 +38,8 @@ These variables can be used in the message that is sent when a streamer goes liv
 
 ## YouTube
 
+!> To move the youtube alert channel or format the youtube alert message, you need to head over to the **[Dashboard](https://carl.gg)**.
+
 <!-- tabs:start -->
 
 <!-- tab:Prefix Commands -->
@@ -47,8 +49,6 @@ These variables can be used in the message that is sent when a streamer goes liv
 | **youtube sub \<name> [channel=current] [message]** | `!yt sub https://youtube.come/ygaming` | Binds the youtuber channel's alerts to the channel. |
 | **youtube list**  | `!yt list`        | Shows all the binded youtubers and the connected channels.                    |
 | **youtube unsub \<name>** | `!yt unsub https://youtube.come/ygaming` | Unbinds a youtuber channel's alerts.           |
-| **youtube move \<name> \<channel>** | `!yt move https://youtube.come/ygaming #live` | Rebinds a youtube channel's alerts to a different channel. |
-| **youtube fmt \<name> \<message>** | `!yt fmt https://youtube.come/ygaming I am live` | Changes a youtube channel's alert message. |
 
 <!-- tab:Slash Commands -->
 | Name              | Example           | Usage                                                                         |
@@ -56,8 +56,6 @@ These variables can be used in the message that is sent when a streamer goes liv
 | **youtube add \<name> [channel=current] [format]** | `/youtube add https://youtube.come/ygaming` | Binds the youtuber channel's alerts to the channel. Can use channel name, handle name, custom channel link or even video links (which is the most accurate way). |
 | **youtube list** | `/youtube list` | Shows all the binded youtubers and the connected channels.         |
 | **youtube remove \<name>** | `/youtube remove https://youtube.come/ygaming` | Unbinds a youtuber channel's alerts. |
-| **youtube move \<name> \<channel>** | `/youtube move https://youtube.come/ygaming #live` | Rebinds a youtube channel's alerts to a different channel. |
-| **youtube format \<name> \<message>** | `/youtube format https://youtube.come/ygaming Live` | Changes a youtube channel's alert message. |
 
 <!-- tabs:end -->
 
