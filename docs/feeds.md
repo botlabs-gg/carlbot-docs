@@ -66,3 +66,9 @@ Automatic feeds can be seen as group reminders, and they share a lot of function
 | **autofeeds move \<id> \<channel>** | `/autofeeds move 73 #general` | Moves an autofeed to the specified channel.     |
 
 <!-- tabs:end -->
+
+### Variables
+These variables can be used in the message that is sent through an autofeed:
+- `{server}` - Server name
+- `{channel}` - Channel name
+- `{unix}` - Unix time
