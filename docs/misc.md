@@ -3,8 +3,6 @@
 <!-- tab:Prefix Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| Name              | Example           | Usage                                                                         |
-| ----------------- | ----------------- | ----------------------------------------------------------------------------- |
 | charinfo \<characters> | `!charinfo %`| Shows you information about characters. Max 15 characters at a time.          |
 | **botpermissions [channel=current]** | `!botpermissions` | Shows the bot's permissions in the channel provided.       |
 | invite            | `!invite`         | Shows you the bot's invite links.                                             |
