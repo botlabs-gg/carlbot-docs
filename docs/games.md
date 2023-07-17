@@ -27,23 +27,26 @@
 | **[reset\|whenisthereset]** | `!reset`| Shows how long until WoW resets for EU/NA.                                    |
 
 <!-- tab:Slash Commands -->
-?> Not available in Slash Commands currently. Please use Prefix Commands instead.
+?> Some commands are not available in Slash Commands currently or are in a different category altogether. Please use Prefix Commands instead.
 
 <!-- tabs:end -->
 
-
-## Roblox
+## Browser Games
 
 <!-- tabs:start -->
 
 <!-- tab:Prefix Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **roblox play**   | `!roblox play`    | Shows an link to play Roblox on your browser.                                 |
+| **games list**    | `!games list`     | Shows list of top games to play in your browser.                              |
+| **games play**    | `!games play`     | Shows a random game to play in your browser.                                  |
+| **games roblox**  | `!games roblox`   | Shows a link to play Roblox on your browser.                                 |
 
 <!-- tab:Slash Commands -->
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **roblox play**   | `/roblox play`    | Shows an link to play Roblox on your browser.                                 |
+| **games list**    | `/games list`     | Shows list of top games to play in your browser.                              |
+| **games play**    | `/games play`     | Shows a random game to play in your browser.                                  |
+| **games roblox**  | `/games roblox`   | Shows a link to play Roblox on your browser.                                 |
 
 <!-- tabs:end -->
