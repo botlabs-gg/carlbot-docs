@@ -815,8 +815,8 @@ Outputs a string describing the difference in time between the parameters and th
 If no parameters are provided, the Tagscript Engine defaults to using the current DateTime as the implied parameters.
 
 > **Examples**<br>
-`{td:2020-01-01 00.00.00}` as of 2019-11-25 would output `1 month, 5 days and 21 hours`, or the time until Midnight New Years Day.<br>
-`{td({m:trunc({unix}-3600)}):{strf:%Y-%m-%d %H.%M.%S}}` will always output `1 hour` because `{unix}` is the current time and we subtracted 3600 seconds.
+`{td:2020-01-01 00:00:00}` as of 2019-11-25 would output `1 month, 5 days and 21 hours`, or the time until Midnight New Years Day.<br>
+`{td({m:trunc({unix}-3600)}):{strf:%Y-%m-%d %H:%M:%S}}` will always output `1 hour` because `{unix}` is the current time and we subtracted 3600 seconds.
 
 
 #### Going from Blocks to Tags
