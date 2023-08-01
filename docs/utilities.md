@@ -142,7 +142,7 @@ For multi-word highlights, it will look for a sequence of words, not a substring
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
 | **[i\|info] [member]** | `!i @Carl-bot` | Returns the specified user's name, avatar link, roles, ID, creation date, server join date and some cool related information. |
-| **avatar [member]** | `!avatar @Carl-bot` | Shows the avatar of a mentioned user or yourself if you don't. Works even if the user doesn't share a server with the bot. Also works in dms, you creeps. |
+| **avatar [member] [avatar_type=server]** | `!avatar @Carl-bot global` | Shows the avatar of a mentioned user or yourself if you don't. If avatar_type is global then it will show the global avatar otherwise it defaults to server avatar if available. |
 | **serverinfo**    | `!serverinfo`     | Displays server information.                                                  |
 | **youngest [count=5]** | `!youngest 10` | Ranks up to 25 members by account creation. Defaults to 5 if unspecified. Requires <span style="color: red;">Manage Messages</span>. |
 | **oldest [count=5]** | `!oldest 15`   | Ranks up to 25 members by account creation. Defaults to 5 if unspecified. Requires <span style="color: red;">Manage Messages</span>. |
@@ -153,7 +153,7 @@ For multi-word highlights, it will look for a sequence of words, not a substring
 | Name              | Example           | Usage                                                                         |
 | ----------------- | ----------------- | ----------------------------------------------------------------------------- |
 | **members info [member]** | `/members info @Carl-bot` | Returns the specified user's name, avatar link, roles, ID, creation date, server join date and some cool related information. |
-| **avatars [user]** | `/avatars @Carl-bot` | Shows the avatar of a mentioned user or yourself if you don't. Works even if the user doesn't share a server with the bot. |
+| **avatars [user] [global]** | `/avatars @Carl-bot true` | Shows the avatar of a mentioned user or yourself if you don't. If global is set true then it will show the global avatar otherwise it defaults to server avatar if available. |
 | **stats serverinfo** | `/stats serverinfo` | Displays server information.                                             |
 | **members youngest [count=5]** | `/members youngest 10` | Ranks up to 25 members by account creation. Defaults to 5 if unspecified. Requires <span style="color: red;">Manage Messages</span>. |
 | **members oldest [count=5]** | `/members oldest 15`   | Ranks up to 25 members by account creation. Defaults to 5 if unspecified. Requires <span style="color: red;">Manage Messages</span>. |
