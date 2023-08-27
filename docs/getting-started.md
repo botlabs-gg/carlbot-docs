@@ -1,18 +1,18 @@
 ## Navigating
 !> Do not literally type out `<` `>` `[` `]` `|` etc.
 
-?> When referencing commands, Mod commands are in **bold**.
+?> The user permissions required to run certain commands will be mentioned like <span class="user-permissions">this</span>.
 
 Each category of commands has their own page which can be found on the sidebar.
 
-| Syntax            | Definition                                                                                        |
-| ----------------- | ------------------------------------------------------------------------------------------------- |
-| `<foo>`           | This argument is mandatory                                                                        |
-| `<foos...>`       | This argument is mandatory and you can specify more than one                                      |
-| `[foo]`           | This argument is optional                                                                         |
-| `[foo='muted']`   | This argument is optional and will use the default value **muted** if not specified               |
-| `[foo\|bar]`      | This argument is optional so you can either use **foo** or **bar**, or don't specify it at all    |
-| `[foos...]`       | This argument is optional and you can specify more than one                                       |
+Syntax            | Definition                                                                                        
+ ---------------- | ------------------------------------------------------------------------------------------------- 
+`<foo>`           | This argument is mandatory                                                                        
+`<foos...>`       | This argument is mandatory and you can specify more than one                                      
+`[foo]`           | This argument is optional                                                                         
+`[foo='muted']`   | This argument is optional and will use the default value **muted** if not specified               
+`[foo\|bar]`      | This argument is optional so you can either use **foo** or **bar**, or don't specify it at all    
+`[foos...]`       | This argument is optional and you can specify more than one                                       
 
 Additionally, the bot uses *converters* which makes specifying roles, members, channels etc, easy and fool-proof. When asked to specify a member, you can provide it a mention, an id, a name or a nickname. This principle works for every single command where applicable.
 
