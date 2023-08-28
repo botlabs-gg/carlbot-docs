@@ -10,51 +10,51 @@ Tags are basically custom commands that can be called using their names after Ca
 <!-- tabs:start -->
 
 <!-- tab:Prefix Commands -->
-| Name              | Example           | Usage                                                                         |
-| ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **tag [create\|add\|+] \<name> \<content>** | `!tag + test hello` | Creates a tag/custom command. Commands can then be used with just the prefix. |
-| **tag [delete\|del\|remove\|-] \<name>** | `!tag - test` | Removes a tag.                                             |
-| **tag ++ \<name> \<pastebin_link>** | `!tag ++ test https://pastebin.com/1234` | Use this command for creating tags whose content length is more than 2000 characters, using Pastebin. |
-| **tag [+=\|append] \<name> \<content>** | `!tag += test world` | Appends content to an already existing tag.          |
-| **tag [a\|alias] \<new> \<existing>** | `!tag alias testing test` | Creates an alias for an already existing tag so you can call it with either of the names. Changes to the existing tag will update its aliases. |
-| **tag raw \<name>** | `!tag raw test` | Retrieves a tag with its markdown (bold, italic, tagscript etc.) removed.     |
-| **tag edit \<name> \<content>** | `!tag edit test bye world` | Edits the content of an already existing tag.          |
-| **tag nsfw \<name>** | `!tag nsfw test` | Restricts the tag so that it can only be used in channels marked as NSFW.   |
-| **tag restrict \<name>** | `!tag restrict test` | This will make the bot post the content in the bot-channel and ping the author upon being used. |
-| **tag stats [member]** | `!tag stats @Carl-bot` | Shows information about the server tags (uses, top 3, total number of tags). If you mention someone, it will show their tags instead. |
-| **tag info \<name>** | `!tag info test` | Shows some stats collected about the tag, uses, creation date, last update, owner, etc. |
-| **tag ownership [enable\|disable]** | `!tag ownership enable` | With this enabled (disabled by default) tags are 'owned' meaning that unless you're a mod, you can't edit, append or delete other people's tags. You can still create aliases to people's tags. |
-| **tag modonly [enable\|disable]** | `!tag modonly enable` | With this enabled, only mods can manage tags, non-mods can still use them. |
-| **tag prompt** | `!tag prompt` | With this disabled (enabled by default), it will default to editing the tag when you try to create an already existing tag. |
-| **tag claim \<name>** | `!tag claim test` | Claims a tag from a member who has left the server, only relevant if ownership is enabled. |
-| **tag sub \<name> \<from_text> \<to_text>** | `!tag sub test world universe` | Replaces every occurance of `from_text` with `to_text` in an already existing tag. |
-| **[commands\|taglist]** | `!taglist` | Lists all of the tags on the server.                                           |
-| **tag share \<name>** | `!tag share test` | Creates a shareable link of a tag so that other users can import it to their servers. |
-| **tag unshare \<name>** | `!tag unshare picross` | Unshare a specific publicly shared tag. Already created share link will not work once you unshare a tag. Requires <span style="color: red;">Manage Server</span> permission. |
-| **tag unshareall** | `!tag unshareall` | Unshare all publicly shared tags. Requires <span style="color: red;">Manage Server</span> permission. |
+Name              | Example           | Usage                                                                         
+ ---------------- | ----------------- | ----------------------------------------------------------------------------- 
+**tag** [create\|add\|+] \<name> \<content> | `!tag + test hello` | Creates a tag/custom command. Commands can then be used with just the prefix.
+**tag** [delete\|del\|remove\|-] \<name> | `!tag - test` | Removes a tag.                                             
+**tag ++** \<name> \<pastebin_link> | `!tag ++ test https://pastebin.com/1234` | Use this command for creating tags whose content length is more than 2000 characters, using Pastebin.
+**tag** [+=\|append] \<name> \<content> | `!tag += test world` | Appends content to an already existing tag.          
+**tag** [a\|alias] \<new> \<existing> | `!tag alias testing test` | Creates an alias for an already existing tag so you can call it with either of the names. Changes to the existing tag will update its aliases. |
+**tag raw** \<name> | `!tag raw test` | Retrieves a tag with its markdown (bold, italic, tagscript etc.) removed.     
+**tag edit** \<name> \<content> | `!tag edit test bye world` | Edits the content of an already existing tag.          
+**tag nsfw** \<name> | `!tag nsfw test` | Restricts the tag so that it can only be used in channels marked as NSFW.
+**tag restrict** \<name> | `!tag restrict test` | This will make the bot post the content in the bot-channel and ping the author upon being used.
+**tag stats** [member] | `!tag stats @Carl-bot` | Shows information about the server tags (uses, top 3, total number of tags). If you mention someone, it will show their tags instead.
+**tag info** \<name> | `!tag info test` | Shows some stats collected about the tag, uses, creation date, last update, owner, etc.
+**tag ownership** [enable\|disable] | `!tag ownership enable` | With this enabled (disabled by default) tags are 'owned' meaning that unless you're a mod, you can't edit, append or delete other people's tags. You can still create aliases to people's tags.
+**tag modonly** [enable\|disable]<br><span class="user-permissions">Manage Server</span> | `!tag modonly enable` | With this enabled, only mods can manage tags, non-mods can still use them.
+**tag prompt** | `!tag prompt` | With this disabled (enabled by default), it will default to editing the tag when you try to create an already existing tag.
+**tag claim** \<name> | `!tag claim test` | Claims a tag from a member who has left the server, only relevant if ownership is enabled.
+**tag sub** \<name> \<from_text> \<to_text> | `!tag sub test world universe` | Replaces every occurance of `from_text` with `to_text` in an already existing tag.
+[**commands**\|**taglist**] | `!taglist` | Lists all of the tags on the server.                                           
+**tag share** \<name> | `!tag share test` | Creates a shareable link of a tag so that other users can import it to their servers.
+**tag unshare** \<name><br><span class="user-permissions">Manage Server</span> | `!tag unshare picross` | Unshare a specific publicly shared tag. Already created share link will not work once you unshare a tag.
+**tag unshareall**<br><span class="user-permissions">Manage Server</span> | `!tag unshareall` | Unshare all publicly shared tags.
 
 <!-- tab:Slash Commands -->
-| Name              | Example           | Usage                                                                         |
-| ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **tag create \<name> \<content>** | `/tag create test hello` | Creates a tag/custom command. Commands can then be used with just the prefix. |
-| **tag remove \<name>** | `/tag remove test` | Removes a tag.                                                          |
-| **tag procreate \<name> \<content>** | `/tag procreate test https://pastebin.com/1234` | Use this command for creating tags whose content length is more than 2000 characters, using Pastebin. |
-| **tag append \<name> \<content>** | `/tag append test world` | Appends content to an already existing tag.            |
-| **tag alias \<point> \<name>** | `/tag alias testing test` | Creates an alias for an already existing tag so you can call it with either of the names. Changes to the existing tag will update its aliases. |
-| **tag raw \<name>** | `/tag raw test` | Retrieves a tag with its markdown (bold, italic, tagscript etc.) removed.     |
-| **tag edit \<name> \<content>** | `/tag edit test bye world` | Edits the content of an already existing tag.          |
-| **tag nsfw \<name>** | `/tag nsfw test` | Restricts the tag so that it can only be used in channels marked as NSFW.   |
-| **tag restrict \<name>** | `/tag restrict test` | This will make the bot post the content in the bot-channel and ping the author upon being used. |
-| **tag stats [member]** | `/tag stats @Carl-bot` | Shows information about the server tags (uses, top 3, total number of tags). If you mention someone, it will show their tags instead. |
-| **tag info \<name>** | `/tag info test` | Shows some stats collected about the tag, uses, creation date, last update, owner, etc. |
-| **tag ownership \<status>** | `/tag ownership enable` | With this enabled (disabled by default) tags are 'owned' meaning that unless you're a mod, you can't edit, append or delete other people's tags. You can still create aliases to people's tags. |
-| **tag modonly \<status>** | `/tag modonly enable` | With this enabled, only mods can manage tags, non-mods can still use them. |
-| **tag claim \<name>** | `/tag claim test` | Claims a tag from a member who has left the server, only relevant if ownership is enabled. |
-| **tag replace \<name> \<from_text> \<to_text>** | `/tag replace test world universe` | Replaces every occurance of `from_text` with `to_text` in an already existing tag. |
-| **tag list [member]** | `/tag list` | Lists all of the tags on the server or by a specific member.                    |
-| **tag share \<name>** | `/tag share test` | Creates a shareable link of a tag so that other users can import it to their servers. |
-| **tag unshare \<name>** | `/tag unshare picross` | Unshare a specific publicly shared tag. Already created share link will not work once you unshare a tag. Requires <span style="color: red;">Manage Server</span> permission. |
-| **tag unshareall** | `/tag unshareall` | Unshare all publicly shared tags. Requires <span style="color: red;">Manage Server</span> permission. |
+Name              | Example           | Usage                                                                        
+ ---------------- | ----------------- | -----------------------------------------------------------------------------
+**tag create** \<name> \<content> | `/tag create test hello` | Creates a tag/custom command. Commands can then be used with just the prefix.
+**tag remove** \<name> | `/tag remove test` | Removes a tag.                                                          
+**tag procreate** \<name> \<content> | `/tag procreate test https://pastebin.com/1234` | Use this command for creating tags whose content length is more than 2000 characters, using Pastebin.
+**tag append** \<name> \<content> | `/tag append test world` | Appends content to an already existing tag.            
+**tag alias** \<point> \<name> | `/tag alias testing test` | Creates an alias for an already existing tag so you can call it with either of the names. Changes to the existing tag will update its aliases.
+**tag raw** \<name> | `/tag raw test` | Retrieves a tag with its markdown (bold, italic, tagscript etc.) removed.     
+**tag edit** \<name> \<content> | `/tag edit test bye world` | Edits the content of an already existing tag.          
+**tag nsfw** \<name> | `/tag nsfw test` | Restricts the tag so that it can only be used in channels marked as NSFW.   
+**tag restrict** \<name> | `/tag restrict test` | This will make the bot post the content in the bot-channel and ping the author upon being used.
+**tag stats** [member] | `/tag stats @Carl-bot` | Shows information about the server tags (uses, top 3, total number of tags). If you mention someone, it will show their tags instead.
+**tag info** \<name> | `/tag info test` | Shows some stats collected about the tag, uses, creation date, last update, owner, etc.
+**tag ownership** \<status> | `/tag ownership enable` | With this enabled (disabled by default) tags are 'owned' meaning that unless you're a mod, you can't edit, append or delete other people's tags. You can still create aliases to people's tags.
+**tag modonly** \<status><br><span class="user-permissions">Manage Server</span> | `/tag modonly enable` | With this enabled, only mods can manage tags, non-mods can still use them.
+**tag claim** \<name> | `/tag claim test` | Claims a tag from a member who has left the server, only relevant if ownership is enabled.
+**tag replace** \<name> \<from_text> \<to_text> | `/tag replace test world universe` | Replaces every occurance of `from_text` with `to_text` in an already existing tag.
+**tag list** [member] | `/tag list` | Lists all of the tags on the server or by a specific member.                   
+**tag share** \<name> | `/tag share test` | Creates a shareable link of a tag so that other users can import it to their servers.
+**tag unshare** \<name><br><span class="user-permissions">Manage Server</span> | `/tag unshare picross` | Unshare a specific publicly shared tag. Already created share link will not work once you unshare a tag.
+**tag unshareall**<br><span class="user-permissions">Manage Server</span> | `/tag unshareall` | Unshare all publicly shared tags.
 
 <!-- tabs:end -->
 
@@ -72,104 +72,104 @@ Want your creation featured here? Post it in the `#show-off` channel of the [Sup
 <!-- tabs:start -->
 
 <!-- tab:Server Tags -->
-| Tag Name          | Description                                                               | Author            | Import Link                                   |
-| ----------------- | ------------------------------------------------------------------------- | ----------------- | --------------------------------------------- |
-| **>**	            | A quote tag made to work with Discord's quote system.                     | Raffael	        | [carl.gg/t/107229](https://carl.gg/t/107229)  | 
-| **afk**	        | Creates/deletes autoresponses that fire when you are mentioned.	        | Raffael	        | [carl.gg/t/41176](https://carl.gg/t/41176)    | 
-| **colors**        | Assists in creating a basic color roles menu.	                            | Vince the Animator | [carl.gg/t/107305](https://carl.gg/t/107305) | 
-| **getid**	        | A tag that retrieves the ID of any specified channel, emoji or user.	    | Asty'	            | [carl.gg/t/120698](https://carl.gg/t/120698)  | 
-| **goal**	        | Create and track membercount milestones.	                                | deniiiii 🦕	    | [carl.gg/t/170717](https://carl.gg/t/170717)  | 
-| **promote**       | Set up RP promotions that follow a chain of command.	                    | Raffael	        | [carl.gg/t/86149](https://carl.gg/t/86149)    | 
-| **rules**	        | A complex rules listing tag.	                                            | Raffael	        | [carl.gg/t/81906](https://carl.gg/t/81906)    | 
-| **setup**	        | A tag that helps with the initial server setup.	                        | Raffael	        | [carl.gg/t/239346](https://carl.gg/t/239346)  | 
-| **social**        | Dynamic Per-User Social Media Clickable Icons.                            | Asty'	            | [carl.gg/t/254647](https://carl.gg/t/254647)  | 
-| **submit**        | An image submission tag. Rename the channel in the redirect for this to work. | Antimony	    | [carl.gg/t/32150](https://carl.gg/t/32150)    | 
-| **verify**        | Custom Captcha Verification system.	                                    | Tush	            | [carl.gg/t/107546](https://carl.gg/t/107546)  | 
+Tag Name          | Description                                                               | Author            | Import Link                                   
+ ---------------- | ------------------------------------------------------------------------- | ----------------- | --------------------------------------------- 
+**>**	          | A quote tag made to work with Discord's quote system.                     | Raffael	          | [carl.gg/t/107229](https://carl.gg/t/107229)   
+**afk**	          | Creates/deletes autoresponses that fire when you are mentioned.	          | Raffael	          | [carl.gg/t/41176](https://carl.gg/t/41176)     
+**colors**        | Assists in creating a basic color roles menu.	                          | Vince the Animator| [carl.gg/t/107305](https://carl.gg/t/107305)  
+**getid**	      | A tag that retrieves the ID of any specified channel, emoji or user.	  | Asty'	          | [carl.gg/t/120698](https://carl.gg/t/120698)   
+**goal**	      | Create and track membercount milestones.	                              | deniiiii 🦕	     | [carl.gg/t/170717](https://carl.gg/t/170717)   
+**promote**       | Set up RP promotions that follow a chain of command.	                  | Raffael	          | [carl.gg/t/86149](https://carl.gg/t/86149)     
+**rules**	      | A complex rules listing tag.	                                          | Raffael	          | [carl.gg/t/81906](https://carl.gg/t/81906)     
+**setup**	      | A tag that helps with the initial server setup.	                          | Raffael	          | [carl.gg/t/239346](https://carl.gg/t/239346)   
+**social**        | Dynamic Per-User Social Media Clickable Icons.                            | Asty'	          | [carl.gg/t/254647](https://carl.gg/t/254647)   
+**submit**        | An image submission tag. Rename the channel in the redirect for this to work. | Antimony	  | [carl.gg/t/32150](https://carl.gg/t/32150)     
+**verify**        | Custom Captcha Verification system.	                                      | Tush	          | [carl.gg/t/107546](https://carl.gg/t/107546)   
 
 <!-- tab:Utility Tags -->
-| Tag Name          | Description                                                               | Author            | Import Link                                   |
-| ----------------- | ------------------------------------------------------------------------- | ----------------- | --------------------------------------------- |
-| **changetemp**	| A temperature conversion tag.	                                            | Rath.	            | [carl.gg/t/110423](https://carl.gg/t/110423)  |
-| **color**	        | Displays information about a color your input or a random color. Accepts multiple input formats. | Elise | [carl.gg/t/183918](https://carl.gg/t/183918) |
-| **colortext**	    | Outputs your text colorized in a codeblock.	                            | Raffael	        | [carl.gg/t/98660](https://carl.gg/t/98660)    |
-| **define**	    | Outputs the URL to the Merriam-Webster page for the word or phrase that follows the tag. Link preview displays definition. | Raffael | [carl.gg/t/44427](https://carl.gg/t/44427) |
-| **formatting**	| Shows all of the Markdown formatting you can do in Discord.	            | ent3r_	        | [carl.gg/t/240243](https://carl.gg/t/240243)  |
-| **weather**	    | Displays current weather for a location. Usage: `weather <location>`	    | Near	            | [carl.gg/t/208597](https://carl.gg/t/208597)  |
+Tag Name          | Description                                                               | Author            | Import Link                                   
+ ---------------- | ------------------------------------------------------------------------- | ----------------- | --------------------------------------------- 
+**changetemp**	  | A temperature conversion tag.	                                          | Rath.	          | [carl.gg/t/110423](https://carl.gg/t/110423)
+**color**	      | Displays information about a color your input or a random color. Accepts multiple input formats. | Elise | [carl.gg/t/183918](https://carl.gg/t/183918) 
+**colortext**	  | Outputs your text colorized in a codeblock.	                              | Raffael	          | [carl.gg/t/98660](https://carl.gg/t/98660)    
+**define**	      | Outputs the URL to the Merriam-Webster page for the word or phrase that follows the tag. Link preview displays definition. | Raffael | [carl.gg/t/44427](https://carl.gg/t/44427)
+**formatting**	  | Shows all of the Markdown formatting you can do in Discord.	              | ent3r_	          | [carl.gg/t/240243](https://carl.gg/t/240243)
+**weather**	      | Displays current weather for a location. Usage: `weather <location>`	  | Near	          | [carl.gg/t/208597](https://carl.gg/t/208597)
 
 <!-- tab:Game Tags -->
-| Tag Name          | Description                                                               | Author            | Import Link                                   |
-| ----------------- | ------------------------------------------------------------------------- | ----------------- | --------------------------------------------- |
-| **corruption**    | Shows the sales turnover of the corruption vendor in WoW.                 | Nerog             | [carl.gg/t/230662](https://carl.gg/t/230662)  |
-| **owi**           | An Overwatch information tag.                                             | Raffael           | [carl.gg/t/45738](https://carl.gg/t/45738)    |
-| **pubg**          | PUBG Mobile information tag.                                              | Raffael & Gucci Potato | [carl.gg/t/250958](https://carl.gg/t/250958) |
-| **5carddraw**     | A 5 card draw game for you and a friend you mention.	                    | Raffael	        | [carl.gg/t/72591](https://carl.gg/t/72591)    |
-| **battle**        | A Pokémon style arena battle.	                                            | RedAngel	        | [carl.gg/t/31280](https://carl.gg/t/31280)    |
-| **cgol**          | Conway's game of life.                                                    | Dungo	            | [carl.gg/t/41017](https://carl.gg/t/41017)    |
-| **connect4**      | Play a game of Connect Four using Carl-bot.	                            | Dungo	            | [carl.gg/t/51924](https://carl.gg/t/51924)    |
-| **hunt**          | Play Duckhunt with a tag.	                                                | dreny	            | [carl.gg/t/31757](https://carl.gg/t/31757)    |
-| **lightsout**     | A lights out game implementation as a tag.	                            | Garfield	        | [carl.gg/t/34826](https://carl.gg/t/34826)    |
-| **maze**          | A Maze Generator tag.	                                                    | Raffael	        | [carl.gg/t/260353](https://carl.gg/t/260353)  |
-| **mine**          | Play Minesweeper with a tag.	                                            | Dungo	            | [carl.gg/t/35755](https://carl.gg/t/35755)    |
-| **picross**       | The game Picross as a tag.	                                            | Dungo	            | [carl.gg/t/38184](https://carl.gg/t/38184)    |
-| **race**          | Race different vehicles against opponents.	                            | ! SpinaChant	    | [carl.gg/t/226914](https://carl.gg/t/226914)  |
-| **slots**         | A slots tag using emojis.	                                                | Raffael & RedAngel | [carl.gg/t/96789](https://carl.gg/t/96789)   |
-| **slots**         | A slots tag using GIFs.	                                                | Rath.	            | [carl.gg/t/206215](https://carl.gg/t/206215)  |
-| **tictactoe**     | A Tic-Tac-Toe game. Do: `tictactoe new` to start.	                        | Tush	            | [carl.gg/t/98106](https://carl.gg/t/98106)    |
-| **whodoneit**     | A who-done-it minigame.	                                                | Deviation	        | [carl.gg/t/34022](https://carl.gg/t/34022)    |
+Tag Name          | Description                                                               | Author            | Import Link                                   
+ ---------------- | ------------------------------------------------------------------------- | ----------------- | --------------------------------------------- 
+**corruption**    | Shows the sales turnover of the corruption vendor in WoW.                 | Nerog             | [carl.gg/t/230662](https://carl.gg/t/230662)  
+**owi**           | An Overwatch information tag.                                             | Raffael           | [carl.gg/t/45738](https://carl.gg/t/45738)    
+**pubg**          | PUBG Mobile information tag.                                              | Raffael & Gucci Potato | [carl.gg/t/250958](https://carl.gg/t/250958)
+**5carddraw**     | A 5 card draw game for you and a friend you mention.	                  | Raffael	          | [carl.gg/t/72591](https://carl.gg/t/72591)    
+**battle**        | A Pokémon style arena battle.	                                          | RedAngel	      | [carl.gg/t/31280](https://carl.gg/t/31280)    
+**cgol**          | Conway's game of life.                                                    | Dungo	          | [carl.gg/t/41017](https://carl.gg/t/41017)    
+**connect4**      | Play a game of Connect Four using Carl-bot.	                              | Dungo	          | [carl.gg/t/51924](https://carl.gg/t/51924)    
+**hunt**          | Play Duckhunt with a tag.	                                              | dreny	          | [carl.gg/t/31757](https://carl.gg/t/31757)
+**lightsout**     | A lights out game implementation as a tag.	                              | Garfield	      | [carl.gg/t/34826](https://carl.gg/t/34826)    
+**maze**          | A Maze Generator tag.	                                                  | Raffael	          | [carl.gg/t/260353](https://carl.gg/t/260353)
+**mine**          | Play Minesweeper with a tag.	                                          | Dungo	          | [carl.gg/t/35755](https://carl.gg/t/35755)  
+**picross**       | The game Picross as a tag.	                                              | Dungo	          | [carl.gg/t/38184](https://carl.gg/t/38184)    
+**race**          | Race different vehicles against opponents.	                              | ! SpinaChant      | [carl.gg/t/226914](https://carl.gg/t/226914)  
+**slots**         | A slots tag using emojis.	                                              | Raffael & RedAngel| [carl.gg/t/96789](https://carl.gg/t/96789)
+**slots**         | A slots tag using GIFs.	                                                  | Rath.	          | [carl.gg/t/206215](https://carl.gg/t/206215)  
+**tictactoe**     | A Tic-Tac-Toe game. Do: `tictactoe new` to start.	                      | Tush	          | [carl.gg/t/98106](https://carl.gg/t/98106)
+**whodoneit**     | A who-done-it minigame.	                                                  | Deviation	      | [carl.gg/t/34022](https://carl.gg/t/34022)    
 
 <!-- tab:Conversation -->
-| Tag Name          | Description                                                               | Author            | Import Link                                   |
-| ----------------- | ------------------------------------------------------------------------- | ----------------- | --------------------------------------------- |
-| **qotd**          | Displays a random quote of the day.                                       | freya ☆          | [carl.gg/t/85193](https://carl.gg/t/85193)    |
-| **topic**         | A random chat topic generator, to spur conversation.                      | Shaun             | [carl.gg/t/76685](https://carl.gg/t/76685)    |
+Tag Name          | Description                                                               | Author            | Import Link                                   
+ ---------------- | ------------------------------------------------------------------------- | ----------------- | --------------------------------------------- 
+**qotd**          | Displays a random quote of the day.                                       | freya ☆          | [carl.gg/t/85193](https://carl.gg/t/85193)    
+**topic**         | A random chat topic generator, to spur conversation.                      | Shaun             | [carl.gg/t/76685](https://carl.gg/t/76685)    
 
 <!-- tab:Time Based -->
-| Tag Name          | Description                                                               | Author            | Import Link                                   |
-| ----------------- | ------------------------------------------------------------------------- | ----------------- | --------------------------------------------- |
-| **calendar**	    | Outputs a month-view calendar for the current month or month you specify. Usage: `calendar 2019 1` would display Jan 2019. | Tush | [carl.gg/t/101740](https://carl.gg/t/101740) |
-| **holidaycd**	    | A configurable Holiday countdown tag.	                                    | Raffael	        | [carl.gg/t/84778](https://carl.gg/t/84778)    |
-| **timein**	    | Displays the current time for the timezone specified.	                    | Raffael	        | [carl.gg/t/213450](https://carl.gg/t/213450)  |
-| **weeklycd**	    | Weekly Countdown Tag. Counts down to the date & time set, restarting every week. | Raffael	| [carl.gg/t/113526](https://carl.gg/t/113526)  |
-| **worldclock**	| Outputs the current time for multiple different locations.	            | Raffael	        | [carl.gg/t/91020](https://carl.gg/t/91020)    |
+Tag Name          | Description                                                               | Author            | Import Link                                   
+ ---------------- | ------------------------------------------------------------------------- | ----------------- | --------------------------------------------- 
+**calendar**	    | Outputs a month-view calendar for the current month or month you specify. Usage: `calendar 2019 1` would display Jan 2019. | Tush | [carl.gg/t/101740](https://carl.gg/t/101740)
+**holidaycd**	    | A configurable Holiday countdown tag.	                                    | Raffael	        | [carl.gg/t/84778](https://carl.gg/t/84778)
+**timein**	    | Displays the current time for the timezone specified.	                    | Raffael	        | [carl.gg/t/213450](https://carl.gg/t/213450)  
+**weeklycd**	    | Weekly Countdown Tag. Counts down to the date & time set, restarting every week. | Raffael	| [carl.gg/t/113526](https://carl.gg/t/113526)
+**worldclock**	| Outputs the current time for multiple different locations.	            | Raffael	        | [carl.gg/t/91020](https://carl.gg/t/91020)    
 
 <!-- tab:Fun Tags -->
-| Tag Name          | Description                                                               | Author            | Import Link                                   |
-| ----------------- | ------------------------------------------------------------------------- | ----------------- | --------------------------------------------- |
-| **babyname**	    | A smart babyname generator. Usage: `babyname @someone-else`               | Raffael	        | [carl.gg/t/247830](https://carl.gg/t/247830)  |
-| **bigbrain**	    | Get your or another user's bigbrain percentage.	                        | ! SpinaChant	    | [carl.gg/t/248533](https://carl.gg/t/248533)  |
-| **bubblewrap**	| Makes Discord bubblewrap.	                                                | Captain Zero	    | [carl.gg/t/120847](https://carl.gg/t/120847)  |
-| **dadjoke**	    | Spits out the worst dad jokes of all time.	                            | iNsane	        | [carl.gg/t/119793](https://carl.gg/t/119793)  |
-| **headout**	    | "Imma headout SpongeBob" meme generator.	                                | KableKompany	    | [carl.gg/t/68475](https://carl.gg/t/68475)    |
-| **lovecalc**	    | A love calculator tag.	                                                | Asty'	            | [carl.gg/t/146014](https://carl.gg/t/146014)  |
-| **mock**	        | A mocking spongebob image generator using your text.	                    | Raffael	        | [carl.gg/t/54870](https://carl.gg/t/54870)    |
-| **roast**	        | A tag that roasts targets.	                                            | BIchL4zAn4	    | [carl.gg/t/193076](https://carl.gg/t/193076)  |
-| **shipname**      | A smart 'ship'-name generator. Usage: `shipname Name1 Name2`.	            | Raffael	        | [carl.gg/t/247867](https://carl.gg/t/247867)  |
+Tag Name          | Description                                                               | Author            | Import Link                                   
+ ---------------- | ------------------------------------------------------------------------- | ----------------- | --------------------------------------------- 
+**babyname**	    | A smart babyname generator. Usage: `babyname @someone-else`               | Raffael	        | [carl.gg/t/247830](https://carl.gg/t/247830)
+**bigbrain**	    | Get your or another user's bigbrain percentage.	                        | ! SpinaChant	    | [carl.gg/t/248533](https://carl.gg/t/248533)
+**bubblewrap**	| Makes Discord bubblewrap.	                                                | Captain Zero	    | [carl.gg/t/120847](https://carl.gg/t/120847)
+**dadjoke**	    | Spits out the worst dad jokes of all time.	                            | iNsane	        | [carl.gg/t/119793](https://carl.gg/t/119793)
+**headout**	    | "Imma headout SpongeBob" meme generator.	                                | KableKompany	    | [carl.gg/t/68475](https://carl.gg/t/68475)
+**lovecalc**	    | A love calculator tag.	                                                | Asty'	            | [carl.gg/t/146014](https://carl.gg/t/146014)
+**mock**	        | A mocking spongebob image generator using your text.	                    | Raffael	        | [carl.gg/t/54870](https://carl.gg/t/54870)  
+**roast**	        | A tag that roasts targets.	                                            | BIchL4zAn4	    | [carl.gg/t/193076](https://carl.gg/t/193076)
+**shipname**      | A smart 'ship'-name generator. Usage: `shipname Name1 Name2`.	            | Raffael	        | [carl.gg/t/247867](https://carl.gg/t/247867)
 
 <!-- tab:Roleplay -->
-| Tag Name          | Description                                                               | Author            | Import Link                                   |
-| ----------------- | ------------------------------------------------------------------------- | ----------------- | --------------------------------------------- |
-| **animehelp**	    | Displays a help embed with info about each of these commands.	            | Samuel	        | [carl.gg/t/32927](https://carl.gg/t/32927)    |
-| **bite**	        | `!bite <user> [user2]`	                                                | Samuel	        | [carl.gg/t/32899](https://carl.gg/t/32899)    |
-| **hug**	        | `!hug <user> [user2]`	                                                    | Samuel	        | [carl.gg/t/32891](https://carl.gg/t/32891)    |
-| **kiss**	        | `!kiss <user> [user2]`	                                                | Samuel	        | [carl.gg/t/32886](https://carl.gg/t/32886)    |
-| **lick**	        | `!lick <user> [user2]`	                                                | Samuel	        | [carl.gg/t/32880](https://carl.gg/t/32880)    |
-| **nuzzle**	    | `!nuzzle <user> [user2]`	                                                | Samuel	        | [carl.gg/t/32902](https://carl.gg/t/32902)    |
-| **slap**	        | `!slap <user> [user2]`	                                                | Samuel	        | [carl.gg/t/32933](https://carl.gg/t/32933)    |
-| **kill**          | `!kill [user]`                                                            | Samuel            | [carl.gg/t/32904](https://carl.gg/t/32904)    |
-| **revive**        | `revive [user]`                                                           | Samuel            | [carl.gg/t/32920](https://carl.gg/t/32920)    |
+Tag Name          | Description                                                               | Author            | Import Link                                  
+ ---------------- | ------------------------------------------------------------------------- | ----------------- | ---------------------------------------------
+**animehelp**	    | Displays a help embed with info about each of these commands.	            | Samuel	        | [carl.gg/t/32927](https://carl.gg/t/32927)
+**bite**	        | `!bite <user> [user2]`	                                                | Samuel	        | [carl.gg/t/32899](https://carl.gg/t/32899)
+**hug**	        | `!hug <user> [user2]`	                                                    | Samuel	        | [carl.gg/t/32891](https://carl.gg/t/32891)    
+**kiss**	        | `!kiss <user> [user2]`	                                                | Samuel	        | [carl.gg/t/32886](https://carl.gg/t/32886) 
+**lick**	        | `!lick <user> [user2]`	                                                | Samuel	        | [carl.gg/t/32880](https://carl.gg/t/32880) 
+**nuzzle**	    | `!nuzzle <user> [user2]`	                                                | Samuel	        | [carl.gg/t/32902](https://carl.gg/t/32902)    
+**slap**	        | `!slap <user> [user2]`	                                                | Samuel	        | [carl.gg/t/32933](https://carl.gg/t/32933)
+**kill**          | `!kill [user]`                                                            | Samuel            | [carl.gg/t/32904](https://carl.gg/t/32904)  
+**revive**        | `revive [user]`                                                           | Samuel            | [carl.gg/t/32920](https://carl.gg/t/32920)  
 
 <!-- tabs:end -->
 
 #### Premium Tags
 These tags only work properly on Carl-bot Premium Servers.
 
-| Tag Name          | Description                                                               | Author            | Import Link                                   |
-| ----------------- | ------------------------------------------------------------------------- | ----------------- | --------------------------------------------- |
-| **cpoll**	        | Quickpoll with up to 5 custom emojis. `!cpoll question\|:emoji: answer\|:emoji:` | Dungo	    | [carl.gg/t/41636](https://carl.gg/t/41636)    |
-| **embedpoll**	    | Quickpoll with up to 5 answers displayed in an embed.	                    | Raffael	        | [carl.gg/t/141776](https://carl.gg/t/141776)  |
-| **pack**	        | Level Banners Pack, choosable level card backgrounds.	                    | Asty'	            | [carl.gg/t/107497](https://carl.gg/t/107497)  |
-| **portfolio**	    | Create and view user portfolios, uses triggers.	                        | Asty'	            | [carl.gg/t/131175](https://carl.gg/t/131175)  |
-| **rewards**	    | Level rewards tag, lets users see their current level rewards.            | Rath.	            | [carl.gg/t/115404](https://carl.gg/t/115404)  |
+Tag Name          | Description                                                               | Author            | Import Link                                   
+ ---------------- | ------------------------------------------------------------------------- | ----------------- | --------------------------------------------- 
+**cpoll**	        | Quickpoll with up to 5 custom emojis. `!cpoll question\|:emoji: answer\|:emoji:` | Dungo	    | [carl.gg/t/41636](https://carl.gg/t/41636)  
+**embedpoll**	    | Quickpoll with up to 5 answers displayed in an embed.	                    | Raffael	        | [carl.gg/t/141776](https://carl.gg/t/141776)
+**pack**	        | Level Banners Pack, choosable level card backgrounds.	                    | Asty'	            | [carl.gg/t/107497](https://carl.gg/t/107497)
+**portfolio**	    | Create and view user portfolios, uses triggers.	                        | Asty'	            | [carl.gg/t/131175](https://carl.gg/t/131175)
+**rewards**	    | Level rewards tag, lets users see their current level rewards.            | Rath.	            | [carl.gg/t/115404](https://carl.gg/t/115404)  
 
 
 
@@ -957,35 +957,35 @@ This method assigns all the data that is related to the same holiday to variable
 <!-- tabs:start -->
 
 <!-- tab:Prefix Commands -->
-| Name              | Example           | Usage                                                                         |
-| ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **[ar\|autoresponse]** | `!ar`        | Lists the triggers, and ignores for the server.                               |
-| **ar list**       | `!ar list`        | Lists all the triggers in a paginated fashion.                                |
-| **ar [add\|create] \<trigger> \<response>** | `!ar add "hello there" Hello!` | Adds a trigger that carlbot will look for and say/do something when it is said. This command looks for a substring within the message, meaning that if you add hi then this will also match. See the next command if that is too greedy for you. |
-| **ar [strict\|s] \<trigger> \<response>** | `!ar strict "its coming home"` | This works a lot like normal ar add with one vital exception: it looks for exact sequences of words, rather than substrings. What this means is that if you add the strict trigger `hell` and someone says `hello` it will not match, it also means that triggers with more than one word requires an exact match per word (this is a lot more reasonable to use than this text makes it out to be). |
-| **ar [exact\|e] \<trigger> \<response>** | `!ar exact "hey guys" Hello!` | This matches if the content of a message is the same as the trigger. Some exceptions such as punctuation and capitalization applies. |
-| **ar [startswith\|sw] \<trigger> \<response>** | `!ar sw "how do i" read the wiki!` | Matches if the start of the message matches. |
-| **ar [endswith\|ew] \<trigger> \<response>** | `!ar ew "i think" no you don't` | Like startswith except if it ends with it. |
-| **ar [remove\|del\|-\|delete] \<trigger>** | `!ar del its coming home` | Removes an autoresponse.                     |
-| **ar clear**      | `ar clear         | Removes all autoresponses (with a prompt).                                    |
-| **ar [channel\|cs] \<trigger> \<response>** | `!ar channel Hakuna Matata` | Like a normal autoresponse except it only listens in the channel you used the command in. Note: This will bypass any channel ignores (member ignores still work). |
-| **ar ignore \<members_or_channels...>** | `!ar ignore @Carl-bot #general` | Blocks channels and or users from triggering responses. |
-| **ar unignore \<members_or_channels...>** | `!ar unignore #general @Carl-bot` | Undoes what !ar ignore does.          |
+Name              | Example           | Usage                                                                         
+ ---------------- | ----------------- | ----------------------------------------------------------------------------- 
+[**ar**\|**autoresponse**]<br><span class="user-permissions">Manage Server</span> | `!ar`        | Lists the triggers, and ignores for the server.                               
+**autoresponse list**<br><span class="user-permissions">Manage Server</span>       | `!ar list`        | Lists all the triggers in a paginated fashion.                                
+**autoresponse** [add\|create] \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `!ar add "hello there" Hello!` | Adds a trigger that carlbot will look for and say/do something when it is said. This command looks for a substring within the message, meaning that if you add hi then this will also match. See the next command if that is too greedy for you.
+**autoresponse** [strict\|s] \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `!ar strict "its coming home"` | This works a lot like normal ar add with one vital exception: it looks for exact sequences of words, rather than substrings. What this means is that if you add the strict trigger `hell` and someone says `hello` it will not match, it also means that triggers with more than one word requires an exact match per word (this is a lot more reasonable to use than this text makes it out to be).
+**autoresponse** [exact\|e] \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `!ar exact "hey guys" Hello!` | This matches if the content of a message is the same as the trigger. Some exceptions such as punctuation and capitalization applies.
+**autoresponse** [startswith\|sw] \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `!ar sw "how do i" read the wiki!` | Matches if the start of the message matches.
+**autoresponse** [endswith\|ew] \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `!ar ew "i think" no you don't` | Like startswith except if it ends with it.
+**autoresponse** [remove\|del\|-\|delete] \<trigger><br><span class="user-permissions">Manage Server</span> | `!ar del its coming home` | Removes an autoresponse.                     
+**autoresponse clear**<br><span class="user-permissions">Manage Server</span>      | `!ar clear`         | Removes all autoresponses (with a prompt).                                    
+**autoresponse** [channel\|cs] \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `!ar channel Hakuna Matata` | Like a normal autoresponse except it only listens in the channel you used the command in. Note: This will bypass any channel ignores (member ignores still work).
+**autoresponse ignore** \<members_or_channels...><br><span class="user-permissions">Manage Server</span> | `!ar ignore @Carl-bot #general` | Blocks channels and or users from triggering responses.
+**autoresponse unignore** \<members_or_channels...><br><span class="user-permissions">Manage Server</span> | `!ar unignore #general @Carl-bot` | Undoes what !ar ignore does.          
 
 <!-- tab:Slash Commands -->
-| Name              | Example           | Usage                                                                         |
-| ----------------- | ----------------- | ----------------------------------------------------------------------------- |
-| **autoresponse list** | `/autoresponse list` | Lists the triggers, and ignores for the server.                        |
-| **autoresponse create \<trigger> \<response>** | `/autoresponse create hello world` | Adds a trigger that carlbot will look for and say/do something when it is said. This command looks for a substring within the message, meaning that if you add hi then this will also match. See the next command if that is too greedy for you. |
-| **autoresponse strict \<trigger> \<response>** | `/autoresponse strict hello world` | This works a lot like normal ar add with one vital exception: it looks for exact sequences of words, rather than substrings. What this means is that if you add the strict trigger `hell` and someone says `hello` it will not match, it also means that triggers with more than one word requires an exact match per word (this is a lot more reasonable to use than this text makes it out to be). |
-| **autoresponse exact \<trigger> \<response>** | `/autoresponse exact hello world` | This matches if the content of a message is the same as the trigger. Some exceptions such as punctuation and capitalization applies. |
-| **autoresponse startswith \<trigger> \<response>** | `/autoresponse startswith hello hi` | Matches if the start of the message matches. |
-| **autoresponse endswith \<trigger> \<response>** | `/autoresponse endswith world hello?` | Like startswith except if it ends with it. |
-| **autoresponse remove \<trigger>** | `/autoresponse remove hello` | Removes an autoresponse.                          |
-| **autoresponse clear** | `/autoresponse clear` | Removes all autoresponses (with a prompt).                           |
-| **autoresponse channel \<trigger> \<response>** | `/autoresponse channel hello world` | Like a normal autoresponse except it only listens in the channel you used the command in. Note: This will bypass any channel ignores (member ignores still work). |
-| **autoresponse ignore \<members_or_channel>** | `/autoresponse ignore @Carl-bot #general` | Blocks channels and or users from triggering responses. |
-| **autoresponse unignore \<members_or_channel>** | `/autoresponse unignore #general @Carl-bot` | Undoes what !ar ignore does. |
+Name              | Example           | Usage                                                                         
+ ---------------- | ----------------- | ----------------------------------------------------------------------------- 
+**autoresponse list**<br><span class="user-permissions">Manage Server</span> | `/autoresponse list` | Lists the triggers, and ignores for the server.                        
+**autoresponse create** \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `/autoresponse create hello world` | Adds a trigger that carlbot will look for and say/do something when it is said. This command looks for a substring within the message, meaning that if you add hi then this will also match. See the next command if that is too greedy for you.
+**autoresponse strict** \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `/autoresponse strict hello world` | This works a lot like normal ar add with one vital exception: it looks for exact sequences of words, rather than substrings. What this means is that if you add the strict trigger `hell` and someone says `hello` it will not match, it also means that triggers with more than one word requires an exact match per word (this is a lot more reasonable to use than this text makes it out to be).
+**autoresponse exact** \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `/autoresponse exact hello world` | This matches if the content of a message is the same as the trigger. Some exceptions such as punctuation and capitalization applies.
+**autoresponse startswith** \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `/autoresponse startswith hello hi` | Matches if the start of the message matches.
+**autoresponse endswith** \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `/autoresponse endswith world hello?` | Like startswith except if it ends with it.
+**autoresponse remove** \<trigger><br><span class="user-permissions">Manage Server</span> | `/autoresponse remove hello` | Removes an autoresponse.                          
+**autoresponse clear**<br><span class="user-permissions">Manage Server</span> | `/autoresponse clear` | Removes all autoresponses (with a prompt).                           
+**autoresponse channel** \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `/autoresponse channel hello world` | Like a normal autoresponse except it only listens in the channel you used the command in. Note: This will bypass any channel ignores (member ignores still work).
+**autoresponse ignore** \<members_or_channel><br><span class="user-permissions">Manage Server</span> | `/autoresponse ignore @Carl-bot #general` | Blocks channels and or users from triggering responses.
+**autoresponse unignore** \<members_or_channel><br><span class="user-permissions">Manage Server</span> | `/autoresponse unignore #general @Carl-bot` | Undoes what !ar ignore does.
 
 <!-- tabs:end -->
 
