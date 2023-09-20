@@ -75,7 +75,7 @@ Want your creation featured here? Post it in the `#show-off` channel of the [Sup
 Tag Name          | Description                                                               | Author            | Import Link                                   
  ---------------- | ------------------------------------------------------------------------- | ----------------- | --------------------------------------------- 
 **>**	          | A quote tag made to work with Discord's quote system.                     | Raffael	          | [carl.gg/t/107229](https://carl.gg/t/107229)   
-**afk**	          | Creates/deletes autoresponses that fire when you are mentioned.	          | Raffael	          | [carl.gg/t/41176](https://carl.gg/t/41176)     
+**afk**	          | Creates/deletes triggers that fire when you are mentioned.	          | Raffael	          | [carl.gg/t/41176](https://carl.gg/t/41176)     
 **colors**        | Assists in creating a basic color roles menu.	                          | Vince the Animator| [carl.gg/t/107305](https://carl.gg/t/107305)  
 **getid**	      | A tag that retrieves the ID of any specified channel, emoji or user.	  | Asty'	          | [carl.gg/t/120698](https://carl.gg/t/120698)   
 **goal**	      | Create and track membercount milestones.	                              | deniiiii 🦕	     | [carl.gg/t/170717](https://carl.gg/t/170717)   
@@ -511,7 +511,7 @@ Use a `+` before the index to reference every element up to and including the in
 Use a `+` after the index to reference the index value and every element after it.<br>
 `{args(-11+)}==a Spicy Italian with - double pepperoni, double salami, provolone, and tomatoes.`
 
-<!-- tab:Degining Delimiters -->
+<!-- tab:Defining Delimiters -->
 You can grab the sentences separately by defining the delimiter as a `.`<br>
 `{args(2):.}==Today he got a Spicy Italian with - double pepperoni, double salami, provolone, and tomatoes`<br><br>
 What if you wanted to parse through just the toppings? Set the toppings to another variable then parse that.<br>
@@ -959,33 +959,33 @@ This method assigns all the data that is related to the same holiday to variable
 <!-- tab:Prefix Commands -->
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
-[**ar**\|**autoresponse**]<br><span class="user-permissions">Manage Server</span> | `!ar`        | Lists the triggers, and ignores for the server.                               
-**autoresponse list**<br><span class="user-permissions">Manage Server</span>       | `!ar list`        | Lists all the triggers in a paginated fashion.                                
-**autoresponse** [add\|create] \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `!ar add "hello there" Hello!` | Adds a trigger that carlbot will look for and say/do something when it is said. This command looks for a substring within the message, meaning that if you add hi then this will also match. See the next command if that is too greedy for you.
-**autoresponse** [strict\|s] \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `!ar strict "its coming home"` | This works a lot like normal ar add with one vital exception: it looks for exact sequences of words, rather than substrings. What this means is that if you add the strict trigger `hell` and someone says `hello` it will not match, it also means that triggers with more than one word requires an exact match per word (this is a lot more reasonable to use than this text makes it out to be).
-**autoresponse** [exact\|e] \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `!ar exact "hey guys" Hello!` | This matches if the content of a message is the same as the trigger. Some exceptions such as punctuation and capitalization applies.
-**autoresponse** [startswith\|sw] \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `!ar sw "how do i" read the wiki!` | Matches if the start of the message matches.
-**autoresponse** [endswith\|ew] \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `!ar ew "i think" no you don't` | Like startswith except if it ends with it.
-**autoresponse** [remove\|del\|-\|delete] \<trigger><br><span class="user-permissions">Manage Server</span> | `!ar del its coming home` | Removes an autoresponse.                     
-**autoresponse clear**<br><span class="user-permissions">Manage Server</span>      | `!ar clear`         | Removes all autoresponses (with a prompt).                                    
-**autoresponse** [channel\|cs] \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `!ar channel Hakuna Matata` | Like a normal autoresponse except it only listens in the channel you used the command in. Note: This will bypass any channel ignores (member ignores still work).
-**autoresponse ignore** \<members_or_channels...><br><span class="user-permissions">Manage Server</span> | `!ar ignore @Carl-bot #general` | Blocks channels and or users from triggering responses.
-**autoresponse unignore** \<members_or_channels...><br><span class="user-permissions">Manage Server</span> | `!ar unignore #general @Carl-bot` | Undoes what !ar ignore does.          
+[**triggers**\|**ar**\|**autoresponse**]<br><span class="user-permissions">Manage Server</span> | `!triggers` | Lists the triggers, and ignores for the server.                               
+**triggers list**<br><span class="user-permissions">Manage Server</span> | `!triggers list` | Lists all the triggers in a paginated fashion.                                
+**triggers** [add\|create] \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `!triggers add "hello there" Hello!` | Adds a trigger that carlbot will look for and say/do something when it is said. This command looks for a substring within the message, meaning that if you add hi then this will also match. See the next command if that is too greedy for you.
+**triggers** [strict\|s] \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `!triggers strict "its coming home"` | This works a lot like normal ar add with one vital exception: it looks for exact sequences of words, rather than substrings. What this means is that if you add the strict trigger `hell` and someone says `hello` it will not match, it also means that triggers with more than one word requires an exact match per word (this is a lot more reasonable to use than this text makes it out to be).
+**triggers** [exact\|e] \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `!triggers exact "hey guys" Hello!` | This matches if the content of a message is the same as the trigger. Some exceptions such as punctuation and capitalization applies.
+**triggers** [startswith\|sw] \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `!triggers sw "how do i" read the wiki!` | Matches if the start of the message matches.
+**triggers** [endswith\|ew] \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `!triggers ew "i think" no you don't` | Like startswith except if it ends with it.
+**triggers** [remove\|del\|-\|delete] \<trigger><br><span class="user-permissions">Manage Server</span> | `!triggers del its coming home` | Removes a trigger.                     
+**triggers clear**<br><span class="user-permissions">Manage Server</span> | `!triggers clear` | Removes all triggers (with a prompt).                                    
+**triggers** [channel\|cs] \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `!triggers channel Hakuna Matata` | Like a normal trigger except it only listens in the channel you used the command in. Note: This will bypass any channel ignores (member ignores still work).
+**triggers ignore** \<members_or_channels...><br><span class="user-permissions">Manage Server</span> | `!triggers ignore @Carl-bot #general` | Blocks channels and or users from triggering responses.
+**triggers unignore** \<members_or_channels...><br><span class="user-permissions">Manage Server</span> | `!triggers unignore #general @Carl-bot` | Undoes what ignore does.          
 
 <!-- tab:Slash Commands -->
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
-**autoresponse list**<br><span class="user-permissions">Manage Server</span> | `/autoresponse list` | Lists the triggers, and ignores for the server.                        
-**autoresponse create** \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `/autoresponse create hello world` | Adds a trigger that carlbot will look for and say/do something when it is said. This command looks for a substring within the message, meaning that if you add hi then this will also match. See the next command if that is too greedy for you.
-**autoresponse strict** \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `/autoresponse strict hello world` | This works a lot like normal ar add with one vital exception: it looks for exact sequences of words, rather than substrings. What this means is that if you add the strict trigger `hell` and someone says `hello` it will not match, it also means that triggers with more than one word requires an exact match per word (this is a lot more reasonable to use than this text makes it out to be).
-**autoresponse exact** \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `/autoresponse exact hello world` | This matches if the content of a message is the same as the trigger. Some exceptions such as punctuation and capitalization applies.
-**autoresponse startswith** \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `/autoresponse startswith hello hi` | Matches if the start of the message matches.
-**autoresponse endswith** \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `/autoresponse endswith world hello?` | Like startswith except if it ends with it.
-**autoresponse remove** \<trigger><br><span class="user-permissions">Manage Server</span> | `/autoresponse remove hello` | Removes an autoresponse.                          
-**autoresponse clear**<br><span class="user-permissions">Manage Server</span> | `/autoresponse clear` | Removes all autoresponses (with a prompt).                           
-**autoresponse channel** \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `/autoresponse channel hello world` | Like a normal autoresponse except it only listens in the channel you used the command in. Note: This will bypass any channel ignores (member ignores still work).
-**autoresponse ignore** \<members_or_channel><br><span class="user-permissions">Manage Server</span> | `/autoresponse ignore @Carl-bot #general` | Blocks channels and or users from triggering responses.
-**autoresponse unignore** \<members_or_channel><br><span class="user-permissions">Manage Server</span> | `/autoresponse unignore #general @Carl-bot` | Undoes what !ar ignore does.
+**triggers list**<br><span class="user-permissions">Manage Server</span> | `/triggers list` | Lists the triggers, and ignores for the server.                        
+**triggers create** \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `/triggers create hello world` | Adds a trigger that carlbot will look for and say/do something when it is said. This command looks for a substring within the message, meaning that if you add hi then this will also match. See the next command if that is too greedy for you.
+**triggers strict** \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `/triggers strict hello world` | This works a lot like normal ar add with one vital exception: it looks for exact sequences of words, rather than substrings. What this means is that if you add the strict trigger `hell` and someone says `hello` it will not match, it also means that triggers with more than one word requires an exact match per word (this is a lot more reasonable to use than this text makes it out to be).
+**triggers exact** \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `/triggers exact hello world` | This matches if the content of a message is the same as the trigger. Some exceptions such as punctuation and capitalization applies.
+**triggers startswith** \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `/triggers startswith hello hi` | Matches if the start of the message matches.
+**triggers endswith** \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `/triggers endswith world hello?` | Like startswith except if it ends with it.
+**triggers remove** \<trigger><br><span class="user-permissions">Manage Server</span> | `/triggers remove hello` | Removes an trigger.                          
+**triggers clear**<br><span class="user-permissions">Manage Server</span> | `/triggers clear` | Removes all triggers (with a prompt).                           
+**triggers channel** \<trigger> \<response><br><span class="user-permissions">Manage Server</span> | `/triggers channel hello world` | Like a normal trigger except it only listens in the channel you used the command in. Note: This will bypass any channel ignores (member ignores still work).
+**triggers ignore** \<members_or_channel><br><span class="user-permissions">Manage Server</span> | `/triggers ignore @Carl-bot #general` | Blocks channels and or users from triggering responses.
+**triggers unignore** \<members_or_channel><br><span class="user-permissions">Manage Server</span> | `/triggers unignore #general @Carl-bot` | Undoes what ignore does.
 
 <!-- tabs:end -->
 
