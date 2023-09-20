@@ -511,7 +511,7 @@ Use a `+` before the index to reference every element up to and including the in
 Use a `+` after the index to reference the index value and every element after it.<br>
 `{args(-11+)}==a Spicy Italian with - double pepperoni, double salami, provolone, and tomatoes.`
 
-<!-- tab:Degining Delimiters -->
+<!-- tab:Defining Delimiters -->
 You can grab the sentences separately by defining the delimiter as a `.`<br>
 `{args(2):.}==Today he got a Spicy Italian with - double pepperoni, double salami, provolone, and tomatoes`<br><br>
 What if you wanted to parse through just the toppings? Set the toppings to another variable then parse that.<br>
