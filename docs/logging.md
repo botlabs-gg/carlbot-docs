@@ -29,7 +29,7 @@
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
 **log channel** [channel]<br><span class="user-permissions">Manage Server</span> | `!log channel #logs` | Sets the default channel where logged events go. Leave empty to clear the channel.
-**log** [event<br><span class="user-permissions">Manage Server</span>]   | `!log timeout`    | Toggles an event from being logged or not. Leave blank to see current config.
+**log** [event]<br><span class="user-permissions">Manage Server</span>   | `!log timeout`    | Toggles an event from being logged or not. Leave blank to see current config.
 **log messagechannel** [channel]<br><span class="user-permissions">Manage Server</span> | `!log messagechannel #msglog` | Sets the channel where message events are logged.
 **log memberchannel** [channel]<br><span class="user-permissions">Manage Server</span> | `!log memberchannel #memberlog` | Sets the channel where member events are logged.
 **log joinchannel** [channel]<br><span class="user-permissions">Manage Server</span> | `!log joinchannel #joinlog` | Sets the channel where the bot logs joining and leaving.
