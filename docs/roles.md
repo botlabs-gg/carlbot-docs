@@ -170,7 +170,7 @@ Name              | Example           | Usage
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
 **role create** \<name> [color] [mentionable=False] [hoist=False]<br><span class="user-permissions">Manage Roles</span> | `!role create bot #FF0000 true true` | Creates a role. Hoist decides if it shows up in the sidebar or not.
-**allroles**<br><span class="user-permissions">Manage Roles</span>      | `!allroles`       | Displays list of roles in the server and member count assigned to the role.   
+**allroles**<br><span class="user-permissions">Manage Roles</span> | `!allroles` | Displays list of roles in the server.   
 **role** \<member> \<role><br><span class="user-permissions">Manage Roles</span> | `!role @Carl-bot bot` | Adds/removes a role from the specified member.                   
 **role add** \<member> \<role><br><span class="user-permissions">Manage Roles</span> | `!role add @Carl-bot bot` | Adds a role to the specified member.                     
 **role remove** \<member> \<role><br><span class="user-permissions">Manage Roles</span> | `!role remove @Carl-bot bot` | Removes a role from the specified member.          
@@ -186,7 +186,7 @@ Name              | Example           | Usage
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
 **role create** \<name> [color] [mentionable=False] [hoist=False]<br><span class="user-permissions">Manage Roles</span> | `/role create bot #FF0000 true true` | Creates a role. Hoist decides if it shows up in the sidebar or not. 
-**role allroles** | `/role allroles` | Displays list of roles in the server and member count assigned to the role.
+**role allroles** | `/role allroles` | Displays list of roles in the server.
 **role add** \<user> \<role><br><span class="user-permissions">Manage Roles</span> | `/role add @Carl-bot bot` | Adds a role to the specified member.                       
 **role remove** \<user> \<role><br><span class="user-permissions">Manage Roles</span> | `/role remove @Carl-bot bot` | Removes a role from the specified member.            
 **role removeall** \<user><br><span class="user-permissions">Manage Roles</span> | `/role removeall @Carl-bot` | Removes all roles from a member.                           
