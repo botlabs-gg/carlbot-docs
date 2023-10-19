@@ -11,9 +11,15 @@ Name              | Example           | Usage
 **star limit** \<number><br><span class="user-permissions">Manage Server</span> | `!star limit 3` | Sets the amount of reactions required for a post to get posted on the Starboard.
 **star nsfw**<br><span class="user-permissions">Manage Server</span>     | `!star nsfw`      | Toggles stars in NSFW channels.                                               
 **star self**<br><span class="user-permissions">Manage Server</span>     | `!star self`      | Toggles being able to star your own posts.                                    
-**star** [stats\|top] [member] | `!star stats @Carl-bot` | Shows some information about the server's or specified member's starred posts and giving pattern.
+**star** [server\|stats\|top] [member] | `!star stats @Carl-bot` | Shows some information about the server's or specified member's starred posts and giving pattern.
 **star show** \<message_id> | `!star show 123456` | Shows a starred post from the Starboard in the channel the command was used in.
-**star** [jump\|source]<br><span class="user-permissions">Manage Server</span> | `!star jump`| Sends the direct link to the starred message.                                 
+**star** [jump\|source]<br><span class="user-permissions">Manage Server</span> | `!star jump`| Sends the direct link to the starred message.
+**star autostar**<br><span class="user-permissions">Manage Server</span> | `!star autostar` | This is a [Premium](https://www.patreon.com/carlbot) command. Automatically stars new Starboard entries.
+**star blacklist** \<channels><br><span class="user-permissions">Manage Server</span> | `!star blacklist #staff` | Blocks channels from having their messages starred.     
+**star unblacklist** \<channels><br><span class="user-permissions">Manage Server</span> | `!star unblacklist #staff` | Unblocks channels from having their messages starred.
+**star config**<br><span class="user-permissions">Manage Server</span>  | `!star config`   | View Starboard configuration for server.                                      
+**star lock**<br><span class="user-permissions">Manage Server</span>    | `!star lock`     | Locks the Starboard making it completely uninteractive.                       
+**star random**  | `!star random`   | Shows a random starred message.                                     
 
 <!-- tab:Slash Commands -->
 Name              | Example           | Usage                                                                         
