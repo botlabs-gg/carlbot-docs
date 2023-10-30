@@ -11,7 +11,7 @@
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
 [**levels**\|**lvl**\|**level**\|**lvls**] [member] | `!level @Carl-bot` | Displays the rank card for a member.                   
-**level** [background\|bg] \<link> | `!lvl bg https://i.imgur.com/L1n\|<` | Sets the [background](#background) of your level card.
+**level** [background\|bg] \<link\|attachment> | `!lvl bg https://i.imgur.com/L1n\|<` | Sets the [background](#background) of your level card.
 **level** [color\|colour] \<color> | `!lvl color FF0000` | Sets the fill color of the XP bar and the border surrounding your profile picture.
 **level accent** \<color> | `!lvl accent FFFFFF` | Sets the color for text, the horizontal bar, and the border surrounding the XP bar.
 **level** [opacity\|alpha] \<value> | `!lvl alpha 0` | Sets the opacity of the overlay.<br>0 - Transparent<br>1.0 or 100 - Opaque.
