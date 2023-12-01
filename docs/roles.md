@@ -174,7 +174,6 @@ Name              | Example           | Usage
 **role** \<member> \<role><br><span class="user-permissions">Manage Roles</span> | `!role @Carl-bot bot` | Adds/removes a role from the specified member.                   
 **role add** \<member> \<role><br><span class="user-permissions">Manage Roles</span> | `!role add @Carl-bot bot` | Adds a role to the specified member.                     
 **role remove** \<member> \<role><br><span class="user-permissions">Manage Roles</span> | `!role remove @Carl-bot bot` | Removes a role from the specified member.          
-**role** [removeall\|purge\|clear] \<member><br><span class="user-permissions">Manage Roles</span> | `!role removeall @Carl-bot` | Removes all roles from a member.         
 **role color** \<role> \<color><br><span class="user-permissions">Manage Roles</span> | `!role color bot #FF0000` | Changes the color of a role.                            
 **role info** \<role> | `!role info bot` | Displays the role's Name, Member Count, Color, and when it was created.   
 **role** [custom\|c] \<member> \<custom_string><br><span class="user-permissions">Manage Roles</span> | `!role custom @Carl-bot +bot -human` | Gives the ability to add and remove roles within a single command, useful for removing a pending role whilst granting a member/joined role.
@@ -189,7 +188,6 @@ Name              | Example           | Usage
 **role allroles** | `/role allroles` | Displays list of roles in the server.
 **role add** \<user> \<role><br><span class="user-permissions">Manage Roles</span> | `/role add @Carl-bot bot` | Adds a role to the specified member.                       
 **role remove** \<user> \<role><br><span class="user-permissions">Manage Roles</span> | `/role remove @Carl-bot bot` | Removes a role from the specified member.            
-**role removeall** \<user><br><span class="user-permissions">Manage Roles</span> | `/role removeall @Carl-bot` | Removes all roles from a member.                           
 **role color** \<role> \<color><br><span class="user-permissions">Manage Roles</span> | `/role color bot #FF0000` | Changes the color of a role.                            
 **role info** \<role> | `/role info bot` | Displays the role's Name, Member Count, Color, and when it was created.    
 **role custom** \<member_and_roles><br><span class="user-permissions">Manage Roles</span> | `/role custom @Carl-bot +bot -human` | Gives the ability to add and remove roles within a single command, useful for removing a pending role whilst granting a member/joined role.
@@ -233,7 +231,8 @@ Name              | Example           | Usage
 **role all** \<role><br><span class="user-permissions">Manage Roles</span> | `!role all newb` | Adds a role to every single member.                                         
 **role humans** \<role><br><span class="user-permissions">Manage Roles</span> | `!role humans members` | Adds a role to all non-bots.                                       
 **role in** \<base_role> \<assigned_role><br><span class="user-permissions">Manage Roles</span> | `!role in valorant gamers` | Assigns a role to all members with the base role.
-**role rall** \<role><br><span class="user-permissions">Manage Roles</span> | `!role rall admin` | Removes a role from all members.                                         
+**role rall** \<role><br><span class="user-permissions">Manage Roles</span> | `!role rall admin` | Removes a role from all members.          
+**role** [removeall\|purge\|clear] \<member><br><span class="user-permissions">Manage Roles</span> | `!role removeall @Carl-bot` | Removes all roles from a member.         
 **role rbots** \<role><br><span class="user-permissions">Manage Roles</span> | `!role rbots members` | Removes a role from all bots.                                        
 **role rhumans** \<role><br><span class="user-permissions">Manage Roles</span> | `!role rhumans robots` | Removes a role from all humans.                                   
 **role rin** \<base_role> \<role><br><span class="user-permissions">Manage Roles</span> | `!role rin fortnite gamers` | Removes a role from all members with the base role.
@@ -245,6 +244,7 @@ Name              | Example           | Usage
 **role humans** \<role><br><span class="user-permissions">Manage Roles</span> | `/role humans members` | Adds a role to all non-bots.                                       
 **role in** \<base_role> \<new_role><br><span class="user-permissions">Manage Roles</span> | `!role in valorant gamers` | Assigns new role to all members with the base role.
 **role rall** \<role><br><span class="user-permissions">Manage Roles</span> | `/role rall admin` | Removes a role from all members.                                         
+**role removeall** \<user><br><span class="user-permissions">Manage Roles</span> | `/role removeall @Carl-bot` | Removes all roles from a member.                           
 **role removebots** \<role><br><span class="user-permissions">Manage Roles</span> | `/role removebots members` | Removes a role from all bots.                              
 **role removehumans** \<role><br><span class="user-permissions">Manage Roles</span> | `/role removehumans robots` | Removes a role from all humans.                         
 **role removein** \<base_role> \<new_role><br><span class="user-permissions">Manage Roles</span> | `/role removein fortnite gamers` | Removes new role from all members with the base role.
