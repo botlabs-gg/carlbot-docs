@@ -94,7 +94,7 @@ Tag Name          | Description                                                 
 **colortext**	  | Outputs your text colorized in a codeblock.	                              | Raffael	          | [carl.gg/t/98660](https://carl.gg/t/98660)    
 **define**	      | Outputs the URL to the Merriam-Webster page for the word or phrase that follows the tag. Link preview displays definition. | Raffael | [carl.gg/t/44427](https://carl.gg/t/44427)
 **formatting**	  | Shows all of the Markdown formatting you can do in Discord.	              | ent3r_	          | [carl.gg/t/240243](https://carl.gg/t/240243)
-**weather**	      | Displays current weather for a location. Usage: `weather <location>`	  | Near	          | [carl.gg/t/208597](https://carl.gg/t/208597)
+<!-- **weather**	      | Displays current weather for a location. Usage: `weather <location>`	  | Near	          | [carl.gg/t/208597](https://carl.gg/t/208597) -->
 
 <!-- tab:Game Tags -->
 Tag Name          | Description                                                               | Author            | Import Link                                   

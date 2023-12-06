@@ -206,6 +206,8 @@ Name              | Example           | Usage
 <!-- tab:Bad Words -->
 Bad words detection is case insensitive, looks for substrings and ignores punctuation. Censoring `boat` would cause Carl-bot to punish any user that said `fredboat`.
 
+?> **Limit**<br>50 Entries
+
 <!-- tabs:start -->
 
 <!-- tab:Prefix Commands -->
