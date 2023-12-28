@@ -65,7 +65,7 @@ Name              | Example           | Usage
 <!-- tab:Prefix Commands -->
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
-**echo** [channel] \<message><br><span class="user-permissions">Manage Messages</span> | `!echo #general Welcome guys` | Makes the bot post the message in the mentioned channel or the channel the command was used in.
+**echo** [channel] \<message><br><span class="user-permissions">Manage Server</span> | `!echo #general Welcome guys` | Makes the bot post the message in the mentioned channel or the channel the command was used in.
 [**pick**\|**choice**\|**select**] <choices...> | `!choose go to sleep, play game` | Picks one of your specified arguments. Use commas for multiple choices.
 [**ud**\|**urbandictionary**] \<word> | `!ud rizz` | Returns the UrbanDictionary definition for your word. Can only be used in NSFW channels.
 **roll** [lower=1]-[upper=100] | `!roll 100-1100` | Random number generation. Providing only one number will change the upper limit.
@@ -77,7 +77,7 @@ Name              | Example           | Usage
 <!-- tab:Slash Commands -->
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
-**echo** \<message> [channel]<br><span class="user-permissions">Manage Messages</span> | `/echo Welcome guys #general` | Makes the bot post the message in the mentioned channel or the channel the command was used in.
+**echo** \<message> [channel]<br><span class="user-permissions">Manage Server</span> | `/echo Welcome guys #general` | Makes the bot post the message in the mentioned channel or the channel the command was used in.
 **fun pick** \<sentence> | `/fun pick go to sleep, play game` | Picks one of your specified arguments. Use commas for multiple choices.
 **fun urbandictionary** \<word> | `/fun urbandictionary rizz` | Returns the UrbanDictionary definition for your word. Can only be used in NSFW channels.
 **fun coinflip** | `/fun coinflip`  | Flips a coin.                                                                 

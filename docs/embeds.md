@@ -10,7 +10,7 @@ Name              | Example           | Usage
 **embed** [channel] \<color> \<title> \| \<description><br><span class="user-permissions">Manage Server</span> | `!embed #welcome FF0000 Title \| Description` | Creates a simple embed with color, title and description.
 **editembed** \<message id> \<title> \| \<description><br><span class="user-permissions">Manage Server</span> | `!editembed 32538901190123 Title \| Description` | Edits an embed sent by the bot in a message.
 **cembed** [channel] \<JSON><br><span class="user-permissions">Manage Server</span> | `!cembed #welcome` | Creates a fully customized embed. Also accepts a Pastebin link.
-**ecembed** \<message id> \<channel> \<JSON><br><span class="user-permissions">Manage Messages</span> | `!ecembed 31203123191 #welcome` | Edits any embed the bot has posted using the JSON or JSON source that follows the message ID and channel.
+**ecembed** \<message id> \<channel> \<JSON><br><span class="user-permissions">Manage Server</span> | `!ecembed 31203123191 #welcome` | Edits any embed the bot has posted using the JSON or JSON source that follows the message ID and channel.
 **embedsource** \<message id> [channel] | `!embedsource 9312838121123 #welcome` | Gets the raw JSON from an embed.
 **embedunhide** \<message_id> [channel]<br><span class="user-permissions">Manage Server</span> | `!embedunhide 123456789` | Unhides a previously closed embed.
 
@@ -20,7 +20,7 @@ Name              | Example           | Usage
 **embed create** \<color> \<text> [channel]<br><span class="user-permissions">Manage Server</span> | `/embed create FF0000 Title \| Description #welcome` | Creates a simple embed with color, title and description.
 **embed edit** \<message id> \<text><br><span class="user-permissions">Manage Server</span> | `/embed edit 32538901190123 Title \| Description` | Edits an embed sent by the bot in a message.
 **embed custom** \<JSON> [channel]<br><span class="user-permissions">Manage Server</span> | `/embed custom #welcome` | Creates a fully customized embed. Also accepts a Pastebin link.
-**embed editcustom** \<message id> \<JSON> \<channel><br><span class="user-permissions">Manage Messages</span> | `/embed editcustom 31203123191 #welcome` | Edits any embed the bot has posted using the JSON or JSON source that follows the message ID and channel.
+**embed editcustom** \<message id> \<JSON> \<channel><br><span class="user-permissions">Manage Server</span> | `/embed editcustom 31203123191 #welcome` | Edits any embed the bot has posted using the JSON or JSON source that follows the message ID and channel.
 **embed source** \<message id> [channel] | `/embed source 9312838121123 #welcome` | Gets the raw JSON from an embed.
 **embed unhide** \<message_id> [channel]<br><span class="user-permissions">Manage Server</span> | `/embed unhide 123456789` | Unhides a previously closed embed.
 
