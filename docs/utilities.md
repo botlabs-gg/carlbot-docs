@@ -145,7 +145,7 @@ Name              | Example           | Usage
 **avatar** [member] [avatar_type=server] | `!avatar @Carl-bot global` | Shows the avatar of a mentioned user or yourself if you don't. If avatar_type is global then it will show the global avatar otherwise it defaults to server avatar if available.
 **serverinfo**    | `!serverinfo`     | Displays server information.                                                  
 **youngest** [count=5]<br><span class="user-permissions">Manage Messages</span> | `!youngest 10` | Ranks up to 25 members by account creation.
-**oldest** [count=5]<br><span class="user-permissions">Manage Messages</span> | `!oldest 15`   | Ranks up to 25 members by account creation.
+**oldest** [count=5]<br><span class="user-permissions">Manage Server</span> | `!oldest 15`   | Ranks up to 25 members by account creation.
 [**newmembers**\|**newusers**] [count=5]<br><span class="user-permissions">Manage Server</span> | `!newusers 10` | Ranks up to 25 members by server join date.
 [**oldmembers**\|**oldusers**] [count=5]<br><span class="user-permissions">Manage Server</span> | `!oldusers 15` | Ranks up to 25 members by server join date.
 
@@ -156,7 +156,7 @@ Name              | Example           | Usage
 **avatars** [user] [global] | `/avatars @Carl-bot true` | Shows the avatar of a mentioned user or yourself if you don't. If global is set true then it will show the global avatar otherwise it defaults to server avatar if available.
 **stats serverinfo** | `/stats serverinfo` | Displays server information.                                             
 **members youngest** [count=5]<br><span class="user-permissions">Manage Messages</span> | `/members youngest 10` | Ranks up to 25 members by account creation.
-**members oldest** [count=5]<br><span class="user-permissions">Manage Messages</span> | `/members oldest 15`   | Ranks up to 25 members by account creation.
+**members oldest** [count=5]<br><span class="user-permissions">Manage Server</span> | `/members oldest 15`   | Ranks up to 25 members by account creation.
 **members newusers** [count=5]<br><span class="user-permissions">Manage Server</span> | `/members newusers 10` | Ranks up to 25 members by server join date.
 **members oldusers** [count=5]<br><span class="user-permissions">Manage Server</span> | `/members oldusers 15` | Ranks up to 25 members by server join date.
 
@@ -169,13 +169,13 @@ Name              | Example           | Usage
 <!-- tab:Prefix Commands -->
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
-**poll** \<question> [choices]<br><span class="user-permissions">Manage Messages</span>  | `!poll is this nice?` | Creates a thumbs up-down poll where users vote with reactions.
+**poll** \<question> [choices]<br><span class="user-permissions">Manage Server</span>  | `!poll is this nice?` | Creates a thumbs up-down poll where users vote with reactions.
 **quickpoll** \<question_and_choices><br><span class="user-permissions">Manage Messages</span> | `!quickpoll is this nice?, yes, no` | Creates a poll with question and answers. Use `\|` or `,` to separate the question and answers.
 
 <!-- tab:Slash Commands -->
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
-**poll** \<question> [choices]<br><span class="user-permissions">Manage Messages</span>  | `/poll is this nice?` | Creates a thumbs up-down poll where users vote with reactions. Use `\|` or `,` to separate the question and answers.
+**poll** \<question> [choices]<br><span class="user-permissions">Manage Server</span>  | `/poll is this nice?` | Creates a thumbs up-down poll where users vote with reactions. Use `\|` or `,` to separate the question and answers.
 
 <!-- tabs:end -->
 
