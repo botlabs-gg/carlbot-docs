@@ -144,7 +144,7 @@ Name              | Example           | Usage
 [**i**\|**info**] [member] | `!i @Carl-bot` | Returns the specified user's name, avatar link, roles, ID, creation date, server join date and some cool related information.
 **avatar** [member] [avatar_type=server] | `!avatar @Carl-bot global` | Shows the avatar of a mentioned user or yourself if you don't. If avatar_type is global then it will show the global avatar otherwise it defaults to server avatar if available.
 **serverinfo**    | `!serverinfo`     | Displays server information.                                                  
-**youngest** [count=5]<br><span class="user-permissions">Manage Messages</span> | `!youngest 10` | Ranks up to 25 members by account creation.
+**youngest** [count=5]<br><span class="user-permissions">Manage Server</span> | `!youngest 10` | Ranks up to 25 members by account creation.
 **oldest** [count=5]<br><span class="user-permissions">Manage Server</span> | `!oldest 15`   | Ranks up to 25 members by account creation.
 [**newmembers**\|**newusers**] [count=5]<br><span class="user-permissions">Manage Server</span> | `!newusers 10` | Ranks up to 25 members by server join date.
 [**oldmembers**\|**oldusers**] [count=5]<br><span class="user-permissions">Manage Server</span> | `!oldusers 15` | Ranks up to 25 members by server join date.
@@ -155,7 +155,7 @@ Name              | Example           | Usage
 **members info** [member] | `/members info @Carl-bot` | Returns the specified user's name, avatar link, roles, ID, creation date, server join date and some cool related information.
 **avatars** [user] [global] | `/avatars @Carl-bot true` | Shows the avatar of a mentioned user or yourself if you don't. If global is set true then it will show the global avatar otherwise it defaults to server avatar if available.
 **stats serverinfo** | `/stats serverinfo` | Displays server information.                                             
-**members youngest** [count=5]<br><span class="user-permissions">Manage Messages</span> | `/members youngest 10` | Ranks up to 25 members by account creation.
+**members youngest** [count=5]<br><span class="user-permissions">Manage Server</span> | `/members youngest 10` | Ranks up to 25 members by account creation.
 **members oldest** [count=5]<br><span class="user-permissions">Manage Server</span> | `/members oldest 15`   | Ranks up to 25 members by account creation.
 **members newusers** [count=5]<br><span class="user-permissions">Manage Server</span> | `/members newusers 10` | Ranks up to 25 members by server join date.
 **members oldusers** [count=5]<br><span class="user-permissions">Manage Server</span> | `/members oldusers 15` | Ranks up to 25 members by server join date.
