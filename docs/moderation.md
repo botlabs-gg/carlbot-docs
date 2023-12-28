@@ -148,7 +148,7 @@ Name              | Example           | Usage
 **purge** [mentions\|pings] [search=100]<br><span class="user-permissions">Manage Server</span> | `!purge pings 25` | Purges messages containing pings.                      
 **purge** [human\|humans] [search=100]<br><span class="user-permissions">Manage Server</span> | `!purge human 13` | Purges messages except those by bots.                    
 **purge reactions** [search=100]<br><span class="user-permissions">Manage Server</span> | `!purge reactions` | Removes all reactions from messages.                          
-**cleanup** [search=100]<br><span class="user-permissions">Manage Messages</span> | `!cleanup 8` | Purges messages sent by @Carl-bot.                                          
+**cleanup** [search=100]<br><span class="user-permissions">Manage Server</span> | `!cleanup 8` | Purges messages sent by @Carl-bot.                                          
 
 <!-- tab:Slash Commands -->
 Name              | Example           | Usage                                                                         
@@ -165,6 +165,6 @@ Name              | Example           | Usage
 **purge mentions** \<count><br><span class="user-permissions">Manage Server</span> | `/purge mentions 25` | Purges messages containing pings.                                
 **purge human** \<count><br><span class="user-permissions">Manage Server</span> | `/purge human 13` | Purges messages except those by bots.                                  
 **purge reactions** [count]<br><span class="user-permissions">Manage Server</span> | `/purge reactions` | Removes all reactions from messages.                               
-**moderation cleanup** [count]<br><span class="user-permissions">Manage Messages</span> | `/moderation cleanup 8` | Purges messages sent by @Carl-bot.                         
+**moderation cleanup** [count]<br><span class="user-permissions">Manage Server</span> | `/moderation cleanup 8` | Purges messages sent by @Carl-bot.                         
 
 <!-- tabs:end -->
