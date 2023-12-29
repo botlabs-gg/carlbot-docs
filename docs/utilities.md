@@ -24,7 +24,7 @@ Variables follow `--format` or `-f`<br><br>
 <!-- tab:Prefix Commands -->
 **dump** Is a special command that deserves its own page.
 
-The syntax is `!dump [role] [args]`<br><span class="user-permissions">Manage Messages</span>
+The syntax is `!dump [role] [args]`<br><span class="user-permissions">Manage Roles</span>
 
 If you're not used to using flags this might be confusing, so here are some examples and what they do:
 
@@ -63,7 +63,7 @@ The order of the flags does not matter, below is a more in-depth explanation of 
 <!-- tab:Slash Commands -->
 **stats dump** Is a special command that deserves its own page.
 
-The syntax is `/stats dump [role] [query]`<br><span class="user-permissions">Manage Messages</span>
+The syntax is `/stats dump [role] [query]`<br><span class="user-permissions">Manage Roles</span>
 
 If you're not used to using flags this might be confusing, so here are some examples and what they do:
 
