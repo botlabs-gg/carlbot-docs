@@ -182,16 +182,7 @@ Invitespam will not be active without setting a rate limit of at least 1+ invite
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
 **invitespam**<br><span class="user-permissions">Manage Server</span>    | `!invitespam`     | Shows the invitespam settings.                                               
-**invitespam** \<rate> [per=1]<br><span class="user-permissions">Manage Server</span> | `!invitespam 1 1` | Sets the invite rate limit. Use the example command to block all invites.
-**invitespam punishment** <punishments...><br><span class="user-permissions">Manage Server</span> | `!invitespam p delte, mute, defer, message` | Sets the punishment(s) for hitting the rate limit.
-**invitespam bl** <links...><br><span class="user-permissions">Manage Server</span> | `!invitespam bl discord.gg/fredboat` | Adds the server that the invite goes to, to the blacklist.
-**invitespam wl** <links...><br><span class="user-permissions">Manage Server</span> | `!invitespam wl discord.gg/fredboat` | Adds the server that the invite goes to, to the whitelist.
-**invitespam unbl** <links...><br><span class="user-permissions">Manage Server</span> | `!invitespam unbl discord.gg/fredboat` | Removes one or more servers from the blacklist.
-**invitespam unwl** <links...><br><span class="user-permissions">Manage Server</span> | `!invitespam unwl discord.gg/fredboat` | Removes one or more servers from the whitelist.
-**invitespam clearbl**<br><span class="user-permissions">Manage Server</span> | `!invitespam clearbl` | Clears the blacklist.                                                    
-**invitespam clearwl**<br><span class="user-permissions">Manage Server</span> | `!invitespam clearwl` | Clears the whitelist.                                                    
-**invitespam** [on\|block]<br><span class="user-permissions">Manage Server</span> | `!invitespam on` | Punish all non-whitelisted invites.                                    
-**invitespam off**<br><span class="user-permissions">Manage Server</span> | `!invitespam off` | Punish only blacklisted invites.                                              
+**invitespam punishment** <punishments...><br><span class="user-permissions">Manage Server</span> | `!invitespam p delte, mute, defer, message` | Sets the punishment(s) for hitting the rate limit.                                           
 **invitespam norole**<br><span class="user-permissions">Manage Server</span> | `!invitespam norole` | Punish only those without roles.                                       
 
 <!-- tab:Slash Commands -->
