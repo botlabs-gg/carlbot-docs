@@ -103,7 +103,7 @@ Attachmentspam will not be active without setting a rate limit of at least 1+ fi
 <!-- tab:Prefix Commands -->
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
-**attachmentspam** [rate] [per=1]<br><span class="user-permissions">Manage Server</span> | `!attachmentspam 3 5` | Rate limits the number of attachments a member can post in a specific timeframe.
+**attachmentspam** [rate] [per=1]<br><span class="user-permissions">Manage Server</span> | `!attachmentspam 3 5` | Rate limits the number of attachments a member can post in a specific timeframe. Leave blank to disable.
 **attachmentspam punishment** <punishments...><br><span class="user-permissions">Manage Server</span> | `!attachmentspam p mute, defer` | Sets the punishment(s) for hitting the rate limit.
 
 <!-- tab:Slash Commands -->
