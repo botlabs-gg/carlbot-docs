@@ -103,7 +103,7 @@ Attachmentspam will not be active without setting a rate limit of at least 1+ fi
 <!-- tab:Prefix Commands -->
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
-**attachmentspam** [rate] [per=1]<br><span class="user-permissions">Manage Server</span> | `!attachmentspam 3 5` | Rate limits the number of attachments a member can post in a specific timeframe.
+**attachmentspam** [rate] [per=1]<br><span class="user-permissions">Manage Server</span> | `!attachmentspam 3 5` | Rate limits the number of attachments a member can post in a specific timeframe. Leave blank to disable.
 **attachmentspam punishment** <punishments...><br><span class="user-permissions">Manage Server</span> | `!attachmentspam p mute, defer` | Sets the punishment(s) for hitting the rate limit.
 
 <!-- tab:Slash Commands -->
@@ -174,7 +174,7 @@ Name              | Example           | Usage
 <!-- tabs:end -->
 
 <!-- tab:Invites -->
-Invitespam will not be active without setting a rate limit of at least 1+ invites in 1+ seconds first.
+You can enable and disable this feature through the dashboard.
 
 <!-- tabs:start -->
 
@@ -182,7 +182,7 @@ Invitespam will not be active without setting a rate limit of at least 1+ invite
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
 **invitespam**<br><span class="user-permissions">Manage Server</span>    | `!invitespam`     | Shows the invitespam settings.                                               
-**invitespam punishment** <punishments...><br><span class="user-permissions">Manage Server</span> | `!invitespam p delte, mute, defer, message` | Sets the punishment(s) for hitting the rate limit.                                           
+**invitespam punishment** <punishments...><br><span class="user-permissions">Manage Server</span> | `!invitespam p delete, mute, defer, message` | Sets the punishment(s) for hitting the rate limit.                                           
 **invitespam norole**<br><span class="user-permissions">Manage Server</span> | `!invitespam norole` | Punish only those without roles.                                       
 
 <!-- tab:Slash Commands -->

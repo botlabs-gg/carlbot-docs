@@ -36,11 +36,11 @@ Name              | Example           | Usage
 <!-- tab:Prefix Commands -->
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
-**ignore** [channels...] [commands...]<br><span class="user-permissions">Manage Server</span> | `!ignore #general #log ping about` | If no channel is specified, the current channel is ignored. If no command is specified, all commands will be ignored in that channel. <span style="color: red;">Manage Server</span> bypasses this.                                        
+**ignore** [channels...]<br><span class="user-permissions">Manage Server</span> | `!ignore #general #log` | If no channel is specified, the current channel is ignored. <span style="color: red;">Manage Server</span> bypasses this.                                        
 **ignore server**<br><span class="user-permissions">Manage Server</span> | `!ignore server`  | This will make the bot mod-only.                                              
-**ignore all** [commands...]<br><span class="user-permissions">Manage Server</span> | `!ignore all ping about` | This will ignore the specified command(s) in all current channels of the server that the bot can see.
-**unignore** [channels...] [commands...]<br><span class="user-permissions">Manage Server</span> | `!unignore #general #log ping about` | Reverses what `!ignore` does        
-**unignore all**<br><span class="user-permissions">Manage Server</span> | `!unignore all` | Unignores all channels. This won't take ignored commands into account.           
+**ignore all**<br><span class="user-permissions">Manage Server</span> | `!ignore all` | This will ignore all commands in all current channels of the server that the bot can see.
+**unignore** [channels...]<br><span class="user-permissions">Manage Server</span> | `!unignore #general #log` | Reverses what `!ignore` does        
+**unignore all**<br><span class="user-permissions">Manage Server</span> | `!unignore all` | Unignores all channels.           
 **disable** <commands...><br><span class="user-permissions">Manage Server</span> | `!disable ping about` | This disables the command in the entire server and no permission can bypass this.
 **disable mod**<br><span class="user-permissions">Manage Server</span>   | `!disable mod`    | Disables all moderation commands.                                             
 **disable all**<br><span class="user-permissions">Manage Server</span>   | `!disable all`    | Disables all the commands.                                                    
@@ -59,6 +59,11 @@ Name              | Example           | Usage
 <!-- tab:Slash Commands -->
 ?> Slash commands can be managed according to your needs in your server's settings:<br>
 **Server Settings** > **Integrations** > **Carl-bot** > **Manage**
+
+Name              | Example           | Usage   
+ ---------------- | ----------------- | ----------------------------------------------------------------------------- 
+**config ignore** \<all\|channel> [channel]<br><span class="user-permissions">Manage Server</span> | `/config ignore channel #general` | If you select channel and no channel is specified, the current channel is ignored. <span style="color: red;">Manage Server</span> bypasses this.                                        
+**config unignore** \<all\|channel> [channel]<br><span class="user-permissions">Manage Server</span> | `/config unignore all` | Reverses what `!ignore` does        
 
 <!-- tabs:end -->
 
