@@ -63,7 +63,7 @@ Name              | Example           | Usage
 <!-- tab:Prefix Commands -->
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
-**aprove** \<suggestion_id> [reaason]<br><span class="user-permissions">Manage Server</span> | `!approve 3` | Approves a suggestion.                                         
+**approve** \<suggestion_id> [reason]<br><span class="user-permissions">Manage Server</span> | `!approve 3` | Approves a suggestion.                                         
 **deny** \<suggestion_id> [reason]<br><span class="user-permissions">Manage Server</span> | `!deny 4 spam` | Denies a suggestion.                                            
 **consider** \<suggestion_id> [reason]<br><span class="user-permissions">Manage Server</span> | `!consider 5` | Marks a suggestion as being considered.                      
 **implemented** \<suggestion_id> [reason]<br><span class="user-permissions">Manage Server</span> | `!implemented 1 Added` | Marks a suggestion as implemented.               
@@ -71,7 +71,7 @@ Name              | Example           | Usage
 <!-- tab:Slash Commands -->
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
-**suggestion aprove** \<suggestionid> [reaason]<br><span class="user-permissions">Manage Server</span> | `/suggestion approve 3` | Approves a suggestion.                    
+**suggestion approve** \<suggestionid> [reason]<br><span class="user-permissions">Manage Server</span> | `/suggestion approve 3` | Approves a suggestion.                    
 **suggestion deny** \<suggestionid> [reason]<br><span class="user-permissions">Manage Server</span> | `/suggestion deny 4 spam` | Denies a suggestion.                       
 **suggestion consider** \<suggestionid> [reason]<br><span class="user-permissions">Manage Server</span> | `/suggestion consider 5` | Marks a suggestion as being considered. 
 **suggestion implemented** \<suggestionid> [reason]<br><span class="user-permissions">Manage Server</span> | `/suggestion implemented 1 Added` | Marks a suggestion as implemented.

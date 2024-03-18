@@ -80,7 +80,7 @@ Tag Name          | Description                                                 
 **getid**	      | A tag that retrieves the ID of any specified channel, emoji or user.	  | Asty'	          | [carl.gg/t/120698](https://carl.gg/t/120698)   
 **goal**	      | Create and track membercount milestones.	                              | deniiiii 🦕	     | [carl.gg/t/170717](https://carl.gg/t/170717)   
 **promote**       | Set up RP promotions that follow a chain of command.	                  | Raffael	          | [carl.gg/t/86149](https://carl.gg/t/86149)     
-**rules**	      | A complex rules listing tag.	                                          | Raffael	          | [carl.gg/t/81906](https://carl.gg/t/81906)     
+**rules**	      | A complex rules listing tag.	                                          | Raffael	          | [carl.gg/t/547511](https://carl.gg/t/547511)     
 **setup**	      | A tag that helps with the initial server setup.	                          | Raffael	          | [carl.gg/t/239346](https://carl.gg/t/239346)   
 **social**        | Dynamic Per-User Social Media Clickable Icons.                            | Asty'	          | [carl.gg/t/254647](https://carl.gg/t/254647)   
 **submit**        | An image submission tag. Rename the channel in the redirect for this to work. | Antimony	  | [carl.gg/t/32150](https://carl.gg/t/32150)     
