@@ -169,13 +169,12 @@ Name              | Example           | Usage
 <!-- tab:Prefix Commands -->
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
-**poll** \<question> [choices]<br><span class="user-permissions">Manage Server</span>  | `!poll is this nice?` | Creates a thumbs up-down poll where users vote with reactions.
-**quickpoll** \<question_and_choices><br><span class="user-permissions">Manage Messages</span> | `!quickpoll is this nice?, yes, no` | Creates a poll with question and answers. Use `\|` or `,` to separate the question and answers.
+**poll** \<question_and_choices><br><span class="user-permissions">Manage Server</span>  | `!poll Is this nice?,Yes,No` | Creates a thumbs up-down poll where users vote with reactions. Use `\|` or `,` to separate the question and choices.
 
 <!-- tab:Slash Commands -->
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
-**poll** \<question> [choices]<br><span class="user-permissions">Manage Server</span>  | `/poll is this nice?` | Creates a thumbs up-down poll where users vote with reactions. Use `\|` or `,` to separate the question and answers.
+**poll** \<question> [choices]<br><span class="user-permissions">Manage Server</span>  | `/poll Is this nice?` | Creates a thumbs up-down poll where users vote with reactions. Use `\|` or `,` to separate the choices.
 
 <!-- tabs:end -->
 
