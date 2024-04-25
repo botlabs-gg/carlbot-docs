@@ -10,7 +10,7 @@
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
 **set welcome** \<channel><br><span class="user-permissions">Manage Server</span> | `!set welcome #welcome` | Sets the channel where welcome, leave and banmsg notification messages will be posted.
-[**welcome**\|greet**] \<text><br><span class="user-permissions">Manage Server</span> | `!welcome Welcome` | Sets up a welcome message that will be sent when a new user joins.
+[**welcome**\|**greet**] \<text><br><span class="user-permissions">Manage Server</span> | `!welcome Welcome` | Sets up a welcome message that will be sent when a new user joins.
 [**leave**\|**farewell**] \<text><br><span class="user-permissions">Manage Server</span> | `!leave Goodbye` | Sets up a leave message that will be sent when a user leaves the server. 
 **banmsg** \<text><br><span class="user-permissions">Manage Server</span> | `!banmsg {user} got banned` | Sets up a banmsg message that will be sent when a user gets banned.
 [**dmjoin**\|**pmjoin**\|**joindm**\|**joinpm**] \<text><br><span class="user-permissions">Manage Server</span> | `!joindm Welcome` | DMs the user upon joining your server.             

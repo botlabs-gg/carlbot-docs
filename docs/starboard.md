@@ -19,7 +19,8 @@ Name              | Example           | Usage
 **star unblacklist** \<channels><br><span class="user-permissions">Manage Server</span> | `!star unblacklist #staff` | Unblocks channels from having their messages starred.
 **star config**<br><span class="user-permissions">Manage Server</span>  | `!star config`   | View Starboard configuration for server.                                      
 **star lock**<br><span class="user-permissions">Manage Server</span>    | `!star lock`     | Locks the Starboard making it completely uninteractive.                       
-**star random**  | `!star random`   | Shows a random starred message.                                     
+**star random**  | `!star random`   | Shows a random starred message.
+**star remove**<br><span class="user-permissions">Manage Server</span>  | `!star remove`   | Removes a channel as starboard.                                    
 
 <!-- tab:Slash Commands -->
 Name              | Example           | Usage                                                                         
@@ -37,6 +38,7 @@ Name              | Example           | Usage
 **stars unblacklist** \<channels><br><span class="user-permissions">Manage Server</span> | `/stars unblacklist #staff` | Unblocks channels from having their messages starred.
 **stars config**<br><span class="user-permissions">Manage Server</span>  | `/stars config`   | View Starboard configuration for server.                                      
 **stars lock**<br><span class="user-permissions">Manage Server</span>    | `/stars lock`     | Locks the Starboard making it completely uninteractive.                       
-**stars random**  | `/stars random`   | Shows a random starred message.                                               
+**stars random**  | `/stars random`   | Shows a random starred message.           
+**stars remove**<br><span class="user-permissions">Manage Server</span>  | `/stars remove`   | Removes a channel as starboard.                                    
 
 <!-- tabs:end -->
