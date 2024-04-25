@@ -1,3 +1,20 @@
+## TopRoll
+Start a TopRoll game where users can try to get into the daily leaderboard. Each user tries to roll the highest sum in 6 tries in 60 seconds. The game starts when the first user starts rolling and lasts for a day.
+
+<!-- tabs:start -->
+
+<!-- tab:Prefix Commands -->
+Name              | Example           | Usage                                                                         
+ ---------------- | ----------------- | ----------------------------------------------------------------------------- 
+**games toproll** | `!games toproll`  | Starts the TopRoll game.
+
+<!-- tab:Slash Commands -->
+Name              | Example           | Usage                                                                         
+ ---------------- | ----------------- | ----------------------------------------------------------------------------- 
+**games toproll** | `/games toproll`  | Starts the TopRoll game.
+
+<!-- tabs:end -->
+
 ## Free Game Alerts
 Get notified whenever there is a free game giveaway. Currently we only support Steam, Origin, Ubisoft, Epic Games Store, Android and GOG.
 
