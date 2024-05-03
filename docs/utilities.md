@@ -28,7 +28,7 @@ The syntax is `!dump [role] [args]`<br><span class="user-permissions">Manage Rol
 
 If you're not used to using flags this might be confusing, so here are some examples and what they do:
 
-> **!dump Patrons --enumerate --order id -f %n %c --dateformat %c --limit 10**<br>
+> **!dump Patrons \--enumerate \--order id -f %n %c \--dateformat %c \--limit 10**<br>
 Dumps the 10 oldest accounts with the patreon role. Output:<br>
 `1. evlsmurf Mon Aug 31 22:23:33 2015`<br>
 `2. Hammy:hamster: Thu Sep 24 23:04:31 2015`<br>
@@ -41,7 +41,7 @@ Dumps the 10 oldest accounts with the patreon role. Output:<br>
 `9. aphoenix Mon Nov  9 02:09:03 2015`<br>
 `10. Terra Fri Dec  4 02:49:17 2015`
 
-> **!dump -o id --limit 10 --no-roles**<br>
+> **!dump -o id \--limit 10 \--no-roles**<br>
 Dumps the 10 oldest accounts without roles. Output:<br>
 `Andy#7194 (23572087872421888)`<br>
 `macki#9999 (48287434319855616)`<br>
@@ -54,7 +54,7 @@ Dumps the 10 oldest accounts without roles. Output:<br>
 `ZeroMastery#1287 (53695818749706240)`<br>
 `Tristin#7915 (54374655984668672)`
 
-> **!dump -o joined_at -d --limit 1 -r Moderator**<br>
+> **!dump -o joined_at -d \--limit 1 -r Moderator**<br>
 Dumps the moderator who joined most recently
 
 The order of the flags does not matter, below is a more in-depth explanation of how it works.
@@ -67,7 +67,7 @@ The syntax is `/stats dump [role] [query]`<br><span class="user-permissions">Man
 
 If you're not used to using flags this might be confusing, so here are some examples and what they do:
 
-> **/stats dump @Patrons --enumerate --order id -f %n %c --dateformat %c --limit 10**<br>
+> **/stats dump @Patrons \--enumerate \--order id -f %n %c \--dateformat %c \--limit 10**<br>
 Dumps the 10 oldest accounts with the patreon role. Output:<br>
 `1. evlsmurf Mon Aug 31 22:23:33 2015`<br>
 `2. Hammy:hamster: Thu Sep 24 23:04:31 2015`<br>
@@ -80,7 +80,7 @@ Dumps the 10 oldest accounts with the patreon role. Output:<br>
 `9. aphoenix Mon Nov  9 02:09:03 2015`<br>
 `10. Terra Fri Dec  4 02:49:17 2015`
 
-> **/stats dump -o id --limit 10 --no-roles**<br>
+> **/stats dump -o id \--limit 10 \--no-roles**<br>
 Dumps the 10 oldest accounts without roles. Output:<br>
 `Andy#7194 (23572087872421888)`<br>
 `macki#9999 (48287434319855616)`<br>
@@ -93,7 +93,7 @@ Dumps the 10 oldest accounts without roles. Output:<br>
 `ZeroMastery#1287 (53695818749706240)`<br>
 `Tristin#7915 (54374655984668672)`
 
-> **/dump -o joined_at -d --limit 1 -r Moderator**<br>
+> **/dump -o joined_at -d \--limit 1 -r Moderator**<br>
 Dumps the moderator who joined most recently
 
 The order of the flags does not matter, below is a more in-depth explanation of how it works.
