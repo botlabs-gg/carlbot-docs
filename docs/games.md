@@ -1,6 +1,8 @@
 ## TopRoll
 Start a TopRoll game where users can try to get into the daily leaderboard. Each user tries to roll the highest sum in 6 tries in 60 seconds. The game starts when the first user starts rolling and lasts for a day.
 
+![TopRoll](_images/toproll.png)
+
 <!-- tabs:start -->
 
 <!-- tab:Prefix Commands -->
@@ -18,6 +20,8 @@ Name              | Example           | Usage
 ## Free Game Alerts
 Get notified whenever there is a free game giveaway. Currently we only support Steam, Origin, Ubisoft, Epic Games Store, Android and GOG.
 
+![Free Game Alerts](_images/free_game_alerts.png)
+
 <!-- tabs:start -->
 
 <!-- tab:Prefix Commands -->
@@ -34,6 +38,8 @@ Name              | Example           | Usage
 
 ## Game GIFs
 Sends game related GIFs. Currently we only support League of Legends.
+
+![GIFs](_images/gif.png)
 
 <!-- tabs:start -->
 
