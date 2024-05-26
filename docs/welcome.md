@@ -37,7 +37,7 @@ Supports the following variables:
 - `{user(id)}` - ID of the user
 - `{user(proper)}` - Name including the last four digits (Carl-bot#1536)
 - `{server(members)}` - Number of members in the server (after the event has happened). Use `{ord:{server(members)}}` to turn 8102 into 8,102nd etc
-- `{random: lists, separated by commas}` - Random string from the list
+- `{random: lists ~ separated by "~"}` - Random string from the list
 - `{math: 1 + 1}` - Calculate stuff
 
 ![Welcome Settings](_images/welcome_settings.png ':size=75%')
