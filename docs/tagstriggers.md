@@ -368,10 +368,10 @@ Tags in Carl-bot premium servers can use **three** command blocks per tag.
 
 Command blocks can also be used to rename a command or create an alias for it.
 
-> **Using Tags to Create Command Aliases
-- `!tag + whois {cmd:info {args}}`
-- `!tag + iam {cmd:rank {args}}`
-- `!tag + lb {c:leaderboard {args}}`
+>**Using Tags to Create Command Aliases**
+> - `!tag + whois {cmd:info {args}}`
+> - `!tag + iam {cmd:rank {args}}`
+> - `!tag + lb {c:leaderboard {args}}`
 
 
 #### Control Blocks
