@@ -84,7 +84,7 @@ Depends on what you're after. If you need to use both, you're pretty much forced
 ### Why does the bot complain about requiring more permissions? I've given it <span style="color: red;">Manage Roles</span> already. {docsify-ignore}
 The way Discord decides if you can add a role or not is based on two things:
 * Does the Member adding the role have <span style="color: red;">Manage Roles</span> permission?
-* Is the member trying to add the role higher in the role heirarchy than the role they're trying to add?
+* Is the member trying to add a role higher in the role heirarchy than the bot's role?
 
 Just assign the bot a role that is higher than the highest role it has to assign. The role being hoisted does not have to have any special permissions.
 
