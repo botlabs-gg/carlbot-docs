@@ -53,7 +53,8 @@ Name              | Example           | Usage
 ## Reaction Roles
 ?> Deleted messages are also cleared from the database. Pin the reaction role message to make it immune to purging.
 
-![Reaction Roles](_images/create_rr.png ':size=75%')
+[How to Setup Reaction Roles](https://www.youtube.com/embed/eoeomVNDnII?si=LvMOouqqnlzvIW3n ':include :type=iframe width=560 height=315')
+
 
 ### RR Management
 
