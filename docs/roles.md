@@ -65,8 +65,8 @@ Name              | Example           | Usage
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
 [**rr**\|**reactionrole**\|**reactrole**] [make\|setup]<br><span class="user-permissions">Manage Server</span> | `!rr make` | Starts the interactive setup to get you started with reaction roles.
 **rr** [list\|show] [msg_id] | `!rr show` | Shows the emoji-role pairs and their associated message id, useful for rr add. If a message id is specified, it will show additional information about that particular reaction role.
-**rr add** [channel]<br><span class="user-permissions">Manage Server</span> \<msg_id> \<emoji> \<role> | `!rr add 123445 👼 @pure` | Adds the emoji-role pair to the message and the database.
-**rr addmany** [channel]<br><span class="user-permissions">Manage Server</span> \<msg_id> \<emoji roles...> | `!rr addmany 123456 👼 @pure 💩 @fn` | Works like `rr add` except it adds more than one role at a time.<br>**Separate each emoji-role pair using Shift + Enter**.
+**rr add** [channel] \<msg_id> \<emoji> \<role><br><span class="user-permissions">Manage Server</span> | `!rr add 123445 👼 @pure` | Adds the emoji-role pair to the message and the database.
+**rr addmany** [channel] \<msg_id> \<emoji roles...><br><span class="user-permissions">Manage Server</span> | `!rr addmany 123456 👼 @pure`<br>`💩 @fn` | Works like `rr add` except it adds more than one role at a time.<br>**Separate each emoji-role pair using Shift + Enter**.
 **rr remove** \<msg_id> \<role><br><span class="user-permissions">Manage Server</span> | `!rr remove 123456 @fortnite` | Removes an emoji-reaction pair from the specified bot message.
 **rr clear** [msg_id]<br><span class="user-permissions">Manage Server</span> | `!rr clear 123456` | If you specify a message id, it removes all the roles from the message and if you don't, it will remove all reaction roles from the server.
 **rr bl** \<msg_id> \<roles...><br><span class="user-permissions">Manage Server</span> | `!rr bl 123456 Staff` | Prevents members with this role from picking up roles from the message.
