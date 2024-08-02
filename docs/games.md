@@ -66,14 +66,16 @@ Name              | Example           | Usage
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
 **games list**    | `!games list`     | Shows list of top games to play in your browser.                              
 **games play**    | `!games play`     | Shows a random game to play in your browser.                                  
-**games roblox**  | `!games roblox`   | Shows a link to play Roblox on your browser.                                 
+**games roblox**  | `!games roblox`   | Shows a link to play Roblox in your browser.                                 
+**games tog**     | `!games tog`      | Shows a link to play Tower of God in your browser.                                 
 
 <!-- tab:Slash Commands -->
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
 **games list**    | `/games list`     | Shows list of top games to play in your browser.                              
 **games play**    | `/games play`     | Shows a random game to play in your browser.                                  
-**games roblox**  | `/games roblox`   | Shows a link to play Roblox on your browser.                                 
+**games roblox**  | `/games roblox`   | Shows a link to play Roblox in your browser.                                 
+**games tog**     | `/games tog`      | Shows a link to play Tower of God in your browser.                                 
 
 <!-- tabs:end -->
 

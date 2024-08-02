@@ -531,7 +531,7 @@ List and Cycle Blocks are another way to parse through a list of values in Tagsc
 
 <!-- tab:List -->
 `{list(index):elem,elem2...}`<br>
-Returns the element in the payload the corresponds to the index value in the parameters. Block is null if the index is out of bounds.
+Returns the element in the payload that corresponds to the index value in the parameters. Block is null if the index is out of bounds.
 
 > **Example**<br>
 `{list(3):Apples~Bananas~Pears~Grapes~Oranges}`==`Grapes`
