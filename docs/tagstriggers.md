@@ -538,7 +538,7 @@ Returns the element in the payload that corresponds to the index value in the pa
 
 <!-- tab:Cycle -->
 `{cycle(index):elem,elem2...}`<br>
-Returns the element in the payload the corresponds to the index value in the parameters. Loops around if the index is out of bounds.
+Returns the element in the payload that corresponds to the index value in the parameters. Loops around if the index is out of bounds.
 
 > **Example**<br>
 `{cycle(11):Apples,Bananas,Pears,Grapes,Oranges}`==`Bananas`
