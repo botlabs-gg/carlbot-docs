@@ -37,6 +37,7 @@ These variables can be used in the message that is sent when a streamer goes liv
 
 
 ## YouTube
+?> **Limits**<br>Non-Premium Carl-bot servers are limited to subscribing to 5 YouTube channel notifications.<br>Premium Carl-bot servers are limited to subscribing to 20 YouTube channel notifications.
 
 !> To move the youtube alert channel or format the youtube alert message, you need to head over to the **[Dashboard](https://carl.gg)**.
 
@@ -45,17 +46,17 @@ These variables can be used in the message that is sent when a streamer goes liv
 <!-- tab:Prefix Commands -->
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
-[**youtube**\|**yt**] \<name> [channel=current] [message]<br><span class="user-permissions">Manage Server</span> | `!yt https://youtube.come/ygaming` | Binds the youtuber channel's alerts to the channel.
-**youtube sub** \<name> [channel=current] [message]<br><span class="user-permissions">Manage Server</span> | `!yt sub https://youtube.come/ygaming` | Binds the youtuber channel's alerts to the channel.
+[**youtube**\|**yt**] \<name> [channel=current] [message]<br><span class="user-permissions">Manage Server</span> | `!yt https://youtube.com/ygaming` | Binds the youtuber channel's alerts to the channel.
+**youtube sub** \<name> [channel=current] [message]<br><span class="user-permissions">Manage Server</span> | `!yt sub https://youtube.com/ygaming` | Binds the youtuber channel's alerts to the channel.
 **youtube list**<br><span class="user-permissions">Manage Server</span>  | `!yt list`        | Shows all the binded youtubers and the connected channels.                    
-**youtube unsub** \<name><br><span class="user-permissions">Manage Server</span> | `!yt unsub https://youtube.come/ygaming` | Unbinds a youtuber channel's alerts.           
+**youtube unsub** \<name><br><span class="user-permissions">Manage Server</span> | `!yt unsub https://youtube.com/ygaming` | Unbinds a youtuber channel's alerts.           
 
 <!-- tab:Slash Commands -->
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | -----------------------------------------------------------------------------
-**youtube add** \<name> [channel=current] [format]<br><span class="user-permissions">Manage Server</span> | `/youtube add https://youtube.come/ygaming` | Binds the youtuber channel's alerts to the channel. Can use channel name, handle name, custom channel link or even video links (which is the most accurate way).
+**youtube add** \<name> [channel=current] [format]<br><span class="user-permissions">Manage Server</span> | `/youtube add https://youtube.com/ygaming` | Binds the youtuber channel's alerts to the channel. Can use channel name, handle name, custom channel link or even video links (which is the most accurate way).
 **youtube list**<br><span class="user-permissions">Manage Server</span> | `/youtube list` | Shows all the binded youtubers and the connected channels.         
-**youtube remove** \<name><br><span class="user-permissions">Manage Server</span> | `/youtube remove https://youtube.come/ygaming` | Unbinds a youtuber channel's alerts.
+**youtube remove** \<name><br><span class="user-permissions">Manage Server</span> | `/youtube remove https://youtube.com/ygaming` | Unbinds a youtuber channel's alerts.
 
 <!-- tabs:end -->
 
