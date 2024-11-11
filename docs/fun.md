@@ -65,7 +65,7 @@ Name              | Example           | Usage
 <!-- tab:Prefix Commands -->
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
-**echo** [channel] \<message><br><span class="user-permissions">Manage Server</span> | `!echo #general Welcome guys` | Makes the bot post the message in the mentioned channel or the channel the command was used in.
+**echo** [channel] [no_button] \<message><br><span class="user-permissions">Manage Server</span> | `!echo #general Welcome guys` | Makes the bot post the message in the mentioned channel or the channel the command was used in. Premium users can toggle the button by setting `no_button` to either True or False. Toggling button is only enabled when a modlogs channel is set for the server. The button can only be pressed by users having Manage Server permission and it gives information of the user that used the command.
 [**pick**\|**choice**\|**select**] <choices...><br><span class="user-permissions">Manage Server</span> | `!choose go to sleep, play game` | Picks one of your specified arguments. Use commas for multiple choices.
 [**ud**\|**urbandictionary**] \<word><br><span class="user-permissions">Manage Server</span> | `!ud rizz` | Returns the UrbanDictionary definition for your word. Can only be used in NSFW channels.
 **roll** [lower=1]-[upper=100] | `!roll 100-1100` | Random number generation. Providing only one number will change the upper limit.
@@ -77,7 +77,7 @@ Name              | Example           | Usage
 <!-- tab:Slash Commands -->
 Name              | Example           | Usage                                                                         
  ---------------- | ----------------- | ----------------------------------------------------------------------------- 
-**echo** \<message> [channel]<br><span class="user-permissions">Manage Server</span> | `/echo Welcome guys #general` | Makes the bot post the message in the mentioned channel or the channel the command was used in.
+**echo** \<message> [channel] [no_button]<br><span class="user-permissions">Manage Server</span> | `/echo Welcome guys #general` | Makes the bot post the message in the mentioned channel or the channel the command was used in. Premium users can toggle the button by setting `no_button` to either True or False. Toggling button is only enabled when a modlogs channel is set for the server. The button can only be pressed by users having Manage Server permission and it gives information of the user that used the command.
 **fun pick** \<sentence><br><span class="user-permissions">Manage Server</span> | `/fun pick go to sleep, play game` | Picks one of your specified arguments. Use commas for multiple choices.
 **fun urbandictionary** \<word><br><span class="user-permissions">Manage Server</span> | `/fun urbandictionary rizz` | Returns the UrbanDictionary definition for your word. Can only be used in NSFW channels.
 **fun coinflip** | `/fun coinflip`  | Flips a coin.                                                                 
