@@ -37,7 +37,7 @@ Name              | Example           | Usage
  ---------------- | ----------------- | -----------------------------------------------------------------------------
 [**tr**\|**timedrole**]<br><span class="user-permissions">Manage Roles</span> | `!timedrole`    | Shows the roles being assigned with their delay.                              
 **timedrole** [add\|+] \<time> \<role><br><span class="user-permissions">Manage Roles</span> | `!timedrole add 2h newbie` | Adds a role to be added with a delay.           
-**timedrole remove** \<role><br><span class="user-permissions">Manage Roles</span> | `!tr remove newbie` | Removes the role from being automatically assigned and also cancels any pending roles.<br>All pending delayed roles with the same delay as the removed role will be removed.
+**timedrole [remove\|-]** \<role><br><span class="user-permissions">Manage Roles</span> | `!tr remove newbie` | Removes the role from being automatically assigned and also cancels any pending roles.<br>All pending delayed roles with the same delay as the removed role will be removed.
 
 <!-- tab:Slash Commands -->
 Name              | Example           | Usage                                                                         
