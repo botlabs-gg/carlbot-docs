@@ -119,7 +119,7 @@ Name              | Example           | Usage
 **highlight unblock** \<members/channels><br><span class="user-permissions">Manage Messages</span> | `!hl unblock #general` | Unblocks the user/channel.                              
 **highlight show**<br><span class="user-permissions">Manage Messages</span> | `!hl show` | Shows which words you have set to highlight you.                              
 **highlight clear**<br><span class="user-permissions">Manage Messages</span> | `!hl clear` | Removes all of your highlighted words.                                        
-**highlight del** \<word><br><span class="user-permissions">Manage Messages</span> | `!hl del carl-bot` | Removes a word from your highlighted words.                                  
+**highlight [-\|del]** \<word><br><span class="user-permissions">Manage Messages</span> | `!hl del carl-bot` | Removes a word from your highlighted words.                                  
 
 <!-- tab:Slash Commands -->
 Name              | Example           | Usage                                                                         
