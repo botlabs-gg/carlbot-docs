@@ -114,6 +114,7 @@ Name              | Example           | Usage
 **rr reversed** \<msg_id><br><span class="user-permissions">Manage Server</span> | `!rr reversed 123456` | Reacting removes roles, unreacting adds roles.                    
 **rr lock** \<msg_id><br><span class="user-permissions">Manage Server</span> | `!rr lock 123456` | Locks the message preventing any roles from being handed out.             
 **rr temp** \<msg_id> \<time><br><span class="user-permissions">Manage Server</span> | `!rr temp 123456 24h` | This is a [Premium](https://www.patreon.com/carlbot) command. This allows for roles to be temporarily be assigned to a member and then removed after the designated amount of time.
+**rr links**<br><span class="user-permissions">Manage Server</span> | `!rr links` | Shows the currently linked messages.      
 **rr link** \<base_id> \<target_id><br><span class="user-permissions">Manage Server</span> | `!rr link 123456 456789` | By linking two or more messages together, only one role from either message can be self-assigned.
 **rr unlink** \<msg_id><br><span class="user-permissions">Manage Server</span> | `!rr unlink 123456` | This breaks apart the entire group created by `rr link`.              
 **rr limit** \<msg_id> \<limit><br><span class="user-permissions">Manage Server</span> | `!rr limit 123456 5` | Limits members to picking up x amount of roles from a message.
