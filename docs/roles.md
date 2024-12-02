@@ -37,7 +37,7 @@ Name              | Example           | Usage
  ---------------- | ----------------- | -----------------------------------------------------------------------------
 [**tr**\|**timedrole**]<br><span class="user-permissions">Manage Roles</span> | `!timedrole`    | Shows the roles being assigned with their delay.                              
 **timedrole** [add\|+] \<time> \<role><br><span class="user-permissions">Manage Roles</span> | `!timedrole add 2h newbie` | Adds a role to be added with a delay.           
-**timedrole remove** \<role><br><span class="user-permissions">Manage Roles</span> | `!tr remove newbie` | Removes the role from being automatically assigned and also cancels any pending roles.<br>All pending delayed roles with the same delay as the removed role will be removed.
+**timedrole [remove\|-]** \<role><br><span class="user-permissions">Manage Roles</span> | `!tr remove newbie` | Removes the role from being automatically assigned and also cancels any pending roles.<br>All pending delayed roles with the same delay as the removed role will be removed.
 
 <!-- tab:Slash Commands -->
 Name              | Example           | Usage                                                                         
@@ -114,6 +114,7 @@ Name              | Example           | Usage
 **rr reversed** \<msg_id><br><span class="user-permissions">Manage Server</span> | `!rr reversed 123456` | Reacting removes roles, unreacting adds roles.                    
 **rr lock** \<msg_id><br><span class="user-permissions">Manage Server</span> | `!rr lock 123456` | Locks the message preventing any roles from being handed out.             
 **rr temp** \<msg_id> \<time><br><span class="user-permissions">Manage Server</span> | `!rr temp 123456 24h` | This is a [Premium](https://www.patreon.com/carlbot) command. This allows for roles to be temporarily be assigned to a member and then removed after the designated amount of time.
+**rr links** <br><span class="user-permissions">Manage Server</span> | `!rr links` | Shows the currently linked messages.      
 **rr link** \<base_id> \<target_id><br><span class="user-permissions">Manage Server</span> | `!rr link 123456 456789` | By linking two or more messages together, only one role from either message can be self-assigned.
 **rr unlink** \<msg_id><br><span class="user-permissions">Manage Server</span> | `!rr unlink 123456` | This breaks apart the entire group created by `rr link`.              
 **rr limit** \<msg_id> \<limit><br><span class="user-permissions">Manage Server</span> | `!rr limit 123456 5` | Limits members to picking up x amount of roles from a message.
@@ -124,7 +125,7 @@ Name              | Example           | Usage
 **reactionrole modify** \<choice> \<message_id><br><span class="user-permissions">Manage Server</span> | `/reactionrole modify unique 123456` | Choose between the different types of reaction roles to apply to the message, all in just a single command.
 **reactionrole normal** \<message_id><br><span class="user-permissions">Manage Server</span> | `/reactionrole normal 123456` | This returns the reaction role message back to a normal reaction role message. Meaning any commands applied to it such as verify or unique will be removed.
 **reactionrole temp** \<message_id> \<duration><br><span class="user-permissions">Manage Server</span> | `/reactionrole temp 123456 24h` | This is a [Premium](https://www.patreon.com/carlbot) command. This allows for roles to be temporarily be assigned to a member and then removed after the designated amount of time.
-**reactionrole links**<br><span class="user-permissions">Manage Server</span> | `/reactionrole links` | Shows the currently linked messages.                                 
+**reactionrole links** <br><span class="user-permissions">Manage Server</span> | `/reactionrole links` | Shows the currently linked messages.                                 
 **reactionrole link** \<message_ids><br><span class="user-permissions">Manage Server</span> | `/reactionrole link 123456 456789` | By linking two or more messages together, only one role from either message can be self-assigned.
 **reactionrole unlink** \<message_id><br><span class="user-permissions">Manage Server</span> | `/reactionrole unlink 123456` | This breaks apart the entire group created by `reactionrole link`.
 **reactionrole limit** \<message_id> \<limit><br><span class="user-permissions">Manage Server</span> | `/reactionrole limit 123456 5` | Limits members to picking up the specified amount of roles from a message.
@@ -237,6 +238,7 @@ Name              | Example           | Usage
 **role rbots** \<role><br><span class="user-permissions">Manage Roles</span> | `!role rbots members` | Removes a role from all bots.                                        
 **role rhumans** \<role><br><span class="user-permissions">Manage Roles</span> | `!role rhumans robots` | Removes a role from all humans.                                   
 **role rin** \<base_role> \<role><br><span class="user-permissions">Manage Roles</span> | `!role rin fortnite gamers` | Removes a role from all members with the base role.
+**role bulk-cancel** <br><span class="user-permissions">Manage Roles</span> | `!role bulk-cancel` | Cancels the current bulk role operations.
 
 <!-- tab:Slash Commands -->
 Name              | Example           | Usage                                                                         
@@ -249,5 +251,6 @@ Name              | Example           | Usage
 **role removebots** \<role><br><span class="user-permissions">Manage Roles</span> | `/role removebots members` | Removes a role from all bots.                              
 **role removehumans** \<role><br><span class="user-permissions">Manage Roles</span> | `/role removehumans robots` | Removes a role from all humans.                         
 **role removein** \<base_role> \<new_role><br><span class="user-permissions">Manage Roles</span> | `/role removein fortnite gamers` | Removes new role from all members with the base role.
+**role bulk-cancel** <br><span class="user-permissions">Manage Roles</span> | `/role bulk-cancel` | Cancels the current bulk role operations.
 
 <!-- tabs:end -->
