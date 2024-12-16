@@ -162,7 +162,7 @@ Name              | Example           | Usage
 
 
 ## Role Management
-?> These commands are for administrators to manage role assignments in their servers. The bot might mention that you require additional permissions despite having <span style="color: red;">Manage Roles</span>. To fix this, make sure both you and the bot have roles higher in the role heirarchy than the role you are trying to assign.
+?> These commands are for administrators to manage role assignments in their servers. The bot might mention that you require additional permissions despite having <span style="color: red;">Manage Roles</span>. To fix this, make sure both you and the bot have roles higher in the role hierarchy than the role you are trying to assign.
 
 ### Role Commands
 
