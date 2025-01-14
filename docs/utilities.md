@@ -190,7 +190,7 @@ Name              | Example           | Usage
 [**rm**\|**reminder**\|**remindme**\|**timer**] \<when> [about] | `!rm birthday 1d` | Sets up a reminder to send a message reminding you about the thing. If you use a human time like `at noon` it uses UTC.
 **reminder mine** | `!rm mine`        | Shows your reminders.                                                        
 **reminder** [-\|remove\|del] \<id> | `!rm - 42`| Removes the reminder with that ID.                                           
-**subscribe** \<id>     | `!subscribe 97`         | Copies a reminder someone else made.                                          
+**subscribe** \<id>     | `!rm subscribe 97`         | Copies a reminder someone else made.                                          
 **reminder clear**| `!rm clear`       | Removes all your reminders from the server or all reminders if used in DMs.
 **reminder repeat** \<id> \<interval> | `!rm repeat 247 20d` | Sets a reminder to be repeated.                                  
 **reminder when** \<id>     | `!rm when 247`    | Shows some information about a timer created in the server or from you if used in DMs.
