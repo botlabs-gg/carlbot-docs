@@ -1,1 +1,1 @@
-Copyright © 2023 [BotLabs](mailto:support@botlabs.gg)
+Copyright © 2025 [BotLabs](mailto:support@botlabs.gg)
