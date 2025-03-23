@@ -13,6 +13,8 @@ Premium commands will help you manage your Discord/Patreon premium subscription 
    - Your Email that is linked to Patreon
    - Screenshot of receipt from Patreon
 
+\*_Editing your Patreon profile forces Patreon to update and send your new membership info to Carl-bot._
+
 ## Premium Commands
 
 <!-- tabs:start -->
