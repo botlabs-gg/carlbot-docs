@@ -17,5 +17,6 @@
 - [**Suggestions**](suggestions.md "Suggestions")
 - [**Tags & Triggers**](tagstriggers.md "Tags & Triggers")
 - [**Utilities**](utilities.md "Utilities")
+- [**FAQ**](faq.md "FAQ")
 
 <footer id="mb-footer"></footer>
