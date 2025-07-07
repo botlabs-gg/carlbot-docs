@@ -46,19 +46,19 @@ Ideal background resolution is `934x282` pixels but if a different resolution is
 
 <!-- tab:Prefix Commands -->
 
-| Name                                                                                               | Example                    | Usage                                                                                                    |
-| -------------------------------------------------------------------------------------------------- | -------------------------- | -------------------------------------------------------------------------------------------------------- |
-| **level config**<br><span class="user-permissions">Manage Server</span>                            | `!lvl config`              | Shows the current configuration.                                                                         |
-| **level messagexp** [xp]<br><span class="user-permissions">Manage Server</span>                    | `!lvl msgxp 15`            | Sets the amount of XP gained from messages. Resets without a value. Value can be from 15 to 100.         |
-| **level addxp** \<xp> [member]<br><span class="user-permissions">Manage Server</span>              | `!lvl addxp 10 @Carl-bot`  | Adds the specified amount of XP to a user/user ID. Value can be from 1 to 1000.                          |
-| **level setlevel** \<level> [member]<br><span class="user-permissions">Manage Server</span>        | `!lvl setlvl 5 @Carl-bot`  | Sets the level of a user/user ID. Value can be from 1 to 100.                                            |
-| **level** [blacklist\|bl] <entities...><br><span class="user-permissions">Manage Server</span>     | `!lvl bl #welcome Muted`   | Blacklists one or more roles and/or channels from gaining xp.                                            |
-| **level** [unblacklist\|unbl] <entities...><br><span class="user-permissions">Manage Server</span> | `!lvl unbl #welcome Muted` | Removes one or more roles and/or channels from the blacklist.                                            |
-| **level mee6import**<br><span class="user-permissions">Manage Server</span>                        | `!lvl mee6import`          | Import exisitng Mee6 config. Carl-bot uses the same XP curve as Mee6. This will replace your current XP. |
-| **level rate** [rate] [time]<br><span class="user-permissions">Manage Server</span>                | `!lvl rate 5 60`           | Changes how often you can gain XP.                                                                       |
-| **level reset** \<member><br><span class="user-permissions">Manage Server</span>                   | `!lvl reset @Carl-bot`     | Resets the level and XP of the member. This can't be undone.                                             |
-| **level resetall**<br><span class="user-permissions">Manage Server</span>                          | `!lvl resetall`            | Resets the level and XP of the entire server but also creates a backup that you can restore.             |
-| **level restore**<br><span class="user-permissions">Manage Server</span>                           | `!lvl restore`             | Restores the level and XP of the entire server from the last backup made.                                |
+| Name                                                                                               | Example                     | Usage                                                                                                    |
+| -------------------------------------------------------------------------------------------------- | --------------------------- | -------------------------------------------------------------------------------------------------------- |
+| **level config**<br><span class="user-permissions">Manage Server</span>                            | `!lvl config`               | Shows the current configuration.                                                                         |
+| **level messagexp** [xp]<br><span class="user-permissions">Manage Server</span>                    | `!lvl msgxp 15`             | Sets the amount of XP gained from messages. Resets without a value. Value can be from 15 to 100.         |
+| **level addxp** \<xp> \<member><br><span class="user-permissions">Manage Server</span>             | `!lvl addxp 10 @Carl-bot`   | Adds the specified amount of XP to a user/user ID. Value can be from 1 to 1000.                          |
+| **level setlevel** \<level> \<member><br><span class="user-permissions">Manage Server</span>       | `!lvl setlevel 5 @Carl-bot` | Sets the level of a user/user ID. Value can be from 1 to 100.                                            |
+| **level** [blacklist\|bl] <entities...><br><span class="user-permissions">Manage Server</span>     | `!lvl bl #welcome Muted`    | Blacklists one or more roles and/or channels from gaining xp.                                            |
+| **level** [unblacklist\|unbl] <entities...><br><span class="user-permissions">Manage Server</span> | `!lvl unbl #welcome Muted`  | Removes one or more roles and/or channels from the blacklist.                                            |
+| **level mee6import**<br><span class="user-permissions">Manage Server</span>                        | `!lvl mee6import`           | Import exisitng Mee6 config. Carl-bot uses the same XP curve as Mee6. This will replace your current XP. |
+| **level rate** [rate] [time]<br><span class="user-permissions">Manage Server</span>                | `!lvl rate 5 60`            | Changes how often you can gain XP.                                                                       |
+| **level reset** \<member><br><span class="user-permissions">Manage Server</span>                   | `!lvl reset @Carl-bot`      | Resets the level and XP of the member. This can't be undone.                                             |
+| **level resetall**<br><span class="user-permissions">Manage Server</span>                          | `!lvl resetall`             | Resets the level and XP of the entire server but also creates a backup that you can restore.             |
+| **level restore**<br><span class="user-permissions">Manage Server</span>                           | `!lvl restore`              | Restores the level and XP of the entire server from the last backup made.                                |
 
 <!-- tab:Slash Commands -->
 
