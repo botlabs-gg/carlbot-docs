@@ -28,14 +28,14 @@ Just assign the bot a role that is higher than the highest role it has to assign
 
 ### What is the drama channel? {docsify-ignore}
 
-This is a [Premium](https://www.patreon.com/carlbot) feature that aims to streamline your server's moderation. Automod is nice but it is not perfect as sometimes false positives happen. This feature was made for that exact reason. You need to:
+This is a [Premium](https://carl.gg/get-premium) feature that aims to streamline your server's moderation. Automod is nice but it is not perfect as sometimes false positives happen. This feature was made for that exact reason. You need to:
 
 1. Set up the drama channel on either the Dashboard or with the command `!am drama <channel>`.
 2. Set the automod punishment to `Post to drama channel` on the Dashboard.
 
 ![Drama Channel](_images/faq_drama.png ":size=75%")
 
-### I am missing premium slots. A different tier is shown than the one I subscribed to. {docsify-ignore}
+### I am missing premium slots. A different tier is shown than the one I subscribed to on Patreon. {docsify-ignore}
 
 0. If you have any alt accounts, visit [Discord](https://discord.com) in a web browser and make sure you are logged in to the correct account.
 1. Go to [Patreon's page for linking apps](https://www.patreon.com/settings/apps) and click the Connect button next to the Discord icon.

@@ -1,5 +1,7 @@
 Premium commands will help you manage your Discord/Patreon premium subscription to Carl-bot.
 
+[![Premium Button](_images/premium_button.png)](https://carl.gg/get-premium)
+
 ## Linking Patreon
 
 ?> Make sure you are logged into the correct [Discord](https://discordapp.com) account in your browser.
