@@ -365,7 +365,7 @@ They must either be a role/channel name, a role/channel id, or a mention formatt
 
 React Blocks instruct Carl-bot to react to either the invocation or the output. Carl-bot, like all Discord accounts, must be in the server where the emoji is hosted to be able to use it. If the emoji is from a server he is in but not the server the tag is in, the emoji ID may need to be used instead of just the name. `<:emoji:123456789>`
 
-?> React Blocks are limited to using one emoji, but this restriction is lifted for [Premium](https://www.patreon.com/carlbot) servers in which react blocks can use 5 emojis.
+?> React Blocks are limited to using one emoji, but this restriction is lifted for [Premium](https://carl.gg/get-premium) servers in which react blocks can use 5 emojis.
 
 - `{react: :laughing: :fortnight:}`<br>
   Reacts with the emoji(s) listed to the tag's output message. Cannot react to command block output messages.
@@ -387,7 +387,7 @@ Command blocks execute a Carl-bot command. The formatting and syntax do not chan
 - `{c:role add {user(id)} Verified}`<br>
   Executes the Carl-bot command in the payload. Block names are synonymous.
 
-?> Tags are limited to using **one** command block per tag unless the server is marked as [Premium](https://www.patreon.com/carlbot).<br>
+?> Tags are limited to using **one** command block per tag unless the server is marked as [Premium](https://carl.gg/get-premium).<br>
 Tags in Carl-bot premium servers can use **three** command blocks per tag.
 
 ?> The action block `{override}` can be a useful tool in allowing users to use a specific command in a command block that they would not otherwise have permission to use.

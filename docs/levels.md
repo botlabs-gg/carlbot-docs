@@ -1,6 +1,6 @@
 ?> Levels is a premium feature offered to our Patrons as a way to show our gratitude for helping keep the bot alive.
 
-[![Patron Button](_images/patron_button.png)](https://www.patreon.com/bePatron?u=11251319)
+[![Premium Button](_images/premium_button.png)](https://carl.gg/get-premium)
 
 ## Level Card
 
