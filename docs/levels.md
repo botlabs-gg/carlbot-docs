@@ -56,6 +56,7 @@ Ideal background resolution is `934x282` pixels but if a different resolution is
 | **level reset** \<member><br><span class="user-permissions">Manage Server</span>                   | `!lvl reset @Carl-bot`      | Resets the level and XP of the member. This can't be undone.                                             |
 | **level resetall**<br><span class="user-permissions">Manage Server</span>                          | `!lvl resetall`             | Resets the level and XP of the entire server but also creates a backup that you can restore.             |
 | **level restore**<br><span class="user-permissions">Manage Server</span>                           | `!lvl restore`              | Restores the level and XP of the entire server from the last backup made.                                |
+| **level voicexp** <br><span class="user-permissions">Manage Server</span>                          | `!lvl voicexp`              | Toggles voice channel XP gain on or off.                                                                 |
 
 <!-- tab:Slash Commands -->
 
@@ -70,6 +71,7 @@ Ideal background resolution is `934x282` pixels but if a different resolution is
 | **level rate** [rate]<br><span class="user-permissions">Manage Server</span>                                   | `/level rate 5 60`                    | Changes how often you can gain XP.                                                                                                                                                                                                                                                               |
 | **level reset** \<choice> [user_id]<br><span class="user-permissions">Manage Server</span>                     | `/level reset all`                    | Resets the level and XP of the member or the entire server.                                                                                                                                                                                                                                      |
 | **level restore**<br><span class="user-permissions">Manage Server</span>                                       | `/level restore`                      | Restores the level and XP of the entire server from the last backup made.                                                                                                                                                                                                                        |
+| **level voice_xp** <br><span class="user-permissions">Manage Server</span>                                     | `/level voice_xp`                     | Toggles voice channel XP gain on or off.                                                                                                                                                                                                                                                         |
 
 <!-- tabs:end -->
 
