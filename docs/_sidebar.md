@@ -5,7 +5,7 @@
 - [**Feeds**](feeds.md "Feeds")
 - [**Fun**](fun.md "Fun")
 - [**Games**](games.md "Games")
-- [**Welcome & Leave**](welcome.md "Welcome & Leave")
+- [**Greetings**](greetings.md "Greetings")
 - [**Levels** :star:](levels.md "Levels")
 - [**Logging**](logging.md "Logging")
 - [**Misc**](misc.md "Misc")
@@ -17,5 +17,6 @@
 - [**Suggestions**](suggestions.md "Suggestions")
 - [**Tags & Triggers**](tagstriggers.md "Tags & Triggers")
 - [**Utilities**](utilities.md "Utilities")
+- [**FAQ**](faq.md "FAQ")
 
 <footer id="mb-footer"></footer>
