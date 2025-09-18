@@ -1,5 +1,6 @@
 - [**Getting Started**](getting-started.md "Getting Started")
 - [**Config**](config.md "Configuration")
+- [**Personalization** :star:](personalization.md "Personalization")
 - [**Automod**](automod.md "Automod")
 - [**Embeds**](embeds.md "Embeds")
 - [**Feeds**](feeds.md "Feeds")
