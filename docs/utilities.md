@@ -181,7 +181,7 @@ For multi-word highlights, it will look for a sequence of words, not a substring
 
 ## Giveaways
 
-?> This feature is currently in open beta so expect frequent changes and updates.
+Create and manage giveaways in your server easily!
 
 <!-- tabs:start -->
 
@@ -204,5 +204,37 @@ For multi-word highlights, it will look for a sequence of words, not a substring
 | **giveaway end** \<giveaway_id><br><span class="user-permissions">Manage Server</span>                                       | `/giveaway end 42`              | Ends an ongoing giveaway prematurely. You will be asked if you want to announce winners or not.                                                         |
 | **giveaway list** [choice=active]<br><span class="user-permissions">Manage Server</span>                                     | `/giveaway list inactive`       | Shows the list of active/inactive giveaways.                                                                                                            |
 | **giveaway participants** \<giveaway_id><br><span class="user-permissions">Manage Server</span>                              | `/giveaway participants 4`      | Check the users that have participated in a particular giveaway.                                                                                        |
+
+<!-- tabs:end -->
+
+## Sticky Messages
+
+Ever wanted to stick a message to the bottom of a channel since no one ever opens the pins? Now you can! You can manage sticky messages and create new templates directly from the **[Dashboard](https://carl.gg)**.
+
+?> - 1 sticky message per channel<br>- Up to 25 sticky messages per server<br>- Up to 25 saved templates<br>- Minimum duration: 1 minute<br>- Maximum duration: 365 days
+
+This feature is available for Premium users only.
+
+[![Premium Button](_images/premium_button.png)](https://carl.gg/get-premium)
+
+<!-- tabs:start -->
+
+<!-- tab:Prefix Commands -->
+
+| Name                                                                                                                         | Example                 | Usage                                                                                               |
+| ---------------------------------------------------------------------------------------------------------------------------- | ----------------------- | --------------------------------------------------------------------------------------------------- |
+| **sticky** [channel=current] [duration=1day] \<message><br><span class="user-permissions">Manage Server</span>               | `!sticky No Spam`       | Create a sticky message in the current or a specified channel.                                      |
+| **stickylist** <br><span class="user-permissions">Manage Server</span>                                                       | `!stickylist`           | View all active sticky messages across your server, including their duration and next refresh time. |
+| **stickyremove** [channel=current]<br><span class="user-permissions">Manage Server</span>                                    | `!stickyremove`         | Remove an active sticky message in the current or a specified channel.                              |
+| **stickytemplate** [channel=current] [duration=1day] \<template_name><br><span class="user-permissions">Manage Server</span> | `!stickytemplate Stick` | Apply a pre-set sticky messatge format for quick setup.                                             |
+
+<!-- tab:Slash Commands -->
+
+| Name                                                                                                                          | Example                  | Usage                                                                                               |
+| ----------------------------------------------------------------------------------------------------------------------------- | ------------------------ | --------------------------------------------------------------------------------------------------- |
+| **sticky add** \<message> [duration=1day] [channel=current]<br><span class="user-permissions">Manage Server</span>            | `/sticky add No Spam`    | Create a sticky message in the current or a specified channel.                                      |
+| **sticky list** <br><span class="user-permissions">Manage Server</span>                                                       | `/sticky list`           | View all active sticky messages across your server, including their duration and next refresh time. |
+| **sticky remove** [channel=current]<br><span class="user-permissions">Manage Server</span>                                    | `/sticky remove`         | Remove an active sticky message in the current or a specified channel.                              |
+| **sticky template** \<template_name> [duration=1day] [channel=current]<br><span class="user-permissions">Manage Server</span> | `/sticky template Stick` | Apply a pre-set sticky messatge format for quick setup.                                             |
 
 <!-- tabs:end -->
