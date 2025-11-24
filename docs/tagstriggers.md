@@ -376,16 +376,24 @@ Use a space to separate multiple emoji.
 
 #### Command Blocks
 
-Command blocks execute a Carl-bot command. The formatting and syntax do not change compared to how Carl-bot commands are normally used, except you do not include a prefix. Command blocks cannot use reaction role commands, nor can they call other tags or use tag commands. If the tag's user does not have the permissions required to use the command, Carl-bot will not use it and will output an error message as if they had tried to use the command.
+Command blocks execute a Carl-bot command. The formatting and syntax do not change compared to how Carl-bot commands are normally used, except you do not include a prefix. Command blocks cannot use reaction role commands, nor can they call other tags or use tag commands.
+There are two types of command blocks: `{command}` and `{cmdAdmin}`. The former checks the user's permissions before executing the command, while the latter executes the command at Carl-bot's permission level. If the permissions required to use the command are not met, Carl-bot will not use it and will output an error message as if they had tried to use the command.
 
-**Command blocks can only be used in Tags.**
+!> Command blocks can only be used in Tags.
+
+##### Command (User Permission Level)
 
 **Aliases**
 
 - `{command:pick Pizza,Burgers,Takeout}`
 - `{cmd:echo {args}}`
 - `{c:role add {user(id)} Verified}`<br>
-  Executes the Carl-bot command in the payload. Block names are synonymous.
+
+##### Command (Bot Permission Level)
+
+- `{cmdAdmin:role {user(id)} Verified}`<br>
+
+Executes the Carl-bot command in the payload. Block names are synonymous.
 
 ?> Tags are limited to using **one** command block per tag unless the server is marked as [Premium](https://carl.gg/get-premium).<br>
 Tags in Carl-bot premium servers can use **three** command blocks per tag.
@@ -399,6 +407,7 @@ Command blocks can also be used to rename a command or create an alias for it.
 > - `!tag + whois {cmd:info {args}}`
 > - `!tag + iam {cmd:rank {args}}`
 > - `!tag + lb {c:leaderboard {args}}`
+> - `!tag + sm {cmdAdmin:slowmode {rate} {per}}`
 
 #### Control Blocks
 
