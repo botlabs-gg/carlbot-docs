@@ -211,7 +211,7 @@ Create and manage giveaways in your server easily!
 
 Ever wanted to stick a message to the bottom of a channel since no one ever opens the pins? Now you can! You can manage sticky messages and create new templates directly from the **[Dashboard](https://carl.gg)**.
 
-?> - 1 sticky message per channel<br>- Up to 25 sticky messages per server<br>- Up to 25 saved templates<br>- Minimum duration: 1 minute<br>- Maximum duration: 365 days
+?> - 1 sticky message per channel<br>- Up to 15 sticky messages per server<br>- Up to 25 saved templates<br>- Minimum duration: 1 minute<br>- Maximum duration: 365 days
 
 This feature is available for Premium users only.
 
