@@ -1027,7 +1027,7 @@ Triggers support most of tagscript, check out [Advanced Usage](#advanced-usage) 
 
 <!-- tabs:end -->
 
-Role triggers can use the `{role}` block to get information about the role that was added or removed. Role blocks contain certain properties. To access a Role block’s property, you specify the property name as the block’s parameter, like `{role(mention)}` or `{role(name)}`.
+Role triggers can use the `{role}`, `{target}` and `{user}` block to get information about the role that was added or removed, the target who got/lost the role and the user who updated the target's role . Role blocks contain certain properties. To access a Role block’s property, you specify the property name as the block’s parameter, like `{role(mention)}` or `{role(name)}`.
 
 - `(mention)`: the role mention.
 - `(position)`: the role's position in the role hierarchy.
