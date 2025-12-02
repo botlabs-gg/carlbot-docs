@@ -376,16 +376,24 @@ Use a space to separate multiple emoji.
 
 #### Command Blocks
 
-Command blocks execute a Carl-bot command. The formatting and syntax do not change compared to how Carl-bot commands are normally used, except you do not include a prefix. Command blocks cannot use reaction role commands, nor can they call other tags or use tag commands. If the tag's user does not have the permissions required to use the command, Carl-bot will not use it and will output an error message as if they had tried to use the command.
+Command blocks execute a Carl-bot command. The formatting and syntax do not change compared to how Carl-bot commands are normally used, except you do not include a prefix. Command blocks cannot use reaction role commands, nor can they call other tags or use tag commands.
+There are two types of command blocks: `{command}` and `{cmdAdmin}`. The former checks the user's permissions before executing the command, while the latter executes the command at Carl-bot's permission level. If the permissions required to use the command are not met, Carl-bot will not use it and will output an error message as if they had tried to use the command.
 
-**Command blocks can only be used in Tags.**
+!> Command blocks can only be used in Tags.
+
+##### Command (User Permission Level)
 
 **Aliases**
 
 - `{command:pick Pizza,Burgers,Takeout}`
 - `{cmd:echo {args}}`
 - `{c:role add {user(id)} Verified}`<br>
-  Executes the Carl-bot command in the payload. Block names are synonymous.
+
+##### Command (Bot Permission Level)
+
+- `{cmdAdmin:role {user(id)} Verified}`<br>
+
+Executes the Carl-bot command in the payload. Block names are synonymous.
 
 ?> Tags are limited to using **one** command block per tag unless the server is marked as [Premium](https://carl.gg/get-premium).<br>
 Tags in Carl-bot premium servers can use **three** command blocks per tag.
@@ -399,6 +407,7 @@ Command blocks can also be used to rename a command or create an alias for it.
 > - `!tag + whois {cmd:info {args}}`
 > - `!tag + iam {cmd:rank {args}}`
 > - `!tag + lb {c:leaderboard {args}}`
+> - `!tag + sm {cmdAdmin:slowmode {rate} {per}}`
 
 #### Control Blocks
 
@@ -948,11 +957,14 @@ This method assigns all the data that is related to the same holiday to variable
 
 ## Triggers
 
-?> Triggers are not custom commands, if you want things that are triggered by a prefix and a keyword, see the [Tag](#tags) section. They offer more functionality, better editing capabilities, will never have a limit to them and are just generally nicer for their intended purpose.
+Triggers are not custom commands. If you want things that are triggered by a prefix and a keyword, see the [Tag](#tags) section. Tags offer more functionality, better editing capabilities, will never have a limit to them and are just generally nicer for their intended purpose.
+Triggers support most of tagscript, check out [Advanced Usage](#advanced-usage) section to learn more.
 
 ![Create Trigger](_images/trigger_create.png)
 
 !> Triggers **CANNOT** be more than 2000 characters in length. A server can only have 50 triggers. If more than 50 triggers exist on a server, any triggers after the 50th one alphabetically will no longer function. Embeds attached to trigger via the Dashboard are subject to the same limits detailed in the Embeds section.
+
+### Basic Triggers
 
 <!-- tabs:start -->
 
@@ -972,7 +984,6 @@ This method assigns all the data that is related to the same holiday to variable
 | **triggers** [channel\|cs] \<trigger> \<response><br><span class="user-permissions">Manage Server</span>            | `!triggers channel Hakuna Matata`        | Like a normal trigger except it only listens in the channel you used the command in. Note: This will bypass any channel ignores (member ignores still work).                                                                                                                                                                                                                                         |
 | **triggers ignore** \<members_or_channels...><br><span class="user-permissions">Manage Server</span>                | `!triggers ignore @Carl-bot #general`    | Blocks channels and or users from triggering responses.                                                                                                                                                                                                                                                                                                                                              |
 | **triggers unignore** \<members_or_channels...><br><span class="user-permissions">Manage Server</span>              | `!triggers unignore #general @Carl-bot`  | Undoes what ignore does.                                                                                                                                                                                                                                                                                                                                                                             |
-| **triggers regex** \<trigger> \<response><br><span class="user-permissions">Manage Server</span>                    | `!triggers regex ^[0-9] Numbers only!`   | Triggers are only invoked when a message matches regex                                                                                                                                                                                                                                                                                                                                               |
 
 <!-- tab:Slash Commands -->
 
@@ -989,8 +1000,38 @@ This method assigns all the data that is related to the same holiday to variable
 | **triggers channel** \<trigger> \<response><br><span class="user-permissions">Manage Server</span>    | `/triggers channel hello world`         | Like a normal trigger except it only listens in the channel you used the command in. Note: This will bypass any channel ignores (member ignores still work).                                                                                                                                                                                                                                         |
 | **triggers ignore** \<members_or_channel><br><span class="user-permissions">Manage Server</span>      | `/triggers ignore @Carl-bot #general`   | Blocks channels and or users from triggering responses.                                                                                                                                                                                                                                                                                                                                              |
 | **triggers unignore** \<members_or_channel><br><span class="user-permissions">Manage Server</span>    | `/triggers unignore #general @Carl-bot` | Undoes what ignore does.                                                                                                                                                                                                                                                                                                                                                                             |
-| **triggers regex** \<trigger> \<response><br><span class="user-permissions">Manage Server</span>      | `/triggers regex ^[0-9] Numbers only!`  | Triggers are only invoked when a message matches regex                                                                                                                                                                                                                                                                                                                                               |
 
 <!-- tabs:end -->
 
-Autoreactions support most of tagscript, check out [Advanced Usage](#advanced-usage) section to learn more.
+### Advanced Triggers
+
+<!-- tabs:start -->
+
+<!-- tab:Prefix Commands -->
+
+| Name                                                                                                   | Example                                | Usage                                                                                                                                |
+| ------------------------------------------------------------------------------------------------------ | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **triggers regex** \<trigger> \<response><br><span class="user-permissions">Manage Server</span>       | `!triggers regex ^[0-9] Numbers only!` | Triggers are only invoked when a message matches regex.                                                                              |
+| **triggers role** \<response> [channel=current]<br><span class="user-permissions">Manage Server</span> | `!triggers role Roles updated!`        | Triggers are only invoked when a role is added or removed to/from a user. There is a cooldown on user-role combination for 1 minute. |
+| **triggers role_bl** \<role> \<trigger_id><br><span class="user-permissions">Manage Server</span>      | `!triggers role_bl @Muted 1234`        | Adds a role to the trigger's blacklist. Users with blacklisted roles cannot trigger the response.                                    |
+| **triggers role_wl** \<role> \<trigger_id><br><span class="user-permissions">Manage Server</span>      | `!triggers role_wl @Muted 1234`        | Adds a role to the trigger's whitelist. Only users with whitelisted roles can trigger the response.                                  |
+
+<!-- tab:Slash Commands -->
+
+| Name                                                                                                     | Example                                | Usage                                                                                                                                |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **triggers regex** \<trigger> \<response><br><span class="user-permissions">Manage Server</span>         | `/triggers regex ^[0-9] Numbers only!` | Triggers are only invoked when a message matches regex.                                                                              |
+| **triggers role** \<response> [channel=current]<br><span class="user-permissions">Manage Server</span>   | `!triggers role Roles updated!`        | Triggers are only invoked when a role is added or removed to/from a user. There is a cooldown on user-role combination for 1 minute. |
+| **triggers role_blacklist** \<role> \<trigger_id><br><span class="user-permissions">Manage Server</span> | `/triggers role_blacklist @Muted 1234` | Adds a role to the trigger's blacklist. Users with blacklisted roles cannot trigger the response.                                    |
+| **triggers role_whitelist** \<role> \<trigger_id><br><span class="user-permissions">Manage Server</span> | `/triggers role_whitelist @Muted 1234` | Adds a role to the trigger's whitelist. Only users with whitelisted roles can trigger the response.                                  |
+
+<!-- tabs:end -->
+
+Role triggers can use the `{role}`, `{target}` and `{user}` block to get information about the role that was added or removed, the target who got/lost the role and the user who updated the target's role . Role blocks contain certain properties. To access a Role block’s property, you specify the property name as the block’s parameter, like `{role(mention)}` or `{role(name)}`.
+
+- `(mention)`: the role mention.
+- `(position)`: the role's position in the role hierarchy.
+- `(id)`: the role's snowflake ID.
+- `(name)`: the role's name.
+- `(is_added)`: returns `true` if the role was added, `false` if it was removed.
+- `(has_elevated_perms)`: returns `true` if the role has <span title="Administrator, Manage Server, Manage Channels, Manage Roles, Manage Messages, Manage Expressions, Manage Webhooks, Manage Nicknames, Mention @everyone, Manage Threads and posts, Manage Events, Kick, Ban, Timeout"><b><u>elevated permissions</u></b></span>, `false` otherwise.
