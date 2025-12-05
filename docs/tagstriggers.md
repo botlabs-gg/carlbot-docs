@@ -379,8 +379,6 @@ Use a space to separate multiple emoji.
 Command blocks execute a Carl-bot command. The formatting and syntax do not change compared to how Carl-bot commands are normally used, except you do not include a prefix. Command blocks cannot use reaction role commands, nor can they call other tags or use tag commands.
 There are two types of command blocks: `{command}` and `{cmdAdmin}`. The former checks the user's permissions before executing the command, while the latter executes the command at Carl-bot's permission level. If the permissions required to use the command are not met, Carl-bot will not use it and will output an error message as if they had tried to use the command.
 
-!> Command blocks can only be used in Tags.
-
 ##### Command (User Permission Level)
 
 **Aliases**
@@ -958,11 +956,11 @@ This method assigns all the data that is related to the same holiday to variable
 ## Triggers
 
 Triggers are not custom commands. If you want things that are triggered by a prefix and a keyword, see the [Tag](#tags) section. Tags offer more functionality, better editing capabilities, will never have a limit to them and are just generally nicer for their intended purpose.
-Triggers support most of tagscript, check out [Advanced Usage](#advanced-usage) section to learn more.
+Triggers fully support tagscript, check out [Advanced Usage](#advanced-usage) section to learn more.
 
 ![Create Trigger](_images/trigger_create.png)
 
-!> Triggers **CANNOT** be more than 2000 characters in length. A server can only have 50 triggers. If more than 50 triggers exist on a server, any triggers after the 50th one alphabetically will no longer function. Embeds attached to trigger via the Dashboard are subject to the same limits detailed in the Embeds section.
+!> Triggers **CANNOT** be more than 25000 characters in length. The content of the response cannot be more than 2000 characters of plaintext in length. A server can only have 50 triggers and a premium server can have 75 triggers. If more triggers than the respective limits exist on a server, any triggers after the limit alphabetically will no longer function. Embeds attached to trigger via the Dashboard are subject to the same limits detailed in the Embeds section.
 
 ### Basic Triggers
 
