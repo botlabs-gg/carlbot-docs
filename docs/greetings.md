@@ -49,17 +49,17 @@ Carl-bot can send leave messages to a channel when a user leaves the server.
 
 <!-- tab:Prefix Commands -->
 
-| Name                                                                                     | Example                   | Usage                                                                         |
-| ---------------------------------------------------------------------------------------- | ------------------------- | ----------------------------------------------------------------------------- |
-| **set farewell** \<channel><br><span class="user-permissions">Manage Server</span>       | `!set farewell #farewell` | Sets the channel where leave and banmsg notification messages will be posted. |
-| [**leave**\|**farewell**] \<text><br><span class="user-permissions">Manage Server</span> | `!leave Goodbye`          | Sets up a leave message that will be sent when a user leaves the server.      |
+| Name                                                                                     | Example                   | Usage                                                                                                                                   |
+| ---------------------------------------------------------------------------------------- | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| **set farewell** \<channel><br><span class="user-permissions">Manage Server</span>       | `!set farewell #farewell` | Sets the channel where leave and banmsg notification messages will be posted. This is a [Premium](https://carl.gg/get-premium) command. |
+| [**leave**\|**farewell**] \<text><br><span class="user-permissions">Manage Server</span> | `!leave Goodbye`          | Sets up a leave message that will be sent when a user leaves the server.                                                                |
 
 <!-- tab:Slash Commands -->
 
-| Name                                                                                             | Example                                 | Usage                                                                    |
-| ------------------------------------------------------------------------------------------------ | --------------------------------------- | ------------------------------------------------------------------------ |
-| **greetings farewell_channel** \<channel><br><span class="user-permissions">Manage Server</span> | `/greetings farewell_channel #farewell` | Sets the channel where farewell messages will be sent.                   |
-| **greetings farewell** [message]<br><span class="user-permissions">Manage Server</span>          | `/greetings farewell Goodbye`           | Sets up a leave message that will be sent when a user leaves the server. |
+| Name                                                                                             | Example                                 | Usage                                                                                                            |
+| ------------------------------------------------------------------------------------------------ | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| **greetings farewell_channel** \<channel><br><span class="user-permissions">Manage Server</span> | `/greetings farewell_channel #farewell` | Sets the channel where farewell messages will be sent. This is a [Premium](https://carl.gg/get-premium) command. |
+| **greetings farewell** [message]<br><span class="user-permissions">Manage Server</span>          | `/greetings farewell Goodbye`           | Sets up a leave message that will be sent when a user leaves the server.                                         |
 
 <!-- tabs:end -->
 
