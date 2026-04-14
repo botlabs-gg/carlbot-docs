@@ -83,6 +83,8 @@ Warns do not automatically expire. Managing warns is detailed on the [Moderation
 
 Message spam will not be active without setting a rate limit of at least 1+ messages in 1+ seconds first.
 
+!> Once activated, the bot will delete the message that triggered the automod even if the punishment doesn't include `delete`. If `message` punishment is included, the warning message will also be deleted after 5 seconds.
+
 <!-- tabs:start -->
 
 <!-- tab:Prefix Commands -->
