@@ -264,4 +264,34 @@ Bad words detection is case insensitive, looks for substrings and ignores punctu
 
 <!-- tabs:end -->
 
+<!-- tab:Honeypot -->
+
+Honeypot sets existing channel in your server as a trap for spammers. Whoever sends a message in this channel will be punished.
+
+?> **Limit**<br>1 Honeypot channel per server. [Premium](https://carl.gg/get-premium) servers can have 5 honeypot channels.
+
+<!-- tabs:start -->
+
+<!-- tab:Prefix Commands -->
+
+| Name                                                                                                          | Example                      | Usage                                         |
+| ------------------------------------------------------------------------------------------------------------- | ---------------------------- | --------------------------------------------- |
+| **honeypot** [**add**\|**+**] <channels...><br><span class="user-permissions">Manage Server</span>            | `!honeypot add #honeypot`    | Adds existing channel(s) as honeypot.         |
+| **honeypot** [**remove**\|**-**] <channels...><br><span class="user-permissions">Manage Server</span>         | `!honeypot remove #honeypot` | Removes existing channel(s) as honeypot.      |
+| **honeypot server** <br><span class="user-permissions">Manage Server</span>                                   | `!honeypot server`           | View honeypot settings for server.            |
+| **honeypot clear**<br><span class="user-permissions">Manage Server</span>                                     | `!honeypot clear`            | Clears all honeypot settings.                 |
+| **honeypot punishment** <punishments...=delete, defer><br><span class="user-permissions">Manage Server</span> | `!honeypot punishment ban`   | Sets the punishment(s) for honeypot triggers. |
+
+<!-- tab:Slash Commands -->
+
+| Name                                                                                                          | Example                      | Usage                                         |
+| ------------------------------------------------------------------------------------------------------------- | ---------------------------- | --------------------------------------------- |
+| **honeypot add** <channels...><br><span class="user-permissions">Manage Server</span>                         | `/honeypot add #honeypot`    | Adds existing channel(s) as honeypot.         |
+| **honeypot remove** <channels...><br><span class="user-permissions">Manage Server</span>                      | `/honeypot remove #honeypot` | Removes existing channel(s) as honeypot.      |
+| **honeypot server** <br><span class="user-permissions">Manage Server</span>                                   | `/honeypot server`           | View honeypot settings for server.            |
+| **honeypot clear**<br><span class="user-permissions">Manage Server</span>                                     | `/honeypot clear`            | Clears all honeypot settings.                 |
+| **honeypot punishment** <punishments...=delete, defer><br><span class="user-permissions">Manage Server</span> | `/honeypot punishment ban`   | Sets the punishment(s) for honeypot triggers. |
+
+<!-- tabs:end -->
+
 <!-- tabs:end -->
