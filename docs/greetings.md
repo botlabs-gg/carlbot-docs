@@ -83,6 +83,37 @@ Ban messages are sent when a user is banned from the server.
 
 <!-- tabs:end -->
 
+### Birthday Messages
+
+Birthday messages are sent when a user has their birthday. Members can set their birthdays and you can set a channel for the birthday messages to be sent in. Birthday messages are sent at 12:00 AM UTC on the user's birthday. [Premium](https://carl.gg/get-premium)
+servers can customize the birthday message, delivery time, and assign a birthday role.
+
+<!-- tabs:start -->
+
+<!-- tab:Prefix Commands -->
+
+| Name                                        | Example                        | Usage                                                                                                                                                             |
+| ------------------------------------------- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **birthday** [member]                       | `!birthday @Carl-bot`          | View a user's birthday.                                                                                                                                           |
+| **birthday set** \<birthday=DD/MM> [member] | `!birthday set 01/01`          | Set a your birthday. Member option can be specified to set another user's birthday (Requires <span class="user-permissions">Manage Server</span> permission).     |
+| **birthday remove** [member]                | `!birthday remove`             | Remove your birthday. Member option can be specified to remove another user's birthday (Requires <span class="user-permissions">Manage Server</span> permission). |
+| **birthday channel** [channel]              | `!birthday channel #birthdays` | Set the channel where birthday announcements will be posted. If no channel is provided, birthday announcements will be disabled.                                  |
+| **birthday config**                         | `!birthday config`             | Display the current birthday configuration for the server.                                                                                                        |
+| **birthday list**                           | `!birthday list`               | Shows every birthday currently set on the server.                                                                                                                 |
+
+<!-- tab:Slash Commands -->
+
+| Name                                        | Example                        | Usage                                                                                                                                                             |
+| ------------------------------------------- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **birthday** [member]                       | `/birthday @Carl-bot`          | View a user's birthday.                                                                                                                                           |
+| **birthday set** \<birthday=DD/MM> [member] | `/birthday set 01/01`          | Set a your birthday. Member option can be specified to set another user's birthday (Requires <span class="user-permissions">Manage Server</span> permission).     |
+| **birthday remove** [member]                | `/birthday remove`             | Remove your birthday. Member option can be specified to remove another user's birthday (Requires <span class="user-permissions">Manage Server</span> permission). |
+| **birthday channel** [channel]              | `/birthday channel #birthdays` | Set the channel where birthday announcements will be posted. If no channel is provided, birthday announcements will be disabled.                                  |
+| **birthday config**                         | `/birthday config`             | Display the current birthday configuration for the server.                                                                                                        |
+| **birthday list**                           | `/birthday list`               | Shows every birthday currently set on the server.                                                                                                                 |
+
+<!-- tabs:end -->
+
 ### Testing Messages
 
 To test your welcome, leave and ban messages, you can use the following commands. This will send a welcome, farewell, and ban message to the channel you use this command in.
