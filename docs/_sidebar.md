@@ -12,6 +12,7 @@
 - [**Misc**](misc.md "Misc")
 - [**Moderation**](moderation.md "Moderation")
 - [**Notifications**](notifications.md "Notifications")
+- [**Perks** :star:](perks.md "Perks")
 - [**Premium** :star:](premium.md "Premium")
 - [**Roles**](roles.md "Roles")
 - [**Starboard**](starboard.md "Starboard")
