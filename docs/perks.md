@@ -6,7 +6,7 @@ Perks are a set of features that are available to users through the bot's **[Dis
 
 ## Superbumps
 
-**Superbumps** are temporary perks that increase your server's bump count for 30 days, helping improve its visibility in Server Discovery. Available in multiple tiers, each Superbump pack grants a fixed number of bonus bumps that remain active for the duration. You can activate purchased Superbumps at any time using the `/perks superbumps` command or from your server's dashboard.
+**Superbumps** are temporary perks that increase your server's bump count for 30 days, helping improve its visibility in Server Discovery. Available in multiple tiers, each Superbump pack grants a fixed number of bonus bumps that remain active for the duration. You can activate purchased Superbumps at any time using the `/perks bumps` command or from your server's dashboard.
 
 ## Bumps Multiplier
 
