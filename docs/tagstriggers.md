@@ -12,28 +12,27 @@ Tags are basically custom commands that can be called using their names after Ca
 
 <!-- tab:Prefix Commands -->
 
-| Name                                                                                     | Example                                  | Usage                                                                                                                                                                                           |
-| ---------------------------------------------------------------------------------------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **tag** [create\|add\|+] \<name> \<content>                                              | `!tag + test hello`                      | Creates a tag/custom command. Commands can then be used with just the prefix.                                                                                                                   |
-| **tag** [delete\|del\|remove\|-] \<name>                                                 | `!tag - test`                            | Removes a tag.                                                                                                                                                                                  |
-| **tag ++** \<name> \<pastebin_link>                                                      | `!tag ++ test https://pastebin.com/1234` | Use this command for creating tags whose content length is more than 2000 characters, using Pastebin.                                                                                           |
-| **tag** [+=\|append] \<name> \<content>                                                  | `!tag += test world`                     | Appends content to an already existing tag.                                                                                                                                                     |
-| **tag** [a\|alias] \<new> \<existing>                                                    | `!tag alias testing test`                | Creates an alias for an already existing tag so you can call it with either of the names. Changes to the existing tag will update its aliases.                                                  |
-| **tag raw** \<name>                                                                      | `!tag raw test`                          | Retrieves a tag with its markdown (bold, italic, tagscript etc.) removed.                                                                                                                       |
-| **tag edit** \<name> \<content>                                                          | `!tag edit test bye world`               | Edits the content of an already existing tag.                                                                                                                                                   |
-| **tag nsfw** \<name>                                                                     | `!tag nsfw test`                         | Restricts the tag so that it can only be used in channels marked as NSFW.                                                                                                                       |
-| **tag restrict** \<name>                                                                 | `!tag restrict test`                     | This will make the bot post the content in the bot-channel and ping the author upon being used.                                                                                                 |
-| **tag stats** [member]                                                                   | `!tag stats @Carl-bot`                   | Shows information about the server tags (uses, top 3, total number of tags). If you mention someone, it will show their tags instead.                                                           |
-| **tag info** \<name>                                                                     | `!tag info test`                         | Shows some stats collected about the tag, uses, creation date, last update, owner, etc.                                                                                                         |
-| **tag ownership** [enable\|disable]                                                      | `!tag ownership enable`                  | With this enabled (disabled by default) tags are 'owned' meaning that unless you're a mod, you can't edit, append or delete other people's tags. You can still create aliases to people's tags. |
-| **tag modonly** [enable\|disable]<br><span class="user-permissions">Manage Server</span> | `!tag modonly enable`                    | With this enabled, only mods can manage tags, non-mods can still use them.                                                                                                                      |
-| **tag prompt**                                                                           | `!tag prompt`                            | With this disabled (enabled by default), it will default to editing the tag when you try to create an already existing tag.                                                                     |
-| **tag claim** \<name>                                                                    | `!tag claim test`                        | Claims a tag from a member who has left the server, only relevant if ownership is enabled.                                                                                                      |
-| **tag sub** \<name> \<from_text> \<to_text>                                              | `!tag sub test world universe`           | Replaces every occurance of `from_text` with `to_text` in an already existing tag.                                                                                                              |
-| [**commands**\|**taglist**]                                                              | `!taglist`                               | Lists all of the tags on the server.                                                                                                                                                            |
-| **tag share** \<name>                                                                    | `!tag share test`                        | Creates a shareable link of a tag so that other users can import it to their servers.                                                                                                           |
-| **tag unshare** \<name><br><span class="user-permissions">Manage Server</span>           | `!tag unshare picross`                   | Unshare a specific publicly shared tag. Already created share link will not work once you unshare a tag.                                                                                        |
-| **tag unshareall**<br><span class="user-permissions">Manage Server</span>                | `!tag unshareall`                        | Unshare all publicly shared tags.                                                                                                                                                               |
+| Name                                                                                       | Example                                  | Usage                                                                                                                                                                                           |
+| ------------------------------------------------------------------------------------------ | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **tag** [create\|add\|+] \<name> \<content>                                                | `!tag + test hello`                      | Creates a tag/custom command. Commands can then be used with just the prefix.                                                                                                                   |
+| **tag** [delete\|del\|remove\|-] \<name>                                                   | `!tag - test`                            | Removes a tag.                                                                                                                                                                                  |
+| **tag ++** \<name> \<pastebin_link>                                                        | `!tag ++ test https://pastebin.com/1234` | Use this command for creating tags whose content length is more than 2000 characters, using Pastebin.                                                                                           |
+| **tag** [+=\|append] \<name> \<content>                                                    | `!tag += test world`                     | Appends content to an already existing tag.                                                                                                                                                     |
+| **tag** [a\|alias] \<new> \<existing>                                                      | `!tag alias testing test`                | Creates an alias for an already existing tag so you can call it with either of the names. Changes to the existing tag will update its aliases.                                                  |
+| **tag raw** \<name>                                                                        | `!tag raw test`                          | Retrieves a tag with its markdown (bold, italic, tagscript etc.) removed.                                                                                                                       |
+| **tag edit** \<name> \<content>                                                            | `!tag edit test bye world`               | Edits the content of an already existing tag.                                                                                                                                                   |
+| **tag nsfw** \<name><br><span class="user-permissions">Manage Server</span>                | `!tag nsfw test`                         | Restricts the tag so that it can only be used in channels marked as NSFW.                                                                                                                       |
+| **tag restrict** \<name>                                                                   | `!tag restrict test`                     | This will make the bot post the content in the bot-channel and ping the author upon being used.                                                                                                 |
+| **tag info** \<name>                                                                       | `!tag info test`                         | Shows some stats collected about the tag, uses, creation date, last update, owner, etc.                                                                                                         |
+| **tag ownership** [enable\|disable]<br><span class="user-permissions">Manage Server</span> | `!tag ownership enable`                  | With this enabled (disabled by default) tags are 'owned' meaning that unless you're a mod, you can't edit, append or delete other people's tags. You can still create aliases to people's tags. |
+| **tag modonly** [enable\|disable]<br><span class="user-permissions">Manage Server</span>   | `!tag modonly enable`                    | With this enabled, only mods can manage tags, non-mods can still use them.                                                                                                                      |
+| **tag prompt**<br><span class="user-permissions">Manage Server</span>                      | `!tag prompt`                            | With this disabled (enabled by default), it will default to editing the tag when you try to create an already existing tag.                                                                     |
+| **tag claim** \<name>                                                                      | `!tag claim test`                        | Claims a tag from a member who has left the server, only relevant if ownership is enabled.                                                                                                      |
+| **tag sub** \<name> \<from_text> \<to_text>                                                | `!tag sub test world universe`           | Replaces every occurance of `from_text` with `to_text` in an already existing tag.                                                                                                              |
+| [**commands**\|**taglist**]                                                                | `!taglist`                               | Lists all of the tags on the server.                                                                                                                                                            |
+| **tag share** \<name><br><span class="user-permissions">Manage Server</span>               | `!tag share test`                        | Creates a shareable link of a tag so that other users can import it to their servers.                                                                                                           |
+| **tag unshare** \<name><br><span class="user-permissions">Manage Server</span>             | `!tag unshare picross`                   | Unshare a specific publicly shared tag. Already created share link will not work once you unshare a tag.                                                                                        |
+| **tag unshareall**<br><span class="user-permissions">Manage Server</span>                  | `!tag unshareall`                        | Unshare all publicly shared tags.                                                                                                                                                               |
 
 <!-- tab:Slash Commands -->
 
@@ -46,16 +45,15 @@ Tags are basically custom commands that can be called using their names after Ca
 | **tag alias** \<point> \<name>                                                   | `/tag alias testing test`                       | Creates an alias for an already existing tag so you can call it with either of the names. Changes to the existing tag will update its aliases.                                                  |
 | **tag raw** \<name>                                                              | `/tag raw test`                                 | Retrieves a tag with its markdown (bold, italic, tagscript etc.) removed.                                                                                                                       |
 | **tag edit** \<name> \<content>                                                  | `/tag edit test bye world`                      | Edits the content of an already existing tag.                                                                                                                                                   |
-| **tag nsfw** \<name>                                                             | `/tag nsfw test`                                | Restricts the tag so that it can only be used in channels marked as NSFW.                                                                                                                       |
+| **tag nsfw** \<name><br><span class="user-permissions">Manage Server</span>      | `/tag nsfw test`                                | Restricts the tag so that it can only be used in channels marked as NSFW.                                                                                                                       |
 | **tag restrict** \<name>                                                         | `/tag restrict test`                            | This will make the bot post the content in the bot-channel and ping the author upon being used.                                                                                                 |
-| **tag stats** [member]                                                           | `/tag stats @Carl-bot`                          | Shows information about the server tags (uses, top 3, total number of tags). If you mention someone, it will show their tags instead.                                                           |
 | **tag info** \<name>                                                             | `/tag info test`                                | Shows some stats collected about the tag, uses, creation date, last update, owner, etc.                                                                                                         |
 | **tag ownership** \<status>                                                      | `/tag ownership enable`                         | With this enabled (disabled by default) tags are 'owned' meaning that unless you're a mod, you can't edit, append or delete other people's tags. You can still create aliases to people's tags. |
 | **tag modonly** \<status><br><span class="user-permissions">Manage Server</span> | `/tag modonly enable`                           | With this enabled, only mods can manage tags, non-mods can still use them.                                                                                                                      |
 | **tag claim** \<name>                                                            | `/tag claim test`                               | Claims a tag from a member who has left the server, only relevant if ownership is enabled.                                                                                                      |
 | **tag replace** \<name> \<from_text> \<to_text>                                  | `/tag replace test world universe`              | Replaces every occurance of `from_text` with `to_text` in an already existing tag.                                                                                                              |
 | **tag list** [member]                                                            | `/tag list`                                     | Lists all of the tags on the server or by a specific member.                                                                                                                                    |
-| **tag share** \<name>                                                            | `/tag share test`                               | Creates a shareable link of a tag so that other users can import it to their servers.                                                                                                           |
+| **tag share** \<name><br><span class="user-permissions">Manage Server</span>     | `/tag share test`                               | Creates a shareable link of a tag so that other users can import it to their servers.                                                                                                           |
 | **tag unshare** \<name><br><span class="user-permissions">Manage Server</span>   | `/tag unshare picross`                          | Unshare a specific publicly shared tag. Already created share link will not work once you unshare a tag.                                                                                        |
 | **tag unshareall**<br><span class="user-permissions">Manage Server</span>        | `/tag unshareall`                               | Unshare all publicly shared tags.                                                                                                                                                               |
 
@@ -376,16 +374,22 @@ Use a space to separate multiple emoji.
 
 #### Command Blocks
 
-Command blocks execute a Carl-bot command. The formatting and syntax do not change compared to how Carl-bot commands are normally used, except you do not include a prefix. Command blocks cannot use reaction role commands, nor can they call other tags or use tag commands. If the tag's user does not have the permissions required to use the command, Carl-bot will not use it and will output an error message as if they had tried to use the command.
+Command blocks execute a Carl-bot command. The formatting and syntax do not change compared to how Carl-bot commands are normally used, except you do not include a prefix. Command blocks cannot use reaction role commands, nor can they call other tags or use tag commands.
+There are two types of command blocks: `{command}` and `{cmdAdmin}`. The former checks the user's permissions before executing the command, while the latter executes the command at Carl-bot's permission level. If the permissions required to use the command are not met, Carl-bot will not use it and will output an error message as if they had tried to use the command.
 
-**Command blocks can only be used in Tags.**
+##### Command (User Permission Level)
 
 **Aliases**
 
 - `{command:pick Pizza,Burgers,Takeout}`
 - `{cmd:echo {args}}`
 - `{c:role add {user(id)} Verified}`<br>
-  Executes the Carl-bot command in the payload. Block names are synonymous.
+
+##### Command (Bot Permission Level)
+
+- `{cmdAdmin:role {user(id)} Verified}`<br>
+
+Executes the Carl-bot command in the payload. Block names are synonymous.
 
 ?> Tags are limited to using **one** command block per tag unless the server is marked as [Premium](https://carl.gg/get-premium).<br>
 Tags in Carl-bot premium servers can use **three** command blocks per tag.
@@ -399,6 +403,7 @@ Command blocks can also be used to rename a command or create an alias for it.
 > - `!tag + whois {cmd:info {args}}`
 > - `!tag + iam {cmd:rank {args}}`
 > - `!tag + lb {c:leaderboard {args}}`
+> - `!tag + sm {cmdAdmin:slowmode {rate} {per}}`
 
 #### Control Blocks
 
@@ -948,11 +953,14 @@ This method assigns all the data that is related to the same holiday to variable
 
 ## Triggers
 
-?> Triggers are not custom commands, if you want things that are triggered by a prefix and a keyword, see the [Tag](#tags) section. They offer more functionality, better editing capabilities, will never have a limit to them and are just generally nicer for their intended purpose.
+Triggers are not custom commands. If you want things that are triggered by a prefix and a keyword, see the [Tag](#tags) section. Tags offer more functionality, better editing capabilities, will never have a limit to them and are just generally nicer for their intended purpose.
+Triggers fully support tagscript, check out [Advanced Usage](#advanced-usage) section to learn more.
 
 ![Create Trigger](_images/trigger_create.png)
 
-!> Triggers **CANNOT** be more than 2000 characters in length. A server can only have 50 triggers. If more than 50 triggers exist on a server, any triggers after the 50th one alphabetically will no longer function. Embeds attached to trigger via the Dashboard are subject to the same limits detailed in the Embeds section.
+!> Triggers **CANNOT** be more than 25000 characters in length. The content of the response cannot be more than 2000 characters of plaintext in length. A server can only have 50 triggers and a premium server can have 75 triggers. If more triggers than the respective limits exist on a server, any triggers after the limit alphabetically will no longer function. Embeds attached to trigger via the Dashboard are subject to the same limits detailed in the Embeds section.
+
+### Basic Triggers
 
 <!-- tabs:start -->
 
@@ -972,7 +980,6 @@ This method assigns all the data that is related to the same holiday to variable
 | **triggers** [channel\|cs] \<trigger> \<response><br><span class="user-permissions">Manage Server</span>            | `!triggers channel Hakuna Matata`        | Like a normal trigger except it only listens in the channel you used the command in. Note: This will bypass any channel ignores (member ignores still work).                                                                                                                                                                                                                                         |
 | **triggers ignore** \<members_or_channels...><br><span class="user-permissions">Manage Server</span>                | `!triggers ignore @Carl-bot #general`    | Blocks channels and or users from triggering responses.                                                                                                                                                                                                                                                                                                                                              |
 | **triggers unignore** \<members_or_channels...><br><span class="user-permissions">Manage Server</span>              | `!triggers unignore #general @Carl-bot`  | Undoes what ignore does.                                                                                                                                                                                                                                                                                                                                                                             |
-| **triggers regex** \<trigger> \<response><br><span class="user-permissions">Manage Server</span>                    | `!triggers regex ^[0-9] Numbers only!`   | Triggers are only invoked when a message matches regex                                                                                                                                                                                                                                                                                                                                               |
 
 <!-- tab:Slash Commands -->
 
@@ -989,8 +996,38 @@ This method assigns all the data that is related to the same holiday to variable
 | **triggers channel** \<trigger> \<response><br><span class="user-permissions">Manage Server</span>    | `/triggers channel hello world`         | Like a normal trigger except it only listens in the channel you used the command in. Note: This will bypass any channel ignores (member ignores still work).                                                                                                                                                                                                                                         |
 | **triggers ignore** \<members_or_channel><br><span class="user-permissions">Manage Server</span>      | `/triggers ignore @Carl-bot #general`   | Blocks channels and or users from triggering responses.                                                                                                                                                                                                                                                                                                                                              |
 | **triggers unignore** \<members_or_channel><br><span class="user-permissions">Manage Server</span>    | `/triggers unignore #general @Carl-bot` | Undoes what ignore does.                                                                                                                                                                                                                                                                                                                                                                             |
-| **triggers regex** \<trigger> \<response><br><span class="user-permissions">Manage Server</span>      | `/triggers regex ^[0-9] Numbers only!`  | Triggers are only invoked when a message matches regex                                                                                                                                                                                                                                                                                                                                               |
 
 <!-- tabs:end -->
 
-Autoreactions support most of tagscript, check out [Advanced Usage](#advanced-usage) section to learn more.
+### Advanced Triggers
+
+<!-- tabs:start -->
+
+<!-- tab:Prefix Commands -->
+
+| Name                                                                                                   | Example                                | Usage                                                                                                                                |
+| ------------------------------------------------------------------------------------------------------ | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **triggers regex** \<trigger> \<response><br><span class="user-permissions">Manage Server</span>       | `!triggers regex ^[0-9] Numbers only!` | Triggers are only invoked when a message matches regex.                                                                              |
+| **triggers role** \<response> [channel=current]<br><span class="user-permissions">Manage Server</span> | `!triggers role Roles updated!`        | Triggers are only invoked when a role is added or removed to/from a user. There is a cooldown on user-role combination for 1 minute. |
+| **triggers role_bl** \<role> \<trigger_id><br><span class="user-permissions">Manage Server</span>      | `!triggers role_bl @Muted 1234`        | Adds a role to the trigger's blacklist. Users with blacklisted roles cannot trigger the response.                                    |
+| **triggers role_wl** \<role> \<trigger_id><br><span class="user-permissions">Manage Server</span>      | `!triggers role_wl @Muted 1234`        | Adds a role to the trigger's whitelist. Only users with whitelisted roles can trigger the response.                                  |
+
+<!-- tab:Slash Commands -->
+
+| Name                                                                                                     | Example                                | Usage                                                                                                                                |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **triggers regex** \<trigger> \<response><br><span class="user-permissions">Manage Server</span>         | `/triggers regex ^[0-9] Numbers only!` | Triggers are only invoked when a message matches regex.                                                                              |
+| **triggers role** \<response> [channel=current]<br><span class="user-permissions">Manage Server</span>   | `!triggers role Roles updated!`        | Triggers are only invoked when a role is added or removed to/from a user. There is a cooldown on user-role combination for 1 minute. |
+| **triggers role_blacklist** \<role> \<trigger_id><br><span class="user-permissions">Manage Server</span> | `/triggers role_blacklist @Muted 1234` | Adds a role to the trigger's blacklist. Users with blacklisted roles cannot trigger the response.                                    |
+| **triggers role_whitelist** \<role> \<trigger_id><br><span class="user-permissions">Manage Server</span> | `/triggers role_whitelist @Muted 1234` | Adds a role to the trigger's whitelist. Only users with whitelisted roles can trigger the response.                                  |
+
+<!-- tabs:end -->
+
+Role triggers can use the `{role}`, `{target}` and `{user}` block to get information about the role that was added or removed, the target who got/lost the role and the user who updated the target's role . Role blocks contain certain properties. To access a Role block’s property, you specify the property name as the block’s parameter, like `{role(mention)}` or `{role(name)}`.
+
+- `(mention)`: the role mention.
+- `(position)`: the role's position in the role hierarchy.
+- `(id)`: the role's snowflake ID.
+- `(name)`: the role's name.
+- `(is_added)`: returns `true` if the role was added, `false` if it was removed.
+- `(has_elevated_perms)`: returns `true` if the role has <span title="Administrator, Manage Server, Manage Channels, Manage Roles, Manage Messages, Manage Expressions, Manage Webhooks, Manage Nicknames, Mention @everyone, Manage Threads and posts, Manage Events, Kick, Ban, Timeout"><b><u>elevated permissions</u></b></span>, `false` otherwise.

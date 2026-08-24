@@ -181,28 +181,60 @@ For multi-word highlights, it will look for a sequence of words, not a substring
 
 ## Giveaways
 
-?> This feature is currently in open beta so expect frequent changes and updates.
+Create and manage giveaways in your server easily!
 
 <!-- tabs:start -->
 
 <!-- tab:Prefix Commands -->
 
-| Name                                                                                                                  | Example                              | Usage                                                                                                                                                   |
-| --------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **giveaway** \<duration> \<winners> \<prize> [channel=current]<br><span class="user-permissions">Manage Server</span> | `!giveaway 1h10m 2 Nitro #giveaways` | Creates a giveaway for the specified duration, number of winners, prize and optional channel which defaults to the channel that the command is used in. |
-| **giveaway reroll** \<case_id> [members...]<br><span class="user-permissions">Manage Server</span>                    | `!giveaway reroll 23`                | Rerolls the giveaway with the specified case id. Optionally, you can mention the members that should be excluded from the reroll.                       |
-| **giveaway end** \<case_id><br><span class="user-permissions">Manage Server</span>                                    | `!giveaway end 42`                   | Ends an ongoing giveaway prematurely. You will be asked if you want to announce winners or not.                                                         |
-| **giveaway list** [choice=active]<br><span class="user-permissions">Manage Server</span>                              | `!giveaway list active`              | Shows the list of active/inactive giveaways.                                                                                                            |
-| **giveaway participants** \<case_id><br><span class="user-permissions">Manage Server</span>                           | `!giveaway participants 4`           | Check the users that have participated in a particular giveaway.                                                                                        |
+| Name                                                                                                                  | Example                                  | Usage                                                                                                                                                                                                                            |
+| --------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **giveaway** \<duration> \<winners> \<prize> [channel=current]<br><span class="user-permissions">Manage Server</span> | `!giveaway 1h10m 2 Nitro #giveaways`     | Creates a giveaway for the specified duration, number of winners, prize and optional channel which defaults to the channel that the command is used in.                                                                          |
+| **giveaway reroll** \<giveaway_id> [flags]<br><span class="user-permissions">Manage Server</span>                     | `!giveaway reroll 23 -exclude @Carl-bot` | Rerolls the giveaway with the specified case id. Optionally, you can use the following flags: <br>`-replace` Only replaces the mentioned winners in the reroll<br>`-exclude` Excludes the mentioned participants from the reroll |
+| **giveaway end** \<case_id><br><span class="user-permissions">Manage Server</span>                                    | `!giveaway end 42`                       | Ends an ongoing giveaway prematurely. You will be asked if you want to announce winners or not.                                                                                                                                  |
+| **giveaway list** [choice=active]<br><span class="user-permissions">Manage Server</span>                              | `!giveaway list active`                  | Shows the list of active/inactive giveaways.                                                                                                                                                                                     |
+| **giveaway participants** \<case_id><br><span class="user-permissions">Manage Server</span>                           | `!giveaway participants 4`               | Check the users that have participated in a particular giveaway.                                                                                                                                                                 |
 
 <!-- tab:Slash Commands -->
 
-| Name                                                                                                                         | Example                         | Usage                                                                                                                                                   |
-| ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **giveaway create** \<duration> \<winners> \<prize> [channel=current]<br><span class="user-permissions">Manage Server</span> | `/giveaway create 10m 1 Nitro`  | Creates a giveaway for the specified duration, number of winners, prize and optional channel which defaults to the channel that the command is used in. |
-| **giveaway reroll** \<giveaway_id> [members...]<br><span class="user-permissions">Manage Server</span>                       | `/giveaway reroll 23 @Carl-bot` | Rerolls the giveaway with the specified giveaway id. Optionally, you can mention the members that should be excluded from the reroll.                   |
-| **giveaway end** \<giveaway_id><br><span class="user-permissions">Manage Server</span>                                       | `/giveaway end 42`              | Ends an ongoing giveaway prematurely. You will be asked if you want to announce winners or not.                                                         |
-| **giveaway list** [choice=active]<br><span class="user-permissions">Manage Server</span>                                     | `/giveaway list inactive`       | Shows the list of active/inactive giveaways.                                                                                                            |
-| **giveaway participants** \<giveaway_id><br><span class="user-permissions">Manage Server</span>                              | `/giveaway participants 4`      | Check the users that have participated in a particular giveaway.                                                                                        |
+| Name                                                                                                                         | Example                         | Usage                                                                                                                                                                        |
+| ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **giveaway create** \<duration> \<winners> \<prize> [channel=current]<br><span class="user-permissions">Manage Server</span> | `/giveaway create 10m 1 Nitro`  | Creates a giveaway for the specified duration, number of winners, prize and optional channel which defaults to the channel that the command is used in.                      |
+| **giveaway reroll** \<giveaway_id> [replace] [exclude]<br><span class="user-permissions">Manage Server</span>                | `/giveaway reroll 23 @Carl-bot` | Rerolls the giveaway with the specified giveaway id. Optionally, you can mention the winners that should be replaced and/or members that should be excluded from the reroll. |
+| **giveaway end** \<giveaway_id><br><span class="user-permissions">Manage Server</span>                                       | `/giveaway end 42`              | Ends an ongoing giveaway prematurely. You will be asked if you want to announce winners or not.                                                                              |
+| **giveaway list** [choice=active]<br><span class="user-permissions">Manage Server</span>                                     | `/giveaway list inactive`       | Shows the list of active/inactive giveaways.                                                                                                                                 |
+| **giveaway participants** \<giveaway_id><br><span class="user-permissions">Manage Server</span>                              | `/giveaway participants 4`      | Check the users that have participated in a particular giveaway.                                                                                                             |
+
+<!-- tabs:end -->
+
+## Sticky Messages
+
+Ever wanted to stick a message to the bottom of a channel since no one ever opens the pins? Now you can! You can manage sticky messages and create new templates directly from the **[Dashboard](https://carl.gg)**.
+
+?> - 1 sticky message per channel<br>- Up to 15 sticky messages per server<br>- Up to 25 saved templates<br>- Minimum duration: 1 minute<br>- Maximum duration: 365 days
+
+This feature is available for Premium users only.
+
+[![Premium Button](_images/premium_button.png)](https://carl.gg/get-premium)
+
+<!-- tabs:start -->
+
+<!-- tab:Prefix Commands -->
+
+| Name                                                                                                                         | Example                 | Usage                                                                                               |
+| ---------------------------------------------------------------------------------------------------------------------------- | ----------------------- | --------------------------------------------------------------------------------------------------- |
+| **sticky** [channel=current] [duration=1day] \<message><br><span class="user-permissions">Manage Server</span>               | `!sticky No Spam`       | Create a sticky message in the current or a specified channel.                                      |
+| **stickylist** <br><span class="user-permissions">Manage Server</span>                                                       | `!stickylist`           | View all active sticky messages across your server, including their duration and next refresh time. |
+| **stickyremove** [channel=current]<br><span class="user-permissions">Manage Server</span>                                    | `!stickyremove`         | Remove an active sticky message in the current or a specified channel.                              |
+| **stickytemplate** [channel=current] [duration=1day] \<template_name><br><span class="user-permissions">Manage Server</span> | `!stickytemplate Stick` | Apply a pre-set sticky messatge format for quick setup.                                             |
+
+<!-- tab:Slash Commands -->
+
+| Name                                                                                                                          | Example                  | Usage                                                                                               |
+| ----------------------------------------------------------------------------------------------------------------------------- | ------------------------ | --------------------------------------------------------------------------------------------------- |
+| **sticky add** \<message> [duration=1day] [channel=current]<br><span class="user-permissions">Manage Server</span>            | `/sticky add No Spam`    | Create a sticky message in the current or a specified channel.                                      |
+| **sticky list** <br><span class="user-permissions">Manage Server</span>                                                       | `/sticky list`           | View all active sticky messages across your server, including their duration and next refresh time. |
+| **sticky remove** [channel=current]<br><span class="user-permissions">Manage Server</span>                                    | `/sticky remove`         | Remove an active sticky message in the current or a specified channel.                              |
+| **sticky template** \<template_name> [duration=1day] [channel=current]<br><span class="user-permissions">Manage Server</span> | `/sticky template Stick` | Apply a pre-set sticky messatge format for quick setup.                                             |
 
 <!-- tabs:end -->

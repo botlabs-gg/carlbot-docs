@@ -1,41 +1,10 @@
-?> Levels is a premium feature offered to our Patrons as a way to show our gratitude for helping keep the bot alive.
+Levels is a premium feature offered to our Patrons as a way to show our gratitude for helping keep the bot alive.
 
 [![Premium Button](_images/premium_button.png)](https://carl.gg/get-premium)
 
-## Level Card
-
-!> In order for the bot to start tracking messages you need to change <i>any</i> setting. As long as `level config` command works, the level system works.
-
-<!-- tabs:start -->
-
-<!-- tab:Prefix Commands -->
-
-| Name                                                                                                  | Example                                 | Usage                                                                                                                         |
-| ----------------------------------------------------------------------------------------------------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| [**levels**\|**lvl**\|**level**\|**lvls**] [member]                                                   | `!level @Carl-bot`                      | Displays the rank card for a member.                                                                                          |
-| **level** [background\|bg] \<link\|attachment>                                                        | `!lvl bg https://i.imgur.com/L1n\|<`    | Sets the [background](#background) of your level card.                                                                        |
-| **level** [color\|colour] \<color>                                                                    | `!lvl color FF0000`                     | Sets the fill color of the XP bar and the border surrounding your profile picture.                                            |
-| **level accent** \<color>                                                                             | `!lvl accent FFFFFF`                    | Sets the color for text, the horizontal bar, and the border surrounding the XP bar.                                           |
-| **level** [opacity\|alpha] \<value>                                                                   | `!lvl alpha 0`                          | Sets the opacity of the overlay.<br>0 - Transparent<br>1.0 or 100 - Opaque.                                                   |
-| **level** [serverbackground\|serverbg] \<link><br><span class="user-permissions">Manage Server</span> | `!lvl serverbg https://i.ibb.co/L1n\|<` | Sets the default [background](#background) for level cards in your server. This won't overwrite individually set backgrounds. |
-
-<!-- tab:Slash Commands -->
-
-| Name                                                                                                  | Example                             | Usage                                                                                                                         |
-| ----------------------------------------------------------------------------------------------------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| **level member** [member]                                                                             | `/level member @Carl-bot`           | Displays the rank card for a member.                                                                                          |
-| **level background** [link] [attachment]                                                              | `/level background image.png`       | Sets the [background](#background) of your level card.                                                                        |
-| **level serverbackground** [link] [attachment]<br><span class="user-permissions">Manage Server</span> | `/level serverbackground image.png` | Sets the default [background](#background) for level cards in your server. This won't overwrite individually set backgrounds. |
-
-<!-- tabs:end -->
-
-### Background
-
-Ideal background resolution is `934x282` pixels but if a different resolution is supplied it will be scaled to the ideal width and cropped to fit the height.
-
-> **Example Level Card:** > ![Example Level Card](_images/level_card.png)
-
 ## Level Settings
+
+?> The <b>default rate is 15 - 25 XP</b> (randomized) per message. As users level up, the amount of XP required to reach the next level increases significantly.<br>The <b>XP needed to level up</b> is calculated using the formula: `5 * (n^2) + 50 * n + 100` where n is the next level.<br>The <b>total XP required</b> to reach level `n` can be calculated using the formula: `(5/3)*n^3 + (55/2)*n^2 + (755/6)*n + 100`. <br>To get you started, here are the XP requirements for the first 10 levels:<br>`Level 0: 100XP (0)`<br>`Level 1: 255XP (+155)`<br>`Level 2: 475XP (+220)`<br>`Level 3: 770XP (+295)`<br>`Level 4: 1150XP (+380)`<br>`Level 5: 1625XP (+475)`<br>`Level 6: 2205XP (+580)`<br>`Level 7: 2900XP (+695)`<br>`Level 8: 3720XP (+820)`<br>`Level 9: 4675XP (+955)`<br>`Level 10: 5775XP (+1100)`
 
 ![Level Config](_images/level_config.png ":size=75%")
 
@@ -127,3 +96,36 @@ Ideal background resolution is `934x282` pixels but if a different resolution is
 | **level reward** \<level> [role]<br><span class="user-permissions">Manage Server</span> | `/level reward 10 Member` | Adds a reward for the specified level. Use without specifying a role to remove the reward at that level. |
 
 <!-- tabs:end -->
+
+## Level Card
+
+!> In order for the bot to start tracking messages you need to change <i>any</i> setting. As long as `level config` command works, the level system works.
+
+<!-- tabs:start -->
+
+<!-- tab:Prefix Commands -->
+
+| Name                                                                                                  | Example                                 | Usage                                                                                                                         |
+| ----------------------------------------------------------------------------------------------------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| [**levels**\|**lvl**\|**level**\|**lvls**] [member]                                                   | `!level @Carl-bot`                      | Displays the rank card for a member.                                                                                          |
+| **level** [background\|bg] \<link\|attachment>                                                        | `!lvl bg https://i.imgur.com/L1n\|<`    | Sets the [background](#background) of your level card.                                                                        |
+| **level** [color\|colour] \<color>                                                                    | `!lvl color FF0000`                     | Sets the fill color of the XP bar and the border surrounding your profile picture.                                            |
+| **level accent** \<color>                                                                             | `!lvl accent FFFFFF`                    | Sets the color for text, the horizontal bar, and the border surrounding the XP bar.                                           |
+| **level** [opacity\|alpha] \<value>                                                                   | `!lvl alpha 0`                          | Sets the opacity of the overlay.<br>0 - Transparent<br>1.0 or 100 - Opaque.                                                   |
+| **level** [serverbackground\|serverbg] \<link><br><span class="user-permissions">Manage Server</span> | `!lvl serverbg https://i.ibb.co/L1n\|<` | Sets the default [background](#background) for level cards in your server. This won't overwrite individually set backgrounds. |
+
+<!-- tab:Slash Commands -->
+
+| Name                                                                                                  | Example                             | Usage                                                                                                                         |
+| ----------------------------------------------------------------------------------------------------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| **level member** [member]                                                                             | `/level member @Carl-bot`           | Displays the rank card for a member.                                                                                          |
+| **level background** [link] [attachment]                                                              | `/level background image.png`       | Sets the [background](#background) of your level card.                                                                        |
+| **level serverbackground** [link] [attachment]<br><span class="user-permissions">Manage Server</span> | `/level serverbackground image.png` | Sets the default [background](#background) for level cards in your server. This won't overwrite individually set backgrounds. |
+
+<!-- tabs:end -->
+
+### Background
+
+Ideal background resolution is `934x282` pixels but if a different resolution is supplied it will be scaled to the ideal width and cropped to fit the height.
+
+> **Example Level Card:** > ![Example Level Card](_images/level_card.png)

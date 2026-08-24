@@ -83,6 +83,8 @@ Warns do not automatically expire. Managing warns is detailed on the [Moderation
 
 Message spam will not be active without setting a rate limit of at least 1+ messages in 1+ seconds first.
 
+!> Once activated, the bot will delete the message that triggered the automod even if the punishment doesn't include `delete`. If `message` punishment is included, the warning message will also be deleted after 5 seconds.
+
 <!-- tabs:start -->
 
 <!-- tab:Prefix Commands -->
@@ -262,4 +264,71 @@ Bad words detection is case insensitive, looks for substrings and ignores punctu
 
 <!-- tabs:end -->
 
+<!-- tab:Honeypot -->
+
+Honeypot sets existing channel in your server as a trap for spammers. Whoever sends a message in this channel will be punished.
+
+?> **Limit**<br>1 Honeypot channel per server. [Premium](https://carl.gg/get-premium) servers can have 5 honeypot channels.
+
+<!-- tabs:start -->
+
+<!-- tab:Prefix Commands -->
+
+| Name                                                                                                          | Example                      | Usage                                         |
+| ------------------------------------------------------------------------------------------------------------- | ---------------------------- | --------------------------------------------- |
+| **honeypot** [**add**\|**+**] <channels...><br><span class="user-permissions">Manage Server</span>            | `!honeypot add #honeypot`    | Adds existing channel(s) as honeypot.         |
+| **honeypot** [**remove**\|**-**] <channels...><br><span class="user-permissions">Manage Server</span>         | `!honeypot remove #honeypot` | Removes existing channel(s) as honeypot.      |
+| **honeypot server** <br><span class="user-permissions">Manage Server</span>                                   | `!honeypot server`           | View honeypot settings for server.            |
+| **honeypot clear**<br><span class="user-permissions">Manage Server</span>                                     | `!honeypot clear`            | Clears all honeypot settings.                 |
+| **honeypot punishment** <punishments...=delete, defer><br><span class="user-permissions">Manage Server</span> | `!honeypot punishment ban`   | Sets the punishment(s) for honeypot triggers. |
+
+<!-- tab:Slash Commands -->
+
+| Name                                                                                                          | Example                      | Usage                                         |
+| ------------------------------------------------------------------------------------------------------------- | ---------------------------- | --------------------------------------------- |
+| **honeypot add** <channels...><br><span class="user-permissions">Manage Server</span>                         | `/honeypot add #honeypot`    | Adds existing channel(s) as honeypot.         |
+| **honeypot remove** <channels...><br><span class="user-permissions">Manage Server</span>                      | `/honeypot remove #honeypot` | Removes existing channel(s) as honeypot.      |
+| **honeypot server** <br><span class="user-permissions">Manage Server</span>                                   | `/honeypot server`           | View honeypot settings for server.            |
+| **honeypot clear**<br><span class="user-permissions">Manage Server</span>                                     | `/honeypot clear`            | Clears all honeypot settings.                 |
+| **honeypot punishment** <punishments...=delete, defer><br><span class="user-permissions">Manage Server</span> | `/honeypot punishment ban`   | Sets the punishment(s) for honeypot triggers. |
+
 <!-- tabs:end -->
+
+<!-- tabs:end -->
+
+## Auto Purge
+
+Auto Purge is a [Premium](https://carl.gg/get-premium) feature that automatically deletes messages in a channel after a set amount of time. You can configure the channel, interval, and message type to be purged. Upto 15 channels can be configured for Auto Purge. The minimum interval is 1 hour and maximum is 14 days.
+
+[![Premium Button](_images/premium_button.png)](https://carl.gg/get-premium)
+
+<!-- tabs:start -->
+
+<!-- tab:Prefix Commands -->
+
+| Name                                                                                                               | Example                       | Usage                                                                     |
+| ------------------------------------------------------------------------------------------------------------------ | ----------------------------- | ------------------------------------------------------------------------- |
+| **autopurge**<br><span class="user-permissions">Manage Server</span>                                               | `!autopurge`                  | Shows Auto Purge configuration.                                           |
+| **autopurge set** \<channel> \<interval> [message_type=all]<br><span class="user-permissions">Manage Server</span> | `!autopurge set #channel all` | Sets the channel and interval for Auto Purge.                             |
+| **autopurge remove** [channel]<br><span class="user-permissions">Manage Server</span>                              | `!autopurge remove #channel`  | Removes the specified channel from Auto Purge, or disable it completely.. |
+
+<!-- tab:Slash Commands -->
+
+| Name                                                                                                               | Example                       | Usage                                                                     |
+| ------------------------------------------------------------------------------------------------------------------ | ----------------------------- | ------------------------------------------------------------------------- |
+| **autopurge config**<br><span class="user-permissions">Manage Server</span>                                        | `/autopurge config`           | Shows Auto Purge configuration.                                           |
+| **autopurge set** \<channel> \<interval> [message_type=all]<br><span class="user-permissions">Manage Server</span> | `/autopurge set #channel all` | Sets the channel and interval for Auto Purge.                             |
+| **autopurge remove** [channel]<br><span class="user-permissions">Manage Server</span>                              | `/autopurge remove #channel`  | Removes the specified channel from Auto Purge, or disable it completely.. |
+
+<!-- tabs:end -->
+
+### Message Types
+
+| Type        | Definition                              |
+| ----------- | --------------------------------------- |
+| all         | All messages.                           |
+| humans      | Only messages sent by humans.           |
+| bots        | Only messages sent by bots.             |
+| links       | Only messages that contain links.       |
+| invites     | Only messages that contain invites.     |
+| attachments | Only messages that contain attachments. |
