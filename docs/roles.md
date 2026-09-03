@@ -2,6 +2,8 @@
 
 ?> If you have autoroles and reassigned roles, the returning member will receive the union of both.
 
+!> Reassigned / Sticky roles only work if the returning member joins back within 30 days.
+
 ![Autoroles](_images/autoroles.png ":size=75%") ![Sticky Roles](_images/sticky_roles.png ":size=75%")
 
 <!-- tabs:start -->
