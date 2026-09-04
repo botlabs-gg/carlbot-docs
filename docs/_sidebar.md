@@ -1,3 +1,4 @@
+- [🚨 **NOTICE** 🚨](notice.md "Notice")
 - [**Getting Started**](getting-started.md "Getting Started")
 - [**Config**](config.md "Configuration")
 - [**Personalization** :star:](personalization.md "Personalization")
