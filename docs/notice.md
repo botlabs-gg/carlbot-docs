@@ -9,7 +9,7 @@ Discord is shifting toward Slash Commands to improve user privacy, security, and
 ## Timeline
 
 - **Currently:** Prefix commands still function but will sometimes trigger a warning message.
-- **1st October 2026:** Standard prefix commands will be fully disabled.
+- **5th October 2026:** Standard prefix commands will be fully disabled.
 
 ## How to Prepare Your Server
 
