@@ -4,7 +4,7 @@
 
 ## Why the change?
 
-Discord is shifting toward Slash Commands to improve user privacy, security, and discoverability. Slash commands offer a better user experience by showing you exactly what parameters a command needs right in your chat box, without needing to memorize syntax. We also need to align with Discord's requirements for privileged Intents, and Slash Commands are slowly becoming a requirement for bots to function properly in the future.
+Discord is shifting toward Slash Commands to improve user privacy, security, and discoverability. We need to align with Discord's requirements for privileged Intents, and Slash Commands are slowly becoming a requirement for bots to function properly in the future.
 
 ## Timeline
 
