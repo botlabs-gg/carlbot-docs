@@ -1,6 +1,6 @@
-# Transitioning to Slash Commands
+# Transitioned to Slash Commands
 
-!> **Notice:** Carl-bot is officially phasing out traditional prefix commands (e.g., `!ban`, `?kick`). We are moving exclusively to Discord's native Slash Commands (`/`).
+!> **Notice:** Carl-bot has officially phased out traditional prefix commands (e.g., `!ban`, `?kick`). We have moved exclusively to Discord's native Slash Commands (`/`).
 
 ## Why the change?
 
@@ -8,8 +8,7 @@ Discord is shifting toward Slash Commands to improve user privacy, security, and
 
 ## Timeline
 
-- **Currently:** Prefix commands still function but will sometimes trigger a warning message.
-- **5th October 2026:** Standard prefix commands will be fully disabled.
+- **5th October 2026:** Prefix commands have been officially disabled. All commands must now be used with Slash Commands.
 
 ## How to Prepare Your Server
 
