@@ -6,30 +6,31 @@
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-| Name                                                                                                    | Example                          | Usage                                                                                                                                          |
-| ------------------------------------------------------------------------------------------------------- | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| [**am**\|**automod**]<br><span class="user-permissions">Manage Server</span>                            | `!am`                            | Shows an overview of the current automod settings.                                                                                             |
-| **automod drama** \<channel><br><span class="user-permissions">Manage Server</span>                     | `!automod drama #drama`          | This is a [Premium](https://carl.gg/get-premium) command.<br>Set the channel where mods can make decisions on rule breakers through reactions. |
-| **automod log** \<channel><br><span class="user-permissions">Manage Server</span>                       | `!automod log #automod`          | Set the channel where the logs for automatic moderation actions go.                                                                            |
-| **automod** [media\|mo] <channels...><br><span class="user-permissions">Manage Server</span>            | `!am mo #show-off`               | Set the channel(s) where only posting images/links is allowed.                                                                                 |
-| **automod** [unmedia\|umo\|unmo] <channels...><br><span class="user-permissions">Manage Server</span>   | `!am umo #show-off`              | Removes the media-only restriction from one or more channels.                                                                                  |
-| **automod** [whitelist\|wl] <roles/channels><br><span class="user-permissions">Manage Server</span>     | `!am wl mods #admin-chat`        | Whitelists roles and/or channels so that the automod ignores messages posted in/by them.                                                       |
-| **automod** [unwhitelist\|unwl] <roles/channels><br><span class="user-permissions">Manage Server</span> | `!automod unwl mods #admin-chat` | Removes roles and/or channels from the automod whitelist.                                                                                      |
-| **deletefiles**<br><span class="user-permissions">Manage Server</span>                                  | `!deletefiles`                   | Toggles deleting unsafe files. Safe formats include png, jpg, jpeg, gif, svg, bmp, tif, webp, webm, mp4, mov, pdf, txt, mp3, flac and wav.     |
-
 <!-- tab:Slash Commands -->
 
-| Name                                                                                                        | Example                                   | Usage                                                                                                                                          |
-| ----------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| **automod server**<br><span class="user-permissions">Manage Server</span>                                   | `/automod server`                         | Shows an overview of the current automod settings.                                                                                             |
-| **automod drama** \<channel><br><span class="user-permissions">Manage Server</span>                         | `/automod drama #drama`                   | This is a [Premium](https://carl.gg/get-premium) command.<br>Set the channel where mods can make decisions on rule breakers through reactions. |
-| **automod log** \<channel><br><span class="user-permissions">Manage Server</span>                           | `/automod log #automod`                   | Set the channel where the logs for automatic moderation actions go.                                                                            |
-| **automod media** <channels...><br><span class="user-permissions">Manage Server</span>                      | `/automod mo #show-off`                   | Set the channel(s) where only posting images/links is allowed.                                                                                 |
-| **automod unmedia** <channels...><br><span class="user-permissions">Manage Server</span>                    | `/automod umo #show-off`                  | Removes the media-only restriction from one or more channels.                                                                                  |
-| **automod whitelist** [add\|remove] <roles/channels><br><span class="user-permissions">Manage Server</span> | `!automod whitelist add mods #admin-chat` | Add or remove roles and/or channels from the automod whitelist.                                                                                |
-| **deletefiles**<br><span class="user-permissions">Manage Server</span>                                      | `/deletefiles`                            | Toggles deleting unsafe files. Safe formats include png, jpg, jpeg, gif, svg, bmp, tif, webp, webm, mp4, mov, pdf, txt, mp3, flac and wav.     |
+| Name                                                                                                      | Example                                   | Usage                                                                                                                                          |
+| --------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| **automod server**<br><span class="user-permissions">Manage Server</span>                                 | `/automod server`                         | Shows an overview of the current automod settings.                                                                                             |
+| **automod drama** \<channel><br><span class="user-permissions">Manage Server</span>                       | `/automod drama #drama`                   | This is a [Premium](https://carl.gg/get-premium) command.<br>Set the channel where mods can make decisions on rule breakers through reactions. |
+| **automod log** \<channel><br><span class="user-permissions">Manage Server</span>                         | `/automod log #automod`                   | Set the channel where the logs for automatic moderation actions go.                                                                            |
+| **automod media** <channels...><br><span class="user-permissions">Manage Server</span>                    | `/automod mo #show-off`                   | Set the channel(s) where only posting images/links is allowed.                                                                                 |
+| **automod unmedia** <channels...><br><span class="user-permissions">Manage Server</span>                  | `/automod umo #show-off`                  | Removes the media-only restriction from one or more channels.                                                                                  |
+| **automod whitelist channels** <choice> <channels><br><span class="user-permissions">Manage Server</span> | `/automod whitelist channels add #admins` | Add or remove channels from the automod whitelist.                                                                                             |
+| **automod whitelist roles** <choice> <roles><br><span class="user-permissions">Manage Server</span>       | `/automod whitelist roles add mods`       | Add or remove roles from the automod whitelist.                                                                                                |
+| **automod deletefiles**<br><span class="user-permissions">Manage Server</span>                            | `/automod deletefiles`                    | Toggles deleting unsafe files. Safe formats include png, jpg, jpeg, gif, svg, bmp, tif, webp, webm, mp4, mov, pdf, txt, mp3, flac and wav.     |
+
+<!-- tab:Mention Commands -->
+
+| Name                                                                                                    | Example                              | Usage                                                                                                                                          |
+| ------------------------------------------------------------------------------------------------------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**am**\|**automod**]<br><span class="user-permissions">Manage Server</span>                            | `@Carl-bot am`                       | Shows an overview of the current automod settings.                                                                                             |
+| **automod drama** \<channel><br><span class="user-permissions">Manage Server</span>                     | `@Carl-bot am drama #drama`          | This is a [Premium](https://carl.gg/get-premium) command.<br>Set the channel where mods can make decisions on rule breakers through reactions. |
+| **automod log** \<channel><br><span class="user-permissions">Manage Server</span>                       | `@Carl-bot am log #automod`          | Set the channel where the logs for automatic moderation actions go.                                                                            |
+| **automod** [media\|mo] <channels...><br><span class="user-permissions">Manage Server</span>            | `@Carl-bot am mo #show-off`          | Set the channel(s) where only posting images/links is allowed.                                                                                 |
+| **automod** [unmedia\|umo\|unmo] <channels...><br><span class="user-permissions">Manage Server</span>   | `@Carl-bot am umo #show-off`         | Removes the media-only restriction from one or more channels.                                                                                  |
+| **automod** [whitelist\|wl] <roles/channels><br><span class="user-permissions">Manage Server</span>     | `@Carl-bot am wl mods #admin-chat`   | Whitelists roles and/or channels so that the automod ignores messages posted in/by them.                                                       |
+| **automod** [unwhitelist\|unwl] <roles/channels><br><span class="user-permissions">Manage Server</span> | `@Carl-bot am unwl mods #admin-chat` | Removes roles and/or channels from the automod whitelist.                                                                                      |
+| **deletefiles**<br><span class="user-permissions">Manage Server</span>                                  | `@Carl-bot deletefiles`              | Toggles deleting unsafe files. Safe formats include png, jpg, jpeg, gif, svg, bmp, tif, webp, webm, mp4, mov, pdf, txt, mp3, flac and wav.     |
 
 <!-- tabs:end -->
 
@@ -51,7 +52,7 @@ The punishments available are:
 
 ?> Input the duration in this format `3h42m`.
 
-?>You can add more than one punishment by separating them with commas.
+?> You can add more than one punishment by separating them with commas.
 
 ## Warn Threshold
 
@@ -59,19 +60,19 @@ Warns do not automatically expire. Managing warns is detailed on the [Moderation
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-| Name                                                                                                 | Example       | Usage                                                |
-| ---------------------------------------------------------------------------------------------------- | ------------- | ---------------------------------------------------- |
-| **automod** [warn\|threshold] \<limit><br><span class="user-permissions">Manage Server</span>        | `!am warn 5`  | Sets the warn threshold for a punishment to be made. |
-| **automod** [warnpunish\|wp] <punishments...><br><span class="user-permissions">Manage Server</span> | `!am wp kick` | Sets the punishment for hitting the threshold.       |
-
 <!-- tab:Slash Commands -->
 
 | Name                                                                                           | Example                    | Usage                                                |
 | ---------------------------------------------------------------------------------------------- | -------------------------- | ---------------------------------------------------- |
 | **automod threshold** \<limit><br><span class="user-permissions">Manage Server</span>          | `/automod threshold 5`     | Sets the warn threshold for a punishment to be made. |
 | **automod warnpunish** <punishments...><br><span class="user-permissions">Manage Server</span> | `/automod warnpunish kick` | Sets the punishment for hitting the threshold.       |
+
+<!-- tab:Mention Commands -->
+
+| Name                                                                                                 | Example                | Usage                                                |
+| ---------------------------------------------------------------------------------------------------- | ---------------------- | ---------------------------------------------------- |
+| **automod** [warn\|threshold] \<limit><br><span class="user-permissions">Manage Server</span>        | `@Carl-bot am warn 5`  | Sets the warn threshold for a punishment to be made. |
+| **automod** [warnpunish\|wp] <punishments...><br><span class="user-permissions">Manage Server</span> | `@Carl-bot am wp kick` | Sets the punishment for hitting the threshold.       |
 
 <!-- tabs:end -->
 
@@ -87,20 +88,20 @@ Message spam will not be active without setting a rate limit of at least 1+ mess
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-| Name                                                                                                         | Example                      | Usage                                                                                                                                               |
-| ------------------------------------------------------------------------------------------------------------ | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [**slowmode**\|**sm**] [rate] [per]<br><span class="user-permissions">Manage Server</span>                   | `!slowmode 5 25`             | Rate is the number of messages you can send per timeframe. Per is the timeframe. If you only supply one value, it sets that value as the per. (1/x) |
-| **slowmode** [punishment\|punish\|p] <punishments...><br><span class="user-permissions">Manage Server</span> | `!sm p delete, tempmute 20m` | Sets the punishment(s) for hitting the rate limit.                                                                                                  |
-
 <!-- tab:Slash Commands -->
 
-| Name                                                                                            | Example                                     | Usage                                                                                                                                                                                    |
-| ----------------------------------------------------------------------------------------------- | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **slowmode set** \<rate><br><span class="user-permissions">Manage Server</span>                 | `/slowmode set 5 25`                        | Sets slowmode in the current channel. If you want the rate to be X messages in Y time then input `x y`. If only one value is supplied then it sets it as 1 message every supplied value. |
-| **slowmode disable**<br><span class="user-permissions">Manage Server</span>                     | `/slowmode disable`                         | Disables slowmode in the current channel.                                                                                                                                                |
-| **slowmode punishment** <punishments...><br><span class="user-permissions">Manage Server</span> | `/slowmode punishment delete, tempmute 20m` | Sets the punishment(s) for hitting the rate limit.                                                                                                                                       |
+| Name                                                                                                    | Example                                             | Usage                                                                                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **automod slowmode set** \<rate><br><span class="user-permissions">Manage Server</span>                 | `/automod slowmode set 5 25`                        | Sets slowmode in the current channel. If you want the rate to be X messages in Y time then input `x y`. If only one value is supplied then it sets it as 1 message every supplied value. |
+| **automod slowmode disable**<br><span class="user-permissions">Manage Server</span>                     | `/automod slowmode disable`                         | Disables slowmode in the current channel.                                                                                                                                                |
+| **automod slowmode punishment** <punishments...><br><span class="user-permissions">Manage Server</span> | `/automod slowmode punishment delete, tempmute 20m` | Sets the punishment(s) for hitting the rate limit.                                                                                                                                       |
+
+<!-- tab:Mention Commands -->
+
+| Name                                                                                                         | Example                                     | Usage                                                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**slowmode**\|**sm**] [rate] [per]<br><span class="user-permissions">Manage Server</span>                   | `@Carl-bot slowmode 5 25`                   | Rate is the number of messages you can send per timeframe. Per is the timeframe. If you only supply one value, it sets that value as the per. (1/x) |
+| **slowmode** [punishment\|punish\|p] <punishments...><br><span class="user-permissions">Manage Server</span> | `@Carl-bot slowmode p delete, tempmute 20m` | Sets the punishment(s) for hitting the rate limit.                                                                                                  |
 
 <!-- tabs:end -->
 
@@ -110,20 +111,20 @@ Attachmentspam will not be active without setting a rate limit of at least 1+ fi
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-| Name                                                                                                  | Example                         | Usage                                                                                                    |
-| ----------------------------------------------------------------------------------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| **attachmentspam** [rate] [per=1]<br><span class="user-permissions">Manage Server</span>              | `!attachmentspam 3 5`           | Rate limits the number of attachments a member can post in a specific timeframe. Leave blank to disable. |
-| **attachmentspam punishment** <punishments...><br><span class="user-permissions">Manage Server</span> | `!attachmentspam p mute, defer` | Sets the punishment(s) for hitting the rate limit.                                                       |
-
 <!-- tab:Slash Commands -->
 
-| Name                                                                                                  | Example                                  | Usage                                                                            |
-| ----------------------------------------------------------------------------------------------------- | ---------------------------------------- | -------------------------------------------------------------------------------- |
-| **attachmentspam set** \<rate><br><span class="user-permissions">Manage Server</span>                 | `/attachmentspam set 3 5`                | Rate limits the number of attachments a member can post in a specific timeframe. |
-| **attachmentspam disable**<br><span class="user-permissions">Manage Server</span>                     | `/attachmentspam disable`                | Disables attachmentspam in the current channel.                                  |
-| **attachmentspam punishment** <punishments...><br><span class="user-permissions">Manage Server</span> | `/attachmentspam punishment mute, defer` | Sets the punishment(s) for hitting the rate limit.                               |
+| Name                                                                                                          | Example                                          | Usage                                                                            |
+| ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | -------------------------------------------------------------------------------- |
+| **automod attachmentspam set** \<rate><br><span class="user-permissions">Manage Server</span>                 | `/automod attachmentspam set 3 5`                | Rate limits the number of attachments a member can post in a specific timeframe. |
+| **automod attachmentspam disable**<br><span class="user-permissions">Manage Server</span>                     | `/automod attachmentspam disable`                | Disables attachmentspam in the current channel.                                  |
+| **automod attachmentspam punishment** <punishments...><br><span class="user-permissions">Manage Server</span> | `/automod attachmentspam punishment mute, defer` | Sets the punishment(s) for hitting the rate limit.                               |
+
+<!-- tab:Mention Commands -->
+
+| Name                                                                                                  | Example                                  | Usage                                                                                                    |
+| ----------------------------------------------------------------------------------------------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| **attachmentspam** [rate] [per=1]<br><span class="user-permissions">Manage Server</span>              | `@Carl-bot attachmentspam 3 5`           | Rate limits the number of attachments a member can post in a specific timeframe. Leave blank to disable. |
+| **attachmentspam punishment** <punishments...><br><span class="user-permissions">Manage Server</span> | `@Carl-bot attachmentspam p mute, defer` | Sets the punishment(s) for hitting the rate limit.                                                       |
 
 <!-- tabs:end -->
 
@@ -133,20 +134,20 @@ Mentionspam will not be active without setting a rate limit of at least 1+ menti
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-| Name                                                                                                    | Example                      | Usage                                                        |
-| ------------------------------------------------------------------------------------------------------- | ---------------------------- | ------------------------------------------------------------ |
-| **mentionspam** [rate] [per=1]<br><span class="user-permissions">Manage Server</span>                   | `!mentionspam 25 5`          | Enables the bot to automatically punish the mentionspammers. |
-| **mentionspam punishment** <punishments...=mute><br><span class="user-permissions">Manage Server</span> | `!mentionspam p tempban 24h` | Sets the punishment(s) for hitting the rate limit.           |
-
 <!-- tab:Slash Commands -->
+
+| Name                                                                                                            | Example                                       | Usage                                                        |
+| --------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------------------------ |
+| **automod mentionspam set** \<rate><br><span class="user-permissions">Manage Server</span>                      | `/automod mentionspam set 25 5`               | Enables the bot to automatically punish the mentionspammers. |
+| **automod mentionspam disable**<br><span class="user-permissions">Manage Server</span>                          | `/automod mentionspam disable`                | Disables mentionspam in the current channel.                 |
+| **automod mentionspam punishment** <punishments...=mute><br><span class="user-permissions">Manage Server</span> | `/automod mentionspam punishment tempban 24h` | Sets the punishment(s) for hitting the rate limit.           |
+
+<!-- tab:Mention Commands -->
 
 | Name                                                                                                    | Example                               | Usage                                                        |
 | ------------------------------------------------------------------------------------------------------- | ------------------------------------- | ------------------------------------------------------------ |
-| **mentionspam set** \<rate><br><span class="user-permissions">Manage Server</span>                      | `/mentionspam set 25 5`               | Enables the bot to automatically punish the mentionspammers. |
-| **mentionspam disable**<br><span class="user-permissions">Manage Server</span>                          | `/mentionspam disable`                | Disables mentionspam in the current channel.                 |
-| **mentionspam punishment** <punishments...=mute><br><span class="user-permissions">Manage Server</span> | `/mentionspam punishment tempban 24h` | Sets the punishment(s) for hitting the rate limit.           |
+| **mentionspam** [rate] [per=1]<br><span class="user-permissions">Manage Server</span>                   | `@Carl-bot mentionspam 25 5`          | Enables the bot to automatically punish the mentionspammers. |
+| **mentionspam punishment** <punishments...=mute><br><span class="user-permissions">Manage Server</span> | `@Carl-bot mentionspam p tempban 24h` | Sets the punishment(s) for hitting the rate limit.           |
 
 <!-- tabs:end -->
 
@@ -156,36 +157,36 @@ Linkspam will not be active without setting a rate limit of at least 1+ links in
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-| Name                                                                                            | Example                                 | Usage                                                                 |
-| ----------------------------------------------------------------------------------------------- | --------------------------------------- | --------------------------------------------------------------------- |
-| **linkspam**<br><span class="user-permissions">Manage Server</span>                             | `!linkspam`                             | Shows the current settings.                                           |
-| **linkspam** \<rate> [per=1]<br><span class="user-permissions">Manage Server</span>             | `!linkspam 1 1`                         | Sets the link rate limit. Use the example command to block all links. |
-| **linkspam punishment** <punishments...><br><span class="user-permissions">Manage Server</span> | `!linkspam p delte, mute, defer`        | Sets the punishment(s) for hitting the rate limit.                    |
-| **linkspam bl** <links...><br><span class="user-permissions">Manage Server</span>               | `!linkspam bl reddit.com twitter.com`   | Blacklists one or more links.                                         |
-| **linkspam wl** <links...><br><span class="user-permissions">Manage Server</span>               | `!linkspam wl reddit.com twitter.com`   | Whitelists one or more links.                                         |
-| **linkspam unbl** <links...><br><span class="user-permissions">Manage Server</span>             | `!linkspam unbl reddit.com twitter.com` | Removes one or more links from the blacklist.                         |
-| **linkspam unwl** <links...><br><span class="user-permissions">Manage Server</span>             | `!linkspam unwl reddit.com twitter.com` | Removes one or more links from the whitelist.                         |
-| **linkspam clearbl**<br><span class="user-permissions">Manage Server</span>                     | `!linkspam clearbl`                     | Clears the blacklist.                                                 |
-| **linkspam clearwl**<br><span class="user-permissions">Manage Server</span>                     | `!linkspam clearwl`                     | Clears the whitelist.                                                 |
-| **linkspam block**<br><span class="user-permissions">Manage Server</span>                       | `!linkspam block`                       | Punish all non-whitelisted links.                                     |
-| **linkspam off**<br><span class="user-permissions">Manage Server</span>                         | `!linkspam off`                         | Punish only blacklisted links.                                        |
-| **linkspam norole**<br><span class="user-permissions">Manage Server</span>                      | `!linkspam norole`                      | Punish only those without roles.                                      |
-
 <!-- tab:Slash Commands -->
 
-| Name                                                                                                   | Example                                             | Usage                                                                 |
-| ------------------------------------------------------------------------------------------------------ | --------------------------------------------------- | --------------------------------------------------------------------- |
-| **linkspam server**<br><span class="user-permissions">Manage Server</span>                             | `/linkspam server`                                  | Shows the linkspam settings.                                          |
-| **linkspam rate** \<rate><br><span class="user-permissions">Manage Server</span>                       | `/linkspam rate 1 1`                                | Sets the link rate limit. Use the example command to block all links. |
-| **linkspam punishment** <punishments...><br><span class="user-permissions">Manage Server</span>        | `/linkspam punishment delte, mute, defer`           | Sets the punishment(s) for hitting the rate limit.                    |
-| **linkspam blacklist** [add\|remove] <links...><br><span class="user-permissions">Manage Server</span> | `/linkspam blacklist add reddit.com twitter.com`    | Adds or removes link(s) to/from the linkspam blacklist.               |
-| **linkspam whitelist** [add\|remove] <links...><br><span class="user-permissions">Manage Server</span> | `/linkspam whitelist remove reddit.com twitter.com` | Adds or removes link(s) to/from the linkspam whitelist.               |
-| **linkspam clear** [blacklist\|whitelist]<br><span class="user-permissions">Manage Server</span>       | `/linkspam clear blacklist`                         | Clears the blacklist or the whitelist.                                |
-| **linkspam block**<br><span class="user-permissions">Manage Server</span>                              | `/linkspam block`                                   | Punish all non-whitelisted links.                                     |
-| **linkspam off**<br><span class="user-permissions">Manage Server</span>                                | `/linkspam off`                                     | Punish only blacklisted links.                                        |
-| **linkspam norole**<br><span class="user-permissions">Manage Server</span>                             | `/linkspam norole`                                  | Punish only those without roles.                                      |
+| Name                                                                                                           | Example                                                     | Usage                                                                 |
+| -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------- |
+| **automod linkspam server**<br><span class="user-permissions">Manage Server</span>                             | `/automod linkspam server`                                  | Shows the linkspam settings.                                          |
+| **automod linkspam rate** \<rate><br><span class="user-permissions">Manage Server</span>                       | `/automod linkspam rate 1 1`                                | Sets the link rate limit. Use the example command to block all links. |
+| **automod linkspam punishment** <punishments...><br><span class="user-permissions">Manage Server</span>        | `/automod linkspam punishment delete, mute, defer`          | Sets the punishment(s) for hitting the rate limit.                    |
+| **automod linkspam blacklist** [add\|remove] <links...><br><span class="user-permissions">Manage Server</span> | `/automod linkspam blacklist add reddit.com twitter.com`    | Adds or removes link(s) to/from the linkspam blacklist.               |
+| **automod linkspam whitelist** [add\|remove] <links...><br><span class="user-permissions">Manage Server</span> | `/automod linkspam whitelist remove reddit.com twitter.com` | Adds or removes link(s) to/from the linkspam whitelist.               |
+| **automod linkspam clear** [blacklist\|whitelist]<br><span class="user-permissions">Manage Server</span>       | `/automod linkspam clear blacklist`                         | Clears the blacklist or the whitelist.                                |
+| **automod linkspam block**<br><span class="user-permissions">Manage Server</span>                              | `/automod linkspam block`                                   | Punish all non-whitelisted links.                                     |
+| **automod linkspam off**<br><span class="user-permissions">Manage Server</span>                                | `/automod linkspam off`                                     | Punish only blacklisted links.                                        |
+| **automod linkspam norole**<br><span class="user-permissions">Manage Server</span>                             | `/automod linkspam norole`                                  | Punish only those without roles.                                      |
+
+<!-- tab:Mention Commands -->
+
+| Name                                                                                            | Example                                          | Usage                                                                 |
+| ----------------------------------------------------------------------------------------------- | ------------------------------------------------ | --------------------------------------------------------------------- |
+| **linkspam**<br><span class="user-permissions">Manage Server</span>                             | `@Carl-bot linkspam`                             | Shows the current settings.                                           |
+| **linkspam** \<rate> [per=1]<br><span class="user-permissions">Manage Server</span>             | `@Carl-bot linkspam 1 1`                         | Sets the link rate limit. Use the example command to block all links. |
+| **linkspam punishment** <punishments...><br><span class="user-permissions">Manage Server</span> | `@Carl-bot linkspam p delte, mute, defer`        | Sets the punishment(s) for hitting the rate limit.                    |
+| **linkspam bl** <links...><br><span class="user-permissions">Manage Server</span>               | `@Carl-bot linkspam bl reddit.com twitter.com`   | Blacklists one or more links.                                         |
+| **linkspam wl** <links...><br><span class="user-permissions">Manage Server</span>               | `@Carl-bot linkspam wl reddit.com twitter.com`   | Whitelists one or more links.                                         |
+| **linkspam unbl** <links...><br><span class="user-permissions">Manage Server</span>             | `@Carl-bot linkspam unbl reddit.com twitter.com` | Removes one or more links from the blacklist.                         |
+| **linkspam unwl** <links...><br><span class="user-permissions">Manage Server</span>             | `@Carl-bot linkspam unwl reddit.com twitter.com` | Removes one or more links from the whitelist.                         |
+| **linkspam clearbl**<br><span class="user-permissions">Manage Server</span>                     | `@Carl-bot linkspam clearbl`                     | Clears the blacklist.                                                 |
+| **linkspam clearwl**<br><span class="user-permissions">Manage Server</span>                     | `@Carl-bot linkspam clearwl`                     | Clears the whitelist.                                                 |
+| **linkspam block**<br><span class="user-permissions">Manage Server</span>                       | `@Carl-bot linkspam block`                       | Punish all non-whitelisted links.                                     |
+| **linkspam off**<br><span class="user-permissions">Manage Server</span>                         | `@Carl-bot linkspam off`                         | Punish only blacklisted links.                                        |
+| **linkspam norole**<br><span class="user-permissions">Manage Server</span>                      | `@Carl-bot linkspam norole`                      | Punish only those without roles.                                      |
 
 <!-- tabs:end -->
 
@@ -195,21 +196,21 @@ You can enable and disable this feature through the dashboard.
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-| Name                                                                                              | Example                                      | Usage                                              |
-| ------------------------------------------------------------------------------------------------- | -------------------------------------------- | -------------------------------------------------- |
-| **invitespam**<br><span class="user-permissions">Manage Server</span>                             | `!invitespam`                                | Shows the invitespam settings.                     |
-| **invitespam punishment** <punishments...><br><span class="user-permissions">Manage Server</span> | `!invitespam p delete, mute, defer, message` | Sets the punishment(s) for hitting the rate limit. |
-| **invitespam norole**<br><span class="user-permissions">Manage Server</span>                      | `!invitespam norole`                         | Punish only those without roles.                   |
-
 <!-- tab:Slash Commands -->
 
-| Name                                                                                              | Example                                              | Usage                                              |
-| ------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | -------------------------------------------------- |
-| **invitespam server**<br><span class="user-permissions">Manage Server</span>                      | `/invitespam server`                                 | Shows the invitespam settings.                     |
-| **invitespam punishment** <punishments...><br><span class="user-permissions">Manage Server</span> | `/invitespam punishment delte, mute, defer, message` | Sets the punishment(s) for hitting the rate limit. |
-| **invitespam norole**<br><span class="user-permissions">Manage Server</span>                      | `/invitespam norole`                                 | Punish only those without roles.                   |
+| Name                                                                                                      | Example                                                       | Usage                                              |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | -------------------------------------------------- |
+| **automod invitespam server**<br><span class="user-permissions">Manage Server</span>                      | `/automod invitespam server`                                  | Shows the invitespam settings.                     |
+| **automod invitespam punishment** <punishments...><br><span class="user-permissions">Manage Server</span> | `/automod invitespam punishment delete, mute, defer, message` | Sets the punishment(s) for hitting the rate limit. |
+| **automod invitespam norole**<br><span class="user-permissions">Manage Server</span>                      | `/automod invitespam norole`                                  | Punish only those without roles.                   |
+
+<!-- tab:Mention Commands -->
+
+| Name                                                                                              | Example                                                        | Usage                                              |
+| ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------- |
+| **invitespam**<br><span class="user-permissions">Manage Server</span>                             | `@Carl-bot invitespam`                                         | Shows the invitespam settings.                     |
+| **invitespam punishment** <punishments...><br><span class="user-permissions">Manage Server</span> | `@Carl-bot invitespam punishment delete, mute, defer, message` | Sets the punishment(s) for hitting the rate limit. |
+| **invitespam norole**<br><span class="user-permissions">Manage Server</span>                      | `@Carl-bot invitespam norole`                                  | Punish only those without roles.                   |
 
 <!-- tabs:end -->
 
@@ -221,26 +222,26 @@ Bad words detection is case insensitive, looks for substrings and ignores punctu
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-| Name                                                                                                        | Example                         | Usage                                                    |
-| ----------------------------------------------------------------------------------------------------------- | ------------------------------- | -------------------------------------------------------- |
-| **censor** <words...><br><span class="user-permissions">Manage Server</span>                                | `!censor boat`                  | Adds one or more words to the list of blacklisted words. |
-| **censor add** <words...><br><span class="user-permissions">Manage Server</span>                            | `!censor add boat`              | Same as above.                                           |
-| **censor remove** <words...><br><span class="user-permissions">Manage Server</span>                         | `!censor remove boat`           | Removes a word from the blacklist.                       |
-| **censor list**<br><span class="user-permissions">Manage Server</span>                                      | `!censor list`                  | Lists all censored words.                                |
-| **censor clear**<br><span class="user-permissions">Manage Server</span>                                     | `!censor clear`                 | Clears all censored words.                               |
-| **censor punishment** <punishments...=delete, defer><br><span class="user-permissions">Manage Server</span> | `!censor p mute, delete, defer` | Sets the punishment(s) for bad words.                    |
-
 <!-- tab:Slash Commands -->
 
-| Name                                                                                                        | Example                                  | Usage                                                                    |
-| ----------------------------------------------------------------------------------------------------------- | ---------------------------------------- | ------------------------------------------------------------------------ |
-| **censor server**<br><span class="user-permissions">Manage Server</span>                                    | `/censor server`                         | View censor settings for server.                                         |
-| **censor words** [add\|remove] <words...><br><span class="user-permissions">Manage Server</span>            | `/censor words add boat`                 | Adds or removes one or more words to/from the list of blacklisted words. |
-| **censor display**<br><span class="user-permissions">Manage Server</span>                                   | `/censor display`                        | Lists all censored words.                                                |
-| **censor clear**<br><span class="user-permissions">Manage Server</span>                                     | `/censor clear`                          | Clears all censored words.                                               |
-| **censor punishment** <punishments...=delete, defer><br><span class="user-permissions">Manage Server</span> | `/censor punishment mute, delete, defer` | Sets the punishment(s) for bad words.                                    |
+| Name                                                                                                                | Example                                          | Usage                                                                    |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------ |
+| **automod censor server**<br><span class="user-permissions">Manage Server</span>                                    | `/automod censor server`                         | View censor settings for server.                                         |
+| **automod censor words** [add\|remove] <words...><br><span class="user-permissions">Manage Server</span>            | `/automod censor words add boat`                 | Adds or removes one or more words to/from the list of blacklisted words. |
+| **automod censor display**<br><span class="user-permissions">Manage Server</span>                                   | `/automod censor display`                        | Lists all censored words.                                                |
+| **automod censor clear**<br><span class="user-permissions">Manage Server</span>                                     | `/automod censor clear`                          | Clears all censored words.                                               |
+| **automod censor punishment** <punishments...=delete, defer><br><span class="user-permissions">Manage Server</span> | `/automod censor punishment mute, delete, defer` | Sets the punishment(s) for bad words.                                    |
+
+<!-- tab:Mention Commands -->
+
+| Name                                                                                                        | Example                                           | Usage                                                    |
+| ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------- | -------------------------------------------------------- |
+| **censor** <words...><br><span class="user-permissions">Manage Server</span>                                | `@Carl-bot censor boat`                           | Adds one or more words to the list of blacklisted words. |
+| **censor add** <words...><br><span class="user-permissions">Manage Server</span>                            | `@Carl-bot censor add boat`                       | Same as above.                                           |
+| **censor remove** <words...><br><span class="user-permissions">Manage Server</span>                         | `@Carl-bot censor remove boat`                    | Removes a word from the blacklist.                       |
+| **censor list**<br><span class="user-permissions">Manage Server</span>                                      | `@Carl-bot censor list`                           | Lists all censored words.                                |
+| **censor clear**<br><span class="user-permissions">Manage Server</span>                                     | `@Carl-bot censor clear`                          | Clears all censored words.                               |
+| **censor punishment** <punishments...=delete, defer><br><span class="user-permissions">Manage Server</span> | `@Carl-bot censor punishment mute, delete, defer` | Sets the punishment(s) for bad words.                    |
 
 <!-- tabs:end -->
 
@@ -248,19 +249,19 @@ Bad words detection is case insensitive, looks for substrings and ignores punctu
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-| Name                                                                                                                    | Example               | Usage                                                                                                             |
-| ----------------------------------------------------------------------------------------------------------------------- | --------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| **capslimit** \<percentage><br><span class="user-permissions">Manage Server</span>                                      | `!capslimit 70`       | Punishes messages with the % of its characters being uppercase. The message has to be at least 6 characters long. |
-| [**capspunish**\|**capsp**\|**capspunishment**] <punishments...><br><span class="user-permissions">Manage Server</span> | `!capsp delete, warn` | Sets the punishment(s) for sending a message which hits the threshold.                                            |
-
 <!-- tab:Slash Commands -->
 
-| Name                                                                                        | Example                         | Usage                                                                                                             |
-| ------------------------------------------------------------------------------------------- | ------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| **caps limit** \<percentage><br><span class="user-permissions">Manage Server</span>         | `/caps limit 70`                | Punishes messages with the % of its characters being uppercase. The message has to be at least 6 characters long. |
-| **caps punishment** <punishments...><br><span class="user-permissions">Manage Server</span> | `/caps punishment delete, warn` | Sets the punishment(s) for sending a message which hits the threshold.                                            |
+| Name                                                                                                | Example                                 | Usage                                                                                                             |
+| --------------------------------------------------------------------------------------------------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **automod caps limit** \<percentage><br><span class="user-permissions">Manage Server</span>         | `/automod caps limit 70`                | Punishes messages with the % of its characters being uppercase. The message has to be at least 6 characters long. |
+| **automod caps punishment** <punishments...><br><span class="user-permissions">Manage Server</span> | `/automod caps punishment delete, warn` | Sets the punishment(s) for sending a message which hits the threshold.                                            |
+
+<!-- tab:Mention Commands -->
+
+| Name                                                                                                                    | Example                        | Usage                                                                                                             |
+| ----------------------------------------------------------------------------------------------------------------------- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
+| **capslimit** \<percentage><br><span class="user-permissions">Manage Server</span>                                      | `@Carl-bot capslimit 70`       | Punishes messages with the % of its characters being uppercase. The message has to be at least 6 characters long. |
+| [**capspunish**\|**capsp**\|**capspunishment**] <punishments...><br><span class="user-permissions">Manage Server</span> | `@Carl-bot capsp delete, warn` | Sets the punishment(s) for sending a message which hits the threshold.                                            |
 
 <!-- tabs:end -->
 
@@ -272,25 +273,25 @@ Honeypot sets existing channel in your server as a trap for spammers. Whoever se
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-| Name                                                                                                          | Example                      | Usage                                         |
-| ------------------------------------------------------------------------------------------------------------- | ---------------------------- | --------------------------------------------- |
-| **honeypot** [**add**\|**+**] <channels...><br><span class="user-permissions">Manage Server</span>            | `!honeypot add #honeypot`    | Adds existing channel(s) as honeypot.         |
-| **honeypot** [**remove**\|**-**] <channels...><br><span class="user-permissions">Manage Server</span>         | `!honeypot remove #honeypot` | Removes existing channel(s) as honeypot.      |
-| **honeypot server** <br><span class="user-permissions">Manage Server</span>                                   | `!honeypot server`           | View honeypot settings for server.            |
-| **honeypot clear**<br><span class="user-permissions">Manage Server</span>                                     | `!honeypot clear`            | Clears all honeypot settings.                 |
-| **honeypot punishment** <punishments...=delete, defer><br><span class="user-permissions">Manage Server</span> | `!honeypot punishment ban`   | Sets the punishment(s) for honeypot triggers. |
-
 <!-- tab:Slash Commands -->
 
-| Name                                                                                                          | Example                      | Usage                                         |
-| ------------------------------------------------------------------------------------------------------------- | ---------------------------- | --------------------------------------------- |
-| **honeypot add** <channels...><br><span class="user-permissions">Manage Server</span>                         | `/honeypot add #honeypot`    | Adds existing channel(s) as honeypot.         |
-| **honeypot remove** <channels...><br><span class="user-permissions">Manage Server</span>                      | `/honeypot remove #honeypot` | Removes existing channel(s) as honeypot.      |
-| **honeypot server** <br><span class="user-permissions">Manage Server</span>                                   | `/honeypot server`           | View honeypot settings for server.            |
-| **honeypot clear**<br><span class="user-permissions">Manage Server</span>                                     | `/honeypot clear`            | Clears all honeypot settings.                 |
-| **honeypot punishment** <punishments...=delete, defer><br><span class="user-permissions">Manage Server</span> | `/honeypot punishment ban`   | Sets the punishment(s) for honeypot triggers. |
+| Name                                                                                                                  | Example                              | Usage                                         |
+| --------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | --------------------------------------------- |
+| **automod honeypot add** <channels...><br><span class="user-permissions">Manage Server</span>                         | `/automod honeypot add #honeypot`    | Adds existing channel(s) as honeypot.         |
+| **automod honeypot remove** <channels...><br><span class="user-permissions">Manage Server</span>                      | `/automod honeypot remove #honeypot` | Removes existing channel(s) as honeypot.      |
+| **automod honeypot server** <br><span class="user-permissions">Manage Server</span>                                   | `/automod honeypot server`           | View honeypot settings for server.            |
+| **automod honeypot clear**<br><span class="user-permissions">Manage Server</span>                                     | `/automod honeypot clear`            | Clears all honeypot settings.                 |
+| **automod honeypot punishment** <punishments...=delete, defer><br><span class="user-permissions">Manage Server</span> | `/automod honeypot punishment ban`   | Sets the punishment(s) for honeypot triggers. |
+
+<!-- tab:Mention Commands -->
+
+| Name                                                                                                          | Example                               | Usage                                         |
+| ------------------------------------------------------------------------------------------------------------- | ------------------------------------- | --------------------------------------------- |
+| **honeypot** [**add**\|**+**] <channels...><br><span class="user-permissions">Manage Server</span>            | `@Carl-bot honeypot add #honeypot`    | Adds existing channel(s) as honeypot.         |
+| **honeypot** [**remove**\|**-**] <channels...><br><span class="user-permissions">Manage Server</span>         | `@Carl-bot honeypot remove #honeypot` | Removes existing channel(s) as honeypot.      |
+| **honeypot server** <br><span class="user-permissions">Manage Server</span>                                   | `@Carl-bot honeypot server`           | View honeypot settings for server.            |
+| **honeypot clear**<br><span class="user-permissions">Manage Server</span>                                     | `@Carl-bot honeypot clear`            | Clears all honeypot settings.                 |
+| **honeypot punishment** <punishments...=delete, defer><br><span class="user-permissions">Manage Server</span> | `@Carl-bot honeypot punishment ban`   | Sets the punishment(s) for honeypot triggers. |
 
 <!-- tabs:end -->
 
@@ -304,14 +305,6 @@ Auto Purge is a [Premium](https://carl.gg/get-premium) feature that automaticall
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-| Name                                                                                                               | Example                       | Usage                                                                     |
-| ------------------------------------------------------------------------------------------------------------------ | ----------------------------- | ------------------------------------------------------------------------- |
-| **autopurge**<br><span class="user-permissions">Manage Server</span>                                               | `!autopurge`                  | Shows Auto Purge configuration.                                           |
-| **autopurge set** \<channel> \<interval> [message_type=all]<br><span class="user-permissions">Manage Server</span> | `!autopurge set #channel all` | Sets the channel and interval for Auto Purge.                             |
-| **autopurge remove** [channel]<br><span class="user-permissions">Manage Server</span>                              | `!autopurge remove #channel`  | Removes the specified channel from Auto Purge, or disable it completely.. |
-
 <!-- tab:Slash Commands -->
 
 | Name                                                                                                               | Example                       | Usage                                                                     |
@@ -319,6 +312,14 @@ Auto Purge is a [Premium](https://carl.gg/get-premium) feature that automaticall
 | **autopurge config**<br><span class="user-permissions">Manage Server</span>                                        | `/autopurge config`           | Shows Auto Purge configuration.                                           |
 | **autopurge set** \<channel> \<interval> [message_type=all]<br><span class="user-permissions">Manage Server</span> | `/autopurge set #channel all` | Sets the channel and interval for Auto Purge.                             |
 | **autopurge remove** [channel]<br><span class="user-permissions">Manage Server</span>                              | `/autopurge remove #channel`  | Removes the specified channel from Auto Purge, or disable it completely.. |
+
+<!-- tab:Mention Commands -->
+
+| Name                                                                                                               | Example                                | Usage                                                                     |
+| ------------------------------------------------------------------------------------------------------------------ | -------------------------------------- | ------------------------------------------------------------------------- |
+| **autopurge**<br><span class="user-permissions">Manage Server</span>                                               | `@Carl-bot autopurge`                  | Shows Auto Purge configuration.                                           |
+| **autopurge set** \<channel> \<interval> [message_type=all]<br><span class="user-permissions">Manage Server</span> | `@Carl-bot autopurge set #channel all` | Sets the channel and interval for Auto Purge.                             |
+| **autopurge remove** [channel]<br><span class="user-permissions">Manage Server</span>                              | `@Carl-bot autopurge remove #channel`  | Removes the specified channel from Auto Purge, or disable it completely.. |
 
 <!-- tabs:end -->
 

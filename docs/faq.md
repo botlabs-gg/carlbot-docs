@@ -2,7 +2,7 @@
 
 ### What is the prefix for Carl-bot? {docsify-ignore}
 
-The default prefixes for Carl-bot are `@Carl-bot`, `?` and `!`. You can use `/prefix list` to check the prefixes for your server.
+The default prefixes for Carl-bot commands are `/` and `@Carl-bot`. There are also custom prefixes available for Tags which you can change using `/prefix set`.
 
 ### How do I get the Message ID? {docsify-ignore}
 
@@ -15,7 +15,7 @@ Discord Settings > Advanced > Developer Mode > Enable
 
 ### Another bot has the same command and they both respond, what do I do? {docsify-ignore}
 
-Depends on what you're after. If you need to use both, you're pretty much forced to change the prefix of either bot. If you just want the command that is not from Carl-bot then you can disable it with `!disable <command>`. If you just want Carl-bot's command then you may create an alias using tags and `{cmd:cmdname {args}}`. Check out the Advanced Usage section in Tags category for more information.
+Depends on what you're after. If you need to use both, you're pretty much forced to change the prefix of either bot. If you just want the command that is not from Carl-bot then you can disable it with `/config disable`. If you just want Carl-bot's command then you may create an alias using tags and `{cmd:cmdname {args}}`. Check out the [Advanced Usage section in Tags category](/tagstriggers?id=advanced-usage) for more information.
 
 ### Why does the bot complain about requiring more permissions? I've given it <span style="color: red;">Manage Roles</span> already. {docsify-ignore}
 
@@ -30,7 +30,7 @@ Just assign the bot a role that is higher than the highest role it has to assign
 
 This is a [Premium](https://carl.gg/get-premium) feature that aims to streamline your server's moderation. Automod is nice but it is not perfect as sometimes false positives happen. This feature was made for that exact reason. You need to:
 
-1. Set up the drama channel on either the Dashboard or with the command `!am drama <channel>`.
+1. Set up the drama channel on either the Dashboard or with the command `/automod drama`.
 2. Set the automod punishment to `Post to drama channel` on the Dashboard.
 
 ![Drama Channel](_images/faq_drama.png ":size=75%")
@@ -66,10 +66,8 @@ To check all automod commands, visit the [Automod](/automod) section.
 ### Why is Carl-bot not responding to my commands? {docsify-ignore}
 
 1. Check that Carl-bot is online in your member list. If not, then check the [status page](https://carl.gg/status) to see if there are any issues.
-2. See if Carl-bot is missing permissions. Type `@Carl-bot ping` to make sure Carl-bot has <span style="color: red;">View Channel</span> and <span style="color: red;">Send Messages</span> permissions in the channel you are trying to use it in.
-3. Check if the server's prefix has been changed. You can use `@Carl-bot prefix` to see the current prefixes.
-4. Make sure the command is not disabled in the server. You can enable a command by using `@Carl-bot enable <command>`.
-5. Check your overwrites by using `@Carl-bot diagnose <command>` then share the full response with the support team if you need help.
+2. See if Carl-bot is missing permissions. Type `/ping` to make sure Carl-bot has <span style="color: red;">View Channel</span> and <span style="color: red;">Send Messages</span> permissions in the channel you are trying to use it in.
+3. Make sure the command is not disabled in the server. You can enable a command by using `/config enable`.
 
 If any of these steps do not resolve the issue, please let us know so we can help you further troubleshoot the problem.
 

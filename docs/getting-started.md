@@ -27,38 +27,36 @@ This guide will cover everything you need to do to get started with the basics o
 
 - ### Prefix
 
-  By default, Carl-bot responds to `!` and `?` prefixes as well as `/` slash commands. To make the bot respond to another prefix, `-` for example, you can use `!prefix set -`.
-  To add a prefix without removing the others, use `!prefix add -`. Carl-bot can have upto **15 prefixes** in each server.
+  By default, Carl-bot responds to `/` slash commands. The bot also responds to mention commands, so you can use `@Carl-bot <command>` to run commands. Prefixes other than that are only used for Tags.
 
 - ### Channels
-
-  - **Log Channel**: `!log channel <#channel>` sets the channel where Carl-bot will log things such as message deletions, name changes, role updates and a lot more which you can find later on in this documentation.
-  - **Welcome/Leave Channel**: `!set welcome <#channel>` sets the channel where join/leave/banmessage alerts will go. More on that later.
+  - **Log Channel**: `/log channel` sets the channel where Carl-bot will log things such as message deletions, name changes, role updates and a lot more which you can find later on in this documentation.
+  - **Welcome/Leave Channel**: `/greetings welcome_channel` and `/greetings farewell_channel` set the channels where join/leave alerts will go. More on that later.
 
 - ### Reaction Roles
 
-  Reaction roles work best in their own channels, so Carl-bot offers a command to create a channel specifically for reaction roles with some permissions that most users will find useful. You can create this channel using `!rr channel`. If you are new, it is recommended to use `!rr make` instead.
+  Reaction roles work best in their own channels, so Carl-bot offers a command to create a channel specifically for reaction roles with some permissions that most users will find useful. You can create this channel using `/reactionrole channel`. If you are new, it is recommended to use `/reactionrole setup` instead.
 
 - ### Modlogs
 
-  To create a channel where you can see the logs of all moderation actions taken in your server, you can use `!modlogs create`. This will create the modlogs channel with appropriate permissions. But if you already have a channel ready for this purpose then you can use `!modlogs set <#channel>` instead.
+  To create a channel where you can see the logs of all moderation actions taken in your server, you can use `/modlog create`. This will create the modlogs channel with appropriate permissions. But if you already have a channel ready for this purpose then you can use `/modlog set ` instead.
 
 - ### Starboard
 
-  To create a starboard use `!starboard`. To change the limit of stars required for a post to show up in the starboard use `!star limit <count>`.
+  To create a starboard use `/starboard setup`. To change the limit of stars required for a post to show up in the starboard use `/starboard limit`.
 
 - ### Logs
 
-  By default, Carl-bot will log everything every member does in every channel. This isn't always what you want so let's say that you don't care about message edits. You can use `!log edit` to stop those from showing up in the logs.
-  The `!log` command takes an event as its argument and tries to figure out what you want toggled. Another thing you can do is ignore logs only in certain channels. For that you can use `!log ignore <#channel>` to ignore all events from that channel. Logs are very customizable so make sure to head over that section for full information.
+  By default, Carl-bot will log everything every member does in every channel. This isn't always what you want so let's say that you don't care about message edits. You can use `/log config [edit]` to stop those from showing up in the logs.
+  The `/log config` command takes an event as its argument and tries to figure out what you want toggled. Another thing you can do is ignore logs only in certain channels. For that you can use `/log ignore` to ignore all events from that channel. Logs are very customizable so make sure to head over that section for full information.
 
 - ### Mute Role
-  By using `!muterole create` you can create a role with the permission <span style="color: red;">Send Messages</span> denied in every channel. Users can now be muted using `!mute <@member> [time] [reason]`.
+  By using `/muterole create` you can create a role with the permission <span style="color: red;">Send Messages</span> denied in every channel. Users can now be muted using `/mute`.
 
 !> Any future channels created will not be covered by Mute Role.
 
 - ### Welcome Message
-  You can set the welcome message that would be sent in the previously set [channel](#channels) using `!welcome <message>`. You can also set a different message to be sent in a DM to the member upon joining by using `!joindm <message>`. There are a few variables that can be used in these commands which you can read about in later sections, such as `{user}` for mentioning the user to whom the message is addressed to.
+  You can set the welcome message that would be sent in the previously set [channel](#channels) using `/welcome`. You can also set a different message to be sent in a DM to the member upon joining by using `/joindm`. There are a few variables that can be used in these commands which you can read about in later sections, such as `{user}` for mentioning the user to whom the message is addressed to.
 
 ![Set Welcome](_images/welcome_channel.png ":size=75%")
 

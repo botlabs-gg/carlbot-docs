@@ -23,14 +23,6 @@ Carl-bot can send welcome messages to a channel when a user joins the server. Yo
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-| Name                                                                                                            | Example                 | Usage                                                                |
-| --------------------------------------------------------------------------------------------------------------- | ----------------------- | -------------------------------------------------------------------- |
-| **set welcome** \<channel><br><span class="user-permissions">Manage Server</span>                               | `!set welcome #welcome` | Sets the channel where welcome notification messages will be posted. |
-| [**welcome**\|**greet**] \<text><br><span class="user-permissions">Manage Server</span>                         | `!welcome Welcome`      | Sets up a welcome message that will be sent when a new user joins.   |
-| [**dmjoin**\|**pmjoin**\|**joindm**\|**joinpm**] \<text><br><span class="user-permissions">Manage Server</span> | `!joindm Welcome`       | DMs the user upon joining your server.                               |
-
 <!-- tab:Slash Commands -->
 
 | Name                                                                                            | Example                               | Usage                                                              |
@@ -38,6 +30,14 @@ Carl-bot can send welcome messages to a channel when a user joins the server. Yo
 | **greetings welcome_channel** \<channel><br><span class="user-permissions">Manage Server</span> | `/greetings welcome_channel #welcome` | Sets the channel where welcome messages will be sent.              |
 | **greetings welcome** \<message><br><span class="user-permissions">Manage Server</span>         | `/greetings welcome Welcome`          | Sets up a welcome message that will be sent when a new user joins. |
 | **greetings joindm** [message]<br><span class="user-permissions">Manage Server</span>           | `/greetings joindm Welcome`           | DMs the user upon joining your server.                             |
+
+<!-- tab:Mention Commands -->
+
+| Name                                                                                                            | Example                          | Usage                                                                |
+| --------------------------------------------------------------------------------------------------------------- | -------------------------------- | -------------------------------------------------------------------- |
+| **set welcome** \<channel><br><span class="user-permissions">Manage Server</span>                               | `@Carl-bot set welcome #welcome` | Sets the channel where welcome notification messages will be posted. |
+| [**welcome**\|**greet**] \<text><br><span class="user-permissions">Manage Server</span>                         | `@Carl-bot welcome Welcome`      | Sets up a welcome message that will be sent when a new user joins.   |
+| [**dmjoin**\|**pmjoin**\|**joindm**\|**joinpm**] \<text><br><span class="user-permissions">Manage Server</span> | `@Carl-bot joindm Welcome`       | DMs the user upon joining your server.                               |
 
 <!-- tabs:end -->
 
@@ -47,19 +47,19 @@ Carl-bot can send leave messages to a channel when a user leaves the server.
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-| Name                                                                                     | Example                   | Usage                                                                                                                                   |
-| ---------------------------------------------------------------------------------------- | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| **set farewell** \<channel><br><span class="user-permissions">Manage Server</span>       | `!set farewell #farewell` | Sets the channel where leave and banmsg notification messages will be posted. This is a [Premium](https://carl.gg/get-premium) command. |
-| [**leave**\|**farewell**] \<text><br><span class="user-permissions">Manage Server</span> | `!leave Goodbye`          | Sets up a leave message that will be sent when a user leaves the server.                                                                |
-
 <!-- tab:Slash Commands -->
 
 | Name                                                                                             | Example                                 | Usage                                                                                                            |
 | ------------------------------------------------------------------------------------------------ | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | **greetings farewell_channel** \<channel><br><span class="user-permissions">Manage Server</span> | `/greetings farewell_channel #farewell` | Sets the channel where farewell messages will be sent. This is a [Premium](https://carl.gg/get-premium) command. |
 | **greetings farewell** [message]<br><span class="user-permissions">Manage Server</span>          | `/greetings farewell Goodbye`           | Sets up a leave message that will be sent when a user leaves the server.                                         |
+
+<!-- tab:Mention Commands -->
+
+| Name                                                                                     | Example                            | Usage                                                                                                                                   |
+| ---------------------------------------------------------------------------------------- | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| **set farewell** \<channel><br><span class="user-permissions">Manage Server</span>       | `@Carl-bot set farewell #farewell` | Sets the channel where leave and banmsg notification messages will be posted. This is a [Premium](https://carl.gg/get-premium) command. |
+| [**leave**\|**farewell**] \<text><br><span class="user-permissions">Manage Server</span> | `@Carl-bot leave Goodbye`          | Sets up a leave message that will be sent when a user leaves the server.                                                                |
 
 <!-- tabs:end -->
 
@@ -69,17 +69,17 @@ Ban messages are sent when a user is banned from the server.
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-| Name                                                                      | Example                     | Usage                                                               |
-| ------------------------------------------------------------------------- | --------------------------- | ------------------------------------------------------------------- |
-| **banmsg** \<text><br><span class="user-permissions">Manage Server</span> | `!banmsg {user} got banned` | Sets up a banmsg message that will be sent when a user gets banned. |
-
 <!-- tab:Slash Commands -->
 
 | Name                                                                                      | Example                                   | Usage                                                               |
 | ----------------------------------------------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------- |
 | **greetings banmessage** [message]<br><span class="user-permissions">Manage Server</span> | `/greetings banmessage {user} got banned` | Sets up a banmsg message that will be sent when a user gets banned. |
+
+<!-- tab:Mention Commands -->
+
+| Name                                                                      | Example                              | Usage                                                               |
+| ------------------------------------------------------------------------- | ------------------------------------ | ------------------------------------------------------------------- |
+| **banmsg** \<text><br><span class="user-permissions">Manage Server</span> | `@Carl-bot banmsg {user} got banned` | Sets up a banmsg message that will be sent when a user gets banned. |
 
 <!-- tabs:end -->
 
@@ -90,27 +90,27 @@ servers can customize the birthday message, delivery time, and assign a birthday
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-| Name                                        | Example                        | Usage                                                                                                                                                             |
-| ------------------------------------------- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **birthday** [member]                       | `!birthday @Carl-bot`          | View a user's birthday.                                                                                                                                           |
-| **birthday set** \<birthday=DD/MM> [member] | `!birthday set 01/01`          | Set a your birthday. Member option can be specified to set another user's birthday (Requires <span class="user-permissions">Manage Server</span> permission).     |
-| **birthday remove** [member]                | `!birthday remove`             | Remove your birthday. Member option can be specified to remove another user's birthday (Requires <span class="user-permissions">Manage Server</span> permission). |
-| **birthday channel** [channel]              | `!birthday channel #birthdays` | Set the channel where birthday announcements will be posted. If no channel is provided, birthday announcements will be disabled.                                  |
-| **birthday config**                         | `!birthday config`             | Display the current birthday configuration for the server.                                                                                                        |
-| **birthday list**                           | `!birthday list`               | Shows every birthday currently set on the server.                                                                                                                 |
-
 <!-- tab:Slash Commands -->
 
 | Name                                        | Example                        | Usage                                                                                                                                                             |
 | ------------------------------------------- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **birthday** [member]                       | `/birthday @Carl-bot`          | View a user's birthday.                                                                                                                                           |
+| **birthday** [member]                       | `/birthday @user`              | View a user's birthday.                                                                                                                                           |
 | **birthday set** \<birthday=DD/MM> [member] | `/birthday set 01/01`          | Set a your birthday. Member option can be specified to set another user's birthday (Requires <span class="user-permissions">Manage Server</span> permission).     |
 | **birthday remove** [member]                | `/birthday remove`             | Remove your birthday. Member option can be specified to remove another user's birthday (Requires <span class="user-permissions">Manage Server</span> permission). |
 | **birthday channel** [channel]              | `/birthday channel #birthdays` | Set the channel where birthday announcements will be posted. If no channel is provided, birthday announcements will be disabled.                                  |
 | **birthday config**                         | `/birthday config`             | Display the current birthday configuration for the server.                                                                                                        |
 | **birthday list**                           | `/birthday list`               | Shows every birthday currently set on the server.                                                                                                                 |
+
+<!-- tab:Mention Commands -->
+
+| Name                                        | Example                                 | Usage                                                                                                                                                             |
+| ------------------------------------------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **birthday** [member]                       | `@Carl-bot birthday @user`              | View a user's birthday.                                                                                                                                           |
+| **birthday set** \<birthday=DD/MM> [member] | `@Carl-bot birthday set 01/01`          | Set a your birthday. Member option can be specified to set another user's birthday (Requires <span class="user-permissions">Manage Server</span> permission).     |
+| **birthday remove** [member]                | `@Carl-bot birthday remove`             | Remove your birthday. Member option can be specified to remove another user's birthday (Requires <span class="user-permissions">Manage Server</span> permission). |
+| **birthday channel** [channel]              | `@Carl-bot birthday channel #birthdays` | Set the channel where birthday announcements will be posted. If no channel is provided, birthday announcements will be disabled.                                  |
+| **birthday config**                         | `@Carl-bot birthday config`             | Display the current birthday configuration for the server.                                                                                                        |
+| **birthday list**                           | `@Carl-bot birthday list`               | Shows every birthday currently set on the server.                                                                                                                 |
 
 <!-- tabs:end -->
 
@@ -120,16 +120,16 @@ To test your welcome, leave and ban messages, you can use the following commands
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-| Name                                                                 | Example      | Usage                                             |
-| -------------------------------------------------------------------- | ------------ | ------------------------------------------------- |
-| **testgreet**<br><span class="user-permissions">Manage Server</span> | `!testgreet` | Sends a welcome, farewell and banmsg for testing. |
-
 <!-- tab:Slash Commands -->
 
 | Name                                                                           | Example                | Usage                                             |
 | ------------------------------------------------------------------------------ | ---------------------- | ------------------------------------------------- |
 | **greetings testgreet**<br><span class="user-permissions">Manage Server</span> | `/greetings testgreet` | Sends a welcome, farewell and banmsg for testing. |
+
+<!-- tab:Mention Commands -->
+
+| Name                                                                 | Example               | Usage                                             |
+| -------------------------------------------------------------------- | --------------------- | ------------------------------------------------- |
+| **testgreet**<br><span class="user-permissions">Manage Server</span> | `@Carl-bot testgreet` | Sends a welcome, farewell and banmsg for testing. |
 
 <!-- tabs:end -->
