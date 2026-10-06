@@ -4,46 +4,27 @@
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-1. Choose a channel with `!log channel [channel]`
-2. Select which events you want to be logged with `!log <event>` where event is an event found in the [Events List](#events-list).
-3. Split up logging into separate channel by using the commands found in [Logging Commands](#logging-commands).
-
-?> The `!log aio` command automatically creates a category, fills it with five channels and splits up logging into them.
-
 <!-- tab:Slash Commands -->
 
-1. Choose a channel with `/log channel [channel]`
+1. Choose a channel with `/log channel`
 2. Select which events you want to be logged with `/log config [event]` where event is an event found in the [Events List](#events-list).
 3. Split up logging into separate channel by using the commands found in [Logging Commands](#logging-commands).
 
 ?> The `/log aio` command automatically creates a category, fills it with five channels and splits up logging into them.
+
+<!-- tab:Mention Commands -->
+
+1. Choose a channel with `@Carl-bot log channel [channel]`
+2. Select which events you want to be logged with `@Carl-bot log <event>` where event is an event found in the [Events List](#events-list).
+3. Split up logging into separate channel by using the commands found in [Logging Commands](#logging-commands).
+
+?> The `@Carl-bot log aio` command automatically creates a category, fills it with five channels and splits up logging into them.
 
 <!-- tabs:end -->
 
 ## Logging Commands
 
 <!-- tabs:start -->
-
-<!-- tab:Prefix Commands -->
-
-| Name                                                                                          | Example                         | Usage                                                                                   |
-| --------------------------------------------------------------------------------------------- | ------------------------------- | --------------------------------------------------------------------------------------- |
-| **log channel** [channel]<br><span class="user-permissions">Manage Server</span>              | `!log channel #logs`            | Sets the default channel where logged events go. Leave empty to clear the channel.      |
-| **log** [event]<br><span class="user-permissions">Manage Server</span>                        | `!log timeout`                  | Toggles an event from being logged or not. Leave blank to see current config.           |
-| **log messagechannel** [channel]<br><span class="user-permissions">Manage Server</span>       | `!log messagechannel #msglog`   | Sets the channel where message events are logged.                                       |
-| **log memberchannel** [channel]<br><span class="user-permissions">Manage Server</span>        | `!log memberchannel #memberlog` | Sets the channel where member events are logged.                                        |
-| **log joinchannel** [channel]<br><span class="user-permissions">Manage Server</span>          | `!log joinchannel #joinlog`     | Sets the channel where the bot logs joining and leaving.                                |
-| **log serverchannel** [channel]<br><span class="user-permissions">Manage Server</span>        | `!log serverchannel #svlog`     | Sets the channel where updates to the server are logged.                                |
-| **log voicechannel** [channel]<br><span class="user-permissions">Manage Server</span>         | `!log voicechannel #vclog`      | Sets the channl where members joining/moving between/leaving voice channels are logged. |
-| **log ignore** <channels/members...><br><span class="user-permissions">Manage Server</span>   | `!log ignore @Carl-bot #staff`  | Ignores message events posted in the channels or by the members.                        |
-| **log unignore** <channels/members...><br><span class="user-permissions">Manage Server</span> | `!log unignore @Carl-bot`       | Stops ignoring the channels and/or members.                                             |
-| **log** <prefix\|ip> \<prefix><br><span class="user-permissions">Manage Server</span>         | `!log ip !`                     | Ignores message deletions, edits and messages within purges starting with the prefix.   |
-| **log** <removeprefix\|up> \<prefix><br><span class="user-permissions">Manage Server</span>   | `!log up !`                     | Stops ignoring the prefix in message deletions, edits and messages within purges.       |
-| **log export**<br><span class="user-permissions">Manage Server</span>                         | `!log export`                   | Exports the settings used in this server.                                               |
-| **log** [import\|custom] \<perms><br><span class="user-permissions">Manage Server</span>      | `!log import 1337`              | Imports the settings.                                                                   |
-| **log aio**<br><span class="user-permissions">Manage Server</span>                            | `!log aio`                      | Creates a category, fills it with five channels and splits up logging into them.        |
 
 <!-- tab:Slash Commands -->
 
@@ -56,13 +37,32 @@
 | **log join_channel** [channel]<br><span class="user-permissions">Manage Server</span>    | `/log join_channel #joinlog`     | Sets the channel where the bot logs joining and leaving.                                |
 | **log server_channel** [channel]<br><span class="user-permissions">Manage Server</span>  | `/log server_channel #svlog`     | Sets the channel where updates to the server are logged.                                |
 | **log voice_channel** [channel]<br><span class="user-permissions">Manage Server</span>   | `/log voice_channel #vclog`      | Sets the channl where members joining/moving between/leaving voice channels are logged. |
-| **log ignore** \<ignore><br><span class="user-permissions">Manage Server</span>          | `/log ignore @Carl-bot #staff`   | Ignores message events posted in the channels or by the members.                        |
-| **log unignore** \<unignore><br><span class="user-permissions">Manage Server</span>      | `/log unignore @Carl-bot`        | Stops ignoring the channels and/or members.                                             |
+| **log ignore** \<ignore><br><span class="user-permissions">Manage Server</span>          | `/log ignore @user #staff`       | Ignores message events posted in the channels or by the members.                        |
+| **log unignore** \<unignore><br><span class="user-permissions">Manage Server</span>      | `/log unignore @user`            | Stops ignoring the channels and/or members.                                             |
 | **log prefix** \<prefix><br><span class="user-permissions">Manage Server</span>          | `/log prefix !`                  | Ignores message deletions, edits and messages within purges starting with the prefix.   |
 | **log remove_prefix** \<prefix><br><span class="user-permissions">Manage Server</span>   | `/log remove_prefix !`           | Stops ignoring the prefix in message deletions, edits and messages within purges.       |
 | **log export**<br><span class="user-permissions">Manage Server</span>                    | `/log export`                    | Exports the settings used in this server.                                               |
 | **log import** \<code><br><span class="user-permissions">Manage Server</span>            | `/log import 1337`               | Imports the settings.                                                                   |
 | **log aio**<br><span class="user-permissions">Manage Server</span>                       | `/log aio`                       | Creates a category, fills it with five channels and splits up logging into them.        |
+
+<!-- tab:Mention Commands -->
+
+| Name                                                                                          | Example                                  | Usage                                                                                   |
+| --------------------------------------------------------------------------------------------- | ---------------------------------------- | --------------------------------------------------------------------------------------- |
+| **log channel** [channel]<br><span class="user-permissions">Manage Server</span>              | `@Carl-bot log channel #logs`            | Sets the default channel where logged events go. Leave empty to clear the channel.      |
+| **log** [event]<br><span class="user-permissions">Manage Server</span>                        | `@Carl-bot log timeout`                  | Toggles an event from being logged or not. Leave blank to see current config.           |
+| **log messagechannel** [channel]<br><span class="user-permissions">Manage Server</span>       | `@Carl-bot log messagechannel #msglog`   | Sets the channel where message events are logged.                                       |
+| **log memberchannel** [channel]<br><span class="user-permissions">Manage Server</span>        | `@Carl-bot log memberchannel #memberlog` | Sets the channel where member events are logged.                                        |
+| **log joinchannel** [channel]<br><span class="user-permissions">Manage Server</span>          | `@Carl-bot log joinchannel #joinlog`     | Sets the channel where the bot logs joining and leaving.                                |
+| **log serverchannel** [channel]<br><span class="user-permissions">Manage Server</span>        | `@Carl-bot log serverchannel #svlog`     | Sets the channel where updates to the server are logged.                                |
+| **log voicechannel** [channel]<br><span class="user-permissions">Manage Server</span>         | `@Carl-bot log voicechannel #vclog`      | Sets the channl where members joining/moving between/leaving voice channels are logged. |
+| **log ignore** <channels/members...><br><span class="user-permissions">Manage Server</span>   | `@Carl-bot log ignore @user #staff`      | Ignores message events posted in the channels or by the members.                        |
+| **log unignore** <channels/members...><br><span class="user-permissions">Manage Server</span> | `@Carl-bot log unignore @user`           | Stops ignoring the channels and/or members.                                             |
+| **log** <prefix\|ip> \<prefix><br><span class="user-permissions">Manage Server</span>         | `@Carl-bot log ip !`                     | Ignores message deletions, edits and messages within purges starting with the prefix.   |
+| **log** <removeprefix\|up> \<prefix><br><span class="user-permissions">Manage Server</span>   | `@Carl-bot log up !`                     | Stops ignoring the prefix in message deletions, edits and messages within purges.       |
+| **log export**<br><span class="user-permissions">Manage Server</span>                         | `@Carl-bot log export`                   | Exports the settings used in this server.                                               |
+| **log** [import\|custom] \<perms><br><span class="user-permissions">Manage Server</span>      | `@Carl-bot log import 1337`              | Imports the settings.                                                                   |
+| **log aio**<br><span class="user-permissions">Manage Server</span>                            | `@Carl-bot log aio`                      | Creates a category, fills it with five channels and splits up logging into them.        |
 
 <!-- tabs:end -->
 
@@ -108,18 +108,6 @@ Each event that Carl-bot logs has an associated value and channel.
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-| Name                                                                                   | Example                    | Usage                                                                                                                        |
-| -------------------------------------------------------------------------------------- | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| **modlog create** [name=modlog]<br><span class="user-permissions">Manage Server</span> | `!modlog create auditlog`  | Creates a channel where moderation actions will be logged.                                                                   |
-| **modlog set** \<channel><br><span class="user-permissions">Manage Server</span>       | `!modlog set #modlog`      | Sets an already existing channel to send actions to (make sure the bot has the permissions required to post in the channel). |
-| **modlog clear**<br><span class="user-permissions">Manage Server</span>                | `!modlog clear`            | Makes the bot stop logging actions to the channel.                                                                           |
-| **modlog from** \<member><br><span class="user-permissions">Manage Server</span>       | `!modlog from @Carl-bot`   | Retrieves all infractions for a member with the responsible moderator.                                                       |
-| **reason** \<case_id> \<reason><br><span class="user-permissions">Manage Server</span> | `!reason 17 Spamming`      | Sets a reason for a modlog entry, useful for cases where you either banned manually or forgot to specify a reason.           |
-| **modlog highscores**<br><span class="user-permissions">Manage Server</span>           | `!modlog highscores`       | Shows the moderators ranked by how many actions they've taken.                                                               |
-| **modlog export** \<member><br><span class="user-permissions">Manage Server</span>     | `!modlog export @Carl-bot` | Generates a `.txt` file of the modlogs relating to the user specified.                                                       |
-
 <!-- tab:Slash Commands -->
 
 | Name                                                                                          | Example                      | Usage                                                                                                                        |
@@ -127,9 +115,21 @@ Each event that Carl-bot logs has an associated value and channel.
 | **modlog create** [name]<br><span class="user-permissions">Manage Server</span>               | `/modlog create auditlog`    | Creates a channel where moderation actions will be logged.                                                                   |
 | **modlog set** \<channel><br><span class="user-permissions">Manage Server</span>              | `/modlog set #modlog`        | Sets an already existing channel to send actions to (make sure the bot has the permissions required to post in the channel). |
 | **modlog clear**<br><span class="user-permissions">Manage Server</span>                       | `/modlog clear`              | Makes the bot stop logging actions to the channel.                                                                           |
-| **modlog from** \<member><br><span class="user-permissions">Manage Server</span>              | `/modlog from @Carl-bot`     | Retrieves all infractions for a member with the responsible moderator.                                                       |
+| **modlog from** \<member><br><span class="user-permissions">Manage Server</span>              | `/modlog from @user`         | Retrieves all infractions for a member with the responsible moderator.                                                       |
 | **modlog reason** \<case_id> \<reason><br><span class="user-permissions">Manage Server</span> | `/modlog reason 17 Spamming` | Sets a reason for a modlog entry, useful for cases where you either banned manually or forgot to specify a reason.           |
 | **modlog highscores**<br><span class="user-permissions">Manage Server</span>                  | `/modlog highscores`         | Shows the moderators ranked by how many actions they've taken.                                                               |
-| **modlog export** \<member> [member]<br><span class="user-permissions">Manage Server</span>   | `/modlog export @Carl-bot`   | Generates a `.txt` file of the modlogs relating to the user specified.                                                       |
+| **modlog export** \<member> [member]<br><span class="user-permissions">Manage Server</span>   | `/modlog export @user`       | Generates a `.txt` file of the modlogs relating to the user specified.                                                       |
+
+<!-- tab:Mention Commands -->
+
+| Name                                                                                   | Example                            | Usage                                                                                                                        |
+| -------------------------------------------------------------------------------------- | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| **modlog create** [name=modlog]<br><span class="user-permissions">Manage Server</span> | `@Carl-bot modlog create auditlog` | Creates a channel where moderation actions will be logged.                                                                   |
+| **modlog set** \<channel><br><span class="user-permissions">Manage Server</span>       | `@Carl-bot modlog set #modlog`     | Sets an already existing channel to send actions to (make sure the bot has the permissions required to post in the channel). |
+| **modlog clear**<br><span class="user-permissions">Manage Server</span>                | `@Carl-bot modlog clear`           | Makes the bot stop logging actions to the channel.                                                                           |
+| **modlog from** \<member><br><span class="user-permissions">Manage Server</span>       | `@Carl-bot modlog from @user`      | Retrieves all infractions for a member with the responsible moderator.                                                       |
+| **reason** \<case_id> \<reason><br><span class="user-permissions">Manage Server</span> | `@Carl-bot reason 17 Spamming`     | Sets a reason for a modlog entry, useful for cases where you either banned manually or forgot to specify a reason.           |
+| **modlog highscores**<br><span class="user-permissions">Manage Server</span>           | `@Carl-bot modlog highscores`      | Shows the moderators ranked by how many actions they've taken.                                                               |
+| **modlog export** \<member><br><span class="user-permissions">Manage Server</span>     | `@Carl-bot modlog export @user`    | Generates a `.txt` file of the modlogs relating to the user specified.                                                       |
 
 <!-- tabs:end -->

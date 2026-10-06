@@ -16,16 +16,16 @@ Perks are a set of features that are available to users through the bot's **[Dis
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-| Name                      | Example       | Usage                                                |
-| ------------------------- | ------------- | ---------------------------------------------------- |
-| **bumps**\|**superbumps** | `!superbumps` | View and activate perk packs for the current server. |
-
 <!-- tab:Slash Commands -->
 
 | Name            | Example        | Usage                                                |
 | --------------- | -------------- | ---------------------------------------------------- |
 | **perks bumps** | `/perks bumps` | View and activate perk packs for the current server. |
+
+<!-- tab:Mention Commands -->
+
+| Name                      | Example           | Usage                                                |
+| ------------------------- | ----------------- | ---------------------------------------------------- |
+| **bumps**\|**superbumps** | `@Carl-bot bumps` | View and activate perk packs for the current server. |
 
 <!-- tabs:end -->
