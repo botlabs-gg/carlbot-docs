@@ -4,40 +4,40 @@
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-Name              | Example           | Usage                                                                         
------------------ | ----------------- | ----------------------------------------------------------------------------- 
-**embed** [channel] \<color> \<title> \| \<description><br><span class="user-permissions">Manage Server</span> | `!embed #welcome FF0000 Title \| Description` | Creates a simple embed with color, title and description.
-**editembed** \<message id> \<title> \| \<description><br><span class="user-permissions">Manage Server</span> | `!editembed 32538901190123 Title \| Description` | Edits an embed sent by the bot in a message.
-**cembed** [channel] \<JSON><br><span class="user-permissions">Manage Server</span> | `!cembed #welcome` | Creates a fully customized embed. Also accepts a Pastebin link.
-**ecembed** \<message id> \<channel> \<JSON><br><span class="user-permissions">Manage Server</span> | `!ecembed 31203123191 #welcome` | Edits any embed the bot has posted using the JSON or JSON source that follows the message ID and channel.
-**embedsource** \<message id> [channel] | `!embedsource 9312838121123 #welcome` | Gets the raw JSON from an embed.
-**embedunhide** \<message_id> [channel]<br><span class="user-permissions">Manage Server</span> | `!embedunhide 123456789` | Unhides a previously closed embed.
-
 <!-- tab:Slash Commands -->
-Name              | Example           | Usage
- ----------------- | ----------------- | ----------------------------------------------------------------------------- 
-**embed create** \<color> \<text> [channel]<br><span class="user-permissions">Manage Server</span> | `/embed create FF0000 Title \| Description #welcome` | Creates a simple embed with color, title and description.
-**embed edit** \<message id> \<text><br><span class="user-permissions">Manage Server</span> | `/embed edit 32538901190123 Title \| Description` | Edits an embed sent by the bot in a message.
-**embed custom** \<JSON> [channel]<br><span class="user-permissions">Manage Server</span> | `/embed custom #welcome` | Creates a fully customized embed. Also accepts a Pastebin link.
-**embed editcustom** \<message id> \<JSON> \<channel><br><span class="user-permissions">Manage Server</span> | `/embed editcustom 31203123191 #welcome` | Edits any embed the bot has posted using the JSON or JSON source that follows the message ID and channel.
-**embed source** \<message id> [channel] | `/embed source 9312838121123 #welcome` | Gets the raw JSON from an embed.
-**embed unhide** \<message_id> [channel]<br><span class="user-permissions">Manage Server</span> | `/embed unhide 123456789` | Unhides a previously closed embed.
+
+| Name                                                                                                         | Example                                              | Usage                                                                                                     |
+| ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| **embed create** \<color> \<text> [channel]<br><span class="user-permissions">Manage Server</span>           | `/embed create FF0000 Title \| Description #welcome` | Creates a simple embed with color, title and description.                                                 |
+| **embed edit** \<message id> \<text><br><span class="user-permissions">Manage Server</span>                  | `/embed edit 32538901190123 Title \| Description`    | Edits an embed sent by the bot in a message.                                                              |
+| **embed custom** \<JSON> [channel]<br><span class="user-permissions">Manage Server</span>                    | `/embed custom #welcome`                             | Creates a fully customized embed. Also accepts a Pastebin link.                                           |
+| **embed editcustom** \<message id> \<JSON> \<channel><br><span class="user-permissions">Manage Server</span> | `/embed editcustom 31203123191 #welcome`             | Edits any embed the bot has posted using the JSON or JSON source that follows the message ID and channel. |
+| **embed source** \<message id> [channel]                                                                     | `/embed source 9312838121123 #welcome`               | Gets the raw JSON from an embed.                                                                          |
+| **embed unhide** \<message_id> [channel]<br><span class="user-permissions">Manage Server</span>              | `/embed unhide 123456789`                            | Unhides a previously closed embed.                                                                        |
+
+<!-- tab:Mention Commands -->
+
+| Name                                                                                                           | Example                                                   | Usage                                                                                                     |
+| -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| **embed** [channel] \<color> \<title> \| \<description><br><span class="user-permissions">Manage Server</span> | `@Carl-bot embed #welcome FF0000 Title \| Description`    | Creates a simple embed with color, title and description.                                                 |
+| **editembed** \<message id> \<title> \| \<description><br><span class="user-permissions">Manage Server</span>  | `@Carl-bot editembed 32538901190123 Title \| Description` | Edits an embed sent by the bot in a message.                                                              |
+| **cembed** [channel] \<JSON><br><span class="user-permissions">Manage Server</span>                            | `@Carl-bot cembed #welcome`                               | Creates a fully customized embed. Also accepts a Pastebin link.                                           |
+| **ecembed** \<message id> \<channel> \<JSON><br><span class="user-permissions">Manage Server</span>            | `@Carl-bot ecembed 31203123191 #welcome`                  | Edits any embed the bot has posted using the JSON or JSON source that follows the message ID and channel. |
+| **embedsource** \<message id> [channel]                                                                        | `@Carl-bot embedsource 9312838121123 #welcome`            | Gets the raw JSON from an embed.                                                                          |
+| **embedunhide** \<message_id> [channel]<br><span class="user-permissions">Manage Server</span>                 | `@Carl-bot embedunhide 123456789`                         | Unhides a previously closed embed.                                                                        |
 
 <!-- tabs:end -->
 
-
 ## Embed Builder
 
-!["Embed Builder"](_images/embed_builder.png ':size=75%')
+!["Embed Builder"](_images/embed_builder.png ":size=75%")
 
 > `I` = Icon URL
-`T` = Thumbnail URL
-`Image` = Image URL
-`F` = Footer Icon
+> `T` = Thumbnail URL
+> `Image` = Image URL
+> `F` = Footer Icon
 
-*Image URLs must be direct image links. This means the URL should contain the image's file extension, like `.jpg`, `.jpeg`, `.png`, or `.gif`.*
-
+_Image URLs must be direct image links. This means the URL should contain the image's file extension, like `.jpg`, `.jpeg`, `.png`, or `.gif`._
 
 ## Rules and Limits
 
@@ -51,15 +51,15 @@ Name              | Example           | Usage
 - In addition to the stated character limits for each field provided below the embed builder's text boxes, the sum of all characters in an embed must not exceed 6000 characters.
 - Do not put values in the JSON "timestamp": field if you don't know the correct format for them. The correct format is ISO 8601: `yyyy-mm-ddTHH:MM:SS.000Z`.
 
-
 ## Editing an Embed
+
 ?> You can now edit embeds through the **[Dashboard](https://carl.gg)**.
 
 Editing complex embeds can be daunting to users unfamiliar with JSON. Follow these steps:
 
-1. Use the `embedsource` command to obtain your embed's content and layout. Copy the JSON Carl-bot outputs.
+1. Use the `/embed source` command to obtain your embed's content and layout. Copy the JSON Carl-bot outputs.
 2. Paste the JSON into the embed builder on the [Dashboard](https://carl.gg) (on the top-right where it says **Raw JSON**) then click **Apply**.
 3. Make your edits in the embed builder.
 4. Click the **Copy to clipboard** button on the right side of the builder to copy the JSON for your edited embed.
 5. If the JSON is longer than what Discord allows you to put into the text box, paste the raw JSON into a site like [Pastebin](https://pastebin.com) or [Starbin](https://starb.in).
-6. Use the `ecembed` command to update your embed by using the JSON, or Pastebin/Starb.in link.
+6. Use the `/embed editcustom` command to update your embed by using the JSON, or Pastebin/Starb.in link.

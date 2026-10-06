@@ -22,21 +22,21 @@ Variables follow `--format` or `-f`<br><br>
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
+<!-- tab:Mention Commands -->
 
 **dump** Is a special command that deserves its own page.
 
-The syntax is `!dump [role] [args]`<br><span class="user-permissions">Manage Roles</span>
+The syntax is `@Carl-bot dump [role] [args]`<br><span class="user-permissions">Manage Roles</span>
 
 If you're not used to using flags this might be confusing, so here are some examples and what they do:
 
-> **!dump Patrons \--enumerate \--order id -f %n %c \--dateformat %c \--limit 10**<br>
+> **@Carl-bot dump Patrons \--enumerate \--order id -f %n %c \--dateformat %c \--limit 10**<br>
 > Dumps the 10 oldest accounts with the patreon role. Output:<br> > `1. evlsmurf Mon Aug 31 22:23:33 2015`<br> > `2. Hammy:hamster: Thu Sep 24 23:04:31 2015`<br> > `3. iscottnoidea Tue Sep 29 14:35:10 2015`<br> > `4. Ahmad Fri Oct  2 14:22:21 2015`<br> > `5. Zerxion :coffee: Mon Oct  5 07:36:54 2015`<br> > `6. ! Whoozard Tue Oct 20 16:48:57 2015`<br> > `7. Iris Tue Oct 27 01:53:04 2015`<br> > `8. orangespire Thu Oct 29 06:51:14 2015`<br> > `9. aphoenix Mon Nov  9 02:09:03 2015`<br> > `10. Terra Fri Dec  4 02:49:17 2015`
 
-> **!dump -o id \--limit 10 \--no-roles**<br>
+> **@Carl-bot dump -o id \--limit 10 \--no-roles**<br>
 > Dumps the 10 oldest accounts without roles. Output:<br> > `Andy#7194 (23572087872421888)`<br> > `macki#9999 (48287434319855616)`<br> > `Xaric123#8510 (49188871384072192)`<br> > `Blackstar#1425 (49212295229739008)`<br> > `Nyte#0001 (49253701973442560)`<br> > `Xin#1645 (49548576702861312)`<br> > `Fondue#7609 (49663303806357504)`<br> > `Ryando#2997 (53163621441605632)`<br> > `ZeroMastery#1287 (53695818749706240)`<br> > `Tristin#7915 (54374655984668672)`
 
-> **!dump -o joined_at -d \--limit 1 -r Moderator**<br>
+> **@Carl-bot dump -o joined_at -d \--limit 1 -r Moderator**<br>
 > Dumps the moderator who joined most recently
 
 The order of the flags does not matter, below is a more in-depth explanation of how it works.
@@ -56,7 +56,7 @@ If you're not used to using flags this might be confusing, so here are some exam
 > **/stats dump -o id \--limit 10 \--no-roles**<br>
 > Dumps the 10 oldest accounts without roles. Output:<br> > `Andy#7194 (23572087872421888)`<br> > `macki#9999 (48287434319855616)`<br> > `Xaric123#8510 (49188871384072192)`<br> > `Blackstar#1425 (49212295229739008)`<br> > `Nyte#0001 (49253701973442560)`<br> > `Xin#1645 (49548576702861312)`<br> > `Fondue#7609 (49663303806357504)`<br> > `Ryando#2997 (53163621441605632)`<br> > `ZeroMastery#1287 (53695818749706240)`<br> > `Tristin#7915 (54374655984668672)`
 
-> **/dump -o joined_at -d \--limit 1 -r Moderator**<br>
+> **/stats dump -o joined_at -d \--limit 1 -r Moderator**<br>
 > Dumps the moderator who joined most recently
 
 The order of the flags does not matter, below is a more in-depth explanation of how it works.
@@ -73,29 +73,29 @@ For multi-word highlights, it will look for a sequence of words, not a substring
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-| Name                                                                                                  | Example                        | Usage                                                          |
-| ----------------------------------------------------------------------------------------------------- | ------------------------------ | -------------------------------------------------------------- |
-| [**highlight**\|**hl**] [+\|add] \<words...><br><span class="user-permissions">Manage Messages</span> | `!hl add carl-bot`             | Adds a word that will notify you.                              |
-| **highlight** [m\|match] \<sentence><br><span class="user-permissions">Manage Messages</span>         | `!hl match carl-bot is cute`   | Tests a sentence and sees which if any words would notify you. |
-| **highlight block** \<members/channels><br><span class="user-permissions">Manage Messages</span>      | `!hl block @Carl-bot #general` | Messages sent in this channel/from this user won't notify you. |
-| **highlight unblock** \<members/channels><br><span class="user-permissions">Manage Messages</span>    | `!hl unblock #general`         | Unblocks the user/channel.                                     |
-| **highlight show**<br><span class="user-permissions">Manage Messages</span>                           | `!hl show`                     | Shows which words you have set to highlight you.               |
-| **highlight clear**<br><span class="user-permissions">Manage Messages</span>                          | `!hl clear`                    | Removes all of your highlighted words.                         |
-| **highlight [-\|del]** \<word><br><span class="user-permissions">Manage Messages</span>               | `!hl del carl-bot`             | Removes a word from your highlighted words.                    |
-
 <!-- tab:Slash Commands -->
 
 | Name                                                                                      | Example                               | Usage                                                          |
 | ----------------------------------------------------------------------------------------- | ------------------------------------- | -------------------------------------------------------------- |
 | **highlight add** \<word><br><span class="user-permissions">Manage Messages</span>        | `/highlight add carl-bot`             | Adds a word that will notify you.                              |
 | **highlight matches** \<words><br><span class="user-permissions">Manage Messages</span>   | `/highlight matches carl-bot is cute` | Tests a sentence and sees which if any words would notify you. |
-| **highlight block** \<blocks><br><span class="user-permissions">Manage Messages</span>    | `/highlight block @Carl-bot #general` | Messages sent in this channel/from this user won't notify you. |
+| **highlight block** \<blocks><br><span class="user-permissions">Manage Messages</span>    | `/highlight block @user #general`     | Messages sent in this channel/from this user won't notify you. |
 | **highlight unblock** \<unblock><br><span class="user-permissions">Manage Messages</span> | `/highlight unblock #general`         | Unblocks the user/channel.                                     |
 | **highlight show**<br><span class="user-permissions">Manage Messages</span>               | `/highlight show`                     | Shows which words you have set to highlight you.               |
 | **highlight clear**<br><span class="user-permissions">Manage Messages</span>              | `/highlight clear`                    | Removes all of your highlighted words.                         |
 | **highlight remove** \<word><br><span class="user-permissions">Manage Messages</span>     | `/highlight remove carl-bot`          | Removes a word from your highlighted word.                     |
+
+<!-- tab:Mention Commands -->
+
+| Name                                                                                                  | Example                               | Usage                                                          |
+| ----------------------------------------------------------------------------------------------------- | ------------------------------------- | -------------------------------------------------------------- |
+| [**highlight**\|**hl**] [+\|add] \<words...><br><span class="user-permissions">Manage Messages</span> | `@Carl-bot hl add carl-bot`           | Adds a word that will notify you.                              |
+| **highlight** [m\|match] \<sentence><br><span class="user-permissions">Manage Messages</span>         | `@Carl-bot hl match carl-bot is cute` | Tests a sentence and sees which if any words would notify you. |
+| **highlight block** \<members/channels><br><span class="user-permissions">Manage Messages</span>      | `@Carl-bot hl block @user #general`   | Messages sent in this channel/from this user won't notify you. |
+| **highlight unblock** \<members/channels><br><span class="user-permissions">Manage Messages</span>    | `@Carl-bot hl unblock #general`       | Unblocks the user/channel.                                     |
+| **highlight show**<br><span class="user-permissions">Manage Messages</span>                           | `@Carl-bot hl show`                   | Shows which words you have set to highlight you.               |
+| **highlight clear**<br><span class="user-permissions">Manage Messages</span>                          | `@Carl-bot hl clear`                  | Removes all of your highlighted words.                         |
+| **highlight [-\|del]** \<word><br><span class="user-permissions">Manage Messages</span>               | `@Carl-bot hl del carl-bot`           | Removes a word from your highlighted words.                    |
 
 <!-- tabs:end -->
 
@@ -103,29 +103,29 @@ For multi-word highlights, it will look for a sequence of words, not a substring
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-| Name                                                                                            | Example                    | Usage                                                                                                                                                                            |
-| ----------------------------------------------------------------------------------------------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [**i**\|**info**] [member]                                                                      | `!i @Carl-bot`             | Returns the specified user's name, avatar link, roles, ID, creation date, server join date and some cool related information.                                                    |
-| **avatar** [member] [avatar_type=server]                                                        | `!avatar @Carl-bot global` | Shows the avatar of a mentioned user or yourself if you don't. If avatar_type is global then it will show the global avatar otherwise it defaults to server avatar if available. |
-| **serverinfo**                                                                                  | `!serverinfo`              | Displays server information.                                                                                                                                                     |
-| **youngest** [count=5]<br><span class="user-permissions">Manage Server</span>                   | `!youngest 10`             | Ranks up to 25 members by account creation.                                                                                                                                      |
-| **oldest** [count=5]<br><span class="user-permissions">Manage Server</span>                     | `!oldest 15`               | Ranks up to 25 members by account creation.                                                                                                                                      |
-| [**newmembers**\|**newusers**] [count=5]<br><span class="user-permissions">Manage Server</span> | `!newusers 10`             | Ranks up to 25 members by server join date.                                                                                                                                      |
-| [**oldmembers**\|**oldusers**] [count=5]<br><span class="user-permissions">Manage Server</span> | `!oldusers 15`             | Ranks up to 25 members by server join date.                                                                                                                                      |
-
 <!-- tab:Slash Commands -->
 
-| Name                                                                                  | Example                   | Usage                                                                                                                                                                         |
-| ------------------------------------------------------------------------------------- | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **members info** [member]                                                             | `/members info @Carl-bot` | Returns the specified user's name, avatar link, roles, ID, creation date, server join date and some cool related information.                                                 |
-| **avatars** [user] [global]                                                           | `/avatars @Carl-bot true` | Shows the avatar of a mentioned user or yourself if you don't. If global is set true then it will show the global avatar otherwise it defaults to server avatar if available. |
-| **stats serverinfo**                                                                  | `/stats serverinfo`       | Displays server information.                                                                                                                                                  |
-| **members youngest** [count=5]<br><span class="user-permissions">Manage Server</span> | `/members youngest 10`    | Ranks up to 25 members by account creation.                                                                                                                                   |
-| **members oldest** [count=5]<br><span class="user-permissions">Manage Server</span>   | `/members oldest 15`      | Ranks up to 25 members by account creation.                                                                                                                                   |
-| **members newusers** [count=5]<br><span class="user-permissions">Manage Server</span> | `/members newusers 10`    | Ranks up to 25 members by server join date.                                                                                                                                   |
-| **members oldusers** [count=5]<br><span class="user-permissions">Manage Server</span> | `/members oldusers 15`    | Ranks up to 25 members by server join date.                                                                                                                                   |
+| Name                                                                                  | Example                | Usage                                                                                                                                                                         |
+| ------------------------------------------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **members info** [member]                                                             | `/members info @user`  | Returns the specified user's name, avatar link, roles, ID, creation date, server join date and some cool related information.                                                 |
+| **avatars** [user] [global]                                                           | `/avatars @user true`  | Shows the avatar of a mentioned user or yourself if you don't. If global is set true then it will show the global avatar otherwise it defaults to server avatar if available. |
+| **stats serverinfo**                                                                  | `/stats serverinfo`    | Displays server information.                                                                                                                                                  |
+| **members youngest** [count=5]<br><span class="user-permissions">Manage Server</span> | `/members youngest 10` | Ranks up to 25 members by account creation.                                                                                                                                   |
+| **members oldest** [count=5]<br><span class="user-permissions">Manage Server</span>   | `/members oldest 15`   | Ranks up to 25 members by account creation.                                                                                                                                   |
+| **members newusers** [count=5]<br><span class="user-permissions">Manage Server</span> | `/members newusers 10` | Ranks up to 25 members by server join date.                                                                                                                                   |
+| **members oldusers** [count=5]<br><span class="user-permissions">Manage Server</span> | `/members oldusers 15` | Ranks up to 25 members by server join date.                                                                                                                                   |
+
+<!-- tab:Mention Commands -->
+
+| Name                                                                                            | Example                         | Usage                                                                                                                                                                            |
+| ----------------------------------------------------------------------------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**i**\|**info**] [member]                                                                      | `@Carl-bot i @user`             | Returns the specified user's name, avatar link, roles, ID, creation date, server join date and some cool related information.                                                    |
+| **avatar** [member] [avatar_type=server]                                                        | `@Carl-bot avatar @user global` | Shows the avatar of a mentioned user or yourself if you don't. If avatar_type is global then it will show the global avatar otherwise it defaults to server avatar if available. |
+| **serverinfo**                                                                                  | `@Carl-bot serverinfo`          | Displays server information.                                                                                                                                                     |
+| **youngest** [count=5]<br><span class="user-permissions">Manage Server</span>                   | `@Carl-bot youngest 10`         | Ranks up to 25 members by account creation.                                                                                                                                      |
+| **oldest** [count=5]<br><span class="user-permissions">Manage Server</span>                     | `@Carl-bot oldest 15`           | Ranks up to 25 members by account creation.                                                                                                                                      |
+| [**newmembers**\|**newusers**] [count=5]<br><span class="user-permissions">Manage Server</span> | `@Carl-bot newusers 10`         | Ranks up to 25 members by server join date.                                                                                                                                      |
+| [**oldmembers**\|**oldusers**] [count=5]<br><span class="user-permissions">Manage Server</span> | `@Carl-bot oldusers 15`         | Ranks up to 25 members by server join date.                                                                                                                                      |
 
 <!-- tabs:end -->
 
@@ -133,17 +133,17 @@ For multi-word highlights, it will look for a sequence of words, not a substring
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-| Name                                                                                    | Example                      | Usage                                                                                                                |
-| --------------------------------------------------------------------------------------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **poll** \<question_and_choices><br><span class="user-permissions">Manage Server</span> | `!poll Is this nice?,Yes,No` | Creates a thumbs up-down poll where users vote with reactions. Use `\|` or `,` to separate the question and choices. |
-
 <!-- tab:Slash Commands -->
 
 | Name                                                                                  | Example               | Usage                                                                                                   |
 | ------------------------------------------------------------------------------------- | --------------------- | ------------------------------------------------------------------------------------------------------- |
 | **poll** \<question> [choices]<br><span class="user-permissions">Manage Server</span> | `/poll Is this nice?` | Creates a thumbs up-down poll where users vote with reactions. Use `\|` or `,` to separate the choices. |
+
+<!-- tab:Mention Commands -->
+
+| Name                                                                                    | Example                               | Usage                                                                                                                |
+| --------------------------------------------------------------------------------------- | ------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| **poll** \<question_and_choices><br><span class="user-permissions">Manage Server</span> | `@Carl-bot poll Is this nice?,Yes,No` | Creates a thumbs up-down poll where users vote with reactions. Use `\|` or `,` to separate the question and choices. |
 
 <!-- tabs:end -->
 
@@ -152,18 +152,6 @@ For multi-word highlights, it will look for a sequence of words, not a substring
 ?> These reminders require you to have DMs open from at least one server you share with the bot.
 
 <!-- tabs:start -->
-
-<!-- tab:Prefix Commands -->
-
-| Name                                                            | Example              | Usage                                                                                                                   |
-| --------------------------------------------------------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| [**rm**\|**reminder**\|**remindme**\|**timer**] \<when> [about] | `!rm birthday 1d`    | Sets up a reminder to send a message reminding you about the thing. If you use a human time like `at noon` it uses UTC. |
-| **reminder mine**                                               | `!rm mine`           | Shows your reminders.                                                                                                   |
-| **reminder** [-\|remove\|del] \<id>                             | `!rm - 42`           | Removes the reminder with that ID.                                                                                      |
-| **subscribe** \<id>                                             | `!rm subscribe 97`   | Copies a reminder someone else made.                                                                                    |
-| **reminder clear**                                              | `!rm clear`          | Removes all your reminders from the server or all reminders if used in DMs.                                             |
-| **reminder repeat** \<id> \<interval>                           | `!rm repeat 247 20d` | Sets a reminder to be repeated.                                                                                         |
-| **reminder when** \<id>                                         | `!rm when 247`       | Shows some information about a timer created in the server or from you if used in DMs.                                  |
 
 <!-- tab:Slash Commands -->
 
@@ -177,6 +165,18 @@ For multi-word highlights, it will look for a sequence of words, not a substring
 | **reminder repeat** \<rm_id> [duration] | `/reminder repeat 247 20d`       | Sets a reminder to be repeated.                                                                                         |
 | **reminder when** \<reminder_id>        | `/reminder when 247`             | Shows some information about a timer created in the server or from you if used in DMs.                                  |
 
+<!-- tab:Mention Commands -->
+
+| Name                                                            | Example                       | Usage                                                                                                                   |
+| --------------------------------------------------------------- | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| [**rm**\|**reminder**\|**remindme**\|**timer**] \<when> [about] | `@Carl-bot rm birthday 1d`    | Sets up a reminder to send a message reminding you about the thing. If you use a human time like `at noon` it uses UTC. |
+| **reminder mine**                                               | `@Carl-bot rm mine`           | Shows your reminders.                                                                                                   |
+| **reminder** [-\|remove\|del] \<id>                             | `@Carl-bot rm - 42`           | Removes the reminder with that ID.                                                                                      |
+| **subscribe** \<id>                                             | `@Carl-bot rm subscribe 97`   | Copies a reminder someone else made.                                                                                    |
+| **reminder clear**                                              | `@Carl-bot rm clear`          | Removes all your reminders from the server or all reminders if used in DMs.                                             |
+| **reminder repeat** \<id> \<interval>                           | `@Carl-bot rm repeat 247 20d` | Sets a reminder to be repeated.                                                                                         |
+| **reminder when** \<id>                                         | `@Carl-bot rm when 247`       | Shows some information about a timer created in the server or from you if used in DMs.                                  |
+
 <!-- tabs:end -->
 
 ## Giveaways
@@ -185,25 +185,25 @@ Create and manage giveaways in your server easily!
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-| Name                                                                                                                  | Example                                  | Usage                                                                                                                                                                                                                            |
-| --------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **giveaway** \<duration> \<winners> \<prize> [channel=current]<br><span class="user-permissions">Manage Server</span> | `!giveaway 1h10m 2 Nitro #giveaways`     | Creates a giveaway for the specified duration, number of winners, prize and optional channel which defaults to the channel that the command is used in.                                                                          |
-| **giveaway reroll** \<giveaway_id> [flags]<br><span class="user-permissions">Manage Server</span>                     | `!giveaway reroll 23 -exclude @Carl-bot` | Rerolls the giveaway with the specified case id. Optionally, you can use the following flags: <br>`-replace` Only replaces the mentioned winners in the reroll<br>`-exclude` Excludes the mentioned participants from the reroll |
-| **giveaway end** \<case_id><br><span class="user-permissions">Manage Server</span>                                    | `!giveaway end 42`                       | Ends an ongoing giveaway prematurely. You will be asked if you want to announce winners or not.                                                                                                                                  |
-| **giveaway list** [choice=active]<br><span class="user-permissions">Manage Server</span>                              | `!giveaway list active`                  | Shows the list of active/inactive giveaways.                                                                                                                                                                                     |
-| **giveaway participants** \<case_id><br><span class="user-permissions">Manage Server</span>                           | `!giveaway participants 4`               | Check the users that have participated in a particular giveaway.                                                                                                                                                                 |
-
 <!-- tab:Slash Commands -->
 
-| Name                                                                                                                         | Example                         | Usage                                                                                                                                                                        |
-| ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **giveaway create** \<duration> \<winners> \<prize> [channel=current]<br><span class="user-permissions">Manage Server</span> | `/giveaway create 10m 1 Nitro`  | Creates a giveaway for the specified duration, number of winners, prize and optional channel which defaults to the channel that the command is used in.                      |
-| **giveaway reroll** \<giveaway_id> [replace] [exclude]<br><span class="user-permissions">Manage Server</span>                | `/giveaway reroll 23 @Carl-bot` | Rerolls the giveaway with the specified giveaway id. Optionally, you can mention the winners that should be replaced and/or members that should be excluded from the reroll. |
-| **giveaway end** \<giveaway_id><br><span class="user-permissions">Manage Server</span>                                       | `/giveaway end 42`              | Ends an ongoing giveaway prematurely. You will be asked if you want to announce winners or not.                                                                              |
-| **giveaway list** [choice=active]<br><span class="user-permissions">Manage Server</span>                                     | `/giveaway list inactive`       | Shows the list of active/inactive giveaways.                                                                                                                                 |
-| **giveaway participants** \<giveaway_id><br><span class="user-permissions">Manage Server</span>                              | `/giveaway participants 4`      | Check the users that have participated in a particular giveaway.                                                                                                             |
+| Name                                                                                                                         | Example                        | Usage                                                                                                                                                                        |
+| ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **giveaway create** \<duration> \<winners> \<prize> [channel=current]<br><span class="user-permissions">Manage Server</span> | `/giveaway create 10m 1 Nitro` | Creates a giveaway for the specified duration, number of winners, prize and optional channel which defaults to the channel that the command is used in.                      |
+| **giveaway reroll** \<giveaway_id> [replace] [exclude]<br><span class="user-permissions">Manage Server</span>                | `/giveaway reroll 23 @user`    | Rerolls the giveaway with the specified giveaway id. Optionally, you can mention the winners that should be replaced and/or members that should be excluded from the reroll. |
+| **giveaway end** \<giveaway_id><br><span class="user-permissions">Manage Server</span>                                       | `/giveaway end 42`             | Ends an ongoing giveaway prematurely. You will be asked if you want to announce winners or not.                                                                              |
+| **giveaway list** [choice=active]<br><span class="user-permissions">Manage Server</span>                                     | `/giveaway list inactive`      | Shows the list of active/inactive giveaways.                                                                                                                                 |
+| **giveaway participants** \<giveaway_id><br><span class="user-permissions">Manage Server</span>                              | `/giveaway participants 4`     | Check the users that have participated in a particular giveaway.                                                                                                             |
+
+<!-- tab:Mention Commands -->
+
+| Name                                                                                                                  | Example                                       | Usage                                                                                                                                                                                                                            |
+| --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **giveaway** \<duration> \<winners> \<prize> [channel=current]<br><span class="user-permissions">Manage Server</span> | `@Carl-bot giveaway 1h10m 2 Nitro #giveaways` | Creates a giveaway for the specified duration, number of winners, prize and optional channel which defaults to the channel that the command is used in.                                                                          |
+| **giveaway reroll** \<giveaway_id> [flags]<br><span class="user-permissions">Manage Server</span>                     | `@Carl-bot giveaway reroll 23 -exclude @user` | Rerolls the giveaway with the specified case id. Optionally, you can use the following flags: <br>`-replace` Only replaces the mentioned winners in the reroll<br>`-exclude` Excludes the mentioned participants from the reroll |
+| **giveaway end** \<case_id><br><span class="user-permissions">Manage Server</span>                                    | `@Carl-bot giveaway end 42`                   | Ends an ongoing giveaway prematurely. You will be asked if you want to announce winners or not.                                                                                                                                  |
+| **giveaway list** [choice=active]<br><span class="user-permissions">Manage Server</span>                              | `@Carl-bot giveaway list active`              | Shows the list of active/inactive giveaways.                                                                                                                                                                                     |
+| **giveaway participants** \<case_id><br><span class="user-permissions">Manage Server</span>                           | `@Carl-bot giveaway participants 4`           | Check the users that have participated in a particular giveaway.                                                                                                                                                                 |
 
 <!-- tabs:end -->
 
@@ -219,15 +219,6 @@ This feature is available for Premium users only.
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-| Name                                                                                                                         | Example                 | Usage                                                                                               |
-| ---------------------------------------------------------------------------------------------------------------------------- | ----------------------- | --------------------------------------------------------------------------------------------------- |
-| **sticky** [channel=current] [duration=1day] \<message><br><span class="user-permissions">Manage Server</span>               | `!sticky No Spam`       | Create a sticky message in the current or a specified channel.                                      |
-| **stickylist** <br><span class="user-permissions">Manage Server</span>                                                       | `!stickylist`           | View all active sticky messages across your server, including their duration and next refresh time. |
-| **stickyremove** [channel=current]<br><span class="user-permissions">Manage Server</span>                                    | `!stickyremove`         | Remove an active sticky message in the current or a specified channel.                              |
-| **stickytemplate** [channel=current] [duration=1day] \<template_name><br><span class="user-permissions">Manage Server</span> | `!stickytemplate Stick` | Apply a pre-set sticky messatge format for quick setup.                                             |
-
 <!-- tab:Slash Commands -->
 
 | Name                                                                                                                          | Example                  | Usage                                                                                               |
@@ -236,5 +227,14 @@ This feature is available for Premium users only.
 | **sticky list** <br><span class="user-permissions">Manage Server</span>                                                       | `/sticky list`           | View all active sticky messages across your server, including their duration and next refresh time. |
 | **sticky remove** [channel=current]<br><span class="user-permissions">Manage Server</span>                                    | `/sticky remove`         | Remove an active sticky message in the current or a specified channel.                              |
 | **sticky template** \<template_name> [duration=1day] [channel=current]<br><span class="user-permissions">Manage Server</span> | `/sticky template Stick` | Apply a pre-set sticky messatge format for quick setup.                                             |
+
+<!-- tab:Mention Commands -->
+
+| Name                                                                                                                         | Example                          | Usage                                                                                               |
+| ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------- |
+| **sticky** [channel=current] [duration=1day] \<message><br><span class="user-permissions">Manage Server</span>               | `@Carl-bot sticky No Spam`       | Create a sticky message in the current or a specified channel.                                      |
+| **stickylist** <br><span class="user-permissions">Manage Server</span>                                                       | `@Carl-bot stickylist`           | View all active sticky messages across your server, including their duration and next refresh time. |
+| **stickyremove** [channel=current]<br><span class="user-permissions">Manage Server</span>                                    | `@Carl-bot stickyremove`         | Remove an active sticky message in the current or a specified channel.                              |
+| **stickytemplate** [channel=current] [duration=1day] \<template_name><br><span class="user-permissions">Manage Server</span> | `@Carl-bot stickytemplate Stick` | Apply a pre-set sticky messatge format for quick setup.                                             |
 
 <!-- tabs:end -->

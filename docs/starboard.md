@@ -4,45 +4,45 @@
 
 <!-- tabs:start -->
 
-<!-- tab:Prefix Commands -->
-
-| Name                                                                                     | Example                    | Usage                                                                                                |
-| ---------------------------------------------------------------------------------------- | -------------------------- | ---------------------------------------------------------------------------------------------------- |
-| **starboard** [channel=starboard]<br><span class="user-permissions">Manage Server</span> | `!starboard #stars`        | Sets up the Starboard for the server. Defaults to creating new channel named `#starboard`.           |
-| **star limit** \<number><br><span class="user-permissions">Manage Server</span>          | `!star limit 3`            | Sets the amount of reactions required for a post to get posted on the Starboard.                     |
-| **star nsfw**<br><span class="user-permissions">Manage Server</span>                     | `!star nsfw`               | Toggles stars in NSFW channels.                                                                      |
-| **star self**<br><span class="user-permissions">Manage Server</span>                     | `!star self`               | Toggles being able to star your own posts.                                                           |
-| **star** [server\|stats\|top] [member]                                                   | `!star stats @Carl-bot`    | Shows some information about the server's or specified member's starred posts and giving pattern.    |
-| **star show** \<message_id>                                                              | `!star show 123456`        | Shows a starred post from the Starboard in the channel the command was used in.                      |
-| **star** [jump\|source]<br><span class="user-permissions">Manage Server</span>           | `!star jump`               | Sends the direct link to the starred message.                                                        |
-| **star autostar**<br><span class="user-permissions">Manage Server</span>                 | `!star autostar`           | This is a [Premium](https://carl.gg/get-premium) command. Automatically stars new Starboard entries. |
-| **star blacklist** \<channels><br><span class="user-permissions">Manage Server</span>    | `!star blacklist #staff`   | Blocks channels from having their messages starred.                                                  |
-| **star unblacklist** \<channels><br><span class="user-permissions">Manage Server</span>  | `!star unblacklist #staff` | Unblocks channels from having their messages starred.                                                |
-| **star config**<br><span class="user-permissions">Manage Server</span>                   | `!star config`             | View Starboard configuration for server.                                                             |
-| **star lock**<br><span class="user-permissions">Manage Server</span>                     | `!star lock`               | Locks the Starboard making it completely uninteractive.                                              |
-| **star random**                                                                          | `!star random`             | Shows a random starred message.                                                                      |
-| **star remove**<br><span class="user-permissions">Manage Server</span>                   | `!star remove`             | Removes a channel as starboard.                                                                      |
-| **star emoji** [emoji]<br><span class="user-permissions">Manage Server</span>            | `!star emoji 🔥`           | Sets or resets an emoji for starboard. This is a [Premium](https://carl.gg/get-premium) command.     |
-
 <!-- tab:Slash Commands -->
 
-| Name                                                                                       | Example                     | Usage                                                                                                |
-| ------------------------------------------------------------------------------------------ | --------------------------- | ---------------------------------------------------------------------------------------------------- |
-| **stars setup** [channel=starboard]<br><span class="user-permissions">Manage Server</span> | `/stars setup #stars`       | Sets up the Starboard for the server. Defaults to creating new channel named `#starboard`.           |
-| **stars limit** \<limit><br><span class="user-permissions">Manage Server</span>            | `/stars limit 3`            | Sets the amount of reactions required for a post to get posted on the Starboard.                     |
-| **stars nsfw**<br><span class="user-permissions">Manage Server</span>                      | `/stars nsfw`               | Toggles embedding images from starred messages in NSFW channels.                                     |
-| **stars self**<br><span class="user-permissions">Manage Server</span>                      | `/stars self`               | Toggles being able to star your own posts.                                                           |
-| **stars server**                                                                           | `/stars server`             | Displays stats about the server's starboard.                                                         |
-| **stars stats** [member]                                                                   | `/stars stats @Carl-bot`    | Shows some information about the server's or specified member's starred posts and giving pattern.    |
-| **stars show** \<message_id>                                                               | `/stars show 123456`        | Shows a starred post from the Starboard in the channel the command was used in.                      |
-| **stars jump**<br><span class="user-permissions">Manage Server</span>                      | `/stars jump`               | Sends the direct link to the starred message.                                                        |
-| **stars autostar**<br><span class="user-permissions">Manage Server</span>                  | `/stars autostar`           | This is a [Premium](https://carl.gg/get-premium) command. Automatically stars new Starboard entries. |
-| **stars blacklist** \<channels><br><span class="user-permissions">Manage Server</span>     | `/stars blacklist #staff`   | Blocks channels from having their messages starred.                                                  |
-| **stars unblacklist** \<channels><br><span class="user-permissions">Manage Server</span>   | `/stars unblacklist #staff` | Unblocks channels from having their messages starred.                                                |
-| **stars config**<br><span class="user-permissions">Manage Server</span>                    | `/stars config`             | View Starboard configuration for server.                                                             |
-| **stars lock**<br><span class="user-permissions">Manage Server</span>                      | `/stars lock`               | Locks the Starboard making it completely uninteractive.                                              |
-| **stars random**                                                                           | `/stars random`             | Shows a random starred message.                                                                      |
-| **stars remove**<br><span class="user-permissions">Manage Server</span>                    | `/stars remove`             | Removes a channel as starboard.                                                                      |
-| **stars emoji** \<choice> [emoji]<br><span class="user-permissions">Manage Server</span>   | `/stars emoji set 🔥`       | Sets or resets an emoji for starboard. This is a [Premium](https://carl.gg/get-premium) command.     |
+| Name                                                                                           | Example                         | Usage                                                                                                |
+| ---------------------------------------------------------------------------------------------- | ------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| **starboard setup** [channel=starboard]<br><span class="user-permissions">Manage Server</span> | `/starboard setup #stars`       | Sets up the Starboard for the server. Defaults to creating new channel named `#starboard`.           |
+| **starboard limit** \<limit><br><span class="user-permissions">Manage Server</span>            | `/starboard limit 3`            | Sets the amount of reactions required for a post to get posted on the Starboard.                     |
+| **starboard nsfw**<br><span class="user-permissions">Manage Server</span>                      | `/starboard nsfw`               | Toggles embedding images from starred messages in NSFW channels.                                     |
+| **starboard self**<br><span class="user-permissions">Manage Server</span>                      | `/starboard self`               | Toggles being able to star your own posts.                                                           |
+| **starboard server**                                                                           | `/starboard server`             | Displays stats about the server's starboard.                                                         |
+| **starboard stats** [member]                                                                   | `/starboard stats @user`        | Shows some information about the server's or specified member's starred posts and giving pattern.    |
+| **starboard show** \<message_id>                                                               | `/starboard show 123456`        | Shows a starred post from the Starboard in the channel the command was used in.                      |
+| **starboard jump**<br><span class="user-permissions">Manage Server</span>                      | `/starboard jump`               | Sends the direct link to the starred message.                                                        |
+| **starboard autostar**<br><span class="user-permissions">Manage Server</span>                  | `/starboard autostar`           | This is a [Premium](https://carl.gg/get-premium) command. Automatically stars new Starboard entries. |
+| **starboard blacklist** \<channels><br><span class="user-permissions">Manage Server</span>     | `/starboard blacklist #staff`   | Blocks channels from having their messages starred.                                                  |
+| **starboard unblacklist** \<channels><br><span class="user-permissions">Manage Server</span>   | `/starboard unblacklist #staff` | Unblocks channels from having their messages starred.                                                |
+| **starboard config**<br><span class="user-permissions">Manage Server</span>                    | `/starboard config`             | View Starboard configuration for server.                                                             |
+| **starboard lock**<br><span class="user-permissions">Manage Server</span>                      | `/starboard lock`               | Locks the Starboard making it completely uninteractive.                                              |
+| **starboard random**                                                                           | `/starboard random`             | Shows a random starred message.                                                                      |
+| **starboard remove**<br><span class="user-permissions">Manage Server</span>                    | `/starboard remove`             | Removes a channel as starboard.                                                                      |
+| **starboard emoji** \<choice> [emoji]<br><span class="user-permissions">Manage Server</span>   | `/starboard emoji set 🔥`       | Sets or resets an emoji for starboard. This is a [Premium](https://carl.gg/get-premium) command.     |
+
+<!-- tab:Mention Commands -->
+
+| Name                                                                                     | Example                             | Usage                                                                                                |
+| ---------------------------------------------------------------------------------------- | ----------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| **starboard** [channel=starboard]<br><span class="user-permissions">Manage Server</span> | `@Carl-bot starboard #stars`        | Sets up the Starboard for the server. Defaults to creating new channel named `#starboard`.           |
+| **star limit** \<number><br><span class="user-permissions">Manage Server</span>          | `@Carl-bot star limit 3`            | Sets the amount of reactions required for a post to get posted on the Starboard.                     |
+| **star nsfw**<br><span class="user-permissions">Manage Server</span>                     | `@Carl-bot star nsfw`               | Toggles stars in NSFW channels.                                                                      |
+| **star self**<br><span class="user-permissions">Manage Server</span>                     | `@Carl-bot star self`               | Toggles being able to star your own posts.                                                           |
+| **star** [server\|stats\|top] [member]                                                   | `@Carl-bot star stats @user`        | Shows some information about the server's or specified member's starred posts and giving pattern.    |
+| **star show** \<message_id>                                                              | `@Carl-bot star show 123456`        | Shows a starred post from the Starboard in the channel the command was used in.                      |
+| **star** [jump\|source]<br><span class="user-permissions">Manage Server</span>           | `@Carl-bot star jump`               | Sends the direct link to the starred message.                                                        |
+| **star autostar**<br><span class="user-permissions">Manage Server</span>                 | `@Carl-bot star autostar`           | This is a [Premium](https://carl.gg/get-premium) command. Automatically stars new Starboard entries. |
+| **star blacklist** \<channels><br><span class="user-permissions">Manage Server</span>    | `@Carl-bot star blacklist #staff`   | Blocks channels from having their messages starred.                                                  |
+| **star unblacklist** \<channels><br><span class="user-permissions">Manage Server</span>  | `@Carl-bot star unblacklist #staff` | Unblocks channels from having their messages starred.                                                |
+| **star config**<br><span class="user-permissions">Manage Server</span>                   | `@Carl-bot star config`             | View Starboard configuration for server.                                                             |
+| **star lock**<br><span class="user-permissions">Manage Server</span>                     | `@Carl-bot star lock`               | Locks the Starboard making it completely uninteractive.                                              |
+| **star random**                                                                          | `@Carl-bot star random`             | Shows a random starred message.                                                                      |
+| **star remove**<br><span class="user-permissions">Manage Server</span>                   | `@Carl-bot star remove`             | Removes a channel as starboard.                                                                      |
+| **star emoji** [emoji]<br><span class="user-permissions">Manage Server</span>            | `@Carl-bot star emoji 🔥`           | Sets or resets an emoji for starboard. This is a [Premium](https://carl.gg/get-premium) command.     |
 
 <!-- tabs:end -->
