@@ -8,7 +8,9 @@
 
 <!-- tab:Slash Commands -->
 
-?> Not available in Slash Commands currently. Please use Mention Commands instead.
+| Name                            | Example     | Usage                                                                               |
+| ------------------------------- | ----------- | ----------------------------------------------------------------------------------- |
+| **cute** \<choice> [bomb=false] | `/cute dog` | Gives a random image of the specified animal. Set `bomb` to `true` to get 5 images. |
 
 <!-- tab:Mention Commands -->
 
